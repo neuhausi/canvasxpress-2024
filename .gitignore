@@ -1,0 +1,9 @@
+build
+cgi-bin
+logs
+node_modules
+sqlite
+user
+tmp
+/.project
+/.DS_Store
