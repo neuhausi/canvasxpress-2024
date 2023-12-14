@@ -1,0 +1,529 @@
+<html>
+
+<head>
+  <title>Genome - Scatter</title>
+  <!-- CanvasXpress
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+  -->
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.matrix.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.configurator.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataexplorer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+
+  <style>
+    div.content {
+      top: 25px;
+      left: 25px;
+      position: absolute;
+    }
+
+    div.container {
+      border: 1px solid #d3d3d3;
+      position: relative;
+      height: 100%;
+      border-radius: 4px;
+      background: white;
+      float: left;
+      margin: 5px;
+    }
+
+    div.title {
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      align-items: center;
+      border-radius: 4px;
+      font-size: 22px;
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center !important;
+      font-weight: bold;
+      background: #f5f5f5;
+    }
+
+    div.plot {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      margin: 0 36 36 36px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="container">
+      <div class="title">
+        Two Series Scatter and Line
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "data": [
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)"
+                    },
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "line",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A']
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        Series colored (outlined) by a continuous property
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome2" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome2",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "outline": "black",                
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "outline": "black",
+                  "data": [
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)",
+                      "colorBy": "prop"
+                    },
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "line",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A']
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        Series colored by a discrete category
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome3" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome3",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "data": [
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "line",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red"
+                    },
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)",
+                      "colorBy": "cat"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A']
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        Series colored by a discrete category with metadata
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome4" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome4",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "data": [
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)",
+                      "colorBy": "cat",
+                      "meta": {
+                        "color": {
+                          "a": "red",
+                          "b": "green",
+                          "c": "black",
+                          "d": "orange",
+                          "e": "blue"
+                        }
+                      }
+                    },
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "line",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A']
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        Series evenly shaped and sized
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome5" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome5",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "data": [
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)",
+                      "shapeBy": "cat"
+                    },
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "scatter",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red",
+                      "sizeBy": "prop2"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A']
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        Combinations with and without meta-data
+      </div>
+      <div class="plot">
+        <div>
+          <canvas id="genome6" width="500" height="500" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        new CanvasXpress("genome6",
+          {
+            "tracks": [
+              {
+                "name": "Data Track",
+                "type": "dataframe",
+                "height": 300,
+                "data": [{
+                  "id": "Data-Frame",
+                  "data": [
+                    {
+                      "xAxis": "offset",
+                      "yAxis": "pval",
+                      "type": "scatter",
+                      "side": "left",
+                      "fill": "green",
+                      "title": "-log10(pvalue)",
+                      "shapeBy": "cat",
+                      "colorBy": "cat3",
+                      "sizeBy": "prop",
+                      "meta": {
+                        "shape": {
+                          "a": "square",
+                          "b": "circle",
+                          "c": "plus",
+                          "d": "star",
+                          "e": "triangle"
+                        }
+                      }
+                    },
+                    {
+                      "xAxis": "offset2",
+                      "yAxis": "rate",
+                      "type": "scatter",
+                      "title": "Recombination Rate",
+                      "side": "right",
+                      "fill": "red",
+                      "sizeBy": "prop2"
+                    }
+                  ]
+                }],
+                "dataframe": {
+                  "offset": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                  "offset2": [1, 5, 10, 15, 20],
+                  "pval": [0.5, 0.4, 0.3, 0.2, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4],
+                  "rate": [1, 30, 15, 20, 8],
+                  "prop": [1, 2, 1, 2, 5, 4, 8, 4, 6, 7, 8, 9, 1, 4, 7, 2, 7, 2, 8, 9],
+                  "prop2": [4, 2, 8, 9, 1],
+                  "cat": ['a', 'd', 'c', 'a', 'b', 'c', 'a', 'a', 'b', 'd', 'e', 'a', 'b', 'c', 'd', 'a', 'c', 'e', 'a', 'c'],
+                  "cat2": ['A', 'B', 'C', 'B', 'A'],
+                  "cat3": ['A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B', 'C', 'C', 'C', 'C', 'C', 'D', 'D', 'D', 'D', 'D'],
+                }
+              }
+            ]
+          }, {
+          "graphType": "Genome",
+          "featureStaggered": true,
+          "subtracksMaxDefault": 10,
+          "dataPointSize": 10
+        });
+      </script>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

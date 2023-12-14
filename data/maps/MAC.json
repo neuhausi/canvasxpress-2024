@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"MAC","NAME_0":"Macao","GID_1":"MAC.1_1","NAME_1":"Ilhas","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Concelho|Distrito","ENGTYPE_1":"District","CC_1":"","HASC_1":"MO.IL","cXId":"IL"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"MAC","NAME_0":"Macao","GID_1":"MAC.2_1","NAME_1":"Macau","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Concelho|Distrito","ENGTYPE_1":"District","CC_1":"","HASC_1":"MO.MA","cXId":"MA"}}
+]}

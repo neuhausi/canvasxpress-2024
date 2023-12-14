@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: NonLinear-Fit Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Power Fit">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Power Fit">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta itemprop="description" content="CanvasXpress: Power Fit">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta name="og:description" content="CanvasXpress: Power Fit">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/nonlinear-fit-5.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          NonLinear-Fit
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="nonlinearfit5" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnonlinearfit5 = new CanvasXpress("nonlinearfit5",
+          {
+            "y" : {
+              "vars" : ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11"],
+              "smps" : ["Diameter", "Length"],
+              "data" : [
+                [17.6, 159.9],
+                [26.0, 206.9],
+                [31.9, 236.8],
+                [38.9, 269.9],
+                [45.8, 300.6],
+                [51.2, 323.6],
+                [58.1, 351.7],
+                [64.7, 377.6],
+                [66.7, 384.1],
+                [80.8, 437.2],
+                [82.9, 444.7]
+              ]
+            }
+          },
+          {"decorations": {"power":[{"color":"red"}]},
+           "graphType": "Scatter2D",
+           "showDecorations": true,
+           "showLegend": false,
+           "theme": "CanvasXpress"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

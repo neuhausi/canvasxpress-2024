@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Line Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Short and Fat data format">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Short and Fat data format">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Line Chart">
+    <meta itemprop="description" content="CanvasXpress: Short and Fat data format">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Line Chart">
+    <meta name="og:description" content="CanvasXpress: Short and Fat data format">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/line-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Line
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="line1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXline1 = new CanvasXpress("line1",
+          {
+            "y": {
+              "vars": [1,2,3,4,5],
+              "smps": [118, 484, 664, 1004, 1231, 1372, 1582],
+              "data": [
+                [30,58,87,115,120,142,145],
+                [33,69,111,156,172,203,203],
+                [30,51,75,108,115,139,140],
+                [32,62,112,167,179,209,214],
+                [30,49,81,125,142,174,177]
+              ]
+            }
+          },
+          {"background": "rgb(226,236,248)",
+           "backgroundType": "window",
+           "blockContrast": true,
+           "evenColor": "rgb(226,236,248)",
+           "graphOrientation": "vertical",
+           "graphType": "Line",
+           "legendInside": true,
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "legendPosition": "bottomRight",
+           "smpLabelRotate": 90,
+           "smpTitle": "Days Old",
+           "theme": "GGPlot",
+           "title": "Growth of Orange Trees",
+           "xAxisTitle": "Circumference (mm)"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<html>
+
+<head>
+  <title>RNA-Seq QC Analysis</title>
+
+<!-- Bootstrap and JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="https://canvasxpress.org/dist/canvasXpress.css" type="text/css" />
+  <!-- <script type="text/javascript" src="https://canvasxpress.org/dist/canvasXpress.min.js"></script> -->
+  <!-- CanvasXpress -->
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <div class="form_wrapper" style="padding: 20px;">
+        <div class="form-group">
+          <label for="id_gene">Gene:</label>
+           <i></i>
+           <select name="gene_name" class="use-select2 form-control" id="id_gene">
+            <optgroup label="name">
+              <option value="CD68">CD68</option>
+              <option value="CD68NoData">CD68-NoData</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+           <label for="id_groupby">Group by:</label>
+           <i></i>
+           <select name="groupby" class="use-select2 form-control" id="id_groupby">
+            <optgroup label="annotation">
+              <option value="gender">gender</option>
+              <option value="age">age</option>
+              <option value="cellcount">cellcount</option>
+              <option value="celltype" selected>celltype</option>
+              <option value="disease">disease</option>
+              <option value="diseasestatus">diseasestatus</option>
+              <option value="donorid">donorid</option>
+              <option value="Index">Index</option>
+              <option value="race">race</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+           <label for="id_colorby">Color by:</label>
+           <i></i>
+           <select name="colorby" class="use-select2 form-control" id="id_colorby">
+            <optgroup label="annotation">
+              <option value="gender">gender</option>
+              <option value="age">age</option>
+              <option value="cellcount">cellcount</option>
+              <option value="celltype" selected>celltype</option>
+              <option value="disease">disease</option>
+              <option value="diseasestatus">diseasestatus</option>
+              <option value="donorid">donorid</option>
+              <option value="Index">Index</option>
+              <option value="race">race</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="canvasXpressContainerSite">
+        <canvas id='canvasCSV' width='700' height='600' data-responsive='true' data-aspectRatio='4:3'></canvas>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    var initURL = "https://canvasxpress.org/assets/text/GXPA-105-CD68.csv";
+
+    var cd68 = "https://canvasxpress.org/assets/text/GXPA-105-CD68.csv";
+
+    var cd68n = "https://canvasxpress.org/assets/text/GXPA-105-noCD68.csv";
+
+    var initConfig = {
+      sortData: [['var', 'smp', 'celltype']],
+      backgroundWindow: "rgb(255,255,255)",
+      colorBy: "disease",
+      graphOrientation: "vertical",
+      graphType: "Boxplot",
+      groupingFactors: ["celltype"],
+      plotBox: true,
+      jitter: true,
+      plotBoxColor: "rgb(4,9,13)",
+      showBoxplotIfViolin: false,
+      showBoxplotOriginalData: true,
+      showLegend: true,
+      smpLabelRotate: 45,
+      remoteTransitionEffect: "none",
+      summaryType: "iqr",
+      theme: "ggplot",
+      title: "CD68: GSE60424 blood subsets in disease BRI",
+      violinTransparency: 1,
+      xAxis: ["CD68"],
+      xAxis2Show: false,
+      xAxisTickColor: "rgb(214,214,214)",
+      xAxisTitle: "Expression (RNAseq log2)",
+      smpTitle: "celltype",
+      metaData: {
+        "Index": true,
+        "donorid": true
+      }
+    };
+
+    function getInputValue(elemSelector) {
+      var elem = $(elemSelector);
+      if (elem.length > 0) {
+        return(elem[0].value);
+      } else {
+        return(null);
+      }
+    }
+
+    function submitUpdateConfig(){
+
+      var group_by = getInputValue("#id_groupby");
+      var color_by = getInputValue("#id_colorby");
+      var cx = CanvasXpress.getObject("canvasCSV");
+      cx.updateConfig({
+        groupingFactors: [group_by],
+        sortData: [['cat', 'smp', group_by]],
+        smpTitle: group_by,
+        colorBy: color_by
+      });
+
+    };
+
+    $(document).ready(function() {
+
+      new CanvasXpress({
+        renderTo: "canvasCSV",
+        data: initURL,
+        config: initConfig
+      });
+
+      $("#id_gene").on("change", function(e) {
+
+        var gene_name = getInputValue("#id_gene");
+        var group_by = getInputValue("#id_groupby");
+        var color_by = getInputValue("#id_colorby");
+        var url = gene_name == 'CD68' ? cd68 : cd68n;
+
+        var params = {
+          title: gene_name + ": GSE60424 blood subsets in disease BRI",
+          colorBy: color_by,
+          groupingFactors: [group_by],
+          sortData: [['cat', 'smp', group_by]],
+          smpTitle: group_by,
+          xAxisTitle: "Expression (RNAseq log2)",
+          xAxis: [gene_name]
+        };
+
+        // Get the canvasXpress object using the target Id
+        var cx = CanvasXpress.getObject("canvasCSV");
+        // Get the current cofiguration (including any user changes)
+        var config = cx.getConfig();
+        // Modify parameters to overwrite (for example the title of the graph)
+        for (var p in params) {
+          config[p] = params[p];
+        }
+        cx.updateData({data: url}, false, false, config);
+
+      });
+
+      $("#id_colorby").on('change', submitUpdateConfig);
+
+      $("#id_groupby").on('change', submitUpdateConfig);
+
+    });
+
+  </script>
+
+</body>
+</html>

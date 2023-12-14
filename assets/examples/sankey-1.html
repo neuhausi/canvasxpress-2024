@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Sankey Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: sankey-1">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: sankey-1">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Sankey Chart">
+    <meta itemprop="description" content="CanvasXpress: sankey-1">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Sankey Chart">
+    <meta name="og:description" content="CanvasXpress: sankey-1">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/sankey-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Sankey
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="sankey1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXsankey1 = new CanvasXpress("sankey1",
+          {
+            "y" : {
+              "vars" : ["Weight"],
+              "smps" : ["smp1","smp2","smp3","smp4","smp5","smp6"],
+              "data" : [[5,7,6,2,9,4]]
+            },
+            "x": {
+              "Source" : ["A","A","A","B","B","B"],
+              "Target" : ["X","Y","Z","X","Y","Z"],
+              "Weight" : [1,2,3,4,5,6]
+            }
+          },
+          {"graphOrientation": "vertical",
+           "graphType": "Sankey",
+           "sankeySource": "Source",
+           "sankeyTarget": "Target",
+           "showTransition": false,
+           "theme": "CanvasXpress",
+           "title": "Single Level Sankey"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

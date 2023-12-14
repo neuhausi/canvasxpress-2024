@@ -1,0 +1,6 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"MNP","NAME_0":"Northern Mariana Islands","GID_1":"MNP.1_1","NAME_1":"Northern Islands","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Municipality","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"MP.NI","cXId":"NI"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"MNP","NAME_0":"Northern Mariana Islands","GID_1":"MNP.2_1","NAME_1":"Rota","VARNAME_1":"Luta","NL_NAME_1":"","TYPE_1":"Municipality","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"MP.RO","cXId":"RO"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"MNP","NAME_0":"Northern Mariana Islands","GID_1":"MNP.3_1","NAME_1":"Saipan","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Municipality","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"MP.SA","cXId":"SA"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[145.64500427246105,15.101389884948674],[145.58193969726562,15.018611907959098],[145.66587829589844,14.95057678222662],[145.64500427246105,15.101389884948674]]]},"properties":{"GID_0":"MNP","NAME_0":"Northern Mariana Islands","GID_1":"MNP.4_1","NAME_1":"Tinian","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Municipality","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"MP.TI","cXId":"TI"}}
+]}

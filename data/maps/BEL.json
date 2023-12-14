@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"BEL","NAME_0":"Belgium","GID_1":"BEL.1_1","NAME_1":"Bruxelles","VARNAME_1":"Brussel","NL_NAME_1":"","TYPE_1":"Gewest","ENGTYPE_1":"Region","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[2.87125683,50.70314407],[3.03668141,50.77155685],[3.18144941,50.75196075],[5.69098043,50.80923462],[4.53715086,51.42363358],[3.36078191,51.36763763],[2.87125683,50.70314407]]]},"properties":{"GID_0":"BEL","NAME_0":"Belgium","GID_1":"BEL.2_1","NAME_1":"Vlaanderen","VARNAME_1":"Flandres","NL_NAME_1":"","TYPE_1":"Gewest","ENGTYPE_1":"Region","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[3.18144941,50.75196075],[5.44719648,49.5178833],[5.89612961,50.75958633],[5.6923728,50.76029968],[5.69098043,50.80923462],[3.18144941,50.75196075]]]},"properties":{"GID_0":"BEL","NAME_0":"Belgium","GID_1":"BEL.3_1","NAME_1":"Wallonie","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Région","ENGTYPE_1":"Region","CC_1":"","HASC_1":""}}
+]}

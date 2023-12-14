@@ -1,0 +1,909 @@
+<html>
+
+<head>
+  <title>Hierarchical Networks</title>
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+  <!-- Networks -->
+  <script type="text/javascript" src="/data/doctrine2.js"></script>
+  <script type="text/javascript" src="/data/faker.js"></script>
+  <script type="text/javascript" src="/data/jquery.js"></script>
+  <script type="text/javascript" src="/data/lichess.js"></script>
+  <script type="text/javascript" src="/data/propel2.js"></script>
+  <script type="text/javascript" src="/data/rails.js"></script>
+  <script type="text/javascript" src="/data/symfony.js"></script>
+  <script type="text/javascript" src="/data/twig.js"></script>
+  <script type="text/javascript" src="/data/uptime.js"></script>
+  <script type="text/javascript" src="/data/wordpress.js"></script>
+  <script type="text/javascript" src="/data/zf2.js"></script>
+</head>
+
+<body>
+  <div>
+    <canvas id="canvas" width="1200" height="1200" data-responsive="true"></canvas>
+  </div>
+  <script>
+
+    var cxjson = {
+      "name": "root",
+      "children": [
+        {
+          "name": "misc",
+          "children": [
+            {
+              "name": "cX-function.R",
+              "size": 7461,
+              "language": "R"
+            },
+            {
+              "name": "cran-setup.R",
+              "size": 3,
+              "language": "R"
+            }
+          ]
+        },
+        {
+          "name": "inst",
+          "children": [
+            {
+              "name": "htmlwidgets",
+              "children": [
+                {
+                  "name": "lib",
+                  "children": [
+                    {
+                      "name": "canvasXpress",
+                      "children": [
+                        {
+                          "name": "canvasXpress.css",
+                          "size": 6437,
+                          "language": "CSS"
+                        },
+                        {
+                          "name": "canvasXpress.min.js",
+                          "size": 4,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "canvasXpress.js",
+                  "size": 78,
+                  "language": "JavaScript"
+                },
+                {
+                  "name": "canvasXpress.yaml",
+                  "size": 6,
+                  "language": "YAML"
+                }
+              ]
+            },
+            {
+              "name": "shiny-examples",
+              "children": [
+                {
+                  "name": "example3",
+                  "children": [
+                    {
+                      "name": "customPlots.R",
+                      "size": 223,
+                      "language": "R"
+                    },
+                    {
+                      "name": "server.R",
+                      "size": 93,
+                      "language": "R"
+                    },
+                    {
+                      "name": "ui.R",
+                      "size": 44,
+                      "language": "R"
+                    }
+                  ]
+                },
+                {
+                  "name": "example2",
+                  "children": [
+                    {
+                      "name": "server.R",
+                      "size": 164,
+                      "language": "R"
+                    },
+                    {
+                      "name": "ui.R",
+                      "size": 48,
+                      "language": "R"
+                    },
+                    {
+                      "name": "global.R",
+                      "size": 13,
+                      "language": "R"
+                    }
+                  ]
+                },
+                {
+                  "name": "example1",
+                  "children": [
+                    {
+                      "name": "ui.R",
+                      "size": 38,
+                      "language": "R"
+                    },
+                    {
+                      "name": "server.R",
+                      "size": 37,
+                      "language": "R"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "README-known_issues.md",
+              "size": 27,
+              "language": "Markdown"
+            }
+          ]
+        },
+        {
+          "name": "R",
+          "children": [
+            {
+              "name": "ggplot_as_list.R",
+              "size": 438,
+              "language": "R"
+            },
+            {
+              "name": "canvasXpress.R",
+              "size": 303,
+              "language": "R"
+            },
+            {
+              "name": "internal_functionality.R",
+              "size": 216,
+              "language": "R"
+            },
+            {
+              "name": "html_functionality.R",
+              "size": 52,
+              "language": "R"
+            },
+            {
+              "name": "shiny_examples.R",
+              "size": 16,
+              "language": "R"
+            },
+            {
+              "name": "shiny_functionality.R",
+              "size": 10,
+              "language": "R"
+            }
+          ]
+        },
+        {
+          "name": "tests",
+          "children": [
+            {
+              "name": "testthat",
+              "children": [
+                {
+                  "name": "test-other-decorations.R",
+                  "size": 391,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-legend-position.R",
+                  "size": 184,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-legend-title.R",
+                  "size": 156,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-zoom-disable.R",
+                  "size": 148,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-toolbartype.R",
+                  "size": 129,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-logical-groups.R",
+                  "size": 127,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-null-data.R",
+                  "size": 118,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-table-view.R",
+                  "size": 93,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-color-setting.R",
+                  "size": 90,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-duplicated-labels.R",
+                  "size": 88,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-resizable.R",
+                  "size": 85,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-differentiated-groups.R",
+                  "size": 78,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-network-localfile.R",
+                  "size": 77,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other--BASE.R",
+                  "size": 71,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-regression-lines.R",
+                  "size": 71,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-precalculated-boxplot.R",
+                  "size": 62,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-precalculated-barplot.R",
+                  "size": 61,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-layout.R",
+                  "size": 60,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-boxplot.R",
+                  "size": 58,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-network-data-types.R",
+                  "size": 57,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-segregation-layout-change.R",
+                  "size": 57,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-scatter2D.R",
+                  "size": 56,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-venn-data-types.R",
+                  "size": 52,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-violin.R",
+                  "size": 52,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-segregation-title.R",
+                  "size": 51,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-bar.R",
+                  "size": 51,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-heatmap.R",
+                  "size": 49,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-map.R",
+                  "size": 47,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-network.R",
+                  "size": 47,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-dotplot.R",
+                  "size": 46,
+                  "language": "R"
+                },
+                {
+                  "name": "setup.R",
+                  "size": 39,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-density.R",
+                  "size": 38,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-numeric-colorkey.R",
+                  "size": 32,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-custom-events.R",
+                  "size": 31,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-tcga.R",
+                  "size": 31,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-selected-data-points.R",
+                  "size": 29,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-boxplot-grouping.R",
+                  "size": 28,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-segregation-tooltips.R",
+                  "size": 28,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-segregation-ordering.R",
+                  "size": 26,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-segregation-violin.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-circular.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-facet.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-meter.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-radar.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-splom.R",
+                  "size": 25,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-cxHtmlPage.R",
+                  "size": 24,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-bar-data-types.R",
+                  "size": 23,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-kaplanmeier.R",
+                  "size": 23,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-histogram.R",
+                  "size": 22,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-nonlinearfit.R",
+                  "size": 22,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-ridgeline.R",
+                  "size": 22,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-scatter3D.R",
+                  "size": 22,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-area.R",
+                  "size": 21,
+                  "language": "R"
+                },
+                {
+                  "name": "test-manual-transform.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-other-data-url.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-contour.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-dashboard.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-gantt.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-line.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-oncoprint.R",
+                  "size": 19,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-genome.R",
+                  "size": 17,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-fish.R",
+                  "size": 16,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-hexplotbinplot.R",
+                  "size": 16,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-stacked.R",
+                  "size": 16,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-stackedpercent.R",
+                  "size": 16,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-tree.R",
+                  "size": 16,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-bubble.R",
+                  "size": 13,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-correlation.R",
+                  "size": 13,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-sankey.R",
+                  "size": 13,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-sunburst.R",
+                  "size": 13,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-arealine.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-barline.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-chord.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-dotline.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-linearfit.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-scatterbubble2D.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-treemap.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-venn.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-waterfall.R",
+                  "size": 10,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ggplot.R",
+                  "size": 9,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-donnut.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-lollipop.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-parallelcoordinates.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-pie.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-stackedline.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-stackedpercentline.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-upset.R",
+                  "size": 7,
+                  "language": "R"
+                },
+                {
+                  "name": "test-ui-tagcloud.R",
+                  "size": 4,
+                  "language": "R"
+                },
+                {
+                  "name": "teardown.R",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "testthat.R",
+              "size": 4,
+              "language": "R"
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "size": 147,
+          "language": "Markdown"
+        },
+        {
+          "name": "NEWS.md",
+          "size": 146,
+          "language": "Markdown"
+        },
+        {
+          "name": ".circleci",
+          "children": [
+            {
+              "name": "config.yml",
+              "size": 123,
+              "language": "YAML"
+            }
+          ]
+        },
+        {
+          "name": "cran-comments.md",
+          "size": 49,
+          "language": "Markdown"
+        },
+        {
+          "name": ".travis.yml",
+          "size": 16,
+          "language": "YAML"
+        },
+        {
+          "name": "codecov.yml",
+          "size": 4,
+          "language": "YAML"
+        },
+        {
+          "name": "revdep",
+          "children": [
+            {
+              "name": "run_job.R",
+              "size": 2,
+              "language": "R"
+            }
+          ]
+        },
+        {
+          "name": "vignettes",
+          "children": [
+            {
+              "name": "additional_examples.Rmd",
+              "children": []
+            },
+            {
+              "name": "getting_started.Rmd",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+
+    new CanvasXpress("canvas", { "y": { "data": [[33, 44, 55]], "smps": ["S1", "S2", "S3"], "vars": ["V1"] } }, { "graphType": "Bar" });
+
+    var nodes = [];
+    var edges = [];
+    var fc = 4;
+    var id = 0;
+
+    var hslToRgb = function (h, s, l) {
+      s /= 100;
+      l /= 100;
+      var k = n => (n + h / 30) % 12;
+      var a = s * Math.min(l, 1 - l);
+      var f = n => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
+      return 'rgb(' + parseInt(255 * f(0)) + ',' + parseInt(255 * f(8)) + ',' + parseInt(255 * f(4)) + ')';
+    }
+
+    var flatten = function (obj) {
+      var pId = "Id" + id++;
+      var n = {
+        id: pId
+      };
+      var siz = Number.parseFloat((obj.children ? 3.5 : (Math.pow(obj.size, 2 / 5) || 1)) * fc).toFixed(1);
+      for (var i in obj) {
+        if (i == 'children') {
+          continue;
+        } else if (i == 'size') {
+          n.width = siz;
+          n.height = siz;
+        } else {
+          n[i] = obj[i];
+        }
+      }
+      nodes.push(n);
+      var name = obj.name;
+      if (obj.children) {
+        return flattenRecurse(obj, edges, pId);
+      }
+    }
+
+    var flattenRecurse = function (obj, edges, pId) {
+      obj.children.forEach(function (child) {
+        var cId = "Id" + id++;
+        edges.push({
+          id1: pId,
+          id2: cId
+        });
+        var n = {
+          id: cId
+        };
+        var siz = Number.parseFloat((child.children ? 3.5 : (Math.pow(child.size, 2 / 5) || 1)) * fc).toFixed(1);
+        for (var i in child) {
+          if (i == 'children') {
+            continue;
+          } else if (i == 'size') {
+            n.width = siz;
+            n.height = siz;
+          } else {
+            n[i] = child[i];
+          }
+        }
+        nodes.push(n);
+        if (child.children) {
+          return flattenRecurse(child, edges, cId);
+        }
+      });
+    }
+
+    //flatten(doctrine2);//335
+    //flatten(faker);//167
+    //flatten(jquery);//143
+    //flatten(lichess);//669
+    //flatten(propel2);//713
+    //flatten(rails);//2196
+    //flatten(symfony);//3011 -
+    //flatten(twig);//282
+    //flatten(uptime);//81
+    //flatten(wordpress);//930
+    //flatten(zf2);//2373 -
+    flatten(cxjson);
+
+    var n = 0;
+    var t = nodes.length
+    nodes.forEach(function (o) {
+      n++;
+      o.color = hslToRgb(parseInt(360 / t * n, 10), 90, 70);
+    });
+
+    var data = {
+      "renderTo": "network",
+      "data": {
+        "nodes": nodes,
+        "edges": edges
+      },
+      "config": {
+        "graphType": "Network",
+        "networkLayoutType": "forceDirected",
+        "useBarnesHutSimulation": true,
+        "edgeColor": "rgb(158,202,225)"
+      }
+    }
+    console.log(data);
+
+
+
+
+  </script>
+</body>
+
+</html>

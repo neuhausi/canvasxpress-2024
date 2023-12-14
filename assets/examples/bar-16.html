@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Bar Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Friendship, Love, Family">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Friendship, Love, Family">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Bar Chart">
+    <meta itemprop="description" content="CanvasXpress: Friendship, Love, Family">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Bar Chart">
+    <meta name="og:description" content="CanvasXpress: Friendship, Love, Family">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/bar-16.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Bar
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="bar16" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXbar16 = new CanvasXpress("bar16",
+          {
+            "y": {
+              "vars": ["Topic"],
+              "smps": ["Birth", "Puberty", "Death", "Family", "Friendship", "Love", "Work", "Passion", "Environment"],
+              "data": [
+                [10,12,22,31,42,27,15,15,5]
+              ]
+            },
+            "x": {
+              "Color": ["A","A","A","B","B","B","C","C","C"]
+            }
+          },
+          {"background": "rgb(48,114,148)",
+           "backgroundType": "solid",
+           "barPath": true,
+           "barPathColor": "rgb(48,126,164)",
+           "barPathTransparency": 1,
+           "colorBy": "Color",
+           "colors": ["rgb(250,165,44)", "rgb(254,225,60)", "rgb(253,243,169)"],
+           "fontName": "Waltograph",
+           "fontsExternal": [{"url":"https://www.canvasxpress.org/assets/fonts/waltograph42.otf","name":"Waltograph"}],
+           "graphType": "Bar",
+           "marginBottom": 50,
+           "marginLeft": 50,
+           "marginRight": 50,
+           "marginTop": 50,
+           "maxTextSize": 80,
+           "objectBorderColor": "rgba(255,255,255,0)",
+           "showLegend": false,
+           "smpLabelColor": "rgb(255,255,255)",
+           "smpLabelScaleFontFactor": 3,
+           "title": "Friendship, Love, Family",
+           "titleColor": "rgb(254,225,60)",
+           "titleScaleFontFactor": 2.5,
+           "widthFactor": 1.1,
+           "xAxis2Show": false,
+           "xAxisShow": false,
+           "xAxisTicksMajorShow": false,
+           "xAxisTicksMinorShow": false
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

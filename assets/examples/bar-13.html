@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Bar Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Swimmer Plot with Response Data">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Swimmer Plot with Response Data">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Bar Chart">
+    <meta itemprop="description" content="CanvasXpress: Swimmer Plot with Response Data">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Bar Chart">
+    <meta name="og:description" content="CanvasXpress: Swimmer Plot with Response Data">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/bar-13.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Bar
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="bar13" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXbar13 = new CanvasXpress("bar13",
+          {
+            "y": {
+              "vars": ["high", "start", "end"],
+              "smps": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12", "S13", "S14", "S15"],
+              "data": [[8.3, 12.6, 12.6, 12.5, 12.5, 12.5, 13.5, 13.5, 14, 14, 9.5, 11.5, 7.2, 17, 18.5],
+                       [6, 2.5, 9.5, 3.5, 6.5, 10.5, 7, 11.5, 2.5, 6, 1, 4.5, 1.2, 10.5, 6.5 ],
+                       [null, 7, null, 4.5, 8.5, null, 10, null, 3.5, null, 9.5, 11.5, null, 17, 13.5]]
+            },
+            "x": {
+              "Subject": ["S1", "S2", "S2", "S3", "S3", "S3", "S4", "S4", "S5", "S5", "S6", "S7", "S8", "S9", "S10"],
+              "Stage": ["Stage4", "Stage2", "Stage2", "Stage1", "Stage1", "Stage1", "Stage4", "Stage4", "Stage3", "Stage3", "Stage1", "Stage3", "Stage2", "Stage2", "Stage1"],
+              "High Cap": ["Arrow", "Arrow", "Arrow", "Arrow", "Arrow", "Arrow", "Arrow", "Arrow", "Arrow", "Arrow", null, null, "Arrow", null, "Arrow"],
+              "Status": ["Partial Response", "Partial Response", "Partial Response", "Complete Response", "Complete Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response"],
+              "Response": [20, 10, 10, -15, -15, -15, -20, -20, -22, -22, -25, -30, -42, -45, -50],
+              "Durable": [false, false, false, true, false, false, false, false, true, false, true, true, false, true, true]
+            }
+          },
+          {"barType": "swimmer",
+           "colorBy": "Stage",
+           "graphOrientation": "vertical",
+           "graphType": "Bar",
+           "groupingFactors": ["Subject"],
+           "objectBorderColor": false,
+           "objectColorTransparency": 0.5,
+           "smpOverlayProperties": {"Durable":{"position":"bottom"},"Response":{"type":"Bar","thickness":100,"position":"bottom"}},
+           "smpOverlays": ["Durable", "Response"],
+           "swimDurable": "Durable",
+           "swimEnd": "end",
+           "swimHigh": "high",
+           "swimHighCap": "High Cap",
+           "swimStart": "start",
+           "swimStatus": "Status",
+           "theme": "CanvasXpress",
+           "title": "Tumor Response with Duration by Stage and Month",
+           "xAxisTitle": "Duration of Treatment in Months"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

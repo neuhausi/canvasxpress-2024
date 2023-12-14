@@ -1,0 +1,104 @@
+Symbol	Company	Weight
+AAPL	Apple Inc	11.338
+MSFT	Microsoft Corp	11.237
+AMZN	Amazon.com Inc	9.833
+FB	Facebook Inc	4.413
+GOOGL	Alphabet Inc	3.947
+GOOG	Alphabet Inc	3.904
+INTC	Intel Corp	2.693
+NVDA	NVIDIA Corp	2.183
+CSCO	Cisco Systems Inc	2.024
+ADBE	Adobe Inc	1.916
+CMCSA	Comcast Corp	1.908
+NFLX	Netflix Inc	1.883
+PEP	PepsiCo Inc	1.876
+PYPL	PayPal Holdings Inc	1.87
+TSLA	Tesla Inc	1.653
+COST	Costco Wholesale Corp	1.377
+AMGN	Amgen Inc	1.325
+TMUS	T-Mobile US Inc	1.272
+AVGO	Broadcom Inc	1.257
+TXN	Texas Instruments Inc	1.208
+CHTR	Charter Communications Inc	1.168
+QCOM	QUALCOMM Inc	0.977
+GILD	Gilead Sciences Inc	0.956
+SBUX	Starbucks Corp	0.95
+INTU	Intuit Inc	0.768
+MDLZ	Mondelez International Inc	0.759
+FISV	Fiserv Inc	0.751
+VRTX	Vertex Pharmaceuticals Inc	0.73
+BKNG	Booking Holdings Inc	0.721
+ISRG	Intuitive Surgical Inc	0.677
+ADP	Automatic Data Processing Inc	0.666
+REGN	Regeneron Pharmaceuticals Inc	0.665
+AMD	Advanced Micro Devices Inc	0.627
+CSX	CSX Corp	0.587
+MU	Micron Technology Inc	0.553
+ATVI	Activision Blizzard Inc	0.547
+AMAT	Applied Materials Inc	0.54
+ILMN	Illumina Inc	0.536
+BIIB	Biogen Inc	0.536
+JD	JD.com Inc ADR	0.535
+ADSK	Autodesk Inc	0.505
+ADI	Analog Devices Inc	0.455
+MELI	MercadoLibre Inc	0.431
+LRCX	Lam Research Corp	0.425
+LULU	Lululemon Athletica Inc	0.406
+MNST	Monster Beverage Corp	0.396
+EXC	Exelon Corp	0.395
+WBA	Walgreens Boots Alliance Inc	0.393
+KHC	Kraft Heinz Co/The	0.389
+ZM	Zoom Video Communications Inc	0.381
+ROST	Ross Stores Inc	0.365
+XEL	Xcel Energy Inc	0.356
+EA	Electronic Arts Inc	0.347
+DXCM	DexCom Inc	0.341
+EBAY	eBay Inc	0.331
+MAR	Marriott International Inc/MD	0.329
+ORLY	O'Reilly Automotive Inc	0.321
+BIDU	Baidu Inc ADR	0.316
+CTSH	Cognizant Technology Solutions Corp	0.309
+NXPI	NXP Semiconductors NV	0.309
+WDAY	Workday Inc	0.309
+NTES	NetEase Inc ADR	0.308
+SPLK	Splunk Inc	0.3
+KLAC	KLA Corp	0.297
+CTAS	Cintas Corp	0.286
+VRSK	Verisk Analytics Inc	0.283
+SNPS	Synopsys Inc	0.281
+SIRI	Sirius XM Holdings Inc	0.28
+IDXX	IDEXX Laboratories Inc	0.276
+PAYX	Paychex Inc	0.273
+SGEN	Seattle Genetics Inc	0.272
+MCHP	Microchip Technology Inc	0.265
+CDNS	Cadence Design Systems Inc	0.265
+PCAR	PACCAR Inc	0.263
+ASML	ASML Holding NV	0.26
+ALXN	Alexion Pharmaceuticals Inc	0.256
+VRSN	VeriSign Inc	0.253
+ANSS	ANSYS Inc	0.251
+CSGP	CoStar Group Inc	0.246
+FAST	Fastenal Co	0.246
+XLNX	Xilinx Inc	0.241
+CERN	Cerner Corp	0.233
+DLTR	Dollar Tree Inc	0.228
+SWKS	Skyworks Solutions Inc	0.22
+INCY	Incyte Corp	0.218
+ALGN	Align Technology Inc	0.215
+CPRT	Copart Inc	0.214
+BMRN	BioMarin Pharmaceutical Inc	0.203
+CTXS	Citrix Systems Inc	0.174
+CDW	CDW Corp/DE	0.167
+MXIM	Maxim Integrated Products Inc	0.166
+CHKP	Check Point Software Technologies Ltd	0.159
+TTWO	Take-Two Interactive Software Inc	0.149
+TCOM	Trip.com Group Ltd ADR	0.149
+ULTA	Ulta Beauty Inc	0.147
+WDC	Western Digital Corp	0.138
+EXPE	Expedia Group Inc	0.122
+FOXA	Fox Corp	0.108
+NTAP	NetApp Inc	0.103
+UAL	United Airlines Holdings Inc	0.099
+LBTYK	Liberty Global PLC	0.096
+FOX	Fox Corp	0.081
+LBTYA	Liberty Global PLC	0.041

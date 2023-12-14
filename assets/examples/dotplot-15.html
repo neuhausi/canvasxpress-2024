@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Dotplot Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: dotplot-15">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: dotplot-15">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Dotplot Chart">
+    <meta itemprop="description" content="CanvasXpress: dotplot-15">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Dotplot Chart">
+    <meta name="og:description" content="CanvasXpress: dotplot-15">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/dotplot-15.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Dotplot
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="dotplot15" width="1000" height="250" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdotplot15 = new CanvasXpress("dotplot15",
+          {
+            "y": {
+              "vars": ["Unit"],
+              "smps": ["2021-12-31","2021-03-01","2021-03-31","2021-05-30","2021-06-29","2021-07-29","2021-10-27","2021-11-26","2021-03-26","2021-05-25","2021-09-22","2021-10-22","2021-11-21","2021-12-21","2021-03-21","2021-04-20"],
+              "data": [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+              ]
+            },
+            "x": {
+              "Task": ["Initial Meeting","Needs Assessment","Research","Site Outline","Site Map","Wireframes","Wireframes Review","Content ","Landing Page Artwork","Inner Pages Artwork","Coding","Validation","Content Population","Cross Platform & Browser Testing","Refinement","Launch & Search Engine Submission"],
+              "Color": ["A","B","B","C","C","C","D","D","E","E","F","F","F","F","G","G"],
+              "Size": [1,2,3,1,2,3,2,3,5,4,5,2,3,2,1,2]    
+            }
+          },
+          {"colorBy": "Color",
+           "colorScheme": "LastAirBenderWater",
+           "decorations": {"line":[{"width":1,"align":"left","color":"rgba(0,0,0,0.5)","value":1}]},
+           "graphOrientation": "vertical",
+           "graphType": "Dotplot",
+           "isGraphTime": true,
+           "marginLeft": 70,
+           "marginRight": 70,
+           "objectColorTransparency": 0.6,
+           "showLegend": false,
+           "sizeBy": "Size",
+           "sizes": [2, 15, 25, 35, 70, 150],
+           "smpLabelInterval": 100,
+           "smpLabelRotate": 90,
+           "timeFormat": "isoDate",
+           "xAxis2Show": false,
+           "xAxisShow": false,
+           "xAxisTicksMajorShow": false,
+           "xAxisTicksMinorShow": false
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

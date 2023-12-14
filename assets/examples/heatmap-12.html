@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Heatmap Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Gallery of Overlays">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Gallery of Overlays">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Heatmap Chart">
+    <meta itemprop="description" content="CanvasXpress: Gallery of Overlays">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Heatmap Chart">
+    <meta name="og:description" content="CanvasXpress: Gallery of Overlays">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/heatmap-12.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Heatmap
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="heatmap12" width="700" height="700" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXheatmap12 = new CanvasXpress("heatmap12",
+          {
+            "z" : {
+              "Drug"   : ["A", "A", "A", "B", "B", "B"],
+              "Site"   : ["X", "Y", "Z", "Y", "Z", "W"],
+              "Desc"   : ["Good", "So-so", "So-so", "So-so", "Excellent", "Ahh!"],
+              "Conc"   : [1, 2, 3, 1, 2, 3],
+              "Male"   : [10, 20, 30, 40, 30, 20],
+              "Female" : [50, 40, 30, 20, 10, 20],
+              "Odd"    : [5, 9, 15, 21, 25, 31],
+              "Even"   : [20, 20, 30, 40, 6, 10],
+              "Nice"   : [8, 16, 24, 32, 40, 48],
+              "Ugly"   : [10, 5, 20, 10, 30, 15],
+              "Cold"   : [10, 20, 30, 40, 50, 60],
+              "Hot"    : [10, 20, 10, 25, 10, 30]
+            },
+            "x" : {
+              "Binary"     : ["Yes", "No", "Yes", "No", "Yes", "No"],
+              "Boolean"    : [true, false, true, false, true, false],
+              "Continuous" : [8, 16, 24, 32, 40, 48],
+              "Discrete"   : ["X", "X", "Y", "Y", "Z", "Z"],
+              "Temp"       : [5, 10, 15, 20, 25, 30],
+              "Early"      : [8, 16, 24, 32, 40, 48],
+              "OnTime"     : [30, 40, 20, 30, 40, 20],
+              "Late"       : [60, 50, 40, 30, 20, 10],
+              "PhaseA"     : [40, 10, 20, 60, 20, 50],
+              "PhaseB"     : [10, 20, 30, 40, 50, 60],
+              "PhaseC"     : [6, 22, 18, 14, 25, 34]
+            },
+            "y" : {
+              "vars" : ["V1", "V2", "V3", "V4", "V5", "V6"],
+              "smps" : ["S1", "S2", "S3", "S4", "S5", "S6"],
+              "data" : [[1, 2, 3, 4, 5, 6], 
+                        [2, 3, 4, 5, 6, 7], 
+                        [3, 4, 5, 6, 7, 8], 
+                        [4, 5, 6, 7, 8, 9],
+                        [5, 6, 7, 8, 9, 10],
+                        [6, 7, 8, 9, 10, 11]]
+            }
+          },
+          {"graphType": "Heatmap",
+           "showSmpOverlaysLegend": false,
+           "showVarOverlaysLegend": false,
+           "smpLabelScaleFontFactor": 1.1,
+           "smpOverlayProperties": {"PhaseA":{"showLegend":"true","position":"left","thickness":50,"type":"Bar"},"Binary":{"type":"Default","scheme":"BlackAndWhite","showLegend":"true","position":"left"},"Late":{"color":"red","thickness":50,"type":"Line","position":"right"},"PhaseB":{"showLegend":"true","position":"left","type":"Bar","thickness":50},"Continuous":{"type":"Heatmap","position":"left","showLegend":"true","spectrum":["green","white"]},"Temp":{"type":"Heatmap","thickness":100,"spectrum":["blue","white","red"],"position":"right"},"Discrete":{"type":"Default","thickness":30,"showLegend":"true","position":"left"},"PhaseC":{"showLegend":"true","position":"left","thickness":50,"type":"Bar"},"Boolean":{"position":"left"},"Early":{"position":"right","type":"Line","thickness":50,"color":"blue"},"OnTime":{"color":"green","thickness":50,"type":"Line","position":"right"}},
+           "smpOverlays": ["PhaseA", "PhaseB", "PhaseC", "-", "-", "Binary", "Boolean", "Continuous", "Discrete", "-", "-", "Temp", "-", "-", "Early", "OnTime", "Late"],
+           "splitSamplesBy": "Discrete",
+           "splitVariablesBy": "Drug",
+           "varLabelRotate": 45,
+           "varLabelScaleFontFactor": 1.7,
+           "varOverlayProperties": {"Female":{"thickness":50,"type":"Pie","showLegend":"true","position":"top"},"Drug":{"type":"Increase","thickness":30,"showLegend":"true","position":"top"},"Male":{"type":"Pie","thickness":50,"showLegend":"true","position":"top"},"Cold":{"thickness":50,"type":"StackedPercent","color":"blue","position":"bottom","showLegend":"true"},"Site":{"type":"Default","position":"top","showLegend":"true"},"Desc":{"type":"Text","position":"bottom"},"Nice":{"color":"green","thickness":50,"type":"Dotplot","showLegend":"true","position":"bottom"},"Hot":{"position":"bottom","showLegend":"true","color":"red","type":"StackedPercent","thickness":50},"Conc":{"thickness":40,"type":"Bar","showLegend":"true","position":"top"},"Ugly":{"showLegend":"true","position":"bottom","color":"black","type":"Dotplot","thickness":50},"Odd":{"thickness":50,"type":"BarLine","showLegend":"true","position":"bottom"},"Even":{"thickness":50,"type":"Bar","position":"bottom","showLegend":"true"}},
+           "varOverlays": ["Drug", "-", "Male", "Female", "-", "Site", "-", "Conc", "-", "Desc", "-", "Even", "Odd", "-", "-", "Nice", "Ugly", "-", "-", "Cold", "Hot"]
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

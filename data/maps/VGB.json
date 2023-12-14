@@ -1,0 +1,7 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VGB","NAME_0":"British Virgin Islands","GID_1":"VGB.1_1","NAME_1":"Anegada","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VGB","NAME_0":"British Virgin Islands","GID_1":"VGB.2_1","NAME_1":"Jost Van Dyke","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VGB","NAME_0":"British Virgin Islands","GID_1":"VGB.3_1","NAME_1":"Other Islands","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-64.56764221191406,18.422916412353516],[-64.64430236816406,18.45347213745123],[-64.67763519287104,18.401527404785213],[-64.6634750366211,18.382917404174805],[-64.56764221191406,18.422916412353516]]]},"properties":{"GID_0":"VGB","NAME_0":"British Virgin Islands","GID_1":"VGB.4_1","NAME_1":"Tortola","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VGB","NAME_0":"British Virgin Islands","GID_1":"VGB.5_1","NAME_1":"Virgin Gorda","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":""}}
+]}

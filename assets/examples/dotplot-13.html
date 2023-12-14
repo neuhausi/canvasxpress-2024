@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Dotplot Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: dotplot-13">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: dotplot-13">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Dotplot Chart">
+    <meta itemprop="description" content="CanvasXpress: dotplot-13">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Dotplot Chart">
+    <meta name="og:description" content="CanvasXpress: dotplot-13">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/dotplot-13.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Dotplot
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="dotplot13" width="1000" height="400" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdotplot13 = new CanvasXpress("dotplot13",
+          {
+            "y": {
+              "vars": ["Number"],
+              "smps": ["Dutch in Seven Lessons","High Button Shoes","Sauce Tartare","Saturday Night Revue","Sauce Piquante","One Wild Oat","Young Wives' Tale","Laughter in Paradise","The Lavender Hill Mob","Sunday Night Theatre","Gigi","Secret People","Monte Carlo Baby","CBS Television Workshop","Roman Holiday","Sabrina","Ondine","War and Peace","Love in the Afternoon","Funny Face","Producers' Showcase","Green Mansions","The Nun's Story","The Unforgiven","Breakfast at Tiffany's","The Children's Hour","Charade","Paris When It Sizzles","My Fair Lady","How to Steal a Million","Two for the Road","Wait Until Dark","A World of Love","Robin and Marian","Bloodline","They All Laughed","Love Among Thieves","American Masters","Gregory Peck: His Own Man","Always","Gardens of the World with Audrey Hepburn"],
+              "data": [        
+                [1,2,1,1,2,1,2,3,4,5,6,1,2,3,1,1,2,1,1,2,3,1,2,1,1,2,1,1,2,1,1,2,1,1,1,1,1,1,2,1,1]
+              ]
+            },
+            "x": {
+              "Recognized": ["No","No","No","No","No","No","No","No","No","No","No","No","No","No","Yes","Yes","Yes","Yes","Yes","No","No","No","Yes","No","Yes","No","Yes","No","Yes","No","Yes","Yes","No","No","No","No","No","No","No","No","Yes"],
+              "Type": ["Film","Stage","Stage","Television","Stage","Film","Film","Film","Film","Television","Stage","Film","Film","Television","Film","Film","Stage","Film","Film","Film","Television","Film","Film","Film","Film","Film","Film","Film","Film","Film","Film","Film","Television","Film","Film","Film","Television","Television","Television","Film","Television"],
+              "Recognitions" : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,1,2,2,0,0,0,4,0,2,0,2,0,2,0,1,3,0,0,0,0,0,0,0,0,1],
+              "Winnings": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,1,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+              "Year": [1948,1948,1949,1950,1950,1951,1951,1951,1951,1951,1951,1952,1952,1952,1953,1954,1954,1956,1957,1957,1957,1959,1959,1960,1961,1961,1963,1964,1964,1966,1967,1967,1970,1976,1979,1981,1987,1988,1988,1989,1993]
+            }
+          },
+          {"backgroundImage": "https://www.canvasxpress.org/assets/images/Audrey.jpg",
+           "backgroundType": "image",
+           "colorBy": "Type",
+           "colorScheme": "Greens",
+           "graphOrientation": "vertical",
+           "graphType": "Dotplot",
+           "groupingFactors": ["Year"],
+           "isGraphTime": true,
+           "jitter": false,
+           "legendColumns": 3,
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "legendPosition": "top",
+           "legendTextScaleFontFactor": 2,
+           "legendTitleScaleFontFactor": 2,
+           "marginLeft": 150,
+           "marginRight": 150,
+           "objectBorderColor": "rgba(0,0,0)",
+           "showLegendTitle": false,
+           "smpLabelInterval": 8,
+           "smpLabelRotate": 90,
+           "timeFormat": "year",
+           "title": "The Life and Films of Audrey Hepburn",
+           "xAxis2Show": false,
+           "xAxisShow": false,
+           "xAxisTicksMajorShow": false,
+           "xAxisTicksMinorShow": false
+          },
+          { "mousemove": function(o, e, t) {
+              if (o && o.objectType && o.objectType == 'Property') {
+                          t.showInfoSpan(e, o.display      );
+              } else if (o && o.y && o.objectType != 'Smp') {
+                var str = "<b>" + o.y.smps + "</b><br><b>Year: </b>" + o.y.Year + "<br><b>Type: </b>" + o.y.Type;
+                t.showInfoSpan(e, str      );
+              }
+            }
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

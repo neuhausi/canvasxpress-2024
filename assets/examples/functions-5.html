@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Functions Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: functions-5">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: functions-5">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Functions Chart">
+    <meta itemprop="description" content="CanvasXpress: functions-5">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Functions Chart">
+    <meta name="og:description" content="CanvasXpress: functions-5">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/functions-5.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Functions
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="functions5" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXfunctions5 = new CanvasXpress("functions5",
+          {
+            "fx" : "sin(2y) * cos(3x) / sec(xy)"
+          },
+          {"colorBy": "Y",
+           "graphType": "Scatter3D",
+           "outline3DColor": "rgba(0,0,0,0.1)"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

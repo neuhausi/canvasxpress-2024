@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: NonLinear-Fit Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: 4 Parameters">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: 4 Parameters">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta itemprop="description" content="CanvasXpress: 4 Parameters">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta name="og:description" content="CanvasXpress: 4 Parameters">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/nonlinear-fit-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          NonLinear-Fit
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="nonlinearfit1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnonlinearfit1 = new CanvasXpress("nonlinearfit1",
+          {
+            "y" : {
+              "vars" : ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12"],
+              "smps" : ["Concentration", "V1"],
+              "data" : [[0.0009, 172], [0.0018, 177], [0.0037, 160], [0.0073, 166], [0.0146, 211], [0.0293, 248], [0.0586, 269], [0.117, 283], [0.234, 298], [0.469, 314], [0.938, 328], [1.88, 316]]
+            }
+          },
+          {"decorations": {"nlfit":[{"label":"Custom Fit","param":["164","313",0.031,-1.5,1.2e-06,1.9],"type":"cst"},{"label":"Regular Fit","param":["164","313",0.031,1.5,1.2e-06,1.9],"type":"reg"}]},
+           "graphType": "Scatter2D",
+           "setMaxY": 350,
+           "setMinY": 100,
+           "showDecorations": true,
+           "theme": "CanvasXpress",
+           "xAxisTransform": "log10",
+           "xAxisTransformTicks": true,
+           "yAxisExact": true
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

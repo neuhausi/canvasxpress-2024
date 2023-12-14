@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: NonLinear-Fit Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Polynomial Fit">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Polynomial Fit">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta itemprop="description" content="CanvasXpress: Polynomial Fit">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: NonLinear-Fit Chart">
+    <meta name="og:description" content="CanvasXpress: Polynomial Fit">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/nonlinear-fit-6.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          NonLinear-Fit
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="nonlinearfit6" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnonlinearfit6 = new CanvasXpress("nonlinearfit6",
+          {
+            "y" : {
+              "vars" : ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"],
+              "smps" : ["X", "Y"],
+              "data" : [
+                [-1, -1],
+                [0, 3],
+                [1, 2.5],
+                [2, 5],
+                [3, 4],
+                [5, 2],
+                [7, 5],
+                [9, 4]
+              ]
+            }
+          },
+          {"decorations": {"polynomial":[{"color":"red"}]},
+           "graphType": "Scatter2D",
+           "showDecorations": true,
+           "showLegend": false,
+           "theme": "CanvasXpress"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

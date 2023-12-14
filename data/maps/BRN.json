@@ -1,0 +1,6 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[114.52954865,4.71593618],[114.31780243,4.27593994],[114.74829865,4.08398008],[114.87163544,4.34088421],[114.52954865,4.71593618]]]},"properties":{"GID_0":"BRN","NAME_0":"Brunei","GID_1":"BRN.1_1","NAME_1":"Belait","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Daerah-Daerah","ENGTYPE_1":"District","CC_1":"","HASC_1":"BN.BE","cXId":"BE"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"BRN","NAME_0":"Brunei","GID_1":"BRN.2_1","NAME_1":"Brunei and Muara","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Daerah-Daerah","ENGTYPE_1":"District","CC_1":"","HASC_1":"BN.BM","cXId":"BM"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"BRN","NAME_0":"Brunei","GID_1":"BRN.3_1","NAME_1":"Temburong","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Daerah-Daerah","ENGTYPE_1":"District","CC_1":"","HASC_1":"BN.TE","cXId":"TE"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[114.87163544,4.34088421],[114.79399109,4.74022102],[114.78982544,4.9189229],[114.52954865,4.71593618],[114.87163544,4.34088421]]]},"properties":{"GID_0":"BRN","NAME_0":"Brunei","GID_1":"BRN.4_1","NAME_1":"Tutong","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Daerah-Daerah","ENGTYPE_1":"District","CC_1":"","HASC_1":"BN.TU","cXId":"TU"}}
+]}

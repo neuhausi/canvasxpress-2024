@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Contour Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Three column data set">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Three column data set">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Contour Chart">
+    <meta itemprop="description" content="CanvasXpress: Three column data set">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Contour Chart">
+    <meta name="og:description" content="CanvasXpress: Three column data set">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/contour-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Contour
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="contour3" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXcontour3 = new CanvasXpress("contour3",
+          {
+            "y" : {
+              "smps" : ["s1", "s2", "s3"],
+              "vars" : ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15", "v16", "v17", "v18", "v19", "v20", "v21", "v22", "v23", "v24", "v25" ],
+              "data" : [
+                        [0, 0, 10],
+                        [1, 0, 5.625],
+                        [2, 0, 2.5],
+                        [3, 0, 0.625],
+                        [4, 0, 0],
+                        [0, 1, 10.625],
+                        [1, 1, 6.25],
+                        [2, 1, 3.125],
+                        [3, 1, 1.25],
+                        [4, 1, 0.625],
+                        [0, 2, 12.5],
+                        [1, 2, 8.125],
+                        [2, 2, 5],
+                        [3, 2, 3.125],
+                        [4, 2, 2.5],
+                        [0, 3, 15.625],
+                        [1, 3, 11.25],
+                        [2, 3, 8.125],
+                        [3, 3, 6.25],
+                        [4, 3, 5.625],
+                        [0, 4, 20],
+                        [1, 4, 15.625],
+                        [2, 4, 12.5],
+                        [3, 4, 10.625],
+                        [4, 4, 10]
+                       ]
+            }
+          },
+          {"contourFilled": true,
+           "graphType": "ScatterBubble2D",
+           "showContourLevel": true,
+           "title": "Basic Contour Plot"
+          }
+        );
+        cXcontour3.createContour(      );
+      </script>
+    </div>
+  </body>
+</html>

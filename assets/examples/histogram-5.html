@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Histogram Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: histogram-5">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: histogram-5">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Histogram Chart">
+    <meta itemprop="description" content="CanvasXpress: histogram-5">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Histogram Chart">
+    <meta name="og:description" content="CanvasXpress: histogram-5">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/histogram-5.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Histogram
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="histogram5" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXhistogram5 = new CanvasXpress("histogram5",
+          {
+            "y" : {
+              "smps" : [ "Alcohol", "Tobacco" ],
+              "vars" : [ "North",   "Yorkshire", "Northeast", "East Midlands", "West Midlands", "East Anglia", "Southeast", "Southwest", "Wales", "Scotland", "Northern Ireland" ],
+              "data" : [ [ 6.47, 4.03 ], [ 6.13, 3.76 ], [ 6.19, 3.77 ], [ 4.89, 3.34 ], [ 5.63, 3.47 ], [ 4.52, 2.92 ], [ 5.89, 3.2 ], [ 4.79, 2.71 ], [ 3.53, 3.53 ], [ 6.08, 4.51 ], [ 4.02, 4.56 ] ]
+            }
+          },
+          {"citation": "Moore, David S., and George P. McCabe (1989). Introduction to the Practice of Statistics, p. 179.",
+           "graphType": "Scatter2D",
+           "histogramBins": 5,
+           "histogramType": "staggered",
+           "showHistogram": true,
+           "theme": "CanvasXpress",
+           "title": "Average weekly household spending, in British pounds, on tobacco products\nand alcoholic beverages for each of the 11 regions of Great Britain.",
+           "xAxisTitle": "Pounds Spent",
+           "yAxisTitle": "Frequency"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

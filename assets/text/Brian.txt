@@ -1,0 +1,48 @@
+_id	TNF	cell_type	title	descript	geo_accession	donor_pool
+GSM705287	7.9819	Monocytes	Monocytes rep1 mRNA (Roche)	CD14+ monocytes from healthy donor pool 1	GSM705287	dp1
+GSM705288	7.63547	Monocytes	Monocytes rep2 mRNA (Roche)	CD14+ monocytes from healthy donor pool 13	GSM705288	dp13
+GSM705289	7.70108	Monocytes	Monocytes rep3 mRNA (Roche)	CD14+ monocytes from healthy donor pool 15	GSM705289	dp15
+GSM705290	7.74426	Monocytes	Monocytes rep4 mRNA (Roche)	CD14+ monocytes from healthy donor pool 16	GSM705290	dp16
+GSM705291	7.54496	Monocytes	Monocytes rep5 mRNA (Roche)	CD14+ monocytes from healthy donor pool 17	GSM705291	dp17
+GSM705292	7.74535	Monocytes	Monocytes rep6 mRNA (Roche)	CD14+ monocytes from healthy donor pool 18	GSM705292	dp18
+GSM705293	7.69284	Monocytes	Monocytes rep7 mRNA (Roche)	CD14+ monocytes from healthy donor pool 2	GSM705293	dp2
+GSM705294	7.59194	Monocytes	Monocytes rep8 mRNA (Roche)	CD14+ monocytes from healthy donor pool 6	GSM705294	dp6
+GSM705295	7.46549	Monocytes	Monocytes rep9 mRNA (Roche)	CD14+ monocytes from healthy donor pool 7	GSM705295	dp7
+GSM705296	7.63895	Monocytes	Monocytes rep10 mRNA (Roche)	CD14+ monocytes from healthy donor pool 8	GSM705296	dp8
+GSM705297	7.02679	B cells	B cells rep1 mRNA (Roche)	CD19+ B cells from healthy donor pool 11	GSM705297	dp11
+GSM705298	7.41886	B cells	B cells rep2 mRNA (Roche)	CD19+ B cells from healthy donor pool 6	GSM705298	dp6
+GSM705299	7.01298	B cells	B cells rep3 mRNA (Roche)	CD19+ B cells from healthy donor pool 7	GSM705299	dp7
+GSM705300	7.1569	B cells	B cells rep4 mRNA (Roche)	CD19+ B cells from healthy donor pool 8	GSM705300	dp8
+GSM705301	7.34992	B cells	B cells rep5 mRNA (Roche)	CD19+ B cells from healthy donor pool 9	GSM705301	dp9
+GSM705302	7.07154	CD4+ T cells	CD4+ T cells rep1 mRNA (Roche)	CD4+ T cells from healthy donor pool 2	GSM705302	dp2
+GSM705303	7.01656	CD4+ T cells	CD4+ T cells rep2 mRNA (Roche)	CD4+ T cells from healthy donor pool 3	GSM705303	dp3
+GSM705304	7.18274	CD4+ T cells	CD4+ T cells rep3 mRNA (Roche)	CD4+ T cells from healthy donor pool 4	GSM705304	dp4
+GSM705305	7.22115	CD4+ T cells	CD4+ T cells rep4 mRNA (Roche)	CD4+ T cells from healthy donor pool 7	GSM705305	dp7
+GSM705306	7.01992	CD4+ T cells	CD4+ T cells rep5 mRNA (Roche)	CD4+ T cells from healthy donor pool 8	GSM705306	dp8
+GSM705307	6.32736	NK cells	NK cells rep1 mRNA (Roche)	NK cells from healthy donor pool 10	GSM705307	dp10
+GSM705308	6.74268	NK cells	NK cells rep2 mRNA (Roche)	NK cells from healthy donor pool 12	GSM705308	dp12
+GSM705309	7.31747	NK cells	NK cells rep3 mRNA (Roche)	NK cells from healthy donor pool 6	GSM705309	dp6
+GSM705310	7.15525	NK cells	NK cells rep4 mRNA (Roche)	NK cells from healthy donor pool 7	GSM705310	dp7
+GSM705311	6.69934	NK cells	NK cells rep5 mRNA (Roche)	NK cells from healthy donor pool 9	GSM705311	dp9
+GSM705312	6.56169	CD8+ T cells	CD8+ T cells rep1 mRNA (Roche)	CD8+ T cells from healthy donor pool 10	GSM705312	dp10
+GSM705313	6.32709	CD8+ T cells	CD8+ T cells rep2 mRNA (Roche)	CD8+ T cells from healthy donor pool 11	GSM705313	dp11
+GSM705314	6.71417	CD8+ T cells	CD8+ T cells rep3 mRNA (Roche)	CD8+ T cells from healthy donor pool 12	GSM705314	dp12
+GSM705315	7.3235	CD8+ T cells	CD8+ T cells rep4 mRNA (Roche)	CD8+ T cells from healthy donor pool 3	GSM705315	dp3
+GSM705316	7.20865	CD8+ T cells	CD8+ T cells rep5 mRNA (Roche)	CD8+ T cells from healthy donor pool 4	GSM705316	dp4
+GSM705317	7.60004	Eosinophils	Eosinophils rep1 mRNA (Roche)	Eosinophils from healthy donor pool 3	GSM705317	dp3
+GSM705318	7.7637	Eosinophils	Eosinophils rep2 mRNA (Roche)	Eosinophils from healthy donor pool 4	GSM705318	dp4
+GSM705319	7.18678	Eosinophils	Eosinophils rep3 mRNA (Roche)	Eosinophils from healthy donor pool 7	GSM705319	dp7
+GSM705320	7.35328	Eosinophils	Eosinophils rep4 mRNA (Roche)	Eosinophils from healthy donor pool 8	GSM705320	dp8
+GSM705321	6.66125	mDCs	mDC rep1 mRNA (Roche)	mDCs from healthy donor pool 14	GSM705321	dp14
+GSM705322	6.30892	mDCs	mDC rep2 mRNA (Roche)	mDCs from healthy donor pool 15	GSM705322	dp15
+GSM705323	5.75175	mDCs	mDC rep3 mRNA (Roche)	mDCs from healthy donor pool 16	GSM705323	dp16
+GSM705324	6.67386	mDCs	mDC rep4 mRNA (Roche)	mDCs from healthy donor pool 17	GSM705324	dp17
+GSM705325	6.7242	mDCs	mDC rep5 mRNA (Roche)	mDCs from healthy donor pool 18	GSM705325	dp18
+GSM705326	7.77083	Neutrophils	Neutrophils rep1 mRNA (Roche)	Neutrophils from healthy donor pool 3	GSM705326	dp3
+GSM705327	7.98604	Neutrophils	Neutrophils rep2 mRNA (Roche)	Neutrophils from healthy donor pool 4	GSM705327	dp4
+GSM705328	8.00946	Neutrophils	Neutrophils rep3 mRNA (Roche)	Neutrophils from healthy donor pool 7	GSM705328	dp7
+GSM705329	6.23434	pDCs	pDC rep1 mRNA (Roche)	pDCs from healthy donor pool 13	GSM705329	dp13
+GSM705330	6.63586	pDCs	pDC rep2 mRNA (Roche)	pDCs from healthy donor pool 14	GSM705330	dp14
+GSM705331	5.60446	pDCs	pDC rep3 mRNA (Roche)	pDCs from healthy donor pool 16	GSM705331	dp16
+GSM705332	6.01172	pDCs	pDC rep4 mRNA (Roche)	pDCs from healthy donor pool 17	GSM705332	dp17
+GSM705333	6.26106	pDCs	pDC rep5 mRNA (Roche)	pDCs from healthy donor pool 18	GSM705333	dp18

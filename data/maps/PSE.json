@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"PSE","NAME_0":"Palestina","GID_1":"PSE.1_1","NAME_1":"Gaza","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":"PS.GZ","cXId":"GZ"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[34.96922684,31.60278511],[35.55572128,31.75847626],[35.55973053,32.39043427],[34.96897888,32.21424484],[34.96922684,31.60278511]]]},"properties":{"GID_0":"PSE","NAME_0":"Palestina","GID_1":"PSE.2_1","NAME_1":"West Bank","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":"PS.WE","cXId":"WE"}}
+]}

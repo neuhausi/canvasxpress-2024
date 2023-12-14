@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Bar Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Basic Bar Graph">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Basic Bar Graph">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Bar Chart">
+    <meta itemprop="description" content="CanvasXpress: Basic Bar Graph">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Bar Chart">
+    <meta name="og:description" content="CanvasXpress: Basic Bar Graph">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/bar-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Bar
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="bar1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXbar1 = new CanvasXpress("bar1",
+          {
+             "y" : {
+               "vars" : ["V1"],
+               "smps" : ["S1", "S2", "S3"],
+               "data" : [[33, 44, 55]]
+             }
+          },
+          {"graphOrientation": "vertical",
+           "graphType": "Bar",
+           "showLegend": false,
+           "smpLabelRotate": 90,
+           "smpTitle": "Samples",
+           "theme": "CanvasXpress",
+           "title": "Bar Graph Title",
+           "xAxisTitle": "Value"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

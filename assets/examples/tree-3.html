@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Tree Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: tree-3">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: tree-3">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Tree Chart">
+    <meta itemprop="description" content="CanvasXpress: tree-3">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Tree Chart">
+    <meta name="og:description" content="CanvasXpress: tree-3">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/tree-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Tree
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="tree3" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXtree3 = new CanvasXpress("tree3",
+          {
+            "y" : {
+              "vars" : ["Order"],
+              "smps" : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"],
+              "data" : [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]]
+            },
+            "x" : {
+              "Level1" : ["L1.1", "L1.1", "L1.1", "L1.1", "L1.2", "L1.2", "L1.2", "L1.2", "L1.3", "L1.3", "L1.3", "L1.3", "L1.4", "L1.4", "L1.4", "L1.4"],
+              "Level2" : ["L2.1", "L2.1", "L2.2", "L2.2", "L2.1", "L2.1", "L2.2", "L2.2", "L2.1", "L2.1", "L2.2", "L2.2", "L2.1", "L2.1", "L2.2", "L2.2"],
+              "Level3" : ["L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2", "L3.1", "L3.2"],
+              "Annot1" : ["A", "B", "C", "A", "B", "C", "A", "B", "C", "A", "B", "C", "A", "B", "C", "A"],
+              "Annot2" : [5, 10, 15, 20, 25, 30, 35, 40, 40, 35, 30, 25, 20, 15, 10, 5]
+            }
+          },
+          {"colorBy": "Annot1",
+           "graphType": "Tree",
+           "hierarchy": ["Level1", "Level2", "Level3"],
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "showTransition": true,
+           "title": "Collapsible Tree"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

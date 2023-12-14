@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Bar Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Stacked data">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Stacked data">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Bar Chart">
+    <meta itemprop="description" content="CanvasXpress: Stacked data">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Bar Chart">
+    <meta name="og:description" content="CanvasXpress: Stacked data">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/bar-14.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Bar
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="bar14" width="1000" height="400" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXbar14 = new CanvasXpress("bar14",
+          {
+            "y": {
+              "vars": ["Year"],
+              "smps": ["R1","R2","R3","R4","R5","R6","R7","R8","R9","R10","R11","R12","R13","R14","R15","R16","R17","R18","R19","R20","R21","R22","R23","R24","R25","R26","R27","R28","R29","R30","R31","R32","R33"],
+              "data": [
+                [1953,1954,1954,1954,1954,1955,1955,1955,1955,1957,1957,1957,1958,1959,1960,1960,1960,1962,1962,1964,1964,1965,1965,1968,1968,1968,1968,1968,1990,1993,1993,1993,1994]
+              ]
+            },
+            "x": {
+              "Work": ["Roman Holiday","Roman Holiday","Roman Holiday","Roman Holiday","Ondine","Sabrina","Sabrina","Henrietta Award for World Film Favorite","Sabrina","War and Peace","War and Peace","Love in the Afternoon","Love in the Afternoon","The Nun's Story","The Nun's Story","The Nun's Story","The Nun's Story","Breakfast at Tiffany's","Breakfast at Tiffany's","Charade","My Fair Lady","Charade","My Fair Lady","Wait Until Dark","Two for the Road","Wait Until Dark","Wait Until Dark","Special Tony Award","Cecil B. DeMille Award","Jean Hersholt Humanitarian Award","Gardens of the World with Audrey Hepburn","Life Achievement Award","Audrey Hepburn's Enchanted Tales"],
+              "Result": ["Awarded","Awarded","Awarded","Awarded","Awarded","Nominated","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Awarded","Nominated","Awarded","Awarded","Awarded"],
+              "Award": ["New York Film Critics Circle Awards","Academy Awards","Bafta","Golden Globe Awards","Tony Awards","Academy Awards","Bafta","Golden Globe Awards","New York Film Critics Circle Awards","Bafta","Golden Globe Awards","New York Film Critics Circle Awards","Golden Globe Awards","New York Film Critics Circle Awards","Academy Awards","Bafta","Golden Globe Awards","Academy Awards","Golden Globe Awards","Golden Globe Awards","New York Film Critics Circle Awards","Bafta","Golden Globe Awards","Academy Awards","Golden Globe Awards","Golden Globe Awards","New York Film Critics Circle Awards","Tony Awards","Golden Globe Awards","Academy Awards","Emmy Awards","Screen Actors Guild Awards","Grammy Awards"]
+            }
+          },
+          {"colorBy": "Result",
+           "colorScheme": "Greens",
+           "graphType": "Bar",
+           "groupingFactors": ["Award"],
+           "legendColumns": 2,
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "legendPosition": "top",
+           "legendTextScaleFontFactor": 2,
+           "maxSmpStringLen": 50,
+           "objectBorderColor": "rgb(0,0,0)",
+           "showLegendTitle": false,
+           "smpLabelScaleFontFactor": 2,
+           "stackBy": "Result",
+           "summaryType": "count",
+           "title": "The Awards of Audrey Hepburn",
+           "xAxis2Show": true,
+           "xAxisShow": false
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

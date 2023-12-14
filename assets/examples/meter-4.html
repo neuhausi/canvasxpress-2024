@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Meter Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: meter-4">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: meter-4">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Meter Chart">
+    <meta itemprop="description" content="CanvasXpress: meter-4">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Meter Chart">
+    <meta name="og:description" content="CanvasXpress: meter-4">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/meter-4.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Meter
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="meter4" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXmeter4 = new CanvasXpress("meter4",
+          {
+            "y": {
+              "vars": ["Performance"],
+              "smps": ["January"],
+              "data": [
+                [85]
+              ]
+            }
+          },
+          {"graphType": "Meter",
+           "meterType": "state"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

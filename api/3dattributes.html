@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas Xpress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface to keep track of data, configuration and every single mouse move.">
+    <link href="/dist/build.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/fontawesome-pro-5.12.0-web/css/all.css">
+    <link rel="preload" as="font" href="/assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>CanvasXpress</title>
+    <!-- Search Engine -->
+    <meta name="description"
+        content="CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface to keep track of data, configuration and every single mouse move.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress">
+    <meta itemprop="description"
+        content="CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface to keep track of data, configuration and every single mouse move.">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress">
+    <meta name="og:description"
+        content="CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface to keep track of data, configuration and every single mouse move.">
+    <meta name="og:url" content="https://www.canvasxpress.org/">
+    <meta name="og:site_name" content="CanvasXpress">
+       <meta name="og:type" content="website">
+ <link rel="stylesheet" href="https://canvasxpress.org/css/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="https://canvasxpress.org/js/canvasXpress.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader d-flex flex-column">
+        <i class="fal fa-waveform text-primary mb-3 fa-2x pulse"></i>
+        <h2 class="pulse">CanvasXpress</h2>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+        <!-- Navbar -->
+        <div class="cx--top-border"></div>
+        <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;">
+            <div class="container">
+                <a class="navbar-brand fade-page" href="/index.html">
+                    <h4 class="mb-0"><i class="fal fa-waveform text-primary mr-1"></i> CanvasXpress</h4>
+                </a>
+                <a class="navbar-toggler" href="#" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="icon navbar-toggler-open fal fa-bars"></i>
+                    <i class="icon navbar-toggler-close fal fa-times"></i>
+                </a>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <div class="py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link fade-page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/examples.html" class="nav-link fade-page ">Examples</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/docs.html" class="nav-link fade-page ">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/api.html" class="nav-link fade-page active">Api</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact.html" class="nav-link fade-page">Contact</a>
+                            </li>
+                        </ul>
+                    </div><a href="#" class="btn btn-primary py-2 ml-lg-3"><span class="text-primary-3 mr-1">$99</span>
+                        Buy
+                        License</a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Docs -->
+        <div class="py-5">
+            <div class="container px-4 px-lg-3">
+                <div class="row">
+                    <div class="col-lg-3 sidebar">
+                        <div class="sticky-sidebar" data-aos="fade-up">
+                            <a href="/docs.html" class="d-block text-dark  fade-page"><i
+                                    class="fad fa-book-open text-primary mr-2" style="width: 20px;"></i>
+                                Documentation</a>
+                            <a href="/examples.html" class="d-block text-dark  fade-page"><i
+                                    class="fad fa-th text-primary mr-2 " style="width: 20px;"></i> Examples</a>
+                            <a href="/api.html" class="d-block text-dark fade-page font-weight-bold"><i
+                                    class="fad fa-list text-primary mr-2" style="width: 20px;"></i> API
+                                References</a>
+
+                            <h5 class="mt-4 mb-1">API</h5>
+                            <a href="/api/3dattributes.html" class="d-block">3D Attributes</a>
+                            <a href="#" class="d-block">Animations and Visualization Transitions</a>
+                            <a href="#" class="d-block">Area Graphs</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h2 id="overview"><a href="#overview">#</a> 3D Attributes
+                        </h2>
+                        <p>Use the sidebar to find the example you are interested in learning about.</p>
+<pre class="prettyprint p-3 rounded">
+{
+"graphOrientation" : "vertical",
+"legendPosition" : "right",
+"smpLabelRotate" : 45,
+"graphType" : "Area"
+}
+</pre>
+
+                    </div>
+
+                    <div class="col-lg-2 offset-lg-1 sidebar" data-aos="fade-up">
+                        <div class="sticky-sidebar">
+                            <h5 class=" mb-1">On This Page</h5>
+                            <a href="#overview" class="d-block">3D Attributes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class=" bg-light">
+            <div class="container">
+                <div class="row justify-content-between" data-aos="fade-up">
+                    <div class="col d-flex flex-column align-items-center align-items-md-start">
+                        <a href="/" class=" fade-page">
+                            <h3 class="mb-0"><i class="fal fa-waveform text-primary mr-1"></i> CanvasXpress</h3>
+                        </a>
+                        <ul class="nav mt-3">
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link pl-0 fade-page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/examples.html" class="nav-link fade-page ">Examples</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/docs.html" class="nav-link fade-page ">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/api.html" class="nav-link fade-page active">Api</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact.html" class="nav-link fade-page ">Contact</a>
+                            </li>
+                        </ul>
+                        <small class="text-muted mt-2 d-none d-lg-block">&copy;2020 All Rights Reserved. CanvasXpress®
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</body>
+
+</html>

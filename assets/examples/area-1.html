@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Area Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Basic Area graph">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Basic Area graph">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Area Chart">
+    <meta itemprop="description" content="CanvasXpress: Basic Area graph">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Area Chart">
+    <meta name="og:description" content="CanvasXpress: Basic Area graph">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/area-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Area
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="area1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXarea1 = new CanvasXpress("area1",
+          {
+            "y" : {
+              "data" : [[10,100,70,130,60]],
+              "vars" : ["A"],
+              "smps" : ["S1","S2","S3","S4","S5"]
+            }
+          },
+          {"colorScheme": "CanvasXpress",
+           "graphOrientation": "vertical",
+           "graphType": "Area",
+           "lineType": "rect",
+           "objectBorderColor": false,
+           "showLegend": false,
+           "showSampleNames": true,
+           "showTransition": false,
+           "smpLabelRotate": 90,
+           "smpTitle": "time"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

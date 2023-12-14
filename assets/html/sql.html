@@ -1,0 +1,201 @@
+<html>
+
+<head>
+  <title>SQL - JS</title>
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+
+  <style>
+    html {
+      background: #222;
+      margin: auto;
+      width: 80%;
+    }
+
+    body {
+      background: linear-gradient(#aaa 0, #ddd 10px, #fff 55px);
+      border: 1px solid black;
+      padding: 10px 20px;
+      box-shadow: 5px 0px 30px #000;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin: 0 0 30px;
+    }
+
+    .button {
+      color: #333;
+      background: linear-gradient(#eee, #ddd);
+      border: 1px solid #222;
+      border-radius: 3px;
+      padding: 7px;
+      margin-right: 5px;
+      transition: .3s;
+      font-family: ubuntu, sans-serif;
+      font-size: 1em;
+    }
+
+    .button:active {
+      background: linear-gradient(#ddd, #eee);
+    }
+
+    .button:hover,
+    button:focus {
+      box-shadow: 0 0 2px #222;
+    }
+
+    #execute {
+      margin-top: 5px;
+      ;
+      min-width: 100px;
+    }
+
+    .CodeMirror {
+      border: 1px solid #222;
+      height: auto;
+    }
+
+    .CodeMirror-scroll {
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+    .error {
+      color: red;
+      transition: .5s;
+      overflow: hidden;
+      margin: 15px;
+    }
+
+    #output {
+      overflow: auto;
+    }
+
+    table {
+      width: auto;
+      margin: auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    th,
+    td {
+      border: 1px solid #777;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Online SQL interpreter</h1>
+
+  <main>
+    <label for='commands'>Enter some SQL</label>
+    <br>
+    <textarea id="commands"></textarea>
+    <button id="execute" class="button">Execute SQL</button>
+    <button id='savedb' class="button">Save DB</button>
+    <label class="button">Load SQLite database file: <input type='file' id='dbfile' style="display:inline;"></label>
+    <div id="error" class="error"></div>
+    <pre id="output">Results will be displayed here</pre>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/sql/sql.min.js"></script>
+  <script type="text/javascript" src="/dist/canvasXpress.SQL.js"></script>
+
+</body>
+
+</html>

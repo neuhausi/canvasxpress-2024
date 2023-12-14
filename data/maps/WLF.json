@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"WLF","NAME_0":"Wallis and Futuna","GID_1":"WLF.1_1","NAME_1":"Alo","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Kingdom","ENGTYPE_1":"Kingdom","CC_1":"","HASC_1":"WF.AL","cXId":"AL"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"WLF","NAME_0":"Wallis and Futuna","GID_1":"WLF.2_1","NAME_1":"Singave","VARNAME_1":"Sigave","NL_NAME_1":"","TYPE_1":"Kingdom","ENGTYPE_1":"Kingdom","CC_1":"","HASC_1":"WF.SI","cXId":"SI"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-176.18525696,-13.30609894],[-176.16139221,-13.26611137],[-176.19882202,-13.21875763],[-176.25083923,-13.30666637],[-176.18525696,-13.30609894]]]},"properties":{"GID_0":"WLF","NAME_0":"Wallis and Futuna","GID_1":"WLF.3_1","NAME_1":"Uvéa","VARNAME_1":"Mata Utu","NL_NAME_1":"","TYPE_1":"Kingdom","ENGTYPE_1":"Kingdom","CC_1":"","HASC_1":"WF.UV","cXId":"UV"}}
+]}

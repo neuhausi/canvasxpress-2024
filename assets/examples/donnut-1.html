@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Donnut Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: donnut-1">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: donnut-1">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Donnut Chart">
+    <meta itemprop="description" content="CanvasXpress: donnut-1">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Donnut Chart">
+    <meta name="og:description" content="CanvasXpress: donnut-1">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/donnut-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Donnut
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="donnut1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdonnut1 = new CanvasXpress("donnut1",
+          {
+            "x" : {
+              "Quarter" : ["1st", "1st", "1st", "1st", "1st", "1st", "2nd", "2nd", "2nd", "3rd", "3rd", "3rd", "4th", "4th", "4th"],
+              "Month" : ["Jan", "Feb", "Feb", "Feb", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+              "Week" : [null, "Week 1", "Week 2", "Week 3", "Week 4", null, null, null, null, null, null, null, null, null, null],
+              "Color" : ["red", "blue", "green", "grey", "red", "blue", "green", "grey", "red", "blue", "green", "grey", "red", "blue", "green"]
+            },
+            "y" : {
+              "vars" : ["Sales"],
+              "smps" : ["Sales1", "Sales2", "Sales3", "Sales4", "Sales5", "Sales6", "Sales7", "Sales8", "Sales9", "Sales10", "Sales11", "Sales12", "Sales13", "Sales14", "Sales15"],
+              "data" : [[3.5, 1.2, 0.8, 0.6, 0.5, 1.7, 1.1, 0.8, 0.3, 0.7, 0.6, 0.1, 0.5, 0.4, 0.3]]
+            }
+          },
+          {"circularArc": 360,
+           "circularRotate": 0,
+           "circularType": "sunburst",
+           "colorBy": "Mont",
+           "colorScheme": "Bootstrap",
+           "graphType": "Circular",
+           "hierarchy": ["Month"],
+           "objectBorderColor": "rgb(0,0,0)",
+           "showTransition": false,
+           "title": "Simple Donnut",
+           "transitionStep": 50,
+           "transitionTime": 1500
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Social</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Configure, save, and share your work through the easiest method available today: the drag and drop feature. Intuitive and flexible, this feature allows you to move around pieces of HTML, csv, or json or png files to create the display that you need.">
+    <link rel="stylesheet" href="/dist/build.css" type="text/css" media="all" />
+    <link rel="icon" href="/favicon.png">
+    <style>
+      body {
+        text-align: unset;
+      }
+      .gsc-adBlock {
+        display : none !important;
+      }
+    </style>
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Configure, save, and share your work through the easiest method available today: the drag and drop feature. Intuitive and flexible, this feature allows you to move around pieces of HTML, csv, or json or png files to create the display that you need.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Social">
+    <meta itemprop="description" content="CanvasXpress: Configure, save, and share your work through the easiest method available today: the drag and drop feature. Intuitive and flexible, this feature allows you to move around pieces of HTML, csv, or json or png files to create the display that you need.">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Social">
+    <meta name="og:description" content="CanvasXpress: Configure, save, and share your work through the easiest method available today: the drag and drop feature. Intuitive and flexible, this feature allows you to move around pieces of HTML, csv, or json or png files to create the display that you need.">
+    <meta name="og:url" content="https://www.canvasxpress.org/social.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- Content Box -->
+    <link href="/assets/contentbox/box/box.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/contentbox/assets/minimalist-blocks/content.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/contentbox/assets/scripts/simplelightbox/simplelightbox.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/contentbox/contentbuilder/contentbuilder.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/contentbox/contentbox/contentbox.css" rel="stylesheet" type="text/css" />
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress" style="height:100%!important">
+
+      <!-- Modals -->
+      <div id="modals">
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false"role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="searchModalLabel">Search CanvasXpress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                </style>
+                <script>
+                  (function(){var cx='017553474198412024421:c_qxiweliao';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();
+                </script>
+                <gcse:search></gcse:search>
+              </div>
+              <div class="modal-footer">
+                <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social -->
+        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false"role="dialog">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="dataset" class="content" style="display: block;">
+                    <div class="form">
+                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="dataset">
+                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
+                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
+                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
+                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
+                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
+                            <span>Save dataset &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Datasets -->
+        <div id="datasetStore" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" style="overflow-y: initial !important;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="datasetStoreModalLabel">Shared Pages</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;overflow-y: auto;max-height: 750px;">
+                <div class="row justify-content-center">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div id="sharedPages" data-action="https://www.canvasxpress.org/cgi-bin/services.pl" data-method="post" data-service="service=social"></div>
+                    <h5 class=" mb-1" style="padding-left:10px;">Other Versions of Current Page</h5>
+                    <div id="versionPages"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Account Login/Register/Forgot -->
+        <div id="account" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="false">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <!-- Login -->
+                  <div id="login" class="content" style="display: block;">
+                    <div class="form">
+                      <form id="login-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" autocomplete="current-password" class="form-control" name="password" placeholder="Password" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="login-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="login-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="signin">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Login in">
+                            <span>Login &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Logout -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="logout" class="content" style="display: none;">
+                    <div class="form">
+                      <div class="text-center">
+                        <button id="showLogoutForm" style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Login in">
+                          <span>Logout &#8594;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Register -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="register" class="content" style="display: none;">
+                    <div class="form">
+                      <form id="register-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post" oninput='password.setCustomValidity(confirm.value != password.value ? "Passwords do not match." : "")'>
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Your Name" required/>
+                        </div>
+                        <div class="form-group">
+                          <input id="password" type="password" autocomplete="new-password" class="form-control" name="password" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <input id="confirm" type="password" autocomplete="new-password" class="form-control" name="confirm" placeholder="Password" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="register-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="register-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="register">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Registering">
+                            <span>Create Account &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Forgot -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="forgot" class="content" style="display: none;">
+                    <div class="form">
+                      <form id="forgot-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="forgot-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="forgot-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="forgot">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Requesting">
+                            <span>Request Password &#8594;</i></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div id="create-forgot-footer">
+                  <span>Create account?</span>&nbsp;<a id="showRegisterForm" href="#" role="button">Register</a><br><span>Forgot password?</span>&nbsp;<a id="showForgotForm" href="#" role="button">Request</a>
+                </div>
+                <div id="login-footer" style="display: none">
+                  <span>Already have an account?</span>&nbsp;<a id="showLoginForm" href="#" role="button">Login</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div id="visualization" class="is-wrapper">
+        <div class="is-section is-section-100 is-shadow-1 is-bg-grey">
+          <div class="is-boxes">
+            <div class="is-box-img is-box is-box-7">
+              <div class="is-boxes ">
+                <div class="is-overlay">
+                  <div class="is-overlay-bg" style="background-image: url('/assets/contentbox/assets/designs/images/R5LSS31818.jpg'); background-position: 0% 60%; transform: translateY(-13.8583px) scale(1.05);" data-bottom-top="transform:translateY(180px) scale(1.05);" data-top-bottom="transform:translateY(-180px) scale(1.05)"></div>
+                </div>
+                <div class="is-box-centered">
+                  <div class="is-container container" style="z-index:10002;">
+                    <div class="row clearfix" >
+                      <div class="column full" style="z-index:10002;">
+                        <div class="ContentBuilderCanvasXpress">
+                          <canvas id="canvas-1" class="CanvasXpress" width="700" height="700" data-aspectRatio="1:1" data-responsive="true"></canvas>
+                          <script>
+                            new CanvasXpress("canvas-1",
+                              {
+                                "y" : {
+                                  "vars" : ["Variable1"],
+                                  "smps" : ["Sample1", "Sample2", "Sample3"],
+                                  "data" : [[33, 44, 55]]
+                                }
+                              },
+                              {
+                                "graphOrientation": "vertical",
+                                "graphType": "Bar",
+                                "background": "rgba(0,0,0,0)",
+                                "colorScheme": "CanvasXpress",
+                                "showLegend": false,
+                                "smpLabelRotate": 90
+                              }
+                            );
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <div class="spacer height-40"></div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <p>This is just an example CanvasXpress bar graph that can be used to drop a csv, json or png file. Go ahead and drop a file on it!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="is-box is-dark-text is-bg-light is-box-5">
+              <div class="is-boxes">
+                <div class="is-box-centered">
+                  <div class="is-container container" style="max-width: 480px;">
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <h2>Share Data with CanvasXpress</h2>
+                        <p>Configure, save, and share your work with simple and intuitive drag and drop operations. Use pieces of HTML, csv, json or png files to create powerful visualizations.</p>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <div class="spacer height-40"></div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <h3>1. HTML Widgets</h3>
+                        <p>Click on the icons in the left toolbar to choose html snippets to drag and drop in the page or add new sections. You can add, remove, or change your rows and columns.</p>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <h3>2. CanvasXpress</h3>
+                        <p>Use csv, json or png files created with CanvasXpress and drop them onto the CanvasXpress html widgets (which are bar graphs by defualt).</p>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="column full">
+                        <h3>3. Save and Share</h3>
+                        <p>Click the upload icon on the left to save your work! You can start by modifying this page, login into CanvasXpress and save your first visualization.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class=" bg-primary-alt">
+        <div class="container">
+          <div class="row justify-content-between" data-aos="fade-up">
+            <div class="col d-flex flex-column align-items-center align-items-md-start">
+              <a href="/" class=" fade-page">
+                <h3 class="mb-0">
+                  <img src="/assets/images/logo-dark.svg" width="282" height="35" title="CanvasXpress Logo"/>
+                </h3>
+              </a>
+              <ul class="nav mt-3">
+                <li class="nav-item"><a href="/" class="nav-link pl-0 fade-page">Home</a></li>
+                <li class="nav-item"><a href="/examples.html" class="nav-link fade-page">Examples</a></li>
+                <li class="nav-item"><a href="/docs.html" class="nav-link fade-page">Docs</a></li>
+                <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
+                <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
+                <li class="nav-item"><a href="/social.html" class="nav-link active fade-page">Social</a></li>
+                <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
+                <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
+              </ul>
+              <small class="text-muted mt-2 d-none d-lg-block">&copy;2020 All Rights Reserved. CanvasXpress® </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</i></a>
+
+    <script src="/dist/build.js"></script>
+    <!-- Contentbox -->
+    <script src="/assets/contentbox/assets/scripts/simplelightbox/simple-lightbox.min.js" type="text/javascript"></script>
+    <script src="/assets/contentbox/assets/minimalist-blocks/content.js" type="text/javascript"></script>
+    <script src="/assets/contentbox/contentbuilder/contentbuilder.min.js" type="text/javascript"></script>
+    <script src="/assets/contentbox/contentbox/contentbox.min.js" type="text/javascript"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        var jsonStyles = {
+          "basetype-amaticsc-josepfinsans.css" : ["Amatic SC", "Josefin Sans"],
+          "basetype-sourcesanspro-anonymouspro.css": ["Source Sans Pro", "Anonymous Pro"],
+          "basetype-poppins-oldstandardtt.css": ["Poppins", "Old Standard TT"],
+          "basetype-spectralsc-karma.css": ["Spectral SC", "Karma"],
+          "basetype-yesteryear-chivo.css": ["Yesteryear", "Chivo"],
+          "basetype-alegreyasanssc-hind.css": ["Alegreya Sans SC", "Hind"],
+          "basetype-cabinsketch-montserrat.css": ["Cabin Sketch", "Montserrat"],
+          "basetype-ptserif-poppins.css": ["PT Serif", "Poppins"],
+          "basetype-kellyslab-yantramanav.css": ["Kelly Slab", "Yantramanav"],
+          "basetype-anonymouspro-catamaran.css": ["Anonymous Pro", "Catamaran"],
+          "basetype-nothingyouc-ibmplexmono.css": ["Nothing You Could Do", "IBM Plex Mono"],
+          "basetype-juliussansone-taviraj.css": ["Julius Sans One", "Taviraj"],
+          "basetype-voltaire-sourcecodepro.css": ["Voltaire", "Source Code Pro"],
+          "basetype-oregano-zillaslab.css": ["Oregano", "Zilla Slab"],
+          "basetype-yellowtail-frankruhllibre.css": ["Yellowtail", "Frank Ruhl Libre"],
+          "basetype-anonymouspro.css": ["Anonymous Pro"],
+          "basetype-sedgwickave-spectral.css": ["Sedgwick Ave", "Spectral"],
+          "basetype-dancingscript-anonymouspro.css": ["Dancing Script", "Anonymous Pro"],
+          "basetype-unicaone-cormorantgaramond.css": ["Unica One", "Cormorant Garamond"],
+          "basetype-allan-overpassmono.css": ["Allan", "Overpass Mono"],
+          "basetype-averialibre-barlow.css": ["Averia Libre", "Barlow"],
+          "basetype-merriweathersans-martel.css": ["Merriweather Sans", "Martel"],
+          "basetype-poppins.css": ["Poppins"],
+          "basetype-satisfy-economica.css": ["Satisfy", "Economica"],
+          "basetype-josefinsans-lekton.css": ["Josefin Sans", "Lekton"],
+          "basetype-specialelite-encodesans.css": ["Special Elite", "Encode Sans"],
+          "basetype-parisienne-maitree.css": ["Parisienne", "Maitree"],
+          "basetype-marcellussc-heebo.css": ["Marcellus SC", "Heebo"],
+          "basetype-oswald-cousine.css": ["Oswald", "Cousine"],
+          "basetype-londrinashadow-martel.css": ["Londrina Shadow", "Martel"],
+          "basetype-oranienbaum-sourcesanspro.css": ["Oranienbaum", "Source Sans Pro"],
+          "basetype-sriracha-arvo.css": ["Sriracha", "Arvo"],
+          "basetype-merriweather.css": ["Merriweather"],
+          "basetype-badscript-rokkitt.css": ["Bad Script", "Rokkitt"],
+          "basetype-poiretone-pridi.css": ["Poiret One", "Pridi"],
+          "basetype-inconsolata.css": ["Inconsolata"],
+          "basetype-novamono-robotomono.css": ["Nova Mono", "Roboto Mono"],
+          "basetype-spacemono.css": ["Space Mono"],
+          "basetype-pollerone-ibmplexserif.css": ["Poller One", "IBM Plex Serif"],
+          "basetype-italiana-martel.css": ["Italiana", "Martel"],
+          "basetype-julee-lora.css": ["Julee", "Lora"],
+          "basetype-elsie-frankruhllibre.css": ["Elsie", "Frank Ruhl Libre"],
+          "basetype-playfairdisp-petitformalscr.css": ["Playfair Display"],
+          "basetype-josefinsans-neuton.css": ["Josefin Sans", "Neuton"],
+          "basetype-stintultracon-inconsolata.css": ["Stint Ultra Condensed", "Inconsolata"],
+          "basetype-sixcaps-robotomono.css": ["Six Caps", "Roboto Mono"],
+          "basetype-raleway-playfairdisplay.css": ["Raleway"],
+          "basetype-pacifico-nanumgothiccod.css": ["Pacifico", "Nanum Gothic Coding"],
+          "basetype-ubuntumono-sourcecodepro.css": ["Ubuntu Mono", "Source Code Pro"],
+          "basetype-sharetechmono-nunito.css": ["Share Tech Mono", "Nunito"],
+          "basetype-lato.css": ["Lato"],
+          "basetype-pathwaygothicone-merriweather.css": ["Pathway Gothic One", "Merriweather"],
+          "basetype-forum-nanumgothiccoding.css": ["Forum", "Nanum Gothic Coding"],
+          "basetype-bilbo-halant.css": ["Bilbo", "Halant"],
+          "basetype-greatvibes-robotomono.css": ["Great Vibes", "Roboto Mono"],
+          "basetype-pinyonscript-firasans.css": ["Pinyon Script", "Fira Sans"],
+          "basetype-hammersmithone-poppins.css": ["Hammersmith One", "Poppins"],
+          "basetype-arimamadurai.css": ["Arima Madurai"],
+          "basetype-teko-muktamahee.css": ["Teko", "Mukta Mahee"],
+          "basetype-heebo-ibmplexmono.css": ["Heebo", "IBM Plex Mono"],
+          "basetype-sail-rasa.css": ["Sail", "Rasa"],
+          "basetype-sairacon-thegirlnextdoor.css": ["Saira Condensed"],
+          "basetype-frankruhllibre-lato.css": ["Frank Ruhl Libre", "Lato"],
+          "basetype-yantramanav-ibmplexserif.css": ["Yantramanav", "IBM Plex Serif"],
+          "basetype-quicksand-kalam.css": ["Quicksand", "Kalam"],
+          "basetype-ibmplexmono.css": ["IBM Plex Mono"],
+          "basetype-cinzeldecor-palanquin.css": ["Cinzel Decorative", "Palanquin"],
+          "basetype-yesevaone-forum.css": ["Yeseva One", "Forum"],
+          "basetype-oswald-biryani.css": ["Oswald", "Biryani"],
+          "basetype-yanonekaff-josefinsans.css": ["Yanone Kaffeesatz", "Josefin Sans"],
+          "basetype-abrilfatface-assistant.css": ["Abril Fatface", "Assistant"],
+          "basetype-nanumgothiccod-firasanscon.css": ["Nanum Gothic Coding", "Fira Sans Condensed"],
+          "basetype-inder-trirong.css": ["Inder", "Trirong"],
+          "basetype-dosis-oldstandardtt.css": ["Dosis", "Old Standard TT"],
+          "basetype-atma-tajawal.css": ["Atma", "Tajawal"],
+          "basetype-prata-hindsiliguri.css": ["Prata", "Hind Siliguri"],
+          "basetype-engagement-spectral.css": ["Engagement", "Spectral"],
+          "basetype-federo-gothica1.css": ["Federo", "Gothic A1"],
+          "basetype-fjallaone-ibmplexserif.css": ["Fjalla One", "IBM Plex Serif"],
+          "basetype-dynalight-mada.css": ["Dynalight", "Mada"],
+          "basetype-cormorantsc-ibmplexsanscon.css": ["Cormorant SC", "IBM Plex Sans Condensed"],
+          "basetype-kalam-robotomono.css": ["Kalam", "Roboto Mono"],
+          "basetype-fugazone-librefranklin.css": ["Fugaz One", "Libre Franklin"],
+          "basetype-gravitasone-nanummyeongjo.css": ["Gravitas One", "Nanum Myeongjo"],
+          "basetype-yeonsung-palanquin.css": ["Yeon Sung", "Palanquin"],
+          "basetype-rancho-robotoslab.css": ["Rancho", "Roboto Slab"],
+          "basetype-tenaram-overpassmono.css": ["Tenali Ramakrishna", "Overpass Mono"],
+          "basetype-thegirlnextdoor-sourcesanspro.css": ["The Girl Next Door", "Source Sans Pro"],
+          "basetype-alexbrush-ibmplexsans.css": ["Alex Brush", "IBM Plex Sans"],
+          "basetype-boogaloo-inconsolata.css": ["Boogaloo", "Inconsolata"],
+          "basetype-caveat-sourcecodepro.css": ["Caveat", "Source Code Pro"],
+          "basetype-passionone-worksans.css": ["Passion One", "Work Sans"],
+          "basetype-anticdidone-halant.css": ["Antic Didone", "Halant"],
+          "basetype-adventpro-opensans.css": ["Advent Pro", "Open Sans"],
+          "basetype-cutivemono-lato.css": ["Cutive Mono", "Lato"],
+          "basetype-elsie-montserrat.css": ["Elsie", "Montserrat"],
+          "basetype-macondo-mukta.css": ["Macondo", "Mukta"],
+          "basetype-oswald-opensans.css": ["Oswald", "Open Sans"],
+          "basetype-poppins-lekton.css": ["Poppins", "Lekton"],
+          "basetype-raleway-neuton.css": ["Raleway", "Neuton"],
+          "basetype-sourcecodepro-nunitosans.css": ["Source Code Pro", "Nunito Sans"],
+          "basetype-tangerine-opensans.css": ["Tangerine", "Open Sans"],
+          "basetype-alegreya-lato.css": ["Alegreya", "Lato"],
+          "basetype-amaticsc-lato.css": ["Amatic SC", "Lato"],
+          "basetype-heebo-ibmplexmono-2.css": ["Heebo", "IBM Plex Mono"],
+          "basetype-juliussansone-robotocondensed.css": ["Julius Sans One", "Roboto Condensed"],
+          "basetype-montserrat-roboto.css": ["Montserrat", "Roboto"],
+          "basetype-nothingyouc-ibmplexmono-2.css": ["Nothing You Could Do", "IBM Plex Mono"],
+          "basetype-raleway-lato.css": ["Raleway", "Lato"],
+          "basetype-raleway-lusitana.css": ["Raleway", "Lusitana"],
+          "basetype-rufina-oxygen.css": ["Rufina", "Oxygen"],
+          "basetype-sacramento-opensans.css": ["Sacramento", "Open Sans"],
+          "basetype-specialelite-playfairdisplay.css": ["Special Elite", "Playfair Display"],
+          "basetype-unicaone-sourcesanspro.css": ["Unica One", "Source Sans Pro"],
+        }
+
+        $(".is-wrapper").contentbox({
+          coverImageHandler: '/cgi-bin/services.pl',
+          largerImageHandler: '/cgi-bin/services.pl',
+          moduleConfig: [{ "moduleSaveImageHandler": "saveimage-module.php" }],
+          snippetData: 'assets/minimalist-blocks/snippetlist.html',
+          assetPath: '/assets/contentbox/assets/',
+          fontAssetPath: '/assets/contentbox/assets/fonts/',
+          designPath: '/assets/contentbox/assets/designs/',
+          contentStylePath: '/assets/contentbox/assets/styles/',
+          snippetPathReplace: ['assets/minimalist-blocks', 'assets/contentbox/assets/minimalist-blocks'],
+          snippetOpen: true,
+          snippetCategories: [
+            [718, "CanvasXpress"],
+            [120, "Basic"],
+            [118, "Article"],
+            [101, "Headline"],
+            [119, "Buttons"],
+            [102, "Photos"],
+            [103, "Profile"],
+            [116, "Contact"],
+            [104, "Products"],
+            [105, "Features"],
+            [106, "Process"],
+            [107, "Pricing"],
+            [108, "Skills"],
+            [109, "Achievements"],
+            [110, "Quotes"],
+            [111, "Partners"],
+            [112, "As Featured On"],
+            [113, "Page Not Found"],
+            [114, "Coming Soon"],
+            [115, "Help, FAQ"]
+          ],
+          defaultSnippetCategory: 718,
+          clearPreferences: true,
+          onRender : function() {
+            // Initialize new snippets
+            $('div.ContentBuilderCanvasXpress').each(function() {
+              if (!this.id) {
+                this.parentNode.style.zIndex = 10002;
+                this.parentNode.parentNode.parentNode.style.zIndex = 10002;
+                var cn = 1;
+                var id = 'canvas-' + cn;
+                while ($('#' + id).length) {
+                  cn++;
+                  id = 'canvas-' + cn;
+                }
+                this.id = 'parent-' + id;
+                var cx = this.firstElementChild;
+                cx.id = id;
+                new CanvasXpress(id,
+                  {
+                    "y" : {
+                      "vars" : ["Variable1"],
+                      "smps" : ["Sample1", "Sample2", "Sample3"],
+                      "data" : [[33, 44, 55]]
+                    }
+                  },
+                  {
+                    "graphOrientation": "vertical",
+                    "graphType": "Bar",
+                    "colorScheme": "CanvasXpress",
+                    "background": "rgba(0,0,0,0)",
+                    "showLegend": false
+                  }
+                );
+              }
+            });
+          },
+          onChange : function() {
+            // Destroy deleted snippets
+            var caller = arguments.callee.caller && arguments.callee.caller.caller ? arguments.callee.caller.caller.name : 'foo';
+            var targets = [];
+            for (var i = 0; i < CanvasXpress.instances.length; i++) {
+              targets.push(CanvasXpress.instances[i].target);
+            }
+            for (var i = 0; i < targets.length; i++) {
+              var id = targets[i];
+              if (!$('#' + id).length) {
+                CanvasXpress.destroy(id);
+              } else if (caller.match(/Typography/)) {
+                var css = $('.is-wrapper').data('contentbox').mainCss().replace(/.+styles\//,'').replace(/" rel.+/, '');
+                var fonts = jsonStyles.hasOwnProperty(css) ? jsonStyles[css] : false;
+                CanvasXpress.instances[i].setFont(fonts);
+              }
+            }
+          },
+          onContentClick : function(e) {
+            var t = e.target || e.srcElement;
+            if (t.nodeType == 3) {
+              t = t.parendNode;
+            }
+            if (typeof t.className == 'object' && t.className.toString().match(/SVG/)) {
+              if (t.className.baseVal.match(/CanvasXpress/)) {
+                console.log(t.id);
+              }
+            } else if (t.className.match(/CanvasXpress/)) {
+              console.log(t.id);
+            }
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 3,
+          'title': 'Undo',
+          'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#ion-ios-undo"></use></svg>',
+          'onClick': function() {
+            $('.is-wrapper').data('contentbox').undo();
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 4,
+          'title': 'Redo',
+          'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#ion-ios-redo"></use></svg>',
+          'onClick': function() {
+            $('.is-wrapper').data('contentbox').redo();
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 5,
+          'title': 'Save',
+          'html': '<a id="toggleSocial" data-toggle="modal" data-target="#social" href="#"><i class="icon ion-ios-cloud-upload-outline"</i></a>',
+          'onClick': function() {
+            return false;
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 6,
+          'title': 'Login',
+          'html': '<a id="toggleLogin" data-toggle="modal" data-target="#account" href="#"><i class="icon ion-person"</i></a>',
+          'onClick': function() {
+            return false;
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 7,
+          'title': 'Portfolio',
+          'html': '<a id="toggleDatasetStore" data-toggle="modal" data-target="#datasetStore" href="#"><i class="icon ion-ios-briefcase-outline"</i></a>',
+          'onClick': function() {
+            return false;
+          }
+        });
+
+        $('.is-wrapper').data('contentbox').addButton({
+          'pos': 8,
+          'title': 'Home',
+          'html': '<a href="./"><i class="icon ion-android-home"</i></a>'
+        });
+
+      });
+    </script>
+    <script src="/assets/contentbox/box/box.js" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

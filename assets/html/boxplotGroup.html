@@ -1,0 +1,283 @@
+<html>
+
+<head>
+    <title>Boxplot with Groupings</title>
+
+    <!-- CanvasXpress -->
+    <style>
+        .canvasXpressContainerSite {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas2' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas3' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas4' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas5' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas6' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas7' width='400' height='400'></canvas>
+        </div>
+        <div class="canvasXpressContainerSite">
+            <canvas id='canvas8' width='400' height='400'></canvas>
+        </div>
+    </div>
+    <script>
+        var data = {
+            "y": {
+                "vars": ["Value"],
+                "smps": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19", "R20", "R21", "R22", "R23", "R24", "R25", "R26", "R27", "R28", "R29", "R30", "R31", "R32", "R33", "R34", "R35", "R36", "R37", "R38", "R39", "R40", "R41", "R42", "R43", "R44", "R45", "R46", "R47", "R48", "R49", "R50", "R51", "R52", "R53", "R54", "R55", "R56", "R57", "R58", "R59", "R60", "R61", "R62", "R63", "R64", "R65", "R66", "R67", "R68", "R69", "R70", "R71", "R72"],
+                "data": [[0.1, 0.1, 0.15, 0.1, 0.2, 0.12, 0.1, 0.15, 0, 0.17, 0.2, 0.21, 0.2, 0.1, 0.12, 0.17, 0.2, 0.1, 0.15, 0.17, 0.13, 0.2, 0.1, 0.2, 0.3, 0.6, 0.5, 0.2, 0.4, 0.7, 0.5, 0.1, 0.3, 0.4, 0.35, 0.6, 0.2, 0.3, 0.6, 0.4, 0.1, 0.5, 0.4, 0.3, 0.1, 0.7, 0.5, 0.3, 0.5, 1, 0.7, 0.6, 0.8, 0.9, 0.6, 0.7, 1, 1, 0.8, 0.7, 0.8, 1, 0.9, 0.5, 1, 0.7, 1, 0.5, 0.8, 0.7, 0.9, 1]]
+            },
+            "x": {
+                "Methylation": ["DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "DMV", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "LMR", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD", "PMD"],
+                "Subtype": ["IDH", "IDH", "IDH", "IDH", "IDH", "IDH", "MES", "MES", "MES", "MES", "MES", "MES", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II", "IDH", "IDH", "IDH", "IDH", "IDH", "IDH", "MES", "MES", "MES", "MES", "MES", "MES", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II", "IDH", "IDH", "IDH", "IDH", "IDH", "IDH", "MES", "MES", "MES", "MES", "MES", "MES", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK I", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II", "RTK II"]
+            }
+        };
+
+        /**
+         * Data Sets
+         **/
+        var data1 = JSON.parse(JSON.stringify(data));
+        var data2 = JSON.parse(JSON.stringify(data));
+        var data3 = JSON.parse(JSON.stringify(data));
+        var data3 = JSON.parse(JSON.stringify(data));
+        var data4 = JSON.parse(JSON.stringify(data));
+        var data5 = JSON.parse(JSON.stringify(data));
+        var data6 = JSON.parse(JSON.stringify(data));
+        var data7 = JSON.parse(JSON.stringify(data));
+        var data8 = JSON.parse(JSON.stringify(data));
+        var data9 = JSON.parse(JSON.stringify(data));
+        var data10 = JSON.parse(JSON.stringify(data));
+
+        /**
+         * Functions
+         **/
+        var draw1 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas",
+                "data": data1,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Subtype", "Methylation"],
+                    "graphOrientation": "vertical",
+                    "smpLabelRotate": 0,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw2 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas2",
+                "data": data2,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Subtype", "Methylation"],
+                    "graphOrientation": "horizontal",
+                    "smpLabelRotate": 0,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw3 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas3",
+                "data": data3,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Methylation", "Subtype"],
+                    "graphOrientation": "vertical",
+                    "smpLabelRotate": 45,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw4 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas4",
+                "data": data4,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Methylation", "Subtype"],
+                    "graphOrientation": "horizontal",
+                    "smpLabelRotate": 45,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw5 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas5",
+                "data": data5,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Subtype", "Methylation"],
+                    "graphOrientation": "vertical",
+                    "smpLabelRotate": 90,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw6 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas6",
+                "data": data6,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Subtype", "Methylation"],
+                    "graphOrientation": "horizontal",
+                    "smpLabelRotate": 90,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw7 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas7",
+                "data": data7,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Methylation", "Subtype"],
+                    "graphOrientation": "vertical",
+                    "smpLabelRotate": 135,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+        var draw8 = function () {
+            new CanvasXpress({
+                "renderTo": "canvas8",
+                "data": data8,
+                "config": {
+                    "graphType": "Boxplot",
+                    "groupingFactors": ["Methylation", "Subtype"],
+                    "graphOrientation": "horizontal",
+                    "smpLabelRotate": 135,
+                    "xAxisTickColor": "rgb(0,0,0"
+                }
+            });
+        }
+
+        /**
+         * Calls
+         **/
+        draw1();
+        draw2();
+        draw3();
+        draw4();
+        draw5();
+        draw6();
+        draw7();
+        draw8();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-64.82208252,17.68652725],[-64.7168045,17.70013809],[-64.7095871,17.74708366],[-64.7804184,17.78458595],[-64.89458466,17.74735832],[-64.82208252,17.68652725]]]},"properties":{"GID_0":"VIR","NAME_0":"Virgin Islands, U.S.","GID_1":"VIR.1_1","NAME_1":"Saint Croix","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":"VI.SC","cXId":"SC"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VIR","NAME_0":"Virgin Islands, U.S.","GID_1":"VIR.2_1","NAME_1":"Saint John","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":"VI.SJ","cXId":"SJ"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"VIR","NAME_0":"Virgin Islands, U.S.","GID_1":"VIR.3_1","NAME_1":"Saint Thomas","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"District","ENGTYPE_1":"District","CC_1":"","HASC_1":"VI.ST","cXId":"ST"}}
+]}

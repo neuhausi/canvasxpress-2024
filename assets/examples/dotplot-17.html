@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Dotplot Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: dotplot-17">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: dotplot-17">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Dotplot Chart">
+    <meta itemprop="description" content="CanvasXpress: dotplot-17">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Dotplot Chart">
+    <meta name="og:description" content="CanvasXpress: dotplot-17">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/dotplot-17.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+    <style>
+      div.content {
+        top: 25px;
+        left: 25px;
+        position: absolute;
+      }
+  
+      div.container {
+        border: 1px solid #d3d3d3;
+        position: relative;
+        height: 100%;
+        border-radius: 4px;
+        background: white;
+        float: left;
+        margin: 25px;
+        width: 1200px;
+      }
+  
+      div.title {
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        align-items: center;
+        border-radius: 4px;
+        font-size: 22px;
+        flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center !important;
+        font-weight: bold;
+        background: #f5f5f5;
+      }
+  
+      div.plot {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+      }
+    </style>
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.configurator.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataexplorer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Dotplot
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="dotplot17" width="1000" height="400" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdotplot17 = new CanvasXpress("dotplot17",
+          {
+            "y": {
+              "vars": ["Year"],
+              "smps": ["R1","R2","R3","R4","R5","R6","R7","R8","R9","R10","R11","R12","R13","R14","R15","R16","R17","R18","R19","R20","R21","R22","R23","R24","R25","R26","R27","R28","R29","R30","R31","R32","R33"],
+              "data": [
+                [1953,1954,1954,1954,1954,1955,1955,1955,1955,1957,1957,1957,1958,1959,1960,1960,1960,1962,1962,1964,1964,1965,1965,1968,1968,1968,1968,1968,1990,1993,1993,1993,1994]
+              ]
+            },
+            "x": {
+              "Work": ["Roman Holiday","Roman Holiday","Roman Holiday","Roman Holiday","Ondine","Sabrina","Sabrina","Henrietta Award for World Film Favorite","Sabrina","War and Peace","War and Peace","Love in the Afternoon","Love in the Afternoon","The Nun's Story","The Nun's Story","The Nun's Story","The Nun's Story","Breakfast at Tiffany's","Breakfast at Tiffany's","Charade","My Fair Lady","Charade","My Fair Lady","Wait Until Dark","Two for the Road","Wait Until Dark","Wait Until Dark","Special Tony Award","Cecil B. DeMille Award","Jean Hersholt Humanitarian Award","Gardens of the World with Audrey Hepburn","Life Achievement Award","Audrey Hepburn's Enchanted Tales"],
+              "Result": ["Awarded","Awarded","Awarded","Awarded","Awarded","Nominated","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Nominated","Nominated","Nominated","Nominated","Nominated","Awarded","Awarded","Nominated","Awarded","Awarded","Awarded"],
+              "Award": ["New York Film Critics Circle Awards","Academy Awards","Bafta","Golden Globe Awards","Tony Awards","Academy Awards","Bafta","Golden Globe Awards","New York Film Critics Circle Awards","Bafta","Golden Globe Awards","New York Film Critics Circle Awards","Golden Globe Awards","New York Film Critics Circle Awards","Academy Awards","Bafta","Golden Globe Awards","Academy Awards","Golden Globe Awards","Golden Globe Awards","New York Film Critics Circle Awards","Bafta","Golden Globe Awards","Academy Awards","Golden Globe Awards","Golden Globe Awards","New York Film Critics Circle Awards","Tony Awards","Golden Globe Awards","Academy Awards","Emmy Awards","Screen Actors Guild Awards","Grammy Awards"]
+            }
+          },
+          {"colorBy": "Result",
+           "colorScheme": "Greens",
+           "graphType": "Dotplot",
+           "groupingFactors": ["Award"],
+           "jitter": false,
+           "legendColumns": 2,
+           "legendPosition": "top",
+           "legendScaleFontFactor": 2,
+           "maxSmpStringLen": 50,
+           "showLegendTitle": false,
+           "smpLabelScaleFontFactor": 2,
+           "title": "The Awards of Audrey Hepburn",
+           "xAxisShow": false
+          }
+        );
+      </script>
+    </div>
+
+  </body>
+</html>

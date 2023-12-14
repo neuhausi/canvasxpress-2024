@@ -1,0 +1,32 @@
+.cx--red-line{
+    height: 3px;
+    background: #F54B5F;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.m-70vh{
+    min-height: 70vh;
+}
+
+@include media-breakpoint-up(lg){
+    .chart-left, .chart-right{
+        position: absolute;
+        pointer-events: none;
+    }
+    .chart-left{
+        left: -70%;
+    }
+    .chart-right{
+        right: -70%;
+    }
+}
+@include media-breakpoint-up(xl){
+    .chart-left{
+        left: -60%;
+    }
+    .chart-right{
+        right: -60%;
+    }
+}

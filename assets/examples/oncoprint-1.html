@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Oncoprint Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: oncoprint-1">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: oncoprint-1">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Oncoprint Chart">
+    <meta itemprop="description" content="CanvasXpress: oncoprint-1">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Oncoprint Chart">
+    <meta name="og:description" content="CanvasXpress: oncoprint-1">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/oncoprint-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Oncoprint
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="oncoprint1" width="700" height="613" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXoncoprint1 = new CanvasXpress("oncoprint1",
+          {
+            "y" : {
+              "smps"  : ["V1", "V2", "V3"],
+              "vars"  : ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"],
+              "data"  : [[3.1,3.5,4.0],
+                         [3.0,7.4,4.1],
+                         [2.8,3.1,3.3],
+                         [2.3,2.4,2.1],
+                         [4.9,6.1,6.1],
+                         [1.9,2.1,0.1],
+                         [2.2,1.9,2.1],
+                         [1.7,2.1,0.2],
+                         [0.2,4.9,3.9]],
+              "data2" : [["","","Amplification"],
+                         ["","Amplification",""],
+                         ["","",""],
+                         ["","",""],
+                         ["","Amplification","Amplification"],
+                         ["","",""],
+                         ["","",""],
+                         ["","","Deletion"],
+                         ["Deletion","Amplification",""]],
+              "data3" : [["","","Missence"],
+                         ["","","Truncating"],
+                         ["Nonsense","",""],
+                         ["","Missence",""],
+                         ["","Truncating",""],
+                         ["","Nonsense",""],
+                         ["","",""],
+                         ["Missence","",""],
+                         ["","",""]],
+              "data4" : [["","A",""],
+                         ["","A",""],
+                         ["","A",""],
+                         ["","A",""],
+                         ["","B",""],
+                         ["","B",""],
+                         ["","","B"],
+                         ["","","B"],
+                         ["B","",""]]
+            },
+            "z" : {
+              "Factor" : ["Lev:1", "Lev:2", "Lev:1", "Lev:2", "Lev:1", "Lev:2", "Lev:1", "Lev:2", "Lev:1"]
+            },
+            "x" : {
+              "Annt1" : ["Desc:1", "Desc:2", "Desc:1"],
+              "Annt2" : [23, 34, 52],
+              "Annt3" : [12, 14, 34],
+              "Annt4" : [8, 14, 14],
+              "Annt5" : [17, 9, 18]
+            }
+          },
+          {"graphType": "Heatmap",
+           "oncoprintCNA": "data2",
+           "oncoprintMUT": "data3",
+           "overlaysThickness": 100,
+           "showTransition": false
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

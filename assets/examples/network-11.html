@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: network-11">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: network-11">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Network Chart">
+    <meta itemprop="description" content="CanvasXpress: network-11">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Network Chart">
+    <meta name="og:description" content="CanvasXpress: network-11">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/network-11.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Network
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="network11" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork11 = new CanvasXpress("network11",
+            {
+              "nodes": [
+                {
+                  "name": "a",
+                  "id": "Id0",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "b",
+                  "id": "Id1",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "c",
+                  "id": "Id2",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "d",
+                  "id": "Id3",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "e",
+                  "id": "Id4",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "f",
+                  "id": "Id5",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                },
+                {
+                  "name": "g",
+                  "id": "Id6",
+                  "shape": "roundrect",
+                  "width": 30,
+                  "height": 20,
+                  "color": "rgb(255, 187, 120)"
+                }
+              ],
+              "edges": [
+                {
+                  "id1": "Id1",
+                  "id2": "Id2",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id2",
+                  "id2": "Id3",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id3",
+                  "id2": "Id4",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id0",
+                  "id2": "Id1",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id2",
+                  "id2": "Id0",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id3",
+                  "id2": "Id5",
+                  "thickness": 3
+                },
+                {
+                  "id1": "Id0",
+                  "id2": "Id5",
+                  "thickness": 3
+                }
+              ],
+              "groups": [
+                {
+                  "padding": 0.01,
+                  "nodes": [
+                    "Id0"
+                  ],
+                  "id": "G0",
+                  "groupIds": [
+                    "G1"
+                  ],
+                  "color" : "rgb(94, 159, 202)"
+                },
+                {
+                  "padding": 0.01,
+                  "nodes": [
+                    "Id1",
+                    "Id2"
+                  ],
+                  "id": "G1",
+                  "color": "rgba(245, 245, 245, 0.5)"
+                },
+                {
+                  "padding": 0.01,
+                  "nodes": [
+                    "Id3",
+                    "Id4"
+                  ],
+                  "id": "G2",
+                  "color" : "rgb(255, 187, 120)"
+                }
+              ]
+            }
+,
+          {"edgeColor": "rgb(122,78,79)",
+           "edgeThickness": 3,
+           "graphType": "Network",
+           "networkColaAllConstraintsIterations": 50,
+           "networkColaAvoidOverlaps": true,
+           "networkColaGridSnapIterations": 50,
+           "networkColaLinkDistance": 80,
+           "networkColaStartUnconstrainedIterations": 100,
+           "networkColaUserConstraintIterations": 0,
+           "networkLayoutType": "cola"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

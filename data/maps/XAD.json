@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"XAD","NAME_0":"Akrotiri and Dhekelia","GID_1":"XAD.1_1","NAME_1":"Akrotiri","VARNAME_1":"Western Sovereign Base Area","NL_NAME_1":"","TYPE_1":"Sovereign Base Area","ENGTYPE_1":"Sovereign Base Area","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"XAD","NAME_0":"Akrotiri and Dhekelia","GID_1":"XAD.2_1","NAME_1":"Dhekelia","VARNAME_1":"Eastern Sovereign Base Area","NL_NAME_1":"","TYPE_1":"Sovereign Base Area","ENGTYPE_1":"Sovereign Base Area","CC_1":"","HASC_1":""}}
+]}

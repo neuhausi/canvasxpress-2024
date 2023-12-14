@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-56.38111114501953,46.827777862548885],[-56.315555572509766,46.90139007568371],[-56.3216667175293,46.997501373291016],[-56.258609771728516,47.06333160400385],[-56.350276947021484,47.0991668701173],[-56.37888717651367,47.013053894043026],[-56.32805633544922,46.90861129760742],[-56.38111114501953,46.827777862548885]]]},"properties":{"GID_0":"SPM","NAME_0":"Saint Pierre and Miquelon","GID_1":"SPM.1_1","NAME_1":"Miquelon-Langlade","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Commune","ENGTYPE_1":"Commune","CC_1":"","HASC_1":"PM.ML","cXId":"ML"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"SPM","NAME_0":"Saint Pierre and Miquelon","GID_1":"SPM.2_1","NAME_1":"Saint-Pierre","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Commune","ENGTYPE_1":"Commune","CC_1":"","HASC_1":"PM.SP","cXId":"SP"}}
+]}

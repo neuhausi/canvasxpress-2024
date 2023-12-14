@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Venn Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: venn-1">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: venn-1">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Venn Chart">
+    <meta itemprop="description" content="CanvasXpress: venn-1">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Venn Chart">
+    <meta name="og:description" content="CanvasXpress: venn-1">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/venn-1.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Venn
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="venn1" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXvenn1 = new CanvasXpress("venn1",
+          {
+            "venn": {
+              "data": {
+                "A": 340,
+                "B": 562,
+                "C": 620,
+                "D": 592,
+                "AB": 639,
+                "AC": 456,
+                "AD": 257,
+                "BC": 915,
+                "BD": 354,
+                "CD": 143,
+                "ABC": 552,
+                "ABD": 578,
+                "ACD": 298,
+                "BCD": 613,
+                "ABCD": 148
+              },
+              "legend": {
+                "A": "List 1",
+                "B": "List 2",
+                "C": "List 3",
+                "D": "List 4"
+              }
+            }
+          },
+          {"graphType": "Venn",
+           "showTransition": false,
+           "vennGroups": 4
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

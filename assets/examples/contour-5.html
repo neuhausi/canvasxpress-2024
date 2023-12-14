@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Contour Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Smooth data set">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Smooth data set">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Contour Chart">
+    <meta itemprop="description" content="CanvasXpress: Smooth data set">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Contour Chart">
+    <meta name="og:description" content="CanvasXpress: Smooth data set">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/contour-5.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Contour
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="contour5" width="350" height="613" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXcontour5 = new CanvasXpress("contour5",
+          {
+            "y" : {
+              "smps" : ["s1", "s2", "s3", "s4", "s5", "s6", "s7" ],
+              "vars" : ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8" ],
+              "data" : [
+                [16,17,18,19,19,21,22],
+                [15,16,17,18,20,21,23],
+                [14,13,14,15,18,21,24],
+                [13,12,11,13,16,23,25],
+                [12,11,7,8,9,27,26],
+                [7,6,7,8,10,5,17],
+                [4,1,2,3,4,10,14],
+                [2,3,4,5,7,9,11]
+              ] 
+            }
+          },
+          {"contourType": "normal",
+           "graphType": "Heatmap",
+           "heatmapCellBox": false,
+           "lineType": "spline",
+           "showContourLevel": false,
+           "showSampleNames": false,
+           "showVariableNames": false
+          }
+        );
+        cXcontour5.createContour(      );
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-61.55753708,16.2859726],[-61.8018074,16.3120842],[-61.77069473,16.06097221],[-61.70763779,15.94736195],[-61.55513763,16.05513954],[-61.55091476,16.25208282],[-61.55753708,16.2859726]]]},"properties":{"GID_0":"GLP","NAME_0":"Guadeloupe","GID_1":"GLP.1_1","NAME_1":"Basse-Terre","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Arrondissement","ENGTYPE_1":"District","CC_1":"","HASC_1":"GP.BT","cXId":"BT"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-61.55091476,16.25208282],[-61.37374878,16.34041405],[-61.53541565,16.45513916],[-61.55753708,16.2859726],[-61.55091476,16.25208282]]]},"properties":{"GID_0":"GLP","NAME_0":"Guadeloupe","GID_1":"GLP.2_1","NAME_1":"Pointe-à-Pitre","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Arrondissement","ENGTYPE_1":"District","CC_1":"","HASC_1":"GP.PP","cXId":"PP"}}
+]}

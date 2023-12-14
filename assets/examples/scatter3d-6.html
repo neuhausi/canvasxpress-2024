@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Scatter3D Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: scatter3d-6">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: scatter3d-6">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Scatter3D Chart">
+    <meta itemprop="description" content="CanvasXpress: scatter3d-6">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Scatter3D Chart">
+    <meta name="og:description" content="CanvasXpress: scatter3d-6">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/scatter3d-6.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Scatter3D
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="scatter3d6" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXscatter3d6 = new CanvasXpress("scatter3d6",
+          {
+            "z" : {
+              "Annt1" : ["Desc:1", "Desc:2", "Desc:3", "Desc:4", "Desc:5", "Desc:6", "Desc:7", "Desc:8"],
+              "Annt2" : ["Desc:A", "Desc:B", "Desc:A", "Desc:B", "Desc:A", "Desc:B", "Desc:A", "Desc:B"],
+              "Annt3" : ["Desc:X", "Desc:X", "Desc:Y", "Desc:Y", "Desc:X", "Desc:X", "Desc:Y", "Desc:Y"]
+            },
+            "x" : {
+              "Factor1" : ["Lev:1", "Lev:2", "Lev:3", "Lev:1", "Lev:2", "Lev:3"],
+              "Factor2" : ["Lev:A", "Lev:B", "Lev:A", "Lev:B", "Lev:A", "Lev:B"],
+              "Factor3" : ["Lev:X", "Lev:X", "Lev:Y", "Lev:Y", "Lev:Z", "Lev:Z"]
+            },
+            "y" : {
+              "vars" : ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8"],
+              "smps" : ["S1", "S2", "S3", "S4", "S5", "S6"],
+              "data" : [[5, 10, 25, 40, 45, 50], [95, 80, 75, 70, 55, 40], [25, 30, 45, 60, 65, 70], [55, 40, 35, 30, 15, 1], [10, 20, 35, 50, 55, 65], [80, 70, 65, 60, 45, 35], [30, 40, 55, 70, 75, 85], [60, 50, 45, 40, 25, 15]],
+              "desc" : ["Magnitude1", "Magnitude2"]
+            }
+          },
+          {"colorBy": "Annt1",
+           "graphType": "Scatter3D",
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "shapeBy": "Annt2",
+           "sizeBy": "Annt3",
+           "theme": "CanvasXpress",
+           "xAxis": ["S1"],
+           "yAxis": ["S2"],
+           "zAxis": ["S3"]
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

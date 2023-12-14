@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Remote-Graphs Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: remote-graphs-7">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: remote-graphs-7">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Remote-Graphs Chart">
+    <meta itemprop="description" content="CanvasXpress: remote-graphs-7">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Remote-Graphs Chart">
+    <meta name="og:description" content="CanvasXpress: remote-graphs-7">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/remote-graphs-7.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Remote-Graphs
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="remotegraphs7" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        CanvasXpress.json("https://canvasxpress.org/data/dsmall.json", function(err, json) {
+          if (err) {
+            alert(err);
+            return;
+          } else {
+            var data = {
+              y: {
+                smps: ['carat', 'depth', 'table', 'price', 'x', 'y', 'z'],
+                vars: [],
+                data: []
+              },
+              z: {
+                'cut': [],
+                'color': [],
+                'clarity': []
+              }
+            }
+            var config = {
+              graphType: "Scatter2D",
+              colorBy: "cut",
+              xAxis: ['carat'],
+              yAxis: ['price']
+            }
+            var h = json.shift();
+            for (var i = 0; i < json.length; i++) {
+              data.y.vars.push('Id' + json[i][0]);
+              data.y.data.push([json[i][1], json[i][5], json[i][6], json[i][7], json[i][8], json[i][9], json[i][10]]);
+              data.z.cut.push(json[i][2]);
+              data.z.color.push(json[i][3]);
+              data.z.clarity.push(json[i][4]);
+            }
+            var c = new CanvasXpress("remotegraphs7", data, config);
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>

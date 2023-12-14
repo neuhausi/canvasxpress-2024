@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-172.4930572509765,-8.579723358154297],[-172.50582885742182,-8.581389427185059],[-172.5052795410156,-8.58638858795166],[-172.4930572509765,-8.579723358154297]]]},"properties":{"GID_0":"TKL","NAME_0":"Tokelau","GID_1":"TKL.1_1","NAME_1":"Anafu","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Atoll","ENGTYPE_1":"Atoll","CC_1":"","HASC_1":"TK.AT","cXId":"AT"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"TKL","NAME_0":"Tokelau","GID_1":"TKL.2_1","NAME_1":"Fakaofo","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Atoll","ENGTYPE_1":"Atoll","CC_1":"","HASC_1":"TK.FA","cXId":"FA"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"TKL","NAME_0":"Tokelau","GID_1":"TKL.3_1","NAME_1":"Nukunonu","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Atoll","ENGTYPE_1":"Atoll","CC_1":"","HASC_1":"TK.NU","cXId":"NU"}}
+]}

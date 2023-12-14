@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Map Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Map colored with topoJSON properties">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Map colored with topoJSON properties">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Map Chart">
+    <meta itemprop="description" content="CanvasXpress: Map colored with topoJSON properties">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Map Chart">
+    <meta name="og:description" content="CanvasXpress: Map colored with topoJSON properties">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/map-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Map
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="map3" width="813" height="613" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXmap3 = new CanvasXpress("map3",
+          {
+            "y" : {
+              "vars" : ["Aruba","Afghanistan","Angola","Anguilla","Albania","Aland Islands","Andorra","United Arab Emirates","Argentina","Armenia","American Samoa","Antarctica","Australia","French Southern Territories","Antigua and Barbuda","Australia2","Austria","Azerbaijan","Burundi","Belgium","Benin","Burkina Faso","Bangladesh","Bulgaria","Bahrain","Bahamas","Bosnia and Herzegovina","Saint-Barthélemy","Belarus","Belize","Bermuda","Bolivia","Brazil","Barbados","Brunei Darussalam","Bhutan","Botswana","Central African Republic","Canada","Switzerland","Chile","China","Côte d'Ivoire","Cameroon","Democratic Republic of the Congo","Congo (Brazzaville)","Cook Islands","Colombia","Comoros","Cape Verde","Costa Rica","Cuba","Curacao","Cayman Islands","Missing Name 54","Cyprus","Czech Republic","Germany","Djibouti","Dominica","Denmark","Dominican Republic","Algeria","Ecuador","Egypt","Eritrea","Spain","Estonia","Ethiopia","Finland","Fiji","Falkland Islands (Malvinas)","France","Faroe Islands","Micronesia","Gabon","United Kingdom","Georgia","Guernsey","Ghana","Guinea","Gambia","Guinea-Bissau","Equatorial Guinea","Greece","Grenada","Greenland","Guatemala","Guam","Guyana","Hong Kong","Heard Island and Mcdonald Islands","Honduras","Croatia","Haiti","Hungary","Indonesia","Isle of Man","India","Missing Name 99","British Indian Ocean Territory","Ireland","Islamic Republic of Iran","Iraq","Iceland","Israel","Italy","Jamaica","Jersey","Jordan","Japan","Missing Name 111","Kazakhstan","Kenya","Kyrgyzstan","Cambodia","Kiribati","Saint Kitts and Nevis","Korea","Missing Name 119","Kuwait","Lao PDR","Lebanon","Liberia","Libya","Saint Lucia","Liechtenstein","Sri Lanka","Lesotho","Lithuania","Luxembourg","Latvia","Macao","Saint-Martin (French part)","Morocco","Monaco","Moldova","Madagascar","Maldives","Mexico","Marshall Islands","Macedonia","Mali","Malta","Myanmar","Montenegro","Mongolia","Northern Mariana Islands","Mozambique","Mauritania","Montserrat","Mauritius","Malawi","Malaysia","Namibia","New Caledonia","Niger","Norfolk Island","Nigeria","Nicaragua","Niue","Netherlands","Norway","Nepal","Nauru","New Zealand","Oman","Pakistan","Panama","Pitcairn","Peru","Philippines","Palau","Papua New Guinea","Poland","Puerto Rico","Democratic People's Republic of Korea","Portugal","Paraguay","Occupied Palestinian Territory","French Polynesia","Qatar","Romania","Russian Federation","Rwanda","Western Sahara","Saudi Arabia","Sudan","South Sudan","Senegal","Singapore","South Georgia and the South Sandwich Islands","Saint Helena","Solomon Islands","Sierra Leone","El Salvador","San Marino","Missing Name 197","Somalia","Saint Pierre and Miquelon","Serbia","Sao Tome and Principe","Suriname","Slovakia","Slovenia","Sweden","Swaziland","Sint Maarten (Dutch part)","Seychelles","Syrian Arab Republic (Syria)","Turks and Caicos Islands","Chad","Togo","Thailand","Tajikistan","Turkmenistan","Timor-Leste","Tonga","Trinidad and Tobago","Tunisia","Turkey","Taiwan","Tanzania","Uganda","Ukraine","Uruguay","United States","Uzbekistan","Saint Vincent and Grenadines","Venezuela","British Virgin Islands","US Virgin Islands","Viet Nam","Vanuatu","Wallis and Futuna Islands","Samoa","Yemen","South Africa","Zambia","Zimbabwe"],
+              "smps" : ["Order"],
+              "data" : [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[49],[50],[51],[52],[53],[54],[55],[56],[57],[58],[59],[60],[61],[62],[63],[64],[65],[66],[67],[68],[69],[70],[71],[72],[73],[74],[75],[76],[77],[78],[79],[80],[81],[82],[83],[84],[85],[86],[87],[88],[89],[90],[91],[92],[93],[94],[95],[96],[97],[98],[99],[100],[101],[102],[103],[104],[105],[106],[107],[108],[109],[110],[111],[112],[113],[114],[115],[116],[117],[118],[119],[120],[121],[122],[123],[124],[125],[126],[127],[128],[129],[130],[131],[132],[133],[134],[135],[136],[137],[138],[139],[140],[141],[142],[143],[144],[145],[146],[147],[148],[149],[150],[151],[152],[153],[154],[155],[156],[157],[158],[159],[160],[161],[162],[163],[164],[165],[166],[167],[168],[169],[170],[171],[172],[173],[174],[175],[176],[177],[178],[179],[180],[181],[182],[183],[184],[185],[186],[187],[188],[189],[190],[191],[192],[193],[194],[195],[196],[197],[198],[199],[200],[201],[202],[203],[204],[205],[206],[207],[208],[209],[210],[211],[212],[213],[214],[215],[216],[217],[218],[219],[220],[221],[222],[223],[224],[225],[226],[227],[228],[229],[230],[231],[232],[233],[234],[235],[236],[237],[238],[239]]
+            },
+            "z" : { 
+              "id" : ["ABW","AFG","AGO","AIA","ALB","ALA","AND","ARE","ARG","ARM","ASM","ATA","AUS","ATF","ATG","AUS","AUT","AZE","BDI","BEL","BEN","BFA","BGD","BGR","BHR","BHS","BIH","BLM","BLR","BLZ","BMU","BOL","BRA","BRB","BRN","BTN","BWA","CAF","CAN","CHE","CHL","CHN","CIV","CMR","COD","COG","COK","COL","COM","CPV","CRI","CUB","CUW","CYM","XXX","CYP","CZE","DEU","DJI","DMA","DNK","DOM","DZA","ECU","EGY","ERI","ESP","EST","ETH","FIN","FJI","FLK","FRA","FRO","FSM","GAB","GBR","GEO","GGY","GHA","GIN","GMB","GNB","GNQ","GRC","GRD","GRL","GTM","GUM","GUY","HKG","HMD","HND","HRV","HTI","HUN","IDN","IMN","IND","XXX","IOT","IRL","IRN","IRQ","ISL","ISR","ITA","JAM","JEY","JOR","JPN","XXX","KAZ","KEN","KGZ","KHM","KIR","KNA","KOR","XXX","KWT","LAO","LBN","LBR","LBY","LCA","LIE","LKA","LSO","LTU","LUX","LVA","MAC","MAF","MAR","MCO","MDA","MDG","MDV","MEX","MHL","MKD","MLI","MLT","MMR","MNE","MNG","MNP","MOZ","MRT","MSR","MUS","MWI","MYS","NAM","NCL","NER","NFK","NGA","NIC","NIU","NLD","NOR","NPL","NRU","NZL","OMN","PAK","PAN","PCN","PER","PHL","PLW","PNG","POL","PRI","PRK","PRT","PRY","PSE","PYF","QAT","ROU","RUS","RWA","ESH","SAU","SDN","SSD","SEN","SGP","SGS","SHN","SLB","SLE","SLV","SMR","XXX","SOM","SPM","SRB","STP","SUR","SVK","SVN","SWE","SWZ","SXM","SYC","SYR","TCA","TCD","TGO","THA","TJK","TKM","TLS","TON","TTO","TUN","TUR","TWN","TZA","UGA","UKR","URY","USA","UZB","VCT","VEN","VGB","VIR","VNM","VUT","WLF","WSM","YEM","ZAF","ZMB","ZWE"]
+            }
+          },
+          {"colorBy": "id",
+           "decorations": {"marker":[{"color":"blue","label":"New York","shape":"teardrop","coords":[40.7,"-74"],"size":5},{"color":"blue","size":5,"label":"San Francisco","coords":[37.7,"-122"],"shape":"teardrop"},{"color":"blue","label":"Miami","coords":[25.7,-80.1],"shape":"teardrop","size":5},{"shape":"circle","coords":[41.8,-87.6],"label":"Chicago","size":4,"color":"green"},{"size":3,"shape":"circle","coords":[36.1,-115.1],"label":"Las Vegas","color":"green"},{"size":6,"label":"Boston","shape":"star","coords":[42.3,"-71"],"color":"black"}],"connections":[{"target":[37.7,"-122"],"color":"red","type":"spline","source":[40.7,"-74"]},{"color":"red","source":[40.7,"-74"],"type":"spline","target":[25.7,-80.1]},{"source":[37.7,"-122"],"type":"splineDashed","color":"red","target":[25.7,-80.1]}]},
+           "graphType": "Map",
+           "mapConfig": {"zoom":3.2,"center":[34.7,-96.1]},
+           "mapId": "colorCountries",
+           "showLegend": false,
+           "topoJSON": "https://www.canvasxpress.org/data/world.geo.json"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

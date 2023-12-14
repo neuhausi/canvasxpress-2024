@@ -1,0 +1,336 @@
+<html>
+
+<head>
+  <title>cxplot()</title>
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+</head>
+
+<body>
+  <div>
+    <canvas id="canvas" width="800" height="600" data-responsive="true"></canvas>
+  </div>
+  <script>
+
+    var data2 = [["Id", "year", "level"],
+    ["1", "1875", "580.38"],
+    ["2", "1876", "581.86"],
+    ["3", "1877", "580.97"],
+    ["4", "1878", "580.8"],
+    ["5", "1879", "579.79"],
+    ["6", "1880", "580.39"],
+    ["7", "1881", "580.42"],
+    ["8", "1882", "580.82"],
+    ["9", "1883", "581.4"],
+    ["10", "1884", "581.32"],
+    ["11", "1885", "581.44"],
+    ["12", "1886", "581.68"],
+    ["13", "1887", "581.17"],
+    ["14", "1888", "580.53"],
+    ["15", "1889", "580.01"],
+    ["16", "1890", "579.91"],
+    ["17", "1891", "579.14"],
+    ["18", "1892", "579.16"],
+    ["19", "1893", "579.55"],
+    ["20", "1894", "579.67"],
+    ["21", "1895", "578.44"],
+    ["22", "1896", "578.24"],
+    ["23", "1897", "579.1"],
+    ["24", "1898", "579.09"],
+    ["25", "1899", "579.35"],
+    ["26", "1900", "578.82"],
+    ["27", "1901", "579.32"],
+    ["28", "1902", "579.01"],
+    ["29", "1903", "579"],
+    ["30", "1904", "579.8"],
+    ["31", "1905", "579.83"],
+    ["32", "1906", "579.72"],
+    ["33", "1907", "579.89"],
+    ["34", "1908", "580.01"],
+    ["35", "1909", "579.37"],
+    ["36", "1910", "578.69"],
+    ["37", "1911", "578.19"],
+    ["38", "1912", "578.67"],
+    ["39", "1913", "579.55"],
+    ["40", "1914", "578.92"],
+    ["41", "1915", "578.09"],
+    ["42", "1916", "579.37"],
+    ["43", "1917", "580.13"],
+    ["44", "1918", "580.14"],
+    ["45", "1919", "579.51"],
+    ["46", "1920", "579.24"],
+    ["47", "1921", "578.66"],
+    ["48", "1922", "578.86"],
+    ["49", "1923", "578.05"],
+    ["50", "1924", "577.79"],
+    ["51", "1925", "576.75"],
+    ["52", "1926", "576.75"],
+    ["53", "1927", "577.82"],
+    ["54", "1928", "578.64"],
+    ["55", "1929", "580.58"],
+    ["56", "1930", "579.48"],
+    ["57", "1931", "577.38"],
+    ["58", "1932", "576.9"],
+    ["59", "1933", "576.94"],
+    ["60", "1934", "576.24"],
+    ["61", "1935", "576.84"],
+    ["62", "1936", "576.85"],
+    ["63", "1937", "576.9"],
+    ["64", "1938", "577.79"],
+    ["65", "1939", "578.18"],
+    ["66", "1940", "577.51"],
+    ["67", "1941", "577.23"],
+    ["68", "1942", "578.42"],
+    ["69", "1943", "579.61"],
+    ["70", "1944", "579.05"],
+    ["71", "1945", "579.26"],
+    ["72", "1946", "579.22"],
+    ["73", "1947", "579.38"],
+    ["74", "1948", "579.1"],
+    ["75", "1949", "577.95"],
+    ["76", "1950", "578.12"],
+    ["77", "1951", "579.75"],
+    ["78", "1952", "580.85"],
+    ["79", "1953", "580.41"],
+    ["80", "1954", "579.96"],
+    ["81", "1955", "579.61"],
+    ["82", "1956", "578.76"],
+    ["83", "1957", "578.18"],
+    ["84", "1958", "577.21"],
+    ["85", "1959", "577.13"],
+    ["86", "1960", "579.1"],
+    ["87", "1961", "578.25"],
+    ["88", "1962", "577.91"],
+    ["89", "1963", "576.89"],
+    ["90", "1964", "575.96"],
+    ["91", "1965", "576.8"],
+    ["92", "1966", "577.68"],
+    ["93", "1967", "578.38"],
+    ["94", "1968", "578.52"],
+    ["95", "1969", "579.74"],
+    ["96", "1970", "579.31"],
+    ["97", "1971", "579.89"],
+    ["98", "1972", "579.96"]];
+
+    //var cxp = new cxplot("canvas", data, aes({ "x": "year", "meta": {}, "y": "level" }));
+    //cxp.geom_ribbon({ "ymax": [581.38, 582.86, 581.97, 581.8, 580.79, 581.39, 581.42, 581.82, 582.4, 582.32, 582.44, 582.68, 582.17, 581.53, 581.01, 580.91, 580.14, 580.16, 580.55, 580.67, 579.44, 579.24, 580.1, 580.09, 580.35, 579.82, 580.32, 580.01, 580, 580.8, 580.83, 580.72, 580.89, 581.01, 580.37, 579.69, 579.19, 579.67, 580.55, 579.92, 579.09, 580.37, 581.13, 581.14, 580.51, 580.24, 579.66, 579.86, 579.05, 578.79, 577.75, 577.75, 578.82, 579.64, 581.58, 580.48, 578.38, 577.9, 577.94, 577.24, 577.84, 577.85, 577.9, 578.79, 579.18, 578.51, 578.23, 579.42, 580.61, 580.05, 580.26, 580.22, 580.38, 580.1, 578.95, 579.12, 580.75, 581.85, 581.41, 580.96, 580.61, 579.76, 579.18, 578.21, 578.13, 580.1, 579.25, 578.91, 577.89, 576.96, 577.8, 578.68, 579.38, 579.52, 580.74, 580.31, 580.89, 580.96], "ymin": [579.38, 580.86, 579.97, 579.8, 578.79, 579.39, 579.42, 579.82, 580.4, 580.32, 580.44, 580.68, 580.17, 579.53, 579.01, 578.91, 578.14, 578.16, 578.55, 578.67, 577.44, 577.24, 578.1, 578.09, 578.35, 577.82, 578.32, 578.01, 578, 578.8, 578.83, 578.72, 578.89, 579.01, 578.37, 577.69, 577.19, 577.67, 578.55, 577.92, 577.09, 578.37, 579.13, 579.14, 578.51, 578.24, 577.66, 577.86, 577.05, 576.79, 575.75, 575.75, 576.82, 577.64, 579.58, 578.48, 576.38, 575.9, 575.94, 575.24, 575.84, 575.85, 575.9, 576.79, 577.18, 576.51, 576.23, 577.42, 578.61, 578.05, 578.26, 578.22, 578.38, 578.1, 576.95, 577.12, 578.75, 579.85, 579.41, 578.96, 578.61, 577.76, 577.18, 576.21, 576.13, 578.1, 577.25, 576.91, 575.89, 574.96, 575.8, 576.68, 577.38, 577.52, 578.74, 578.31, 578.89, 578.96], "fill": "grey70", "outline.type": "both" });
+    //cxp.geom_line({ "y": "level" });
+    //cxp.gg_labels({ "xAxisTitle": "year", "yAxisTitle": "level" });
+
+    var data = [["Id", "subject", "nday", "annotation", "test_result"],
+    ["1", "1001", "1", "Cohort B", "9.37333560806001"],
+    ["2", "1001", "6", "Cohort B", "9.54259196375497"],
+    ["3", "1001", "11", "Cohort B", "6.06207439322025"],
+    ["4", "1001", "16", "Cohort B", "4.59055166512262"],
+    ["5", "1001", "21", "Cohort B", "8.14856578415493"],
+    ["6", "1001", "26", "Cohort B", "7.90972392226104"],
+    ["7", "1001", "31", "Cohort B", "0.31056000693934"],
+    ["8", "1002", "1", "Cohort B", "6.88779989201575"],
+    ["9", "1002", "6", "Cohort B", "6.71212260763859"],
+    ["10", "1002", "11", "Cohort B", "2.22013799438719"],
+    ["11", "1002", "16", "Cohort B", "5.58926170991035"],
+    ["12", "1002", "21", "Cohort B", "7.84517817461165"],
+    ["13", "1002", "26", "Cohort B", "0.468325334042311"],
+    ["14", "1002", "31", "Cohort B", "8.02193929444766"],
+    ["15", "1003", "1", "Cohort A", "7.67146464135731"],
+    ["16", "1003", "6", "Cohort A", "8.93148736592848"],
+    ["17", "1003", "11", "Cohort A", "2.00647645215504"],
+    ["18", "1003", "16", "Cohort A", "4.86431102788774"],
+    ["19", "1003", "21", "Cohort A", "6.09511982961558"],
+    ["20", "1003", "26", "Cohort A", "6.52167376743164"],
+    ["21", "1003", "31", "Cohort A", "6.1177717018174"],
+    ["22", "1004", "1", "Cohort B", "7.49048611646285"],
+    ["23", "1004", "6", "Cohort B", "0.802714634418953"],
+    ["24", "1004", "11", "Cohort B", "7.43911530467449"],
+    ["25", "1004", "16", "Cohort B", "5.60434664795175"],
+    ["26", "1004", "21", "Cohort B", "9.10263998598093"],
+    ["27", "1004", "26", "Cohort B", "8.99042678219266"],
+    ["28", "1004", "31", "Cohort B", "7.57444413991179"],
+    ["29", "1005", "1", "Cohort A", "3.8344588328735"],
+    ["30", "1005", "6", "Cohort A", "3.29972721496597"],
+    ["31", "1005", "11", "Cohort A", "5.40436412006384"],
+    ["32", "1005", "16", "Cohort A", "6.35917319116415"],
+    ["33", "1005", "21", "Cohort A", "8.67991276390385"],
+    ["34", "1005", "26", "Cohort A", "5.31287545532687"],
+    ["35", "1005", "31", "Cohort A", "7.48997719846666"],
+    ["36", "1006", "1", "Cohort A", "7.86475825108355"],
+    ["37", "1006", "6", "Cohort A", "9.55548731754534"],
+    ["38", "1006", "11", "Cohort A", "9.0222120270133"],
+    ["39", "1006", "16", "Cohort A", "4.90270828686189"],
+    ["40", "1006", "21", "Cohort A", "5.79472471867921"],
+    ["41", "1006", "26", "Cohort A", "6.72230281857774"],
+    ["42", "1006", "31", "Cohort A", "5.73165597695624"],
+    ["43", "1007", "1", "Cohort B", "2.95890586591559"],
+    ["44", "1007", "6", "Cohort B", "9.79061125660082"],
+    ["45", "1007", "11", "Cohort B", "0.690471920953132"],
+    ["46", "1007", "16", "Cohort B", "5.2572757038055"],
+    ["47", "1007", "21", "Cohort B", "7.24613751429133"],
+    ["48", "1007", "26", "Cohort B", "7.7235776546644"],
+    ["49", "1007", "31", "Cohort B", "6.85380978453904"],
+    ["50", "1008", "1", "Cohort B", "1.43462815349922"],
+    ["51", "1008", "6", "Cohort B", "4.36806077084038"],
+    ["52", "1008", "11", "Cohort B", "9.51794368240517"],
+    ["53", "1008", "16", "Cohort B", "0.643136359495111"],
+    ["54", "1008", "21", "Cohort B", "6.60224127534311"],
+    ["55", "1008", "26", "Cohort B", "9.63175851247506"],
+    ["56", "1008", "31", "Cohort B", "4.41932557435939"],
+    ["57", "1009", "1", "Cohort B", "6.72905402954202"],
+    ["58", "1009", "6", "Cohort B", "3.97653663422679"],
+    ["59", "1009", "11", "Cohort B", "0.0554276053211652"],
+    ["60", "1009", "16", "Cohort B", "1.64615168044111"],
+    ["61", "1009", "21", "Cohort B", "7.71158410670469"],
+    ["62", "1009", "26", "Cohort B", "8.23754373550182"],
+    ["63", "1009", "31", "Cohort B", "9.08982766146073"]];
+
+
+    var cxp = new cxplot("canvas", data, aes({ "x": "nday", "y": "test_result", "group": "subject", "color": "annotation", "meta": {} }));
+    cxp.geom_line({ "alpha": 0.7 });
+    cxp.geom_point({ "alpha": 0.7 });
+    cxp.gg_labels({ "xAxisTitle": "Study Day", "yAxisTitle": "Test result" });
+    cxp.gg_scales({ "yAxisTransform": "log10" });
+    cxp.gg_theme({ "axis.text.colour": "grey30", "axis.text.inherit.blank": "TRUE", "axis.text.size": "0.8", "axis.text.x.inherit.blank": "TRUE", "axis.text.x.margin": ["2.2points", "0points", "0points", "0points"], "axis.text.x.vjust": "1", "axis.text.x.top.inherit.blank": "TRUE", "axis.text.x.top.margin": ["0points", "0points", "2.2points", "0points"], "axis.text.x.top.vjust": "0", "axis.text.y.hjust": "1", "axis.text.y.inherit.blank": "TRUE", "axis.text.y.margin": ["0points", "2.2points", "0points", "0points"], "axis.text.y.right.hjust": "0", "axis.text.y.right.inherit.blank": "TRUE", "axis.text.y.right.margin": ["0points", "0points", "0points", "2.2points"], "axis.ticks.arrow": "FALSE", "axis.ticks.colour": "grey20", "axis.ticks.inherit.blank": "TRUE", "axis.ticks.length": "2.75points", "axis.title.x.inherit.blank": "TRUE", "axis.title.x.margin": ["2.75points", "0points", "0points", "0points"], "axis.title.x.vjust": "1", "axis.title.x.top.inherit.blank": "TRUE", "axis.title.x.top.margin": ["0points", "0points", "2.75points", "0points"], "axis.title.x.top.vjust": "0", "axis.title.y.angle": "90", "axis.title.y.inherit.blank": "TRUE", "axis.title.y.margin": ["0points", "2.75points", "0points", "0points"], "axis.title.y.vjust": "1", "axis.title.y.right.angle": "-90", "axis.title.y.right.inherit.blank": "TRUE", "axis.title.y.right.margin": ["0points", "0points", "0points", "2.75points"], "axis.title.y.right.vjust": "0", "legend.background.colour": null, "legend.background.inherit.blank": "TRUE", "legend.box.margin": ["0cm", "0cm", "0cm", "0cm"], "legend.box.spacing": "11points", "legend.justification": "center", "legend.key.colour": null, "legend.key.fill": "white", "legend.key.inherit.blank": "TRUE", "legend.key.size": "1.2lines", "legend.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "legend.position": "right", "legend.spacing": "11points", "legend.text.inherit.blank": "TRUE", "legend.text.size": "0.8", "legend.title.hjust": "0", "legend.title.inherit.blank": "TRUE", "line.arrow": "FALSE", "line.colour": "black", "line.inherit.blank": "TRUE", "line.lineend": "butt", "line.linetype": "1", "line.linewidth": "0.5", "panel.background.colour": null, "panel.background.fill": "white", "panel.background.inherit.blank": "TRUE", "panel.border.colour": "grey20", "panel.border.fill": null, "panel.border.inherit.blank": "TRUE", "panel.grid.arrow": "FALSE", "panel.grid.colour": "grey92", "panel.grid.inherit.blank": "TRUE", "panel.grid.minor.arrow": "FALSE", "panel.grid.minor.inherit.blank": "TRUE", "panel.grid.minor.linewidth": "0.5", "panel.ontop": "FALSE", "panel.spacing": "5.5points", "plot.background.colour": "white", "plot.background.inherit.blank": "TRUE", "plot.caption.hjust": "1", "plot.caption.inherit.blank": "TRUE", "plot.caption.margin": ["5.5points", "0points", "0points", "0points"], "plot.caption.size": "0.8", "plot.caption.vjust": "1", "plot.caption.position": "panel", "plot.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "plot.subtitle.hjust": "0", "plot.subtitle.inherit.blank": "TRUE", "plot.subtitle.margin": ["0points", "0points", "5.5points", "0points"], "plot.subtitle.vjust": "1", "plot.tag.hjust": "0.5", "plot.tag.inherit.blank": "TRUE", "plot.tag.size": "1.2", "plot.tag.vjust": "0.5", "plot.tag.position": "topleft", "plot.title.hjust": "0", "plot.title.inherit.blank": "TRUE", "plot.title.margin": ["0points", "0points", "5.5points", "0points"], "plot.title.size": "1.2", "plot.title.vjust": "1", "plot.title.position": "panel", "rect.colour": "black", "rect.fill": "white", "rect.inherit.blank": "TRUE", "rect.linetype": "1", "rect.linewidth": "0.5", "strip.background.colour": "grey20", "strip.background.fill": "grey85", "strip.background.inherit.blank": "TRUE", "strip.clip": "inherit", "strip.placement": "inside", "strip.switch.pad.grid": "2.75points", "strip.switch.pad.wrap": "2.75points", "strip.text.colour": "grey10", "strip.text.inherit.blank": "TRUE", "strip.text.margin": ["4.4points", "4.4points", "4.4points", "4.4points"], "strip.text.size": "0.8", "strip.text.y.angle": "-90", "strip.text.y.inherit.blank": "TRUE", "strip.text.y.left.angle": "90", "strip.text.y.left.inherit.blank": "TRUE", "text.angle": "0", "text.colour": "black", "text.debug": "FALSE", "text.face": "plain", "text.family": "", "text.hjust": "0.5", "text.inherit.blank": "TRUE", "text.lineheight": "0.9", "text.margin": ["0points", "0points", "0points", "0points"], "text.size": "11", "text.vjust": "0.5" });
+
+    //var cxp = new cxplot("canvas", data, aes({ "x": "nday", "y": "test_result", "group": "subject", "color": "annotation", "meta": {} }));
+    //cxp.geom_line({ "alpha": 0.7 });
+    //cxp.geom_point({ "alpha": 0.7 });
+    //cxp.geom_smooth({ "group": "annotation", "alpha": 0.2, "se": true, "formula": "y ~ x", "method": "loess" });
+    //cxp.gg_labels({ "xAxisTitle": "Study Day", "yAxisTitle": "Test result" });
+    //cxp.gg_theme({ "axis.text.colour": "grey30", "axis.text.inherit.blank": "TRUE", "axis.text.size": "0.8", "axis.text.x.inherit.blank": "TRUE", "axis.text.x.margin": ["2.2points", "0points", "0points", "0points"], "axis.text.x.vjust": "1", "axis.text.x.top.inherit.blank": "TRUE", "axis.text.x.top.margin": ["0points", "0points", "2.2points", "0points"], "axis.text.x.top.vjust": "0", "axis.text.y.hjust": "1", "axis.text.y.inherit.blank": "TRUE", "axis.text.y.margin": ["0points", "2.2points", "0points", "0points"], "axis.text.y.right.hjust": "0", "axis.text.y.right.inherit.blank": "TRUE", "axis.text.y.right.margin": ["0points", "0points", "0points", "2.2points"], "axis.ticks.arrow": "FALSE", "axis.ticks.colour": "grey20", "axis.ticks.inherit.blank": "TRUE", "axis.ticks.length": "2.75points", "axis.title.x.inherit.blank": "TRUE", "axis.title.x.margin": ["2.75points", "0points", "0points", "0points"], "axis.title.x.vjust": "1", "axis.title.x.top.inherit.blank": "TRUE", "axis.title.x.top.margin": ["0points", "0points", "2.75points", "0points"], "axis.title.x.top.vjust": "0", "axis.title.y.angle": "90", "axis.title.y.inherit.blank": "TRUE", "axis.title.y.margin": ["0points", "2.75points", "0points", "0points"], "axis.title.y.vjust": "1", "axis.title.y.right.angle": "-90", "axis.title.y.right.inherit.blank": "TRUE", "axis.title.y.right.margin": ["0points", "0points", "0points", "2.75points"], "axis.title.y.right.vjust": "0", "legend.background.colour": null, "legend.background.inherit.blank": "TRUE", "legend.box.margin": ["0cm", "0cm", "0cm", "0cm"], "legend.box.spacing": "11points", "legend.justification": "center", "legend.key.colour": null, "legend.key.fill": "white", "legend.key.inherit.blank": "TRUE", "legend.key.size": "1.2lines", "legend.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "legend.position": "right", "legend.spacing": "11points", "legend.text.inherit.blank": "TRUE", "legend.text.size": "0.8", "legend.title.hjust": "0", "legend.title.inherit.blank": "TRUE", "line.arrow": "FALSE", "line.colour": "black", "line.inherit.blank": "TRUE", "line.lineend": "butt", "line.linetype": "1", "line.linewidth": "0.5", "panel.background.colour": null, "panel.background.fill": "white", "panel.background.inherit.blank": "TRUE", "panel.border.colour": "grey20", "panel.border.fill": null, "panel.border.inherit.blank": "TRUE", "panel.grid.arrow": "FALSE", "panel.grid.colour": "grey92", "panel.grid.inherit.blank": "TRUE", "panel.grid.minor.arrow": "FALSE", "panel.grid.minor.inherit.blank": "TRUE", "panel.grid.minor.linewidth": "0.5", "panel.ontop": "FALSE", "panel.spacing": "5.5points", "plot.background.colour": "white", "plot.background.inherit.blank": "TRUE", "plot.caption.hjust": "1", "plot.caption.inherit.blank": "TRUE", "plot.caption.margin": ["5.5points", "0points", "0points", "0points"], "plot.caption.size": "0.8", "plot.caption.vjust": "1", "plot.caption.position": "panel", "plot.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "plot.subtitle.hjust": "0", "plot.subtitle.inherit.blank": "TRUE", "plot.subtitle.margin": ["0points", "0points", "5.5points", "0points"], "plot.subtitle.vjust": "1", "plot.tag.hjust": "0.5", "plot.tag.inherit.blank": "TRUE", "plot.tag.size": "1.2", "plot.tag.vjust": "0.5", "plot.tag.position": "topleft", "plot.title.hjust": "0", "plot.title.inherit.blank": "TRUE", "plot.title.margin": ["0points", "0points", "5.5points", "0points"], "plot.title.size": "1.2", "plot.title.vjust": "1", "plot.title.position": "panel", "rect.colour": "black", "rect.fill": "white", "rect.inherit.blank": "TRUE", "rect.linetype": "1", "rect.linewidth": "0.5", "strip.background.colour": "grey20", "strip.background.fill": "grey85", "strip.background.inherit.blank": "TRUE", "strip.clip": "inherit", "strip.placement": "inside", "strip.switch.pad.grid": "2.75points", "strip.switch.pad.wrap": "2.75points", "strip.text.colour": "grey10", "strip.text.inherit.blank": "TRUE", "strip.text.margin": ["4.4points", "4.4points", "4.4points", "4.4points"], "strip.text.size": "0.8", "strip.text.y.angle": "-90", "strip.text.y.inherit.blank": "TRUE", "strip.text.y.left.angle": "90", "strip.text.y.left.inherit.blank": "TRUE", "text.angle": "0", "text.colour": "black", "text.debug": "FALSE", "text.face": "plain", "text.family": "", "text.hjust": "0.5", "text.inherit.blank": "TRUE", "text.lineheight": "0.9", "text.margin": ["0points", "0points", "0points", "0points"], "text.size": "11", "text.vjust": "0.5" });
+
+    //var cxp = new cxplot("canvas", data, aes({ "x": "nday", "y": "test_result", "group": "subject", "color": "annotation", "meta": {} }));
+    //cxp.geom_line({ "alpha": 0.7 });
+    //cxp.geom_point({ "alpha": 0.7 });
+    //cxp.geom_line({ "group": "1", "color": "#BE2BBB", "data": { "x": [1, 6, 11, 16, 21, 26, 31], "y": [0.9719, 0.9797, 0.7826, 0.6619, 0.9111, 0.8982, -0.5079] } });
+    //cxp.geom_point({ "color": "#BE2BBB", "data": { "x": [1, 6, 11, 16, 21, 26, 31], "y": [0.9719, 0.9797, 0.7826, 0.6619, 0.9111, 0.8982, -0.5079] } });
+    //cxp.gg_labels({ "xAxisTitle": "Study Day", "yAxisTitle": "Test result" });
+    //cxp.gg_scales({ "yAxisTransform": "log10" });
+    //cxp.gg_theme({ "axis.text.colour": "grey30", "axis.text.inherit.blank": "TRUE", "axis.text.size": "0.8", "axis.text.x.inherit.blank": "TRUE", "axis.text.x.margin": ["2.2points", "0points", "0points", "0points"], "axis.text.x.vjust": "1", "axis.text.x.top.inherit.blank": "TRUE", "axis.text.x.top.margin": ["0points", "0points", "2.2points", "0points"], "axis.text.x.top.vjust": "0", "axis.text.y.hjust": "1", "axis.text.y.inherit.blank": "TRUE", "axis.text.y.margin": ["0points", "2.2points", "0points", "0points"], "axis.text.y.right.hjust": "0", "axis.text.y.right.inherit.blank": "TRUE", "axis.text.y.right.margin": ["0points", "0points", "0points", "2.2points"], "axis.ticks.arrow": "FALSE", "axis.ticks.colour": "grey20", "axis.ticks.inherit.blank": "TRUE", "axis.ticks.length": "2.75points", "axis.title.x.inherit.blank": "TRUE", "axis.title.x.margin": ["2.75points", "0points", "0points", "0points"], "axis.title.x.vjust": "1", "axis.title.x.top.inherit.blank": "TRUE", "axis.title.x.top.margin": ["0points", "0points", "2.75points", "0points"], "axis.title.x.top.vjust": "0", "axis.title.y.angle": "90", "axis.title.y.inherit.blank": "TRUE", "axis.title.y.margin": ["0points", "2.75points", "0points", "0points"], "axis.title.y.vjust": "1", "axis.title.y.right.angle": "-90", "axis.title.y.right.inherit.blank": "TRUE", "axis.title.y.right.margin": ["0points", "0points", "0points", "2.75points"], "axis.title.y.right.vjust": "0", "legend.background.colour": null, "legend.background.inherit.blank": "TRUE", "legend.box.margin": ["0cm", "0cm", "0cm", "0cm"], "legend.box.spacing": "11points", "legend.justification": "center", "legend.key.colour": null, "legend.key.fill": "white", "legend.key.inherit.blank": "TRUE", "legend.key.size": "1.2lines", "legend.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "legend.position": "right", "legend.spacing": "11points", "legend.text.inherit.blank": "TRUE", "legend.text.size": "0.8", "legend.title.hjust": "0", "legend.title.inherit.blank": "TRUE", "line.arrow": "FALSE", "line.colour": "black", "line.inherit.blank": "TRUE", "line.lineend": "butt", "line.linetype": "1", "line.linewidth": "0.5", "panel.background.colour": null, "panel.background.fill": "white", "panel.background.inherit.blank": "TRUE", "panel.border.colour": "grey20", "panel.border.fill": null, "panel.border.inherit.blank": "TRUE", "panel.grid.arrow": "FALSE", "panel.grid.colour": "grey92", "panel.grid.inherit.blank": "TRUE", "panel.grid.minor.arrow": "FALSE", "panel.grid.minor.inherit.blank": "TRUE", "panel.grid.minor.linewidth": "0.5", "panel.ontop": "FALSE", "panel.spacing": "5.5points", "plot.background.colour": "white", "plot.background.inherit.blank": "TRUE", "plot.caption.hjust": "1", "plot.caption.inherit.blank": "TRUE", "plot.caption.margin": ["5.5points", "0points", "0points", "0points"], "plot.caption.size": "0.8", "plot.caption.vjust": "1", "plot.caption.position": "panel", "plot.margin": ["5.5points", "5.5points", "5.5points", "5.5points"], "plot.subtitle.hjust": "0", "plot.subtitle.inherit.blank": "TRUE", "plot.subtitle.margin": ["0points", "0points", "5.5points", "0points"], "plot.subtitle.vjust": "1", "plot.tag.hjust": "0.5", "plot.tag.inherit.blank": "TRUE", "plot.tag.size": "1.2", "plot.tag.vjust": "0.5", "plot.tag.position": "topleft", "plot.title.hjust": "0", "plot.title.inherit.blank": "TRUE", "plot.title.margin": ["0points", "0points", "5.5points", "0points"], "plot.title.size": "1.2", "plot.title.vjust": "1", "plot.title.position": "panel", "rect.colour": "black", "rect.fill": "white", "rect.inherit.blank": "TRUE", "rect.linetype": "1", "rect.linewidth": "0.5", "strip.background.colour": "grey20", "strip.background.fill": "grey85", "strip.background.inherit.blank": "TRUE", "strip.clip": "inherit", "strip.placement": "inside", "strip.switch.pad.grid": "2.75points", "strip.switch.pad.wrap": "2.75points", "strip.text.colour": "grey10", "strip.text.inherit.blank": "TRUE", "strip.text.margin": ["4.4points", "4.4points", "4.4points", "4.4points"], "strip.text.size": "0.8", "strip.text.y.angle": "-90", "strip.text.y.inherit.blank": "TRUE", "strip.text.y.left.angle": "90", "strip.text.y.left.inherit.blank": "TRUE", "text.angle": "0", "text.colour": "black", "text.debug": "FALSE", "text.face": "plain", "text.family": "", "text.hjust": "0.5", "text.inherit.blank": "TRUE", "text.lineheight": "0.9", "text.margin": ["0points", "0points", "0points", "0points"], "text.size": "11", "text.vjust": "0.5" });
+
+    var data2 = [["Id", "feature_name", "snp_name", "beta", "se", "p_value", "effects", "model", "i2", "n_samples", "n_studies", "rsid", "chr", "bp", "ref", "eff", "vep_impact", "consequence", "symbol", "display", "germline_category", "germline_module", "germline_group", "disply_order"],
+    ["1", "fox_IFN_alpha_TumorStage_adj", "4:75957683:A:G", "-0.194023", "0.098918", "0.0498", "??-?-????+?????+??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox IFN alpha (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox IFN alpha (TumorStage adj)"],
+    ["2", "fox_T_reg_TumorStage_adj", "4:75957683:A:G", "-0.129466", "0.148026", "0.382", "??-?-????-?????+??+????????", "random-effects", "0.656619", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T reg (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T reg (TumorStage adj)"],
+    ["3", "fox_T_exh_TumorStage_adj", "4:75957683:A:G", "-0.112744", "0.098443", "0.252", "??-?-????-?????-??+????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T exh (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T exh (TumorStage adj)"],
+    ["4", "fox_T_CD4_TumorStage_adj", "4:75957683:A:G", "-0.111038", "0.093562", "0.235", "??-?-????+?????-??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T CD4 (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T CD4 (TumorStage adj)"],
+    ["5", "fox_NK_marker_TumorStage_adj", "4:75957683:A:G", "-0.105432", "0.090615", "0.245", "??-?-????+?????-??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox NK marker (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox NK marker (TumorStage adj)"],
+    ["6", "fox_fibro_myo_TumorStage_adj", "4:75957683:A:G", "-0.094383", "0.109232", "0.388", "??-?-????-?????+??+????????", "random-effects", "0.51133", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox fibro myo (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox fibro myo (TumorStage adj)"],
+    ["7", "fox_B_plasma_cell_TumorStage_adj", "4:75957683:A:G", "-0.093693", "0.088923", "0.292", "??-?-????-?????+??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox B plasma cell (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox B plasma cell (TumorStage adj)"],
+    ["8", "fox_T_total_TumorStage_adj", "4:75957683:A:G", "-0.082756", "0.087548", "0.345", "??-?-????+?????-??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T total (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T total (TumorStage adj)"],
+    ["9", "fox_fibro_CAF_TumorStage_adj", "4:75957683:A:G", "-0.068574", "0.105531", "0.516", "??-?-????-?????-??+????????", "random-effects", "0.551851", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox fibro CAF (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox fibro CAF (TumorStage adj)"],
+    ["10", "fox_T_CTL_TumorStage_adj", "4:75957683:A:G", "-0.065532", "0.094803", "0.489", "??-?-????-?????+??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T CTL (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T CTL (TumorStage adj)"],
+    ["11", "fox_T_CD8_TumorStage_adj", "4:75957683:A:G", "-0.057597", "0.099315", "0.562", "??+?-????-?????+??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox T CD8 (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox T CD8 (TumorStage adj)"],
+    ["12", "fox_B_TumorStage_adj", "4:75957683:A:G", "-0.037222", "0.088373", "0.674", "??-?-????+?????+??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox B (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox B (TumorStage adj)"],
+    ["13", "fox_IFN_gamma_TumorStage_adj", "4:75957683:A:G", "-0.023991", "0.089484", "0.789", "??-?-????+?????+??+????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox IFN gamma (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox IFN gamma (TumorStage adj)"],
+    ["14", "fox_Endothel_TumorStage_adj", "4:75957683:A:G", "-0.018952", "0.080184", "0.813", "??+?-????+?????-??-????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox Endothel (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox Endothel (TumorStage adj)"],
+    ["15", "fox_Mac_TumorStage_adj", "4:75957683:A:G", "-0.015639", "0.086193", "0.856", "??-?-????+?????+??+????????", "fixed-effects", "0.340933", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox Mac (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox Mac (TumorStage adj)"],
+    ["16", "fox_Mast_TumorStage_adj", "4:75957683:A:G", "0.010061", "0.063367", "0.874", "??-?-????-?????+??+????????", "fixed-effects", "0.080626", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox Mast (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox Mast (TumorStage adj)"],
+    ["17", "fox_pDC_TumorStage_adj", "4:75957683:A:G", "0.041844", "0.0975", "0.668", "??-?-????+?????+??+????????", "fixed-effects", "0.087396", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox pDC (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox pDC (TumorStage adj)"],
+    ["18", "fox_DC_TumorStage_adj", "4:75957683:A:G", "0.048171", "0.073537", "0.512", "??-?-????+?????+??+????????", "fixed-effects", "0.299878", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox DC (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox DC (TumorStage adj)"],
+    ["19", "fox_Neutro_TumorStage_adj", "4:75957683:A:G", "0.050815", "0.072609", "0.484", "??-?+????+?????-??+????????", "fixed-effects", "0", "2069", "5", "rs114534142", "4", "75957683", "A", "G", "MODERATE", "missense_variant", "SDAD1", "fox Neutro (TumorStage adj)", "TumorStage_adj", "IOCT_signature", "IOCT (adj)", "fox Neutro (TumorStage adj)"]];
+
+    //var cxp = new cxplot("canvas", data2, aes({ "x": "beta", "y": "disply_order", "xmin": ".data$beta - 1.96 * .data$se", "xmax": ".data$beta + 1.96 * .data$se", "meta": { "vep_impact": ["LOW", "MODERATE", "HIGH", "MODIFIER", ""], "disply_order": ["fox IFN alpha (TumorStage adj)", "fox T reg (TumorStage adj)", "fox T exh (TumorStage adj)", "fox T CD4 (TumorStage adj)", "fox NK marker (TumorStage adj)", "fox fibro myo (TumorStage adj)", "fox B plasma cell (TumorStage adj)", "fox T total (TumorStage adj)", "fox fibro CAF (TumorStage adj)", "fox T CTL (TumorStage adj)", "fox T CD8 (TumorStage adj)", "fox B (TumorStage adj)", "fox IFN gamma (TumorStage adj)", "fox Endothel (TumorStage adj)", "fox Mac (TumorStage adj)", "fox Mast (TumorStage adj)", "fox pDC (TumorStage adj)", "fox DC (TumorStage adj)", "fox Neutro (TumorStage adj)"] } }));
+    //cxp.geom_errorbarh({ "height": 0.25, "xmin": [-0.3879, -0.4196, -0.3057, -0.2944, -0.283, -0.3085, -0.268, -0.2544, -0.2754, -0.2513, -0.2523, -0.2104, -0.1994, -0.1761, -0.1846, -0.1141, -0.1493, -0.096, -0.0915], "xmax": [-0.0001, 0.1607, 0.0802, 0.0723, 0.0722, 0.1197, 0.0806, 0.0888, 0.1383, 0.1203, 0.1371, 0.136, 0.1514, 0.1382, 0.1533, 0.1343, 0.2329, 0.1923, 0.1931] });
+    //cxp.geom_point({ "color": "red" });
+    //cxp.geom_vline({ "xintercept": "xintercept", "linetype": 2, "showLegend": false, "data":[["Id","xintercept"],["1","0"]] });
+    //cxp.gg_labels({ "xAxisTitle": "beta with 95% CI", "yAxisTitle": "" });
+    //cxp.gg_theme({ "text.inherit.blank": "FALSE", "text.size": "20" });
+
+  </script>
+</body>
+
+</html>

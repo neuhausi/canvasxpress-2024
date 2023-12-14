@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"SHN","NAME_0":"Saint Helena","GID_1":"SHN.1_1","NAME_1":"Ascension","VARNAME_1":"Ascensão","NL_NAME_1":"","TYPE_1":"Administrative Area","ENGTYPE_1":"Administrative Area","CC_1":"","HASC_1":"SH.AC","cXId":"AC"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"SHN","NAME_0":"Saint Helena","GID_1":"SHN.2_1","NAME_1":"Saint Helena","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Dependency","ENGTYPE_1":"Dependency","CC_1":"","HASC_1":"SH.SH","cXId":"SH"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-12.27877045,-37.0616684],[-12.35166645,-37.11808014],[-12.28444481,-37.17055511],[-12.21472168,-37.11611176],[-12.27877045,-37.0616684]]]},"properties":{"GID_0":"SHN","NAME_0":"Saint Helena","GID_1":"SHN.3_1","NAME_1":"Tristan da Cunha","VARNAME_1":"Tristão da Cunha","NL_NAME_1":"","TYPE_1":"Dependency","ENGTYPE_1":"Dependency","CC_1":"","HASC_1":"SH.TA","cXId":"TA"}}
+]}

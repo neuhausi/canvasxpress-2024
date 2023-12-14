@@ -1,0 +1,506 @@
+Symbol	Security	GICS Sector	GICS Sub Industry	Country	Headquarters Location	Headquarters State	Date first added	CIK	Founded	Weight	Price
+A	Agilent Technologies Inc	Health Care	Health Care Equipment	USA	Santa Clara	California	36682	1090872	1999	0.109368	90.98
+AAL	American Airlines Group	Industrials	Airlines	USA	Fort Worth	Texas	42086	6201	1934	0.017348	12.08
+AAP	Advance Auto Parts	Consumer Discretionary	Automotive Retail	USA	Raleigh	North Carolina	42194	1158449	1932	0.037822	144.31
+AAPL	Apple Inc.	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Cupertino	California	30285	320193	1977	5.27371	324.14
+ABBV	AbbVie Inc.	Health Care	Pharmaceuticals	USA	North Chicago	Illinois	41274	1551152	2013	0.626811	90.13
+ABC	AmerisourceBergen Corp	Health Care	Health Care Distributors	USA	Chesterbrook	Pennsylvania	37133	1140859	1985	0.058089	99.63
+ABMD	ABIOMED Inc	Health Care	Health Care Equipment	USA	Danvers	Massachusetts	43251	815094	1981	0.040507	241.21
+ABT	Abbott Laboratories	Health Care	Health Care Equipment	USA	North Chicago	Illinois	23467	1800	1888	0.639249	91.28
+ACN	Accenture plc	Information Technology	IT Consulting & Other Services	USA	Dublin	Ireland	40730	1467373	1989	0.510318	206.12
+ADBE	Adobe Inc.	Information Technology	Application Software	USA	San Jose	California	35555	796343	1982	0.738072	389.95
+ADI	"Analog Devices, Inc."	Information Technology	Semiconductors	USA	Norwood	Massachusetts	36445	6281	1965	0.168106	122.00
+ADM	Archer-Daniels-Midland Co	Consumer Staples	Agricultural Products	USA	Chicago	Illinois	29796	7084	1902	0.086565	40.38
+ADP	Automatic Data Processing	Information Technology	Internet Services & Infrastructure	USA	Roseland	New Jersey	29676	8670		0.250692	151.58
+ADS	Alliance Data Systems	Information Technology	Data Processing & Outsourced Services	USA	Plano	Texas	41631	1101215	1996	0.007972	54.57
+ADSK	Autodesk Inc.	Information Technology	Application Software	USA	San Rafael	California	32843	769397		0.1882	223.19
+AEE	Ameren Corp	Utilities	Multi-Utilities	USA	St. Louis	Missouri	33500	1002910	1902	0.071257	75.54
+AEP	American Electric Power	Utilities	Electric Utilities	USA	Columbus	Ohio		4904	1906	0.165971	87.28
+AES	AES Corp	Utilities	Independent Power Producers & Energy Traders	USA	Arlington	Virginia	36070	874761	1981	0.033814	13.66
+AFL	AFLAC Inc	Financials	Life & Health Insurance	USA	Columbus	Georgia	36308	4977	1955	0.106743	38.39
+AIG	American International Group	Financials	Property & Casualty Insurance	USA	New York	New York	29311	5272	1919	0.106863	33.28
+AIV	Apartment Investment & Management	Real Estate	Residential REITs	USA	Denver	Colorado	37694	922864	1994	0.021925	39.59
+AIZ	Assurant	Financials	Multi-line Insurance	USA	New York	New York	39182	1267238		0.024682	108.45
+AJG	Arthur J. Gallagher & Co.	Financials	Insurance Brokers	USA	Itasca	Illinois	42521	354190		0.068945	97.65
+AKAM	Akamai Technologies Inc	Information Technology	Internet Services & Infrastructure	USA	Cambridge	Massachusetts	39275	1086222	1998	0.066783	102.95
+ALB	Albemarle Corp	Materials	Specialty Chemicals	USA	Charlotte	North Carolina	42552	915913	1994	0.032806	80.60
+ALGN	Align Technology	Health Care	Health Care Supplies	USA	San Jose	California	42905	1097149	1997	0.074098	271.71
+ALK	Alaska Air Group Inc	Industrials	Airlines	USA	Seattle	Washington	42503	766421	1985	0.017428	40.13
+ALL	Allstate Corp	Financials	Property & Casualty Insurance	USA	Northfield Township	Illinois	34893	899051	1931	0.125335	100.31
+ALLE	Allegion	Industrials	Building Products	USA	Dublin	Ireland	41610	1579241	1908	0.03657	103.31
+ALXN	Alexion Pharmaceuticals	Health Care	Biotechnology	USA	Boston	Massachusetts	41054	899866	1992	0.100758	115.30
+AMAT	Applied Materials Inc.	Information Technology	Semiconductor Equipment	USA	Santa Clara	California	34774	6951	1967	0.20136	57.58
+AMCR	Amcor plc	Materials	Paper Packaging	USA	Warmley	Bristol	43623	1748790	2019	0.065582	10.69
+AMD	Advanced Micro Devices Inc	Information Technology	Semiconductors	USA	Santa Clara	California	42814	2488	1969	0.24473	52.65
+AME	AMETEK Inc.	Industrials	Electrical Components & Equipment	USA	Berwyn	Pennsylvania	41540	1037868	1930	0.082312	95.39
+AMGN	Amgen Inc.	Health Care	Biotechnology	USA	Thousand Oaks	California	33605	318154	1980	0.519392	218.49
+AMP	Ameriprise Financial	Financials	Asset Management & Custody Banks	USA	Minneapolis	Minnesota	38628	820027	1894	0.072732	154.21
+AMT	American Tower Corp.	Real Estate	Specialized REITs	USA	Boston	Massachusetts	39405	1053507	1995	0.455954	267.07
+AMZN	Amazon.com Inc.	Consumer Discretionary	Internet & Direct Marketing Retail	USA	Seattle	Washington	38674	1018724	1994	4.020873	2469.72
+ANET	Arista Networks	Information Technology	Communications Equipment	USA	Santa Clara	California	43340	1596532	2004	0.04906	230.24
+ANSS	ANSYS	Information Technology	Application Software	USA	Canonsburg	Pennsylvania	42905	1013462	1969	0.096362	289.38
+ANTM	Anthem	Health Care	Managed Health Care	USA	Indianapolis	Indiana	37462	1156039	2014	0.291528	293.01
+AON	Aon plc	Financials	Insurance Brokers	USA	London	United Kingdom	35178	315293	1982	0.178276	200.56
+AOS	A.O. Smith Corp	Industrials	Building Products	USA	Milwaukee	Wisconsin	42942	91142	1916	0.025936	49.50
+APA	Apache Corporation	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	35639	6769	1954	0.017887	12.41
+APD	Air Products & Chemicals Inc	Materials	Industrial Gases	USA	Allentown	Pennsylvania	31167	2969	1940	0.211462	250.33
+APH	Amphenol Corp	Information Technology	Electronic Components	USA	Wallingford	Connecticut	39721	820313	1932	0.114616	101.43
+APTV	Aptiv PLC	Consumer Discretionary	Auto Parts & Equipment	USA	Dublin	Ireland	41267	1521332	1994	0.079472	84.08
+ARE	Alexandria Real Estate Equities	Real Estate	Office REITs	USA	Pasadena	California	42814	1035443	1994	0.074393	155.88
+ATO	Atmos Energy	Utilities	Gas Utilities	USA	Dallas	Texas	43511	731802	1906	0.048305	104.45
+ATVI	Activision Blizzard	Communication Services	Interactive Home Entertainment	USA	Santa Monica	California	42247	718877	2008	0.218608	70.76
+AVB	AvalonBay Communities	Real Estate	Residential REITs	USA	Arlington	Virginia	39092	915912		0.086564	162.46
+AVGO	Broadcom Inc.	Information Technology	Semiconductors	USA	San Jose	California	41767	1730168	1961	0.461694	308.79
+AVY	Avery Dennison Corp	Materials	Paper Packaging	USA	Glendale	California	32142	8818		0.037709	118.80
+AWK	American Water Works Company Inc	Utilities	Water Utilities	USA	Camden	New Jersey	42433	1410636	1886	0.091588	131.56
+AXP	American Express Co	Financials	Consumer Finance	USA	New York	New York	27941	4962	1850	0.259585	104.06
+AZO	AutoZone Inc	Consumer Discretionary	Specialty Stores	USA	Memphis	Tennessee	35432	866787		0.104883	1161.23
+BA	Boeing Company	Industrials	Aerospace & Defense	USA	Chicago	Illinois		12927	1916	0.32033	166.39
+BAC	Bank of America Corp	Financials	Diversified Banks	USA	Charlotte	North Carolina	27941	70858		0.785285	26.08
+BAX	Baxter International Inc.	Health Care	Health Care Equipment	USA	Deerfield	Illinois	26572	10456	1931	0.181389	90.82
+BBY	Best Buy Co. Inc.	Consumer Discretionary	Computer & Electronics Retail	USA	Richfield	Minnesota	36340	764478		0.071848	81.65
+BDX	Becton Dickinson	Health Care	Health Care Equipment	USA	Franklin Lakes	New Jersey	26572	10795	1897	0.281653	241.49
+BEN	Franklin Resources	Financials	Asset Management & Custody Banks	USA	San Mateo	California		38777	1947	0.021864	21.09
+BF.B	Brown-Forman Corp.	Consumer Staples	Distillers & Vintners	USA	Louisville	Kentucky	30255	14693		0.046538	66.37
+BIIB	Biogen Inc.	Health Care	Biotechnology	USA	Cambridge	Massachusetts	37938	875045		0.213522	301.52
+BK	The Bank of New York Mellon	Financials	Asset Management & Custody Banks	USA	New York	New York	34789	1390777	1784	0.125704	39.39
+BKNG	Booking Holdings Inc	Consumer Discretionary	Internet & Direct Marketing Retail	USA	Norwalk	Connecticut	40123	1075531		0.27073	1725.92
+BKR	Baker Hughes Co	Energy	Oil & Gas Equipment & Services	USA	Houston	Texas	42923	1701605	2017	0.043513	17.40
+BLK	BlackRock	Financials	Asset Management & Custody Banks	USA	New York	New York	40637	1364742		0.322518	550.92
+BLL	Ball Corp	Materials	Metal & Glass Containers	USA	Broomfield	Colorado	30986	9389		0.092244	73.87
+BMY	Bristol-Myers Squibb	Health Care	Health Care Distributors	USA	New York	New York		14272	1989	0.555505	60.16
+BR	Broadridge Financial Solutions	Information Technology	Data Processing & Outsourced Services	USA	Lake Success	New York	43269	1383312	1962	0.055121	123.73
+BRK.B	Berkshire Hathaway	Financials	Multi-Sector Holdings	USA	Omaha	Nebraska	40225	1067983		1.420296	190.81
+BSX	Boston Scientific	Health Care	Health Care Equipment	USA	Marlborough	Massachusetts	34754	885725		0.204626	37.80
+BWA	BorgWarner	Consumer Discretionary	Auto Parts & Equipment	USA	Auburn Hills	Michigan	40896	908255		0.027274	34.89
+BXP	Boston Properties	Real Estate	Office REITs	USA	Boston	Massachusetts	38810	1037540		0.05078	95.35
+C	Citigroup Inc.	Financials	Diversified Banks	USA	New York	New York	32294	831001		0.433439	53.56
+CAG	Conagra Brands	Consumer Staples	Packaged Foods & Meats	USA	Chicago	Illinois	30559	23217		0.065281	34.02
+CAH	Cardinal Health Inc.	Health Care	Health Care Distributors	USA	Dublin	Ohio	35577	721371		0.063899	56.77
+CARR	Carrier Global	Industrials	Building Products	USA	Palm Beach Gardens	Florida	43924	1783180		0.067956	22.10
+CAT	Caterpillar Inc.	Industrials	Construction Machinery & Heavy Trucks	USA	Deerfield	Illinois		18230	1925	0.266479	126.42
+CB	Chubb Limited	Financials	Property & Casualty Insurance	USA	Zurich	Switzerland	40374	896159		0.215535	126.97
+CBOE	Cboe Global Markets	Financials	Financial Exchanges & Data	USA	Chicago	Illinois	42795	1374310		0.044725	103.71
+CBRE	CBRE Group	Real Estate	Real Estate Services	USA	Los Angeles	California	39031	1138118		0.06015	49.12
+CCI	Crown Castle International Corp.	Real Estate	Specialized REITs	USA	Houston	Texas	40982	1051470		0.283611	175.78
+CCL	Carnival Corp.	Consumer Discretionary	"Hotels, Resorts & Cruise Lines"	USA	Miami	Florida	36151	815097		0.025974	17.63
+CDNS	Cadence Design Systems	Information Technology	Application Software	USA	San Jose	California	42996	813672		0.101536	93.17
+CDW	CDW	Information Technology	Technology Distributors	USA	Lincolnshire	Illinois	43731	1402057	1984	0.063756	114.69
+CE	Celanese	Materials	Specialty Chemicals	USA	Irving	Texas	43458	1306830	1918	0.043862	96.44
+CERN	Cerner	Health Care	Health Care Technology	USA	North Kansas City	Missouri	40298	804753		0.090041	73.72
+CF	CF Industries Holdings Inc	Materials	Fertilizers & Agricultural Chemicals	USA	Deerfield	Illinois	39687	1324404		0.026409	31.96
+CFG	Citizens Financial Group	Financials	Regional Banks	USA	Providence	Rhode Island	42398	759944		0.042825	27.02
+CHD	Church & Dwight	Consumer Staples	Household Products	USA	Ewing	New Jersey	42367	313927		0.072581	75.58
+CHRW	C. H. Robinson Worldwide	Industrials	Air Freight & Logistics	USA	Eden Prairie	Minnesota	39143	1043277	1905	0.043437	83.41
+CHTR	Charter Communications	Communication Services	Cable & Satellite	USA	Stamford	Connecticut	42621	1091667		0.334057	545.50
+CI	CIGNA Corp.	Health Care	Managed Health Care	USA	Bloomfield	Connecticut	27941	701221		0.293773	203.21
+CINF	Cincinnati Financial	Financials	Property & Casualty Insurance	USA	Fairfield	Ohio	35782	20286		0.036065	63.78
+CL	Colgate-Palmolive	Consumer Staples	Household Products	USA	New York	New York		21665	1806	0.242441	72.14
+CLX	The Clorox Company	Consumer Staples	Household Products	USA	Oakland	California	25293	21076	1913	0.10141	205.26
+CMA	Comerica Inc.	Financials	Diversified Banks	USA	Dallas	Texas	35034	28412		0.02131	40.40
+CMCSA	Comcast Corp.	Communication Services	Cable & Satellite	USA	Philadelphia	Pennsylvania	42265	1166691		0.722955	41.26
+CME	CME Group Inc.	Financials	Financial Exchanges & Data	USA	Chicago	Illinois	38940	1156375		0.250322	183.55
+CMG	Chipotle Mexican Grill	Consumer Discretionary	Restaurants	USA	Newport Beach	California	40661	1058090		0.105789	1056.96
+CMI	Cummins Inc.	Industrials	Industrial Machinery	USA	Columbus	Indiana	23832	26172	1919	0.102637	175.85
+CMS	CMS Energy	Utilities	Multi-Utilities	USA	Jackson	Michigan	36283	811156		0.066015	59.82
+CNC	Centene Corporation	Health Care	Managed Health Care	USA	St Louis	Missouri	42459	1071739		0.15066	65.89
+CNP	CenterPoint Energy	Utilities	Multi-Utilities	USA	Houston	Texas	31259	1130310		0.035275	18.46
+COF	Capital One Financial	Financials	Consumer Finance	USA	Tysons Corner	Virginia	35977	927628	1935	0.128944	74.43
+COG	Cabot Oil & Gas	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	39622	858470		0.032292	20.42
+COO	The Cooper Companies	Health Care	Health Care Supplies	USA	San Ramon	California	42636	711404		0.06064	319.69
+COP	ConocoPhillips	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas		1163165	2002	0.189665	44.53
+COST	Costco Wholesale Corp.	Consumer Staples	Hypermarkets & Super Centers	USA	Issaquah	Washington	34243	909832		0.530071	306.25
+COTY	"Coty, Inc"	Consumer Staples	Personal Products	USA	New York	New York	42646	1024305		0.004927	4.43
+CPB	Campbell Soup	Consumer Staples	Packaged Foods & Meats	USA	Camden	New Jersey		16732	1869	0.034321	49.76
+CPRT	Copart Inc	Industrials	Diversified Support Services	USA	Dallas	Texas	43283	900075	1982	0.070691	89.75
+CRM	Salesforce.com	Information Technology	Application Software	USA	San Francisco	California	39706	1108524		0.603822	174.15
+CSCO	Cisco Systems	Information Technology	Communications Equipment	USA	San Jose	California	34304	858877		0.776795	47.03
+CSX	CSX Corp.	Industrials	Railroads	USA	Jacksonville	Florida	24745	277948	1980	0.219507	74.16
+CTAS	Cintas Corporation	Industrials	Diversified Support Services	USA	Mason	Ohio	36951	723254	1929	0.082818	267.44
+CTL	CenturyLink Inc	Communication Services	Alternative Carriers	USA	Monroe	Louisiana	36244	18926		0.038395	10.59
+CTSH	Cognizant Technology Solutions	Information Technology	IT Consulting & Other Services	USA	Teaneck	New Jersey	39038	1058290		0.113971	54.89
+CTVA	Corteva	Materials	Fertilizers & Agricultural Chemicals	USA	Wilmington	Delaware	43619	1755672	2019	0.081889	28.64
+CTXS	Citrix Systems	Information Technology	Application Software	USA	Fort Lauderdale	Florida	36495	877890		0.064811	140.51
+CVS	CVS Health	Health Care	Health Care Services	USA	Woonsocket	Rhode Island		64803	1996	0.339819	66.82
+CVX	Chevron Corp.	Energy	Integrated Oil & Gas	USA	San Ramon	California		93410	1879	0.699191	96.86
+CXO	Concho Resources	Energy	Oil & Gas Exploration & Production	USA	Midland	Texas	42422	1358071		0.046503	62.12
+D	Dominion Energy	Utilities	Electric Utilities	USA	Richmond	Virginia		715957	1983	0.277317	86.54
+DAL	Delta Air Lines Inc.	Industrials	Airlines	USA	Atlanta	Georgia	41528	27904	1929	0.059396	28.38
+DD	DuPont de Nemours Inc	Materials	Specialty Chemicals	USA	Midland	Michigan	43557	1666700	2017	0.152394	54.57
+DE	Deere & Co.	Industrials	Agricultural & Farm Machinery	USA	Moline	Illinois		315189	1837	0.188065	157.68
+DFS	Discover Financial Services	Financials	Consumer Finance	USA	Riverwoods	Illinois	39265	1393612		0.064347	55.96
+DG	Dollar General	Consumer Discretionary	General Merchandise Stores	USA	Goodlettsville	Tennessee	41246	29534	1939	0.190802	189.90
+DGX	Quest Diagnostics	Health Care	Health Care Services	USA	Secaucus	New Jersey	37602	1022079		0.063692	121.23
+DHI	D. R. Horton	Consumer Discretionary	Homebuilding	USA	Fort Worth	Texas		882184	1978	0.072548	56.80
+DHR	Danaher Corp.	Health Care	Health Care Equipment	USA	Washington	D.C.		313616	1969	0.410564	167.31
+DIS	The Walt Disney Company	Communication Services	Movies & Entertainment	USA	Burbank	California	27941	1001039		0.835821	121.41
+DISCA	"Discovery, Inc.(Class A)"	Communication Services	Broadcasting	USA	Silver Spring	Maryland	40238	1437107		0.013431	22.59
+DISCK	"Discovery, Inc.(Class C)"	Communication Services	Broadcasting	USA	Silver Spring	Maryland	41858	1437107		0.025863	20.36
+DISH	Dish Network	Communication Services	Cable & Satellite	USA	Meridian	Colorado	42807	1001082		0.03243	33.92
+DLR	Digital Realty Trust Inc	Real Estate	Specialized REITs	USA	San Francisco	California	42508	1297996		0.143793	140.63
+DLTR	Dollar Tree	Consumer Discretionary	General Merchandise Stores	USA	Chesapeake	Virginia	40896	935703		0.089802	96.51
+DOV	Dover Corporation	Industrials	Industrial Machinery	USA	Downers Grove	Illinois	31351	29905	1955	0.056398	103.40
+DOW	Dow Inc.	Materials	Commodity Chemicals	USA	Midland	Michigan	43556	1751788	2019	0.117649	42.08
+DPZ	Domino's Pizza	Consumer Discretionary	Restaurants	USA	Ann Arbor	Michigan	43963	1286681	1960	0.058436	387.06
+DRE	Duke Realty Corp	Real Estate	Industrial REITs	USA	Indianapolis	Indiana	42942	783280		0.051368	36.56
+DRI	Darden Restaurants	Consumer Discretionary	Restaurants	USA	Orlando	Florida		940944	1938	0.03715	84.65
+DTE	DTE Energy Co.	Utilities	Multi-Utilities	USA	Detroit	Michigan		936340	1995	0.082829	113.15
+DUK	Duke Energy	Utilities	Electric Utilities	USA	Charlotte	North Carolina	27941	1326160		0.249725	89.04
+DVA	DaVita Inc.	Health Care	Health Care Facilities	USA	Denver	Colorado	39660	927066		0.028331	80.14
+DVN	Devon Energy	Energy	Oil & Gas Exploration & Production	USA	Oklahoma City	Oklahoma	36768	1090012		0.018452	12.32
+DXC	DXC Technology	Information Technology	IT Consulting & Other Services	USA	Tysons Corner	Virginia	42829	1688568	2017	0.016169	17.73
+DXCM	DexCom	Health Care	Health Care Equipment	USA	San Diego	California	43963	1093557	1999	0.133973	366.77
+EA	Electronic Arts	Communication Services	Interactive Home Entertainment	USA	Redwood City	California	37459	712515		0.139592	119.58
+EBAY	eBay Inc.	Consumer Discretionary	Internet & Direct Marketing Retail	USA	San Jose	California		1065088	1995	0.137411	46.67
+ECL	Ecolab Inc.	Materials	Specialty Chemicals	USA	St. Paul	Minnesota	32539	31462		0.207826	221.63
+ED	Consolidated Edison	Utilities	Electric Utilities	USA	New York	New York		1047862	1823	0.097263	75.57
+EFX	Equifax Inc.	Industrials	Research & Consulting Services	USA	Atlanta	Georgia	35600	33185	1899	0.07856	170.91
+EIX	Edison Int'l	Utilities	Electric Utilities	USA	Rosemead	California		827052	1886	0.083886	60.43
+EL	Est�e Lauder Companies	Consumer Staples	Personal Products	USA	New York	New York	38722	1001250		0.176282	204.01
+EMN	Eastman Chemical	Materials	Diversified Chemicals	USA	Kingsport	Tennessee	34335	915389		0.037968	72.89
+EMR	Emerson Electric Company	Industrials	Electrical Components & Equipment	USA	Ferguson	Missouri	23832	32604	1890	0.145543	62.91
+EOG	EOG Resources	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	36832	821189		0.124609	54.70
+EQIX	Equinix	Real Estate	Specialized REITs	USA	Redwood City	California	42083	1101239		0.240013	691.85
+EQR	Equity Residential	Real Estate	Residential REITs	USA	Chicago	Illinois	37228	906107		0.082478	61.78
+ES	Eversource Energy	Utilities	Multi-Utilities	USA	Springfield	Massachusetts		72741	1966	0.108744	87.48
+ESS	"Essex Property Trust, Inc."	Real Estate	Residential REITs	USA	Palo Alto	California	41731	920522		0.0631	252.27
+ETFC	E*Trade	Financials	Investment Banking & Brokerage	USA	New York	New York	38077	1015780		0.041585	48.61
+ETN	Eaton Corporation	Industrials	Electrical Components & Equipment	USA	Dublin	Ireland		1551182	1911	0.138319	88.23
+ETR	Entergy Corp.	Utilities	Electric Utilities	USA	New Orleans	Louisiana		65984	1913	0.08055	104.52
+EVRG	Evergy	Utilities	Electric Utilities	USA	Kansas City	Missouri	43256	1711269	1909	0.056331	63.69
+EW	Edwards Lifesciences	Health Care	Health Care Equipment	USA	Irvine	California	40634	1099800		0.182398	75.20
+EXC	Exelon Corp.	Utilities	Multi-Utilities	USA	Chicago	Illinois		1109357	2000	0.147833	39.79
+EXPD	Expeditors	Industrials	Air Freight & Logistics	USA	Seattle	Washington	39365	746515	1979	0.051342	78.33
+EXPE	Expedia Group	Consumer Discretionary	Internet & Direct Marketing Retail	USA	Seattle	Washington	39357	1324424		0.045531	89.09
+EXR	Extra Space Storage	Real Estate	Specialized REITs	USA	Salt Lake City	Utah	42388	1289490		0.050802	102.61
+F	Ford Motor Company	Consumer Discretionary	Automobile Manufacturers	USA	Dearborn	Michigan		37996	1903	0.089998	6.09
+FANG	Diamondback Energy	Energy	Oil & Gas Exploration & Production	USA	Midland	Texas	43437	1539838	2007	0.028719	46.31
+FAST	Fastenal Co	Industrials	Building Products	USA	Winona	Minnesota	39706	815556	1967	0.091799	41.67
+FB	"Facebook, Inc."	Communication Services	Interactive Media & Services	USA	Menlo Park	California	41631	1326801		2.186967	230.57
+FBHS	Fortune Brands Home & Security	Industrials	Building Products	USA	Deerfield	Illinois	42543	1519751		0.033371	63.42
+FCX	Freeport-McMoRan Inc.	Materials	Copper	USA	Phoenix	Arizona		831259	1912	0.055305	10.30
+FDX	FedEx Corporation	Industrials	Air Freight & Logistics	USA	Memphis	Tennessee	29586	1048911		0.125314	138.72
+FE	FirstEnergy Corp	Utilities	Electric Utilities	USA	Akron	Ohio		1031296	1997	0.091017	43.45
+FFIV	F5 Networks	Information Technology	Communications Equipment	USA	Seattle	Washington	40532	1048695	1996	0.034236	146.62
+FIS	Fidelity National Information Services	Information Technology	Data Processing & Outsourced Services	USA	Jacksonville	Florida	39031	1136893		0.333763	139.02
+FISV	Fiserv Inc	Information Technology	Data Processing & Outsourced Services	USA	Brookfield	Wisconsin	36983	798354		0.240766	108.62
+FITB	Fifth Third Bancorp	Financials	Regional Banks	USA	Cincinnati	Ohio		35527	1858	0.056238	21.43
+FLIR	FLIR Systems	Information Technology	Electronic Equipment & Instruments	USA	Wilsonville	Oregon	39815	354908		0.024335	47.13
+FLS	Flowserve Corporation	Industrials	Industrial Machinery	USA	Irving	Texas	39723	30625		0.013578	28.64
+FLT	FleetCor Technologies Inc	Information Technology	Data Processing & Outsourced Services	USA	Norcross	Georgia	43271	1175454	2000	0.084004	255.15
+FMC	FMC Corporation	Materials	Fertilizers & Agricultural Chemicals	USA	Philadelphia	Pennsylvania	40044	37785		0.051231	103.32
+FOX	Fox Corporation(Class B)	Communication Services	Movies & Entertainment	USA	New York	New York	42265	1308161		0.018036	30.15
+FOXA	Fox Corporation(Class A)	Communication Services	Movies & Entertainment	USA	New York	New York	41456	1308161		0.040206	30.68
+FRC	First Republic Bank	Financials	Regional Banks	USA	San Francisco	California	43467	1132979	1985	0.071985	114.15
+FRT	Federal Realty Investment Trust	Real Estate	Retail REITs	USA	Rockville	Maryland	42401	34903		0.024096	92.70
+FTI	TechnipFMC	Energy	Oil & Gas Equipment & Services	United Kingdom	London		39969	1681459	2017	0.013327	8.55
+FTNT	Fortinet	Information Technology	Systems Software	USA	Sunnyvale	California	43384	1262039	2000	0.079942	142.52
+FTV	Fortive Corp	Industrials	Industrial Machinery	USA	Everett	Washington	42552	1659166	2016	0.07384	66.46
+GD	General Dynamics	Industrials	Aerospace & Defense	USA	Falls Church	Virginia		40533	1899	0.136729	154.13
+GE	General Electric	Industrials	Industrial Conglomerates	USA	Boston	Massachusetts		40545	1892	0.240441	7.28
+GILD	Gilead Sciences	Health Care	Biotechnology	USA	Foster City	California	38169	882095		0.362139	74.02
+GIS	General Mills	Consumer Staples	Packaged Foods & Meats	USA	Golden Valley	Minnesota	25293	40704	1856	0.149795	61.82
+GL	Globe Life Inc.	Financials	Life & Health Insurance	USA	McKinney	Texas	32628	320335		0.031012	82.20
+GLW	Corning Inc.	Information Technology	Electronic Components	USA	Corning	New York		24741	1851	0.071958	25.02
+GM	General Motors	Consumer Discretionary	Automobile Manufacturers	USA	Detroit	Michigan	41431	1467858		0.134789	28.91
+GOOG	Alphabet Inc.(Class C)	Communication Services	Interactive Media & Services	USA	Mountain View	California	38810	1652044	1998	1.679848	1437.72
+GOOGL	Alphabet Inc.(Class A)	Communication Services	Interactive Media & Services	USA	Mountain View	California	41732	1652044	1998	1.68759	1439.90
+GPC	Genuine Parts	Consumer Discretionary	Specialty Stores	USA	Atlanta	Georgia	27029	40987	1925	0.048279	88.25
+GPN	Global Payments Inc.	Information Technology	Data Processing & Outsourced Services	USA	Atlanta	Georgia	42485	1123360		0.212961	186.58
+GPS	Gap Inc.	Consumer Discretionary	Apparel Retail	USA	San Francisco	California	31655	39911		0.008974	11.51
+GRMN	Garmin Ltd.	Consumer Discretionary	Consumer Electronics	USA	Schaffhausen	Switzerland	41255	1121788		0.052263	94.94
+GS	Goldman Sachs Group	Financials	Investment Banking & Brokerage	USA	New York	New York	37459	886982		0.254044	209.73
+GWW	Grainger (W.W.) Inc.	Industrials	Industrial Machinery	USA	Lake Forest	Illinois	29767	277135		0.053842	317.56
+HAL	Halliburton Co.	Energy	Oil & Gas Equipment & Services	USA	Houston	Texas		45012	1919	0.043679	13.03
+HAS	Hasbro Inc.	Consumer Discretionary	Leisure Products	USA	Pawtucket	Rhode Island	30955	46080		0.036582	75.97
+HBAN	Huntington Bancshares	Financials	Regional Banks	USA	Columbus	Ohio		49196	1866	0.037369	9.94
+HBI	Hanesbrands Inc	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	Winston-Salem	North Carolina	42083	1359841	2000	0.015196	11.57
+HCA	HCA Healthcare	Health Care	Health Care Facilities	USA	Nashville	Tennessee	42031	860730		0.112708	111.16
+HD	Home Depot	Consumer Discretionary	Home Improvement Retail	USA	Atlanta	Georgia	32233	354950		1.076477	252.64
+HES	Hess Corporation	Energy	Integrated Oil & Gas	USA	New York	New York	30833	4447		0.052401	51.36
+HFC	HollyFrontier Corp	Energy	Oil & Gas Refining & Marketing	USA	Dallas	Texas	43269	48039		0.01891	33.30
+HIG	Hartford Financial Svc.Gp.	Financials	Property & Casualty Insurance	USA	Hartford	Connecticut		874766		0.056946	42.41
+HII	Huntington Ingalls Industries	Industrials	Aerospace & Defense	USA	Newport News	Virginia	43103	1501585		0.031041	201.03
+HLT	Hilton Worldwide Holdings Inc	Consumer Discretionary	"Hotels, Resorts & Cruise Lines"	USA	Tysons Corner	Virginia	42905	1585689	1919	0.092114	86.55
+HOG	Harley-Davidson	Consumer Discretionary	Motorcycle Manufacturers	USA	Milwaukee	Wisconsin		793952	1903	0.014219	24.58
+HOLX	Hologic	Health Care	Health Care Equipment	USA	Marlborough	Massachusetts	42459	859737		0.055097	53.73
+HON	Honeywell Int'l Inc.	Industrials	Industrial Conglomerates	USA	Morristown	New Jersey	23467	773840	1906	0.41394	153.19
+HPE	Hewlett Packard Enterprise	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Palo Alto	California	42310	1645590	2015	0.050435	10.28
+HPQ	HP Inc.	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Palo Alto	California	27394	47217	1939	0.091583	16.64
+HRB	H&R Block	Consumer Discretionary	Specialized Consumer Services	USA	Kansas City	Missouri	31746	12659		0.013091	18.02
+HRL	Hormel Foods Corp.	Consumer Staples	Packaged Foods & Meats	USA	Austin	Minnesota	39876	48465		0.053098	47.87
+HSIC	Henry Schein	Health Care	Health Care Distributors	USA	Melville	New York	42080	1000228		0.036246	63.84
+HST	Host Hotels & Resorts	Real Estate	Hotel & Resort REITs	USA	Bethesda	Maryland	39161	1070750		0.034499	12.87
+HSY	The Hershey Company	Consumer Staples	Packaged Foods & Meats	USA	Hershey	Pennsylvania		47111	1894	0.079505	135.76
+HUM	Humana Inc.	Health Care	Managed Health Care	USA	Louisville	Kentucky		49071	1961	0.209703	397.84
+HWM	Howmet Aerospace	Industrials	Aerospace & Defense	USA	New York	New York	23467	4281	2016	0.021204	15.01
+IBM	International Business Machines	Information Technology	IT Consulting & Other Services	USA	Armonk	New York		51143	1911	0.435761	129.15
+ICE	Intercontinental Exchange	Financials	Financial Exchanges & Data	USA	Atlanta	Georgia	39351	1571949	2000	0.209669	97.22
+IDXX	IDEXX Laboratories	Health Care	Health Care Equipment	USA	Westbrook	Maine	42740	874716		0.106084	316.09
+IEX	IDEX Corporation	Industrials	Industrial Machinery	USA	Lake Forest	Illinois	43686	832101	1988	0.046694	162.90
+IFF	Intl Flavors & Fragrances	Materials	Specialty Chemicals	USA	New York	New York	27850	51253		0.055972	137.75
+ILMN	Illumina Inc	Health Care	Life Sciences Tools & Services	USA	San Diego	California	42327	1110803		0.210444	359.50
+INCY	Incyte	Health Care	Biotechnology	USA	Wilmington	Delaware	42794	879169		0.069737	98.02
+INFO	IHS Markit Ltd.	Industrials	Research & Consulting Services	United Kingdom	London		42888	1598014		0.111466	71.84
+INTC	Intel Corp.	Information Technology	Semiconductors	USA	Santa Clara	California	28125	50863		1.05523	61.91
+INTU	Intuit Inc.	Information Technology	Application Software	USA	Mountain View	California	36865	896878		0.291776	288.75
+IP	International Paper	Materials	Paper Packaging	USA	Memphis	Tennessee		51434	1898	0.054158	37.05
+IPG	Interpublic Group	Communication Services	Advertising	USA	New York	New York	33878	51644		0.026476	18.25
+IPGP	IPG Photonics Corp.	Information Technology	Electronic Manufacturing Services	USA	Oxford	Massachusetts	43166	1111928		0.022147	162.71
+IQV	IQVIA Holdings Inc.	Health Care	Life Sciences Tools & Services	USA	Durham	North Carolina	42976	1478242		0.106784	154.24
+IR	Ingersoll Rand	Industrials	Industrial Machinery	USA	Milwaukee	Wisconsin	43893	1699150	1859	0.03895	29.95
+IRM	Iron Mountain Incorporated	Real Estate	Specialized REITs	USA	Boston	Massachusetts	39819	1020569		0.029865	27.67
+ISRG	Intuitive Surgical Inc.	Health Care	Health Care Equipment	USA	Sunnyvale	California	39601	1035267		0.261887	584.39
+IT	Gartner Inc	Information Technology	IT Consulting & Other Services	USA	Stamford	Connecticut	42830	749251		0.044029	131.00
+ITW	Illinois Tool Works	Industrials	Industrial Machinery	USA	Glenview	Illinois	31471	49826		0.196918	176.31
+IVZ	Invesco Ltd.	Financials	Asset Management & Custody Banks	USA	Atlanta	Georgia	39681	914208		0.012204	9.01
+J	Jacobs Engineering Group	Industrials	Construction & Engineering	USA	Dallas	Texas	39381	52988		0.045296	87.00
+JBHT	J. B. Hunt Transport Services	Industrials	Trucking	USA	Lowell	Arkansas	42186	728535		0.039377	117.57
+JCI	Johnson Controls International	Industrials	Building Products	USA	Cork	Ireland	40417	833444		0.097507	33.38
+JKHY	Jack Henry & Associates	Information Technology	Data Processing & Outsourced Services	USA	Monett	Missouri	43417	779152	1976	0.05443	179.38
+JNJ	Johnson & Johnson	Health Care	Pharmaceuticals	USA	New Brunswick	New Jersey	26845	200406	1886	1.523658	147.13
+JNPR	Juniper Networks	Information Technology	Communications Equipment	USA	Sunnyvale	California	38870	1043604	1996	0.031768	24.31
+JPM	JPMorgan Chase & Co.	Financials	Diversified Banks	USA	New York	New York	27575	19617		1.21171	104.45
+JWN	Nordstrom	Consumer Discretionary	Department Stores	USA	Seattle	Washington	31655	72333		0.007308	19.13
+K	Kellogg Co.	Consumer Staples	Packaged Foods & Meats	USA	Battle Creek	Michigan		55067	1906	0.065035	66.15
+KEY	KeyCorp	Financials	Regional Banks	USA	Cleveland	Ohio	34394	91576		0.046231	12.67
+KEYS	Keysight Technologies	Information Technology	Electronic Equipment & Instruments	USA	Santa Rosa	California	43410	1601046	2014	0.077751	107.71
+KHC	Kraft Heinz Co	Consumer Staples	Packaged Foods & Meats	USA	Chicago	Illinois	42191	1637459	2015	0.076135	31.41
+KIM	Kimco Realty	Real Estate	Retail REITs	USA	New Hyde Park	New York	38811	879101		0.020277	13.63
+KLAC	KLA Corporation	Information Technology	Semiconductor Equipment	USA	Milpitas	California		319201	1975	0.109567	185.80
+KMB	Kimberly-Clark	Consumer Staples	Household Products	USA	Irving	Texas		55785	1872	0.190441	142.00
+KMI	Kinder Morgan	Energy	Oil & Gas Storage & Transportation	USA	Houston	Texas	41054	1506307		0.120271	15.97
+KMX	Carmax Inc	Consumer Discretionary	Specialty Stores	USA	Richmond	Virginia	40357	1170010		0.059218	93.98
+KO	Coca-Cola Company	Consumer Staples	Soft Drinks	USA	Atlanta	Georgia		21344	1886	0.706222	47.80
+KR	Kroger Co.	Consumer Staples	Food Retail	USA	Cincinnati	Ohio		56873	1883	0.103128	32.62
+KSS	Kohl's Corp.	Consumer Discretionary	General Merchandise Stores	USA	Menomonee Falls	Wisconsin		885639	1962	0.013117	22.71
+KSU	Kansas City Southern	Industrials	Railroads	USA	Kansas City	Missouri	41418	54480		0.057976	153.97
+L	Loews Corp.	Financials	Multi-line Insurance	USA	New York	New York		60086		0.034695	35.71
+LB	L Brands Inc.	Consumer Discretionary	Apparel Retail	USA	Columbus	Ohio	30589	701985		0.01472	18.37
+LDOS	Leidos Holdings	Information Technology	IT Consulting & Other Services	USA	Reston	Virginia	43686	1336920	1969	0.054482	106.78
+LEG	Leggett & Platt	Consumer Discretionary	Home Furnishings	USA	Carthage	Missouri		58492	1883	0.016373	34.73
+LEN	Lennar Corp.	Consumer Discretionary	Homebuilding	USA	Miami	Florida	38629	920760		0.066039	62.95
+LH	Laboratory Corp. of America Holding	Health Care	Health Care Services	USA	Burlington	North Carolina	38292	920148		0.068241	181.50
+LHX	L3Harris Technologies	Industrials	Aerospace & Defense	USA	Melbourne	Florida		202058		0.168102	200.21
+LIN	Linde plc	Materials	Industrial Gases	United Kingdom	Guildford Surrey		33786	1707925	1879	0.43267	212.71
+LKQ	LKQ Corporation	Consumer Discretionary	Distributors	USA	Chicago	Illinois	42513	1065696		0.034029	30.03
+LLY	Lilly (Eli) & Co.	Health Care	Pharmaceuticals	USA	Indianapolis	Indiana	25933	59478	1876	0.507664	151.49
+LMT	Lockheed Martin Corp.	Industrials	Aerospace & Defense	USA	Bethesda	Maryland	30894	936468		0.378011	396.68
+LNC	Lincoln National	Financials	Multi-line Insurance	USA	Radnor	Pennsylvania	27941	59558		0.030174	42.01
+LNT	Alliant Energy Corp	Utilities	Electric Utilities	USA	Madison	Wisconsin	42552	352541	1917	0.047221	50.98
+LOW	Lowe's Cos.	Consumer Discretionary	Home Improvement Retail	USA	Mooresville	North Carolina	30741	60667	1904	0.395042	133.16
+LRCX	Lam Research	Information Technology	Semiconductor Equipment	USA	Fremont	California	41089	707549		0.153544	285.98
+LUV	Southwest Airlines	Industrials	Airlines	USA	Dallas	Texas	34516	92380		0.07114	36.73
+LVS	Las Vegas Sands	Consumer Discretionary	Casinos & Gaming	USA	Las Vegas	Nevada	43741	1300514	1988	0.06325	51.66
+LW	Lamb Weston Holdings Inc	Consumer Staples	Packaged Foods & Meats	USA	Eagle	Idaho	43437	1679273	2016	0.035253	64.52
+LYB	LyondellBasell	Materials	Specialty Chemicals	USA	Rotterdam	Netherlands	41157	1489393		0.068613	71.57
+LYV	Live Nation Entertainment	Communication Services	Movies & Entertainment	USA	Beverly Hills	California	43822	1335258	2010	0.027918	55.02
+MA	Mastercard Inc.	Information Technology	Data Processing & Outsourced Services	USA	Harrison	New York	39647	1141391		1.052431	306.10
+MAA	Mid-America Apartments	Real Estate	Residential REITs	USA	Memphis	Tennessee	42706	912595		0.052243	122.46
+MAR	Marriott Int'l.	Consumer Discretionary	"Hotels, Resorts & Cruise Lines"	USA	Bethesda	Maryland		1048286	1927	0.101312	99.01
+MAS	Masco Corp.	Industrials	Building Products	USA	Livonia	Michigan	29767	62996		0.052858	48.65
+MCD	McDonald's Corp.	Consumer Discretionary	Restaurants	USA	Chicago	Illinois	25749	63908	1940	0.551691	193.12
+MCHP	Microchip Technology	Information Technology	Semiconductors	USA	Chandler	Arizona	39332	827054		0.090372	108.04
+MCK	McKesson Corp.	Health Care	Health Care Distributors	USA	Irving	Texas		927653	1833	0.103053	162.91
+MCO	Moody's Corp	Financials	Financial Exchanges & Data	USA	New York	New York		1059556	1909	0.175415	282.86
+MDLZ	Mondelez International	Consumer Staples	Packaged Foods & Meats	USA	Chicago	Illinois	41184	1103982		0.293773	52.06
+MDT	Medtronic plc	Health Care	Health Care Equipment	Irelan	Dublin		31716	1613103	1949	0.509037	97.86
+MET	MetLife Inc.	Financials	Life & Health Insurance	USA	New York	New York		1099219	1868	0.111144	38.15
+MGM	MGM Resorts International	Consumer Discretionary	Casinos & Gaming	USA	Paradise	Nevada	42942	789570		0.036627	20.09
+MHK	Mohawk Industries	Consumer Discretionary	Home Furnishings	USA	Calhoun	Georgia	41631	851968		0.022728	102.27
+MKC	McCormick & Co.	Consumer Staples	Packaged Foods & Meats	USA	Hunt Valley	Maryland		63754	1889	0.083649	174.29
+MKTX	MarketAxess	Financials	Financial Exchanges & Data	USA	New York	New York	43647	1278021	2000	0.075989	512.58
+MLM	Martin Marietta Materials	Materials	Construction Materials	USA	Raleigh	North Carolina	41822	916076		0.049875	211.25
+MMC	Marsh & McLennan	Financials	Insurance Brokers	USA	New York	New York	32020	62709		0.213043	109.63
+MMM	3M Company	Industrials	Industrial Conglomerates	USA	St. Paul	Minnesota	27981	66740	1902	0.354188	159.51
+MNST	Monster Beverage	Consumer Staples	Soft Drinks	USA	Corona	California	41088	865752		0.107452	72.74
+MO	Altria Group Inc	Consumer Staples	Tobacco	USA	Richmond	Virginia		764180	1985	0.289541	40.07
+MOS	The Mosaic Company	Materials	Fertilizers & Agricultural Chemicals	USA	Tampa	Florida	40812	1285785		0.017234	13.71
+MPC	Marathon Petroleum	Energy	Oil & Gas Refining & Marketing	USA	Findlay	Ohio	40725	1510295		0.095698	38.99
+MRK	Merck & Co.	Health Care	Pharmaceuticals	USA	Kenilworth	New Jersey		310158	1891	0.80373	82.03
+MRO	Marathon Oil Corp.	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	33359	101778		0.018441	5.89
+MS	Morgan Stanley	Financials	Investment Banking & Brokerage	USA	New York	New York		895421	1935	0.207293	47.27
+MSCI	MSCI Inc	Financials	Financial Exchanges & Data	USA	New York	New York	43194	1408198		0.107764	319.37
+MSFT	Microsoft Corp.	Information Technology	Systems Software	USA	Redmond	Washington	34486	789019	1975	5.508634	184.30
+MSI	Motorola Solutions Inc.	Information Technology	Communications Equipment	USA	Chicago	Illinois		68505	1928	0.093491	143.69
+MTB	M&T Bank Corp.	Financials	Regional Banks	USA	Buffalo	New York		36270	1856	0.054815	114.02
+MTD	Mettler Toledo	Health Care	Life Sciences Tools & Services	USA	Columbus	Ohio	42619	1037646		0.078402	833.32
+MU	Micron Technology	Information Technology	Semiconductors	USA	Boise	Idaho	34604	723125		0.202703	48.34
+MXIM	Maxim Integrated Products Inc	Information Technology	Semiconductors	USA	San Jose	California	43437	743316	1983	0.062077	61.07
+MYL	Mylan N.V.	Health Care	Pharmaceuticals	Netherlands	Amsterdam		38100	1623613	1961	0.035124	17.68
+NBL	Noble Energy Inc	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	39363	72207		0.018483	9.80
+NCLH	Norwegian Cruise Line Holdings	Consumer Discretionary	"Hotels, Resorts & Cruise Lines"	USA	Miami	Florida	43021	1513761		0.014662	18.41
+NDAQ	"Nasdaq, Inc."	Financials	Financial Exchanges & Data	USA	New York	New York	39743	1120193		0.053589	119.16
+NEE	NextEra Energy	Utilities	Multi-Utilities	USA	Juno Beach	Florida	27941	753308		0.48977	259.68
+NEM	Newmont Corporation	Materials	Gold	USA	Denver	Colorado	25384	1164727	1921	0.186816	55.59
+NFLX	Netflix Inc.	Communication Services	Movies & Entertainment	USA	Los Gatos	California	40532	1065280	1997	0.731294	421.40
+NI	NiSource Inc.	Utilities	Multi-Utilities	USA	Merrillville	Indiana		1111711	1912	0.035812	25.14
+NKE	Nike	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	Washington County	Oregon	32477	320187		0.490179	103.25
+NLOK	NortonLifeLock	Information Technology	Application Software	USA	Tempe	Arizona	37705	849399		0.046846	20.79
+NLSN	Nielsen Holdings	Industrials	Research & Consulting Services	USA	New York	New York	41464	1492633		0.020565	15.96
+NOC	Northrop Grumman	Industrials	Aerospace & Defense	USA	West Falls Church	Virginia	31228	1133421		0.200321	330.38
+NOV	National Oilwell Varco Inc.	Energy	Oil & Gas Equipment & Services	USA	Houston	Texas	38425	1021860		0.018948	13.34
+NOW	ServiceNow	Information Technology	Systems Software	USA	Santa Clara	California	43790	1373715	2003	0.289586	385.79
+NRG	NRG Energy	Utilities	Independent Power Producers & Energy Traders	USA	Princeton	New Jersey	40207	1013871		0.035556	36.48
+NSC	Norfolk Southern Corp.	Industrials	Railroads	USA	Norfolk	Virginia		702165	1881	0.187559	191.15
+NTAP	NetApp	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Sunnyvale	California	36336	1002047		0.039502	45.20
+NTRS	Northern Trust Corp.	Financials	Asset Management & Custody Banks	USA	Chicago	Illinois		73124	1889	0.067151	84.49
+NUE	Nucor Corp.	Materials	Steel	USA	Charlotte	North Carolina	31167	73309		0.051526	44.38
+NVDA	Nvidia Corporation	Information Technology	Semiconductors	USA	Santa Clara	California	37225	1045810		0.843653	351.05
+NVR	NVR Inc	Consumer Discretionary	Homebuilding	USA	Reston	VA	43734	906163	1980	0.044541	3443.98
+NWL	Newell Brands	Consumer Discretionary	Housewares & Specialties	USA	Atlanta	Georgia	32628	814453		0.020609	14.66
+NWS	News Corp. Class B	Communication Services	Publishing	USA	New York	New York	42265	1564708		0.005948	12.68
+NWSA	News Corp. Class A	Communication Services	Publishing	USA	New York	New York	41487	1564708		0.017921	12.60
+O	Realty Income Corporation	Real Estate	Retail REITs	USA	San Diego	California	42101	726728		0.076822	60.38
+ODFL	Old Dominion Freight Line	Industrials	Trucking	USA	Thomasville	North Carolina	43808	878927	1934	0.061814	167.11
+OKE	ONEOK	Energy	Oil & Gas Storage & Transportation	USA	Tulsa	Oklahoma	40252	1039684		0.063768	40.64
+OMC	Omnicom Group	Communication Services	Advertising	USA	New York	New York		29989	1986	0.047025	57.03
+ORCL	Oracle Corp.	Information Technology	Application Software	USA	Redwood Shores	California	32751	1341439		0.450758	53.12
+ORLY	O'Reilly Automotive	Consumer Discretionary	Specialty Stores	USA	Springfield	Missouri	39899	898173		0.124122	425.23
+OTIS	Otis Worldwide	Industrials	Industrial Machinery	USA	Farmington	Connecticut	43924	1781335		0.085779	55.10
+OXY	Occidental Petroleum	Energy	Oil & Gas Exploration & Production	USA	Houston	Texas	30316	797468		0.051491	15.38
+PAYC	Paycom	Information Technology	Application Software	USA	Oklahoma City	Oklahoma	43858	1590955	1998	0.058828	307.41
+PAYX	Paychex Inc.	Information Technology	Data Processing & Outsourced Services	USA	Penfield	New York		723531	1971	0.091156	74.41
+PBCT	People's United Financial	Financials	Thrifts & Mortgage Finance	USA	Bridgeport	Connecticut	39765	1378946		0.020288	12.28
+PCAR	PACCAR Inc.	Industrials	Construction Machinery & Heavy Trucks	USA	Bellevue	Washington	29586	75362		0.098822	74.71
+PEAK	Healthpeak Properties	Real Estate	Health Care REITs	USA	Long Beach	California	39538	765880		0.050108	27.06
+PEG	Public Serv. Enterprise Inc.	Utilities	Electric Utilities	USA	Newark	New Jersey		788784		0.102765	52.85
+PEP	PepsiCo Inc.	Consumer Staples	Soft Drinks	USA	Purchase	New York		77476	1898	0.722211	132.86
+PFE	Pfizer Inc.	Health Care	Pharmaceuticals	USA	New York	New York		78003	1849	0.781454	35.64
+PFG	Principal Financial Group	Financials	Life & Health Insurance	USA	Des Moines	Iowa	37459	1126328		0.040147	42.61
+PG	Procter & Gamble	Consumer Staples	Personal Products	USA	Cincinnati	Ohio		80424	1837	1.149716	118.31
+PGR	Progressive Corp.	Financials	Property & Casualty Insurance	USA	Mayfield Village	Ohio	35646	80661		0.180805	79.04
+PH	Parker-Hannifin	Industrials	Industrial Machinery	USA	Cleveland	Ohio	31381	76334		0.092868	193.59
+PHM	PulteGroup	Consumer Discretionary	Homebuilding	USA	Atlanta	Georgia	30802	822416		0.034587	36.01
+PKG	Packaging Corporation of America	Materials	Paper Packaging	USA	Lake Forest	Illinois	42942	75677		0.037887	107.23
+PKI	PerkinElmer	Health Care	Health Care Equipment	USA	Waltham	Massachusetts	31198	31791		0.043991	104.19
+PLD	Prologis	Real Estate	Industrial REITs	USA	San Francisco	California	37819	1045609		0.275407	96.86
+PM	Philip Morris International	Consumer Staples	Tobacco	USA	New York	New York	39538	1413329		0.447972	74.00
+PNC	PNC Financial Services	Financials	Regional Banks	USA	Pittsburgh	Pennsylvania	32263	713676		0.196814	120.80
+PNR	Pentair plc	Industrials	Industrial Machinery	USA	Worsley	UK	41183	77360		0.025669	40.39
+PNW	Pinnacle West Capital	Utilities	Multi-Utilities	USA	Phoenix	Arizona		764622	1985	0.034306	79.31
+PPG	PPG Industries	Materials	Specialty Chemicals	USA	Pittsburgh	Pennsylvania		79879	1883	0.099262	112.52
+PPL	PPL Corp.	Utilities	Electric Utilities	USA	Allentown	Pennsylvania		922224		0.087596	29.79
+PRGO	Perrigo	Health Care	Pharmaceuticals	USA	Dublin	Ireland	40896	1585364		0.030017	56.74
+PRU	Prudential Financial	Financials	Life & Health Insurance	USA	Newark	New Jersey	37459	1137774		0.095883	63.86
+PSA	Public Storage	Real Estate	Specialized REITs	USA	Glendale	California	38583	1393311		0.121249	212.73
+PSX	Phillips 66	Energy	Oil & Gas Refining & Marketing	USA	Houston	Texas	41030	1534701		0.141624	83.88
+PVH	PVH Corp.	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	New York	New York	41320	78239		0.014367	54.13
+PWR	Quanta Services Inc.	Industrials	Construction & Engineering	USA	Houston	Texas	39995	1050915		0.022018	40.33
+PXD	Pioneer Natural Resources	Energy	Oil & Gas Exploration & Production	USA	Irving	Texas	39715	1038357		0.062401	97.77
+PYPL	PayPal	Information Technology	Data Processing & Outsourced Services	USA	San Jose	California	42205	1633917	1998	0.722129	156.01
+QCOM	QUALCOMM Inc.	Information Technology	Semiconductors	USA	San Diego	California		804328	1985	0.377368	84.80
+QRVO	Qorvo	Information Technology	Semiconductors	USA	Greensboro	North Carolina	42166	1604778	2015	0.049907	114.59
+RCL	Royal Caribbean Cruises Ltd	Consumer Discretionary	"Hotels, Resorts & Cruise Lines"	USA	Miami	Florida	41978	884887		0.037402	58.13
+RE	Everest Re Group Ltd.	Financials	Reinsurance	USA	Hamilton	Bermuda	42905	1095073		0.032363	214.12
+REG	Regency Centers Corporation	Real Estate	Retail REITs	USA	Jacksonville	Florida	42796	910606		0.029869	49.32
+REGN	Regeneron Pharmaceuticals	Health Care	Biotechnology	USA	Tarrytown	New York	41395	872589		0.242794	601.00
+RF	Regions Financial Corp.	Financials	Regional Banks	USA	Birmingham	Alabama	36035	1281761		0.044254	12.40
+RHI	Robert Half International	Industrials	Human Resource & Employment Services	USA	Menlo Park	California	36865	315213		0.024464	54.76
+RJF	Raymond James Financial Inc.	Financials	Investment Banking & Brokerage	USA	St. Petersburg	Florida	42814	720005		0.035302	77.07
+RL	Ralph Lauren Corporation	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	New York	New York	39115	1037038		0.015272	85.08
+RMD	ResMed	Health Care	Health Care Equipment	USA	San Diego	California	42942	943819		0.089075	159.61
+ROK	Rockwell Automation Inc.	Industrials	Electrical Components & Equipment	USA	Milwaukee	Wisconsin		1024478		0.098183	221.47
+ROL	Rollins Inc.	Industrials	Environmental & Facilities Services	USA	Atlanta	Georgia	43374	84839	1948	0.023628	43.90
+ROP	Roper Technologies	Industrials	Industrial Conglomerates	USA	Sarasota	Florida	40170	882835		0.160608	398.54
+ROST	Ross Stores	Consumer Discretionary	Apparel Retail	USA	Dublin	California	40168	745732		0.139651	100.66
+RSG	Republic Services Inc	Industrials	Environmental & Facilities Services	USA	Phoenix	Arizona	39787	1060391		0.071311	87.44
+RTX	Raytheon Technologies	Industrials	Aerospace & Defense	USA	Waltham	Massachusetts		101829	1922	0.362408	66.25
+SBAC	SBA Communications	Real Estate	Specialized REITs	USA	Boca Raton	Florida	42979	1034054		0.140036	317.35
+SBUX	Starbucks Corp.	Consumer Discretionary	Restaurants	USA	Seattle	Washington		829224	1971	0.358975	79.78
+SCHW	Charles Schwab Corporation	Financials	Investment Banking & Brokerage	USA	San Francisco	California	35583	316709		0.165937	39.01
+SEE	Sealed Air	Materials	Paper Packaging	USA	Charlotte	North Carolina		1012100	1960	0.019822	33.74
+SHW	Sherwin-Williams	Materials	Specialty Chemicals	USA	Cleveland	Ohio	23558	89800	1866	0.191564	601.97
+SIVB	SVB Financial	Financials	Regional Banks	USA	Santa Clara	California	43178	719739		0.042465	222.57
+SJM	JM Smucker	Consumer Staples	Packaged Foods & Meats	USA	Orrville	Ohio	39758	91419		0.051027	115.16
+SLB	Schlumberger Ltd.	Energy	Oil & Gas Equipment & Services	Netherlands	Cura�ao		23832	87347	1926	0.102015	19.20
+SLG	SL Green Realty	Real Estate	Office REITs	USA	New York	New York	42083	1040971		0.015271	51.43
+SNA	Snap-on	Industrials	Industrial Machinery	USA	Kenosha	Wisconsin	30224	91440	1920	0.028809	140.91
+SNPS	Synopsys Inc.	Information Technology	Application Software	USA	Mountain View	California	42810	883241		0.106518	184.22
+SO	Southern Company	Utilities	Electric Utilities	USA	Atlanta	Georgia		92122	1945	0.237825	58.63
+SPG	Simon Property Group Inc	Real Estate	Retail REITs	USA	Indianapolis	Indiana	37433	1063761	2003	0.076282	72.25
+SPGI	"S&P Global, Inc."	Financials	Financial Exchanges & Data	USA	New York	New York		64040		0.312472	333.79
+SRE	Sempra Energy	Utilities	Multi-Utilities	USA	San Diego	California		1032208	1998	0.143562	131.78
+STE	STERIS plc	Health Care	Health Care Equipment	USA	Dublin	Ireland	43822	1757898	1985	0.054664	164.94
+STT	State Street Corp.	Financials	Asset Management & Custody Banks	USA	Boston	Massachusetts		93751	1792	0.089188	65.70
+STX	Seagate Technology	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Dublin	Ireland	41092	1137789		0.04772	52.78
+STZ	Constellation Brands	Consumer Staples	Distillers & Vintners	USA	Victor	New York	38534	16918		0.11324	175.37
+SWK	Stanley Black & Decker	Industrials	Industrial Machinery	USA	New Britain	Connecticut	30224	93556		0.077439	139.89
+SWKS	Skyworks Solutions	Information Technology	Semiconductors	USA	Woburn	Massachusetts	42075	4127		0.08264	127.67
+SYF	Synchrony Financial	Financials	Consumer Finance	USA	Stamford	Connecticut	42326	1601712	2003	0.04879	23.86
+SYK	Stryker Corp.	Health Care	Health Care Equipment	USA	Kalamazoo	Michigan	36872	310764		0.249767	202.51
+SYY	Sysco Corp.	Consumer Staples	Food Distributors	USA	Houston	Texas	31777	96021		0.112853	58.98
+T	AT&T Inc.	Communication Services	Integrated Telecommunication Services	USA	Dallas	Texas	20913	732717	1983	0.884034	31.43
+TAP	Molson Coors Brewing Company	Consumer Staples	Brewers	USA	Denver	Colorado	27941	24545		0.028777	41.13
+TDG	TransDigm Group	Industrials	Aerospace & Defense	USA	Cleveland	Ohio	42524	1260221		0.083998	469.63
+TEL	TE Connectivity Ltd.	Information Technology	Electronic Manufacturing Services	USA	Schaffhausen	Switzerland	40833	1385157		0.113036	89.82
+TFC	Truist Financial	Financials	Regional Banks	USA	Charlotte	North Carolina	35768	92230		0.197105	39.97
+TFX	Teleflex	Health Care	Health Care Equipment	USA	Wayne	Pennsylvania	43483	96943	1943	0.065888	367.77
+TGT	Target Corp.	Consumer Discretionary	General Merchandise Stores	USA	Minneapolis	Minnesota	28125	27419		0.235353	121.31
+TIF	Tiffany & Co.	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	New York	New York	36698	98246		0.049082	115.93
+TJX	TJX Companies Inc.	Consumer Discretionary	Apparel Retail	USA	Framingham	Massachusetts	31320	109198		0.257328	55.79
+TMO	Thermo Fisher Scientific	Health Care	Life Sciences Tools & Services	USA	Waltham	Massachusetts		97745	2006	0.548521	347.96
+TMUS	T-Mobile US	Communication Services	Wireless Telecommunication Services	USA	Bellevue	Washington	43661	1283699	1994	0.1482	101.77
+TPR	"Tapestry, Inc."	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	New York	New York		1116132	2017	0.015675	15.63
+TROW	T. Rowe Price Group	Financials	Asset Management & Custody Banks	USA	Baltimore	Maryland		1113169	1937	0.112534	126.66
+TRV	The Travelers Companies Inc.	Financials	Property & Casualty Insurance	USA	New York	New York	37489	86312		0.112217	114.50
+TSCO	Tractor Supply Company	Consumer Discretionary	Specialty Stores	USA	Brentwood	Tennessee	41663	916365		0.057257	122.23
+TSN	Tyson Foods	Consumer Staples	Packaged Foods & Meats	USA	Springdale	Arkansas		100493	1935	0.072077	63.40
+TT	Trane Technologies plc	Industrials	Building Products	USA	Dublin	Ireland	40499	1466258		0.085819	93.98
+TTWO	Take-Two Interactive	Communication Services	Interactive Home Entertainment	USA	New York	New York	43178	946581		0.05885	129.93
+TWTR	"Twitter, Inc."	Communication Services	Interactive Media & Services	USA	San Francisco	California	43258	1418091		0.097586	33.49
+TXN	Texas Instruments	Information Technology	Semiconductors	USA	Dallas	Texas		97476	1930	0.447787	127.92
+TXT	Textron Inc.	Industrials	Aerospace & Defense	USA	Providence	Rhode Island	28855	217346		0.028736	33.98
+UA	Under Armour(Class C)	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	Baltimore	Maryland	42468	1336917		0.006368	8.85
+UAA	Under Armour(Class A)	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	Baltimore	Maryland	41760	1336917		0.00668	9.94
+UAL	United Airlines Holdings	Industrials	Airlines	USA	Chicago	Illinois	42250	100517	1967	0.025354	32.91
+UDR	"UDR, Inc."	Real Estate	Residential REITs	USA	Highlands Ranch	Colorado	42436	74208		0.04316	39.27
+UHS	"Universal Health Services, Inc."	Health Care	Health Care Facilities	USA	King of Prussia	Pennsylvania	41902	352915		0.032656	107.48
+ULTA	Ulta Beauty	Consumer Discretionary	Specialty Stores	USA	Bolingbrook	Illinois	42478	1403568	1990	0.054089	253.26
+UNH	United Health Group Inc.	Health Care	Managed Health Care	USA	Minnetonka	Minnesota	34516	731766		1.133251	304.67
+UNM	Unum Group	Financials	Life & Health Insurance	USA	Chattanooga	Tennessee	34394	5513		0.012782	16.94
+UNP	Union Pacific Corp	Industrials	Railroads	USA	Omaha	Nebraska		100885	1862	0.463396	177.29
+UPS	United Parcel Service	Industrials	Air Freight & Logistics	USA	Atlanta	Georgia	37459	1090727	1907	0.277056	103.68
+URI	"United Rentals, Inc."	Industrials	Trading Companies & Distributors	USA	Stamford	Connecticut	41902	1067701	1997	0.042154	148.99
+USB	U.S. Bancorp	Financials	Diversified Banks	USA	Minneapolis	Minnesota		36104	1968	0.203542	38.55
+V	Visa Inc.	Information Technology	Data Processing & Outsourced Services	USA	San Francisco	California	40168	1403161		1.312626	197.25
+VAR	Varian Medical Systems	Health Care	Health Care Equipment	USA	Palo Alto	California	39125	203527		0.044156	128.11
+VFC	V.F. Corp.	Consumer Discretionary	"Apparel, Accessories & Luxury Goods"	USA	Greensboro	North Carolina	29036	103379		0.07621	62.39
+VIAC	ViacomCBS	Communication Services	Movies & Entertainment	USA	New York	New York		1339947		0.04591	22.87
+VLO	Valero Energy	Energy	Oil & Gas Refining & Marketing	USA	San Antonio	Texas		1035002	1980	0.109351	69.79
+VMC	Vulcan Materials	Materials	Construction Materials	USA	Birmingham	Alabama	36341	1396009		0.057112	118.83
+VNO	Vornado Realty Trust	Real Estate	Office REITs	USA	New York	New York		899689	1982	0.024491	41.92
+VRSK	Verisk Analytics	Industrials	Research & Consulting Services	USA	Jersey City	New Jersey	42285	1442145	1971	0.109053	171.86
+VRSN	Verisign Inc.	Information Technology	Internet Services & Infrastructure	USA	Dulles	Virginia	38749	1014473		0.087975	214.07
+VRTX	Vertex Pharmaceuticals Inc	Health Care	Biotechnology	USA	Cambridge	Massachusetts	41540	875320		0.285668	277.08
+VTR	Ventas Inc	Real Estate	Health Care REITs	USA	Chicago	Illinois	39876	740260		0.054201	40.53
+VZ	Verizon Communications	Communication Services	Integrated Telecommunication Services	USA	New York	New York	30650	732712		0.910885	56.54
+WAB	Wabtec Corporation	Industrials	Construction Machinery & Heavy Trucks	USA	Wilmerding	Pennsylvania	43523	943452	1999	0.045336	64.50
+WAT	Waters Corporation	Health Care	Health Care Distributors	USA	Milford	Massachusetts		1000697	1958	0.051229	203.04
+WBA	Walgreens Boots Alliance	Consumer Staples	Drug Retail	USA	Deerfield	Illinois	29220	1618921	2014	0.1276	43.74
+WDC	Western Digital	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Irvine	California	39995	106040		0.050384	45.45
+WEC	WEC Energy Group	Utilities	Electric Utilities	USA	Milwaukee	Wisconsin	39752	783325		0.115264	94.25
+WELL	Welltower Inc.	Real Estate	Health Care REITs	USA	Toledo	Ohio	39843	766704		0.086742	57.84
+WFC	Wells Fargo	Financials	Diversified Banks	USA	San Francisco	California	27941	72971		0.411806	28.98
+WHR	Whirlpool Corp.	Consumer Discretionary	Household Appliances	USA	Benton Harbor	Michigan		106640	1911	0.031401	131.47
+WLTW	Willis Towers Watson	Financials	Insurance Brokers	USA	London	United Kingdom	42374	1140536		0.101017	206.60
+WM	Waste Management Inc.	Industrials	Environmental & Facilities Services	USA	Houston	Texas		823768	1968	0.163739	109.64
+WMB	Williams Cos.	Energy	Oil & Gas Storage & Transportation	USA	Tulsa	Oklahoma	27484	107263		0.095802	20.52
+WMT	Walmart	Consumer Staples	Hypermarkets & Super Centers	USA	Bentonville	Arkansas	30194	104169		0.686594	123.36
+WRB	W. R. Berkley Corporation	Financials	Property & Casualty Insurance	USA	Greenwich	Connecticut	43804	11544	1967	0.033785	61.18
+WRK	WestRock	Materials	Paper Packaging	USA	Richmond	Virginia		1636023	2015	0.028409	29.93
+WST	West Pharmaceutical Services	Health Care	Health Care Supplies	USA	Exton	Pennsylvania	43973	105770		0.061101	210.39
+WU	Western Union Co	Information Technology	Data Processing & Outsourced Services	USA	Englewood	Colorado		1365135	1851	0.037766	23.04
+WY	Weyerhaeuser	Real Estate	Specialized REITs	USA	Federal Way	Washington		106535	1900	0.062865	22.34
+WYNN	Wynn Resorts Ltd	Consumer Discretionary	Casinos & Gaming	USA	Paradise	Nevada	39766	1174922		0.031668	91.55
+XEL	Xcel Energy Inc	Utilities	Multi-Utilities	USA	Minneapolis	Minnesota		72903	1909	0.135617	66.83
+XLNX	Xilinx	Information Technology	Semiconductors	USA	San Jose	California	36472	743988		0.091706	95.69
+XOM	Exxon Mobil Corp.	Energy	Integrated Oil & Gas	USA	Irving	Texas		34088	1999	0.781687	48.85
+XRAY	Dentsply Sirona	Health Care	Health Care Supplies	USA	Charlotte	North Carolina	39766	818479		0.041166	48.95
+XRX	Xerox	Information Technology	"Technology Hardware, Storage & Peripherals"	USA	Norwalk	Connecticut		108772	1906	0.012503	18.14
+XYL	Xylem Inc.	Industrials	Industrial Machinery	USA	White Plains	New York	40848	1524472	2011	0.047484	69.90
+YUM	Yum! Brands Inc	Consumer Discretionary	Restaurants	USA	Louisville	Kentucky	35709	1041061		0.109254	95.69
+ZBH	Zimmer Biomet Holdings	Health Care	Health Care Equipment	USA	Warsaw	Indiana	37110	1136869		0.103254	130.56
+ZBRA	Zebra Technologies	Information Technology	Electronic Equipment & Instruments	USA	Lincolnshire	Illinois	43822	877212	1969	0.055868	268.26
+ZION	Zions Bancorp	Financials	Regional Banks	USA	Salt Lake City	Utah	37064	109380		0.02235	35.38
+ZTS	Zoetis	Health Care	Pharmaceuticals	USA	Florham Park	New Jersey	41446	1555280	1952	0.263159	142.28

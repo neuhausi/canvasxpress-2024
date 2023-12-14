@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"STP","NAME_0":"São Tomé and Príncipe","GID_1":"STP.1_1","NAME_1":"Príncipe","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Concelho","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"ST.PR","cXId":"PR"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[6.67347097,0.15791599],[6.69013882,0.404028],[6.49180603,0.318194],[6.47791719,0.146805],[6.67347097,0.15791599]]]},"properties":{"GID_0":"STP","NAME_0":"São Tomé and Príncipe","GID_1":"STP.2_1","NAME_1":"São Tomé","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Concelho","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":"ST.ST","cXId":"ST"}}
+]}

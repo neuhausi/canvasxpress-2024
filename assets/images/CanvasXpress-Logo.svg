@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="267px" height="98px" viewBox="0 0 267 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 2 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFD587" offset="0%"></stop>
+            <stop stop-color="#FFC674" offset="34.1474415%"></stop>
+            <stop stop-color="#FFAA4F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF6F6F" offset="0%"></stop>
+            <stop stop-color="#EB0000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#00B4DF" offset="0%"></stop>
+            <stop stop-color="#007DBB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="HiFi-Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Option-5" transform="translate(-538.000000, -115.000000)">
+            <g id="Group-2-Copy-2" transform="translate(538.000000, 115.000000)">
+                <g id="Group-2">
+                    <path d="M0,97.1999942 C20,32.3999981 40.7999988,0 62.3999963,0 C94.7999943,0 86.6554449,44.4928883 152.399991,68.3999959 C178.799989,77.9999954 216.799987,87.5999948 266.399984,97.1999942 L0,97.1999942 Z" id="Path-4" fill="url(#linearGradient-1)"></path>
+                    <path d="M0,97.1999942 C31.7221481,82.7314451 57.3221466,71.1314458 76.7999954,62.3999963 C111.599993,46.7999972 114,17.9999989 138,20.3999988 C162,22.7999986 157.455441,57.6928875 223.199987,81.5999951 C249.599985,91.1999946 263.999984,96.3999943 266.399984,97.1999942 L0,97.1999942 Z" id="Path-4" fill="url(#linearGradient-2)"></path>
+                    <path d="M0,97.1999942 C76,83.599995 124.399997,71.1999958 145.199991,59.9999964 C176.399989,43.1999974 175.19999,34.7998968 207.599988,34.7998968 C229.199986,34.7998968 248.799985,55.5999293 266.399984,97.1999942 L0,97.1999942 Z" id="Path-4" fill="url(#linearGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

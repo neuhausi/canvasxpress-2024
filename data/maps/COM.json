@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":null,"properties":{"GID_0":"COM","NAME_0":"Comoros","GID_1":"COM.1_1","NAME_1":"Mwali","VARNAME_1":"Mohéli","NL_NAME_1":"","TYPE_1":"Autonomous Island","ENGTYPE_1":"Autonomous Island","CC_1":"","HASC_1":"KM.MO","cXId":"MO"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[43.39374923706055,-11.884305000305176],[43.51763916015625,-11.895137786865234],[43.39152908325201,-11.612639427185059],[43.393196105957145,-11.374027252197152],[43.2779159545899,-11.398470878601074],[43.23902893066412,-11.78097152709961],[43.39374923706055,-11.884305000305176]]]},"properties":{"GID_0":"COM","NAME_0":"Comoros","GID_1":"COM.2_1","NAME_1":"Njazídja","VARNAME_1":"Grande Comore","NL_NAME_1":"","TYPE_1":"Autonomous Island","ENGTYPE_1":"Autonomous Island","CC_1":"","HASC_1":"KM.GC","cXId":"GC"}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"COM","NAME_0":"Comoros","GID_1":"COM.3_1","NAME_1":"Nzwani","VARNAME_1":"Anjouan","NL_NAME_1":"","TYPE_1":"Autonomous Island","ENGTYPE_1":"Autonomous Island","CC_1":"","HASC_1":"KM.AN","cXId":"AN"}}
+]}

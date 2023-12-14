@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: network-14">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: network-14">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Network Chart">
+    <meta itemprop="description" content="CanvasXpress: network-14">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Network Chart">
+    <meta name="og:description" content="CanvasXpress: network-14">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/network-14.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Network
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="network14" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork14 = new CanvasXpress("network14",
+          {
+            "nodes" : [{
+              "id" : "Gene1",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene2",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene3",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene4",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene5",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene6",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene7",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "Gene8",
+              "color" : "rgb(255,0,0)",
+              "shape" : "square"
+            }, {
+              "id" : "SNP1",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP2",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP3",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP4",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP5",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP6",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP7",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "SNP8",
+              "color" : "rgb(0,255,0)",
+              "shape" : "sphere"
+            }, {
+              "id" : "PH1",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star"
+            }, {
+              "id" : "PH1a",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star",
+              "parentNode" : "PH1"
+            }, {
+              "id" : "PH1b",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star",
+              "parentNode" : "PH1"
+            }, {
+              "id" : "PH2",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star"
+            }, {
+              "id" : "PH2a",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star",
+              "parentNode" : "PH2"
+            }, {
+              "id" : "PH2b",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star",
+              "parentNode" : "PH2"
+            }, {
+              "id" : "PH2ba",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star",
+              "parentNode" : "PH2b"
+            }, {
+              "id" : "PH3",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star"
+            }, {
+              "id" : "PH4",
+              "color" : "rgb(0,255,255)",
+              "shape" : "star"
+            }],
+            "edges" : [{
+              "id1" : "Gene1",
+              "id2" : "Gene2",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP1",
+              "id2" : "PH1",
+              "color" : "rgb(51,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene2",
+              "id2" : "Gene7",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene2",
+              "id2" : "Gene8",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene1",
+              "id2" : "Gene3",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP4",
+              "id2" : "PH4",
+              "color" : "rgb(51,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "PH1",
+              "id2" : "PH1a",
+              "color" : "rgb(102,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "PH1",
+              "id2" : "PH1b",
+              "color" : "rgb(102,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene4",
+              "id2" : "SNP3",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene6",
+              "id2" : "SNP4",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "PH2",
+              "id2" : "PH2a",
+              "color" : "rgb(51,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "PH2",
+              "id2" : "PH2b",
+              "color" : "rgb(102,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene6",
+              "id2" : "SNP5",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene7",
+              "id2" : "SNP6",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP6",
+              "id2" : "SNP7",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene1",
+              "id2" : "Gene4",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene1",
+              "id2" : "Gene5",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP7",
+              "id2" : "Gene6",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP6",
+              "id2" : "SNP8",
+              "color" : "rgb(153,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene3",
+              "id2" : "SNP1",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "Gene3",
+              "id2" : "SNP2",
+              "color" : "rgb(51,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP2",
+              "id2" : "PH2",
+              "color" : "rgb(153,12,255)",
+              "type" : "line"
+            }, {
+              "id1" : "SNP3",
+              "id2" : "PH3",
+              "color" : "rgb(51,12,152)",
+              "type" : "line"
+            }, {
+              "id1" : "PH2b",
+              "id2" : "PH2ba",
+              "color" : "rgb(102,12,152)",
+              "type" : "line"
+            }]
+          },
+          {"graphType": "Network",
+           "networkLayoutType": "radial",
+           "nodeFontColor": "rgb(29,34,43)",
+           "nodeScaleFontFactor": 2,
+           "showAnimation": true,
+           "title": "Radial Network"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

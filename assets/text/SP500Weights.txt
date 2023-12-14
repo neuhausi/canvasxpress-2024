@@ -1,0 +1,506 @@
+Symbol	Company	Weight
+MSFT	Microsoft Corporation	5.447417
+AAPL	Apple Inc.	5.23108
+AMZN	Amazon.com Inc.	3.97622
+FB	Facebook Inc. Class A	2.133678
+GOOGL	Alphabet Inc. Class A	1.661297
+GOOG	Alphabet Inc. Class C	1.653864
+JNJ	Johnson & Johnson	1.50712
+BRK.B	Berkshire Hathaway Inc. Class B	1.437871
+V	Visa Inc. Class A	1.298252
+JPM	JPMorgan Chase & Co.	1.259858
+PG	Procter & Gamble Company	1.138698
+UNH	UnitedHealth Group Incorporated	1.114438
+HD	Home Depot Inc.	1.054749
+MA	Mastercard Incorporated Class A	1.050109
+INTC	Intel Corporation	1.037787
+VZ	Verizon Communications Inc.	0.905428
+T	AT&T Inc.	0.886721
+DIS	Walt Disney Company	0.848341
+NVDA	NVIDIA Corporation	0.827
+BAC	Bank of America Corp	0.810538
+MRK	Merck & Co. Inc.	0.804835
+XOM	Exxon Mobil Corporation	0.802583
+PFE	Pfizer Inc.	0.770895
+CSCO	Cisco Systems Inc.	0.767114
+ADBE	Adobe Inc.	0.727125
+CMCSA	Comcast Corporation Class A	0.72228
+PEP	PepsiCo Inc.	0.713475
+NFLX	Netflix Inc.	0.712407
+KO	Coca-Cola Company	0.711533
+PYPL	PayPal Holdings Inc	0.709162
+CVX	Chevron Corporation	0.707879
+WMT	Walmart Inc.	0.674745
+ABT	Abbott Laboratories	0.622302
+ABBV	AbbVie Inc.	0.617324
+CRM	salesforce.com inc.	0.597932
+MCD	McDonald's Corporation	0.560767
+BMY	Bristol-Myers Squibb Company	0.544019
+TMO	Thermo Fisher Scientific Inc.	0.5363
+COST	Costco Wholesale Corporation	0.522144
+ACN	Accenture Plc Class A	0.507098
+AMGN	Amgen Inc.	0.506139
+MDT	Medtronic Plc	0.501382
+NKE	NIKE Inc. Class B	0.499733
+LLY	Eli Lilly and Company	0.496471
+NEE	NextEra Energy Inc.	0.488763
+UNP	Union Pacific Corporation	0.476148
+AVGO	Broadcom Inc.	0.472988
+TXN	Texas Instruments Incorporated	0.458082
+AMT	American Tower Corporation	0.456267
+C	Citigroup Inc.	0.448606
+ORCL	Oracle Corporation	0.446418
+PM	Philip Morris International Inc.	0.444793
+LIN	Linde plc	0.440544
+IBM	International Business Machines Corporation	0.44028
+WFC	Wells Fargo & Company	0.427444
+HON	Honeywell International Inc.	0.422106
+DHR	Danaher Corporation	0.411512
+LOW	Lowe's Companies Inc.	0.39224
+LMT	Lockheed Martin Corporation	0.385211
+RTX	Raytheon Technologies Corporation	0.380475
+QCOM	QUALCOMM Incorporated	0.369979
+GILD	Gilead Sciences Inc.	0.362801
+SBUX	Starbucks Corporation	0.362318
+MMM	3M Company	0.357316
+BA	Boeing Company	0.356907
+CVS	CVS Health Corporation	0.335276
+CHTR	Charter Communications Inc. Class A	0.330799
+FIS	Fidelity National Information Services Inc.	0.330692
+BLK	BlackRock Inc.	0.321886
+SPGI	S&P Global Inc.	0.313897
+INTU	Intuit Inc.	0.290761
+CI	Cigna Corporation	0.289876
+MO	Altria Group Inc	0.289588
+MDLZ	Mondelez International Inc. Class A	0.28908
+ANTM	Anthem Inc.	0.282768
+NOW	ServiceNow Inc.	0.282173
+UPS	United Parcel Service Inc. Class B	0.28001
+CCI	Crown Castle International Corp	0.27979
+BKNG	Booking Holdings Inc.	0.278512
+PLD	Prologis Inc.	0.276974
+BDX	Becton Dickinson and Company	0.276191
+VRTX	Vertex Pharmaceuticals Incorporated	0.274606
+D	Dominion Energy Inc	0.274359
+AXP	American Express Company	0.272438
+CAT	Caterpillar Inc.	0.270567
+ZTS	Zoetis Inc. Class A	0.261524
+GS	Goldman Sachs Group Inc.	0.258505
+TJX	TJX Companies Inc	0.258056
+CME	CME Group Inc. Class A	0.257273
+ISRG	Intuitive Surgical Inc.	0.255951
+ADP	Automatic Data Processing Inc.	0.25302
+DUK	Duke Energy Corporation	0.250733
+SYK	Stryker Corporation	0.248937
+GE	General Electric Company	0.247621
+FISV	Fiserv Inc.	0.239754
+TGT	Target Corporation	0.237799
+AMD	Advanced Micro Devices Inc.	0.237768
+SO	Southern Company	0.237482
+CL	Colgate-Palmolive Company	0.236558
+REGN	Regeneron Pharmaceuticals Inc.	0.234311
+EQIX	Equinix Inc.	0.234159
+CSX	CSX Corporation	0.223684
+CB	Chubb Limited	0.220922
+GPN	Global Payments Inc.	0.219034
+ECL	Ecolab Inc.	0.21344
+MMC	Marsh & McLennan Companies Inc.	0.212513
+USB	U.S. Bancorp	0.212084
+APD	Air Products and Chemicals Inc.	0.211286
+MS	Morgan Stanley	0.210458
+BIIB	Biogen Inc.	0.210452
+ICE	Intercontinental Exchange Inc.	0.21012
+MU	Micron Technology Inc.	0.208927
+TFC	Truist Financial Corporation	0.206642
+ATVI	Activision Blizzard Inc.	0.206613
+AMAT	Applied Materials Inc.	0.205831
+BSX	Boston Scientific Corporation	0.203846
+NOC	Northrop Grumman Corporation	0.202991
+ILMN	Illumina Inc.	0.202911
+PNC	PNC Financial Services Group Inc.	0.202353
+ITW	Illinois Tool Works Inc.	0.201209
+HUM	Humana Inc.	0.200849
+NSC	Norfolk Southern Corporation	0.193423
+DE	Deere & Company	0.192077
+ADSK	Autodesk Inc.	0.191845
+COP	ConocoPhillips	0.190995
+SHW	Sherwin-Williams Company	0.188031
+KMB	Kimberly-Clark Corporation	0.187344
+DG	Dollar General Corporation	0.186236
+EW	Edwards Lifesciences Corporation	0.179698
+AON	Aon Plc Class A	0.179598
+PGR	Progressive Corporation	0.178425
+BAX	Baxter International Inc.	0.177954
+MCO	Moody's Corporation	0.17688
+NEM	Newmont Corporation	0.176572
+EL	Estee Lauder Companies Inc. Class A	0.174373
+SCHW	Charles Schwab Corporation	0.174139
+ADI	Analog Devices Inc.	0.172678
+LHX	L3Harris Technologies Inc	0.170969
+WM	Waste Management Inc.	0.165707
+AEP	American Electric Power Company Inc.	0.16565
+ROP	Roper Technologies Inc.	0.160771
+LRCX	Lam Research Corporation	0.160082
+DD	DuPont de Nemours Inc.	0.155845
+EXC	Exelon Corporation	0.149507
+EMR	Emerson Electric Co.	0.147731
+TMUS	T-Mobile US Inc.	0.147373
+CNC	Centene Corporation	0.146588
+PSX	Phillips 66	0.143407
+GIS	General Mills Inc.	0.143225
+SRE	Sempra Energy	0.143013
+ETN	Eaton Corp. Plc	0.142363
+DLR	Digital Realty Trust Inc.	0.141337
+GM	General Motors Company	0.141019
+GD	General Dynamics Corporation	0.140214
+ROST	Ross Stores Inc.	0.139619
+EBAY	eBay Inc.	0.136938
+SBAC	SBA Communications Corp. Class A	0.136695
+XEL	Xcel Energy Inc.	0.13498
+COF	Capital One Financial Corporation	0.133373
+EA	Electronic Arts Inc.	0.132719
+DXCM	DexCom Inc.	0.128691
+BK	Bank of New York Mellon Corporation	0.127272
+FDX	FedEx Corporation	0.127201
+WBA	Walgreens Boots Alliance Inc	0.126047
+ALL	Allstate Corporation	0.1254
+EOG	EOG Resources Inc.	0.124181
+ORLY	O'Reilly Automotive Inc.	0.122787
+KMI	Kinder Morgan Inc Class P	0.120668
+PSA	Public Storage	0.119744
+DOW	Dow Inc.	0.119001
+APH	Amphenol Corporation Class A	0.117926
+CTSH	Cognizant Technology Solutions Corporation Class A	0.116754
+SYY	Sysco Corporation	0.116164
+TEL	TE Connectivity Ltd.	0.114801
+TROW	T. Rowe Price Group	0.114779
+MET	MetLife Inc.	0.114129
+TRV	Travelers Companies Inc.	0.113823
+WEC	WEC Energy Group Inc	0.1137
+KLAC	KLA Corporation	0.113099
+STZ	Constellation Brands Inc. Class A	0.112731
+INFO	IHS Markit Ltd.	0.112525
+VLO	Valero Energy Corporation	0.111591
+AIG	American International Group Inc.	0.111312
+YUM	Yum! Brands Inc.	0.110175
+HCA	HCA Healthcare Inc	0.110086
+ES	Eversource Energy	0.108709
+A	Agilent Technologies Inc.	0.108123
+AFL	Aflac Incorporated	0.108044
+VRSK	Verisk Analytics Inc	0.107455
+MNST	Monster Beverage Corporation	0.106634
+IQV	IQVIA Holdings Inc	0.106403
+SNPS	Synopsys Inc.	0.105771
+AZO	AutoZone Inc.	0.10569
+IDXX	IDEXX Laboratories Inc.	0.105153
+SLB	Schlumberger NV	0.104638
+MAR	Marriott International Inc. Class A	0.10443
+MSCI	MSCI Inc. Class A	0.104235
+TWTR	Twitter Inc.	0.104088
+CMG	Chipotle Mexican Grill Inc.	0.103429
+ZBH	Zimmer Biomet Holdings Inc.	0.103354
+CMI	Cummins Inc.	0.103312
+PEG	Public Service Enterprise Group Inc	0.102312
+PPG	PPG Industries Inc.	0.101712
+WLTW	Willis Towers Watson Public Limited Company	0.101514
+KR	Kroger Co.	0.100751
+MCK	McKesson Corporation	0.100745
+CDNS	Cadence Design Systems Inc.	0.100481
+MCHP	Microchip Technology Incorporated	0.100151
+JCI	Johnson Controls International plc	0.099816
+CLX	Clorox Company	0.099654
+PCAR	PACCAR Inc	0.099082
+PRU	Prudential Financial Inc.	0.098853
+ROK	Rockwell Automation Inc.	0.098059
+MSI	Motorola Solutions Inc.	0.097652
+ALXN	Alexion Pharmaceuticals Inc.	0.097251
+PH	Parker-Hannifin Corporation	0.097131
+ED	Consolidated Edison Inc.	0.097036
+MPC	Marathon Petroleum Corporation	0.096581
+HPQ	HP Inc.	0.096465
+WMB	Williams Companies Inc.	0.095999
+ANSS	ANSYS Inc.	0.094644
+HLT	Hilton Worldwide Holdings Inc	0.093597
+BLL	Ball Corporation	0.093484
+F	Ford Motor Company	0.093143
+XLNX	Xilinx Inc.	0.09269
+FAST	Fastenal Company	0.092477
+STT	State Street Corporation	0.092312
+WELL	Welltower Inc.	0.092115
+AWK	American Water Works Company Inc.	0.091919
+PAYX	Paychex Inc.	0.091852
+FE	FirstEnergy Corp.	0.090662
+TDG	TransDigm Group Incorporated	0.090047
+CERN	Cerner Corporation	0.089245
+RMD	ResMed Inc.	0.089004
+PPL	PPL Corporation	0.088752
+TT	Trane Technologies plc	0.087335
+AVB	AvalonBay Communities Inc.	0.087135
+ADM	Archer-Daniels-Midland Company	0.086874
+CTAS	Cintas Corporation	0.086767
+OTIS	Otis Worldwide Corporation	0.086682
+SPG	Simon Property Group Inc.	0.086433
+DLTR	Dollar Tree Inc.	0.086386
+VRSN	VeriSign Inc.	0.085415
+FLT	FleetCor Technologies Inc.	0.085141
+EIX	Edison International	0.084287
+SWKS	Skyworks Solutions Inc.	0.083818
+DTE	DTE Energy Company	0.083655
+AME	AMETEK Inc.	0.083016
+EQR	Equity Residential	0.082936
+CTVA	Corteva Inc	0.082196
+APTV	Aptiv PLC	0.082009
+MKC	McCormick & Company Incorporated	0.082002
+VFC	V.F. Corporation	0.081066
+EFX	Equifax Inc.	0.080704
+SWK	Stanley Black & Decker Inc.	0.080375
+ETR	Entergy Corporation	0.07985
+O	Realty Income Corporation	0.079701
+MTD	Mettler-Toledo International Inc.	0.078718
+FTNT	Fortinet Inc.	0.078284
+KEYS	Keysight Technologies Inc	0.076865
+HSY	Hershey Company	0.076739
+FTV	Fortive Corp.	0.076312
+MKTX	MarketAxess Holdings Inc.	0.075725
+KHC	Kraft Heinz Company	0.074822
+GLW	Corning Inc	0.074758
+ALGN	Align Technology Inc.	0.07436
+AMP	Ameriprise Financial Inc.	0.074236
+FRC	First Republic Bank	0.074227
+LUV	Southwest Airlines Co.	0.074126
+DHI	D.R. Horton Inc.	0.073471
+ARE	Alexandria Real Estate Equities Inc.	0.073266
+BBY	Best Buy Co. Inc.	0.072359
+AEE	Ameren Corporation	0.071398
+CPRT	Copart Inc.	0.071183
+CHD	Church & Dwight Co. Inc.	0.070912
+RSG	Republic Services Inc.	0.070865
+LYB	LyondellBasell Industries NV	0.069774
+AJG	Arthur J. Gallagher & Co.	0.069767
+NTRS	Northern Trust Corporation	0.069748
+CARR	Carrier Global Corp.	0.069733
+DFS	Discover Financial Services	0.069231
+LEN	Lennar Corporation Class A	0.068673
+TSN	Tyson Foods Inc. Class A	0.068372
+LVS	Las Vegas Sands Corp.	0.067617
+INCY	Incyte Corporation	0.06739
+LH	Laboratory Corporation of America Holdings	0.06708
+TFX	Teleflex Incorporated	0.066019
+CMS	CMS Energy Corporation	0.065823
+AMCR	Amcor PLC	0.065757
+PXD	Pioneer Natural Resources Company	0.064505
+OKE	ONEOK Inc.	0.064417
+AKAM	Akamai Technologies Inc.	0.064306
+CAH	Cardinal Health Inc.	0.063993
+CDW	CDW Corp.	0.063902
+CBRE	CBRE Group Inc. Class A	0.063867
+ESS	Essex Property Trust Inc.	0.063842
+WY	Weyerhaeuser Company	0.063219
+MXIM	Maxim Integrated Products Inc.	0.063178
+DAL	Delta Air Lines Inc.	0.063163
+CAG	Conagra Brands Inc.	0.06287
+K	Kellogg Company	0.062829
+CTXS	Citrix Systems Inc.	0.062023
+ODFL	Old Dominion Freight Line Inc.	0.061314
+DGX	Quest Diagnostics Incorporated	0.061248
+COO	Cooper Companies Inc.	0.060376
+VMC	Vulcan Materials Company	0.060281
+KMX	CarMax Inc.	0.060178
+WST	West Pharmaceutical Services Inc.	0.059714
+KSU	Kansas City Southern	0.059136
+FITB	Fifth Third Bancorp	0.058632
+HIG	Hartford Financial Services Group Inc.	0.058497
+DPZ	Domino's Pizza Inc.	0.058103
+PAYC	Paycom Software Inc.	0.058051
+MTB	M&T Bank Corporation	0.058041
+DOV	Dover Corporation	0.058
+VTR	Ventas Inc.	0.057817
+ABC	AmerisourceBergen Corporation	0.057784
+FCX	Freeport-McMoRan Inc.	0.05674
+IFF	International Flavors & Fragrances Inc.	0.056401
+ZBRA	Zebra Technologies Corporation Class A	0.056133
+TSCO	Tractor Supply Company	0.056077
+IP	International Paper Company	0.055986
+EVRG	Evergy Inc.	0.055895
+ULTA	Ulta Beauty Inc	0.055801
+TTWO	Take-Two Interactive Software Inc.	0.055777
+HOLX	Hologic Inc.	0.055407
+LDOS	Leidos Holdings Inc.	0.055149
+BR	Broadridge Financial Solutions Inc.	0.05483
+GWW	W.W. Grainger Inc.	0.053617
+MAA	Mid-America Apartment Communities Inc.	0.053563
+STE	STERIS Plc	0.053509
+GRMN	Garmin Ltd.	0.053387
+MAS	Masco Corporation	0.053305
+OXY	Occidental Petroleum Corporation	0.053205
+BXP	Boston Properties Inc.	0.053051
+NDAQ	Nasdaq Inc.	0.052909
+JKHY	Jack Henry & Associates Inc.	0.052463
+PEAK	Healthpeak Properties Inc.	0.052316
+HES	Hess Corporation	0.052061
+DRE	Duke Realty Corporation	0.052021
+HPE	Hewlett Packard Enterprise Co.	0.051702
+SYF	Synchrony Financial	0.051661
+NUE	Nucor Corporation	0.051512
+EXPD	Expeditors International of Washington Inc.	0.051475
+WDC	Western Digital Corporation	0.051337
+EXR	Extra Space Storage Inc.	0.051218
+HRL	Hormel Foods Corporation	0.051209
+FMC	FMC Corporation	0.05104
+QRVO	Qorvo Inc.	0.05072
+MLM	Martin Marietta Materials Inc.	0.05043
+WAT	Waters Corporation	0.050189
+SJM	J.M. Smucker Company	0.050088
+GPC	Genuine Parts Company	0.050021
+CXO	Concho Resources Inc.	0.049513
+ANET	Arista Networks Inc.	0.048575
+ATO	Atmos Energy Corporation	0.048351
+XYL	Xylem Inc.	0.048349
+OMC	Omnicom Group Inc	0.047957
+KEY	KeyCorp	0.047888
+IEX	IDEX Corporation	0.047794
+EXPE	Expedia Group Inc.	0.047546
+STX	Seagate Technology PLC	0.047459
+LNT	Alliant Energy Corp	0.047399
+TIF	Tiffany & Co.	0.04727
+VIAC	ViacomCBS Inc. Class B	0.047117
+BF.B	Brown-Forman Corporation Class B	0.046217
+WAB	Westinghouse Air Brake Technologies Corporation	0.046121
+NVR	NVR Inc.	0.046076
+J	Jacobs Engineering Group Inc.	0.045963
+RF	Regions Financial Corporation	0.04593
+NLOK	NortonLifeLock Inc.	0.045449
+IT	Gartner Inc.	0.04527
+VAR	Varian Medical Systems Inc.	0.045184
+CFG	Citizens Financial Group Inc.	0.045105
+CE	Celanese Corporation	0.044759
+CBOE	Cboe Global Markets Inc	0.044682
+HAL	Halliburton Company	0.044411
+UDR	UDR Inc.	0.044307
+PKI	PerkinElmer Inc.	0.044228
+SIVB	SVB Financial Group	0.043904
+CHRW	C.H. Robinson Worldwide Inc.	0.043699
+URI	United Rentals Inc.	0.043517
+BKR	Baker Hughes Company Class A	0.043475
+PFG	Principal Financial Group Inc.	0.042916
+ETFC	E*TRADE Financial Corporation	0.042208
+FOXA	Fox Corporation Class A	0.041656
+ABMD	ABIOMED Inc.	0.041239
+XRAY	DENTSPLY SIRONA Inc.	0.041012
+IR	Ingersoll Rand Inc.	0.041007
+DRI	Darden Restaurants Inc.	0.040343
+NTAP	NetApp Inc.	0.040336
+MGM	MGM Resorts International	0.040222
+HBAN	Huntington Bancshares Incorporated	0.039666
+CTL	CenturyLink Inc.	0.039254
+PKG	Packaging Corporation of America	0.039053
+AVY	Avery Dennison Corporation	0.038544
+RCL	Royal Caribbean Cruises Ltd.	0.038289
+JBHT	J.B. Hunt Transport Services Inc.	0.038242
+AAP	Advance Auto Parts Inc.	0.038071
+HAS	Hasbro Inc.	0.03799
+EMN	Eastman Chemical Company	0.037935
+ALLE	Allegion PLC	0.037889
+CINF	Cincinnati Financial Corporation	0.03738
+WU	Western Union Company	0.037013
+RJF	Raymond James Financial Inc.	0.036841
+LW	Lamb Weston Holdings Inc.	0.036473
+NI	NiSource Inc	0.036188
+LKQ	LKQ Corporation	0.035899
+HSIC	Henry Schein Inc.	0.035767
+NRG	NRG Energy Inc.	0.035542
+CNP	CenterPoint Energy Inc.	0.035493
+PHM	PulteGroup Inc.	0.035328
+L	Loews Corporation	0.035054
+HST	Host Hotels & Resorts Inc.	0.034946
+MYL	Mylan N.V.	0.03477
+WYNN	Wynn Resorts Limited	0.034734
+AES	AES Corporation	0.034682
+PNW	Pinnacle West Capital Corporation	0.034192
+FBHS	Fortune Brands Home & Security Inc.	0.034044
+FFIV	F5 Networks Inc.	0.033672
+WRB	W. R. Berkley Corporation	0.033653
+DISH	DISH Network Corporation Class A	0.03345
+RE	Everest Re Group Ltd.	0.033041
+ALB	Albemarle Corporation	0.032506
+UHS	Universal Health Services Inc. Class B	0.032337
+COG	Cabot Oil & Gas Corporation	0.032075
+CPB	Campbell Soup Company	0.031779
+REG	Regency Centers Corporation	0.031691
+JNPR	Juniper Networks Inc.	0.031649
+HII	Huntington Ingalls Industries Inc.	0.031483
+WHR	Whirlpool Corporation	0.031473
+GL	Globe Life Inc.	0.031335
+IRM	Iron Mountain Inc.	0.031327
+LNC	Lincoln National Corporation	0.031248
+TXT	Textron Inc.	0.030868
+SNA	Snap-on Incorporated	0.029808
+FANG	Diamondback Energy Inc.	0.029556
+WRK	WestRock Company	0.02952
+LYV	Live Nation Entertainment Inc.	0.02938
+TAP	Molson Coors Beverage Company Class B	0.029271
+PRGO	Perrigo Co. Plc	0.029171
+UAL	United Airlines Holdings Inc.	0.028185
+DVA	DaVita Inc.	0.027555
+IPG	Interpublic Group of Companies Inc.	0.027235
+BWA	BorgWarner Inc.	0.027216
+CF	CF Industries Holdings Inc.	0.026893
+AOS	A. O. Smith Corporation	0.026634
+CCL	Carnival Corporation	0.026253
+PNR	Pentair plc	0.026244
+DISCK	Discovery Inc. Class C	0.026213
+AIZ	Assurant Inc.	0.025327
+VNO	Vornado Realty Trust	0.025254
+FRT	Federal Realty Investment Trust	0.025187
+RHI	Robert Half International Inc.	0.025003
+FLIR	FLIR Systems Inc.	0.02448
+ROL	Rollins Inc.	0.024237
+MHK	Mohawk Industries Inc.	0.024146
+ZION	Zions Bancorporation N.A.	0.023391
+AIV	Apartment Investment & Management Co Class A	0.023034
+BEN	Franklin Resources Inc.	0.02297
+HWM	Howmet Aerospace Inc.	0.022681
+CMA	Comerica Incorporated	0.022301
+KIM	Kimco Realty Corporation	0.022283
+IPGP	IPG Photonics Corporation	0.022262
+PWR	Quanta Services Inc.	0.022152
+NWL	Newell Brands Inc	0.022004
+NLSN	Nielsen Holdings Plc	0.021493
+PBCT	People's United Financial Inc.	0.02094
+SEE	Sealed Air Corporation	0.020257
+NOV	National Oilwell Varco Inc.	0.019665
+HFC	HollyFrontier Corporation	0.019296
+DVN	Devon Energy Corporation	0.018741
+ALK	Alaska Air Group Inc.	0.018665
+NWSA	News Corporation Class A	0.018639
+FOX	Fox Corporation Class B	0.018626
+NBL	Noble Energy Inc.	0.018604
+MRO	Marathon Oil Corporation	0.018469
+MOS	Mosaic Company	0.018455
+APA	Apache Corporation	0.018079
+AAL	American Airlines Group Inc.	0.018071
+DXC	DXC Technology Co.	0.017618
+LEG	Leggett & Platt Incorporated	0.017516
+HBI	Hanesbrands Inc.	0.016836
+TPR	Tapestry Inc.	0.016731
+SLG	SL Green Realty Corp.	0.016279
+RL	Ralph Lauren Corporation Class A	0.016275
+LB	L Brands Inc.	0.015833
+PVH	PVH Corp.	0.015714
+NCLH	Norwegian Cruise Line Holdings Ltd.	0.01498
+HOG	Harley-Davidson Inc.	0.014454
+FLS	Flowserve Corporation	0.014349
+FTI	TechnipFMC Plc	0.014331
+KSS	Kohl's Corporation	0.014074
+HRB	H&R Block Inc.	0.013599
+UNM	Unum Group	0.013582
+DISCA	Discovery Inc. Class A	0.013518
+IVZ	Invesco Ltd.	0.01316
+XRX	Xerox Holdings Corporation	0.012863
+GPS	Gap Inc.	0.009932
+ADS	Alliance Data Systems Corporation	0.008723
+JWN	Nordstrom Inc.	0.007879
+UAA	Under Armour Inc. Class A	0.007216
+UA	Under Armour Inc. Class C	0.006865
+NWS	News Corporation Class B	0.006176
+COTY	Coty Inc. Class A	0.005509

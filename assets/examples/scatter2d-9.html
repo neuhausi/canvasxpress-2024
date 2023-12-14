@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Scatter2D Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: scatter2d-9">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: scatter2d-9">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Scatter2D Chart">
+    <meta itemprop="description" content="CanvasXpress: scatter2d-9">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Scatter2D Chart">
+    <meta name="og:description" content="CanvasXpress: scatter2d-9">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/scatter2d-9.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Scatter2D
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="scatter2d9" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXscatter2d9 = new CanvasXpress("scatter2d9",
+          {
+            "y" : {
+              "smps" : [ "Mortality", "Temperature" ],
+              "vars" : [ "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12", "s13", "s14", "s15", "s16" ],
+              "data" : [ [ 102.5, 51.3 ], [ 104.5, 49.9 ], [ 100.4, 50 ], [ 95.9, 49.2 ], [ 87, 48.5 ], [ 95, 47.8 ], [ 88.6, 47.3 ], [ 89.2, 45.1 ], [ 78.9, 46.3 ], [ 84.6, 42.1 ], [ 81.7, 44.2 ], [ 72.2, 43.5 ], [ 65.1, 42.3 ], [ 68.1, 40.2 ], [ 67.3, 31.8 ], [ 52.5, 34 ] ]
+            }
+          },
+          {"backgroundType": "window",
+           "backgroundWindow": "rgb(238,238,238)",
+           "citation": "Velleman, P. F. and Hoaglin, D. C. (1981).\nApplications, Basics, and Computing of Exploratory Data Analysis. Belmont. CA: Wadsworth, Inc., pp. 127-134.",
+           "colors": ["rgba(64,64,64,0.5)"],
+           "decorationsBackgroundColor": "rgb(238,238,238)",
+           "decorationsBorderColor": "rgb(0,0,0)",
+           "decorationsPosition": "bottomRight",
+           "graphType": "Scatter2D",
+           "legendBackgroundColor": "rgba(255,255,255,0)",
+           "legendInside": true,
+           "plotBox": false,
+           "showDecorations": true,
+           "showRegressionFit": true,
+           "showTransition": false,
+           "theme": "CanvasXpress",
+           "title": "Mean annual temperature (in degrees F) and Mortality Index for neoplasms of the female breast.",
+           "xAxis": ["Mortality"],
+           "xAxisTickColor": "rgb(255,255,255)",
+           "yAxis": ["Temperature"],
+           "yAxisTickColor": "rgb(255,255,255)"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

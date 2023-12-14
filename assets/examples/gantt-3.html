@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Gantt Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: gantt-3">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: gantt-3">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Gantt Chart">
+    <meta itemprop="description" content="CanvasXpress: gantt-3">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Gantt Chart">
+    <meta name="og:description" content="CanvasXpress: gantt-3">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/gantt-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Gantt
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="gantt3" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXgantt3 = new CanvasXpress("gantt3",
+          {
+            "y" : {
+              "vars" : ["Start", "End"],
+              "smps" : ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12"],
+              "data" : [[20140221, 20140521, 20140821, 20141121, 20150221, 20150521, 20140821, 20141121, 20150221, 20150521, 20150821, 20151121],
+                        [20140520, 20140820, 20141120, 20150220, 20150520, 20150820, 20141120, 20150220, 20150520, 20150820, 20151120, 20160220]]
+            },
+            "x" : {
+              "Clinical Trial" : ["CT001", "CT002", "CT003", "CT004", "CT005", "CT006", "CT001", "CT002", "CT003", "CT004", "CT005", "CT006"],
+              "Indication" : ["Lung", "Liver", "Breast", "Skin", "Lung", "Lung", "Breast", "Pancreas", "Stomach", "Breast", "Skin", "Lung"],
+              "Completion" : [0.2, 0.6, 1, 0.4, 0.3, 0.4, 0.25, 1, 0.8, 0.9, 0.6, 0.3],
+              "Dependencies" : [null, null, null, null, null, null, "S01", "S02", "S03", null, null, null]
+            }
+          },
+          {"blockContrast": true,
+           "colorBy": "Clinical Trial",
+           "ganttCompletion": "Completion",
+           "ganttEnd": "End",
+           "ganttStart": "Start",
+           "graphType": "Gantt",
+           "groupingFactors": ["Clinical Trial"],
+           "theme": "CanvasXpress"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

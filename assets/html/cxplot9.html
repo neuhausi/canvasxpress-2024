@@ -1,0 +1,285 @@
+<html>
+
+<head>
+  <title>cxplot()</title>
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/build/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.globals.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.complex.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipMouse.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.tabpanel.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.motion.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.example.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.random.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+  <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+</head>
+
+<body>
+  <!--
+  <div>
+    <canvas id="canvas" width="600" height="600" data-responsive="true"></canvas>
+  </div>
+  <div>
+    <canvas id="canvas2" width="600" height="600" data-responsive="true"></canvas>
+  </div>
+  <div>
+    <canvas id="canvas3" width="600" height="600" data-responsive="true"></canvas>
+  </div>
+  <div>
+    <canvas id="canvas4" width="600" height="600" data-responsive="true"></canvas>
+  </div>
+  -->
+  <div>
+    <canvas id="canvas5" width="600" height="600" data-responsive="true"></canvas>
+  </div>
+  <script>
+
+    /*
+    new CanvasXpress({
+      "renderTo": "canvas",
+      "data": {
+        "y": {
+          "vars": ["value"],
+          "smps": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "R14"],
+          "data": [
+            [4, 4, 7, 5, 3, 9, 4, 7, 5, 3, 9, 4, 2, 5]
+          ]
+        },
+        "x": {
+          "date": [
+            "2023-09-10", "2023-09-11", "2023-09-12", "2023-09-13", "2023-09-14", "2023-09-15", "2023-09-16",
+            "2023-09-10", "2023-09-11", "2023-09-12", "2023-09-13", "2023-09-14", "2023-09-15", "2023-09-16"
+          ],
+          "class": [
+            "A", "A", "A", "A", "A", "A", "A",
+            "B", "B", "B", "B", "B", "B", "B"
+          ]
+        }
+      },
+      "config": {
+        "aes": {
+          "x": "date",
+          "y": "value",
+          "color": "class"
+        },
+        "isCxplot": true
+      },
+      "afterRender": [
+        [
+          "geom_line"
+        ]
+      ]
+    });
+
+    new CanvasXpress({
+      "renderTo": "canvas2",
+      "data": {
+        "y": {
+          "smps": ["date", "value-1", "value-2"],
+          "vars": ["R1", "R2", "R3", "R4", "R5", "R6", "R7"],
+          "data": [
+            ["2023-09-10", 4, 7],
+            ["2023-09-11", 4, 5],
+            ["2023-09-12", 7, 3],
+            ["2023-09-13", 5, 9],
+            ["2023-09-14", 3, 4],
+            ["2023-09-15", 9, 2],
+            ["2023-09-16", 4, 5]
+          ]
+        }
+      },
+      "config": {
+        "graphType": "Scatter2D",
+        "scatterType": "line",
+        "title": "Minimal Date Time Series Example",
+        "xAxis": ["date"],
+        "xAxisTime": true,
+        "xAxisTitle": "Days",
+        "yAxis": ["value-1", "value-2"],
+        "yAxisTitle": "Counts by Day"
+      }
+    });
+
+    new CanvasXpress({
+      "renderTo": "canvas3",
+      "data": {
+        "y": {
+          "smps": ["date", "Series A", "Series B"],
+          "vars": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9"],
+          "data": [
+            [1674864000000, 10, 20],
+            [1674950400000, 30, 50],
+            [1675036800000, 80, 70],
+            [1675123200000, 30, 40],
+            [1675209600000, 40, 30],
+            [1675296000000, 20, 20],
+            [1675468800000,  0, 20],
+            [1675555200000,  0, 50],
+            [1675641600000, 40, 70]
+          ]
+        }
+      },
+      "config": {
+        "graphType": "Scatter2D",
+        "scatterType": "line",
+        "title": "Minimal Date Time Series Example",
+        "xAxis": ["date"],
+        "xAxisTime": true,
+        "xAxisTitle": "Days",
+        "yAxis": ["Series A", "Series B"],
+        "yAxisTitle": "Counts by Day"
+      }
+    });
+
+    new CanvasXpress({
+      "renderTo": "canvas4",
+      "data": {
+        "y": {
+          "smps": ["date", "Series A", "Series B"],
+          "vars": ["R1", "R2", "R3", "R7", "R8", "R9"],
+          "data": [
+            [1674864000000, 10, 20],
+            [1674950400000, 30, 50],
+            [1675036800000, 80, 70],
+            [1675468800000,  0, 20],
+            [1675555200000,  0, 50],
+            [1675641600000, 40, 70]
+          ]
+        }
+      },
+      "config": {
+        "graphType": "Scatter2D",
+        "scatterType": "line",
+        "title": "Minimal Date Time Series Example",
+        "xAxis": ["date"],
+        "xAxisTime": true,
+        "xAxisTitle": "Days",
+        "yAxis": ["Series A", "Series B"],
+        "yAxisTitle": "Counts by Day"
+      }
+    });
+    */
+
+    new CanvasXpress({
+      "renderTo": "canvas5",
+      "data": {
+        "y": {
+          "smps": ["date", "Series A", "Series B"],
+          "vars": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9"],
+          "data": [
+            [1674864000000, 10, 20],
+            [1674950400000, 30, 50],
+            [1675036800000, 80, 70],
+            [1675123200000, null, 0],
+            [1675209600000, null, 0],
+            [1675296000000, null, 0],
+            [1675468800000,  0, 20],
+            [1675555200000,  0, 50],
+            [1675641600000, 40, 70]
+          ]
+        }
+      },
+      "config": {
+        "graphType": "Scatter2D",
+        "scatterType": "line",
+        "title": "Minimal Date Time Series Example",
+        "xAxis": ["date"],
+        "xAxisTime": true,
+        "xAxisTitle": "Days",
+        "yAxis": ["Series A", "Series B"],
+        "yAxisTitle": "Counts by Day"
+      }
+    });
+
+  </script>
+</body>
+
+</html>

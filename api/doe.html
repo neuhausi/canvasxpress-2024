@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: API - DOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: API - DOE parameters to configure visualizations">
+    <link rel="stylesheet" href="/dist/build.css" type="text/css" media="all" />
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: API - DOE parameters to configure visualizations">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: API - DOE">
+    <meta itemprop="description" content="CanvasXpress: API - DOE parameters to configure visualizations">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: API - DOE">
+    <meta name="og:description" content="CanvasXpress: API - DOE parameters to configure visualizations">
+    <meta name="og:url" content="https://www.canvasxpress.org/api/doe.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Loader
+    <div class="loader d-flex flex-column">
+      <img src="/assets/images/logo-square.svg" class="pulse" width="200" height="124" title="CanvasXpress Loader"/>
+    </div>
+    -->
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <div class="cx--top-border"></div>
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top: 0;">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="/index.html">
+            <h4 class="mb-0">
+              <img src="/assets/images/logo-dark.svg" style="height: 25px; width: auto;" title="CanvasXpress Logo" width="282" height="35">
+            </h4>
+          </a>
+          <a class="navbar-toggler" href="#" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxaa"><rect x="2" y="15" width="96" height="8" /><rect x="2" y="48" width="96" height="8" /><rect x="2" y="81" width="96" height="8" /></g></svg>
+          </a>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="/index.html" class="nav-link fade-page">Home</a></li>
+                <li class="nav-item"><a id="toggleExamples" href="#examples" data-toggle="modal" data-target="#examples" class="nav-link">Examples</a></li>
+                <li class="nav-item"><a href="/docs.html" class="nav-link fade-page">Docs</a></li>
+                <li class="nav-item"><a href="/api.html" class="nav-link active fade-page">Api</a></li>
+                <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
+                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
+                <li class="nav-item" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-toggle="modal" data-target="#search">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="35" cy="35" r="33" /><line x1="60" y1="60" x2="99" y2="99" /></g></svg>
+                </li>
+              </ul>
+            </div>
+            <!-- <a href="/contact.html" class="btn btn-primary py-2 ml-lg-3">Get License</a> -->
+            <a id="siteUserId" href="#" style="margin-left:8px;"></a>
+            <a id="toggleLogin" title="Login" href="#account" data-toggle="modal" data-target="#account" style="margin-left:12px;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="49.9" cy="26" r="23.6" /><path d="M 49.9 49.6 L 49.9 49.6 C 71.7 49.6 89.3 67.2 89.3 88.9 L 89.3 97.7 C 89.3 97.7 89.3 97.7 89.3 97.7 L 10.7 97.7 C 10.7 97.7 10.7 97.7 10.7 97.7 L 10.7 88.9 C 10.6 67.2 28.2 49.6 49.9 49.6 Z" /></g></svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Modals -->
+      <div id="modals">
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="searchModalLabel">Search CanvasXpress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                </style>
+                <script>
+                  (function(){var cx='017553474198412024421:c_qxiweliao';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();
+                </script>
+                <gcse:search></gcse:search>
+              </div>
+              <div class="modal-footer">
+                <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social -->
+        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="dataset" class="content" style="display: block;">
+                    <div class="form">
+                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="dataset">
+                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
+                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
+                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
+                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
+                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
+                            <span>Save dataset &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Account Login/Register/Forgot -->
+        <div id="account" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="false">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <!-- Login -->
+                  <div id="login" class="content" style="display: block;">
+                    <div class="form">
+                      <form id="login-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" autocomplete="current-password" class="form-control" name="password" placeholder="Password" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="login-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="login-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="signin">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Login in">
+                            <span>Login &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Logout -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="logout" class="content" style="display: none;">
+                    <div class="form">
+                      <div class="text-center">
+                        <button id="showLogoutForm" style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Login in">
+                          <span>Logout &#8594;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Register -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="register" class="content" style="display: none;">
+                    <div class="form">
+                      <form id="register-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post" oninput='password.setCustomValidity(confirm.value != password.value ? "Passwords do not match." : "")'>
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Your Name" required/>
+                        </div>
+                        <div class="form-group">
+                          <input id="password" type="password" autocomplete="new-password" class="form-control" name="password" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <input id="confirm" type="password" autocomplete="new-password" class="form-control" name="confirm" placeholder="Password" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="register-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="register-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="register">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Registering">
+                            <span>Create Account &#8594;</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Forgot -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div id="forgot" class="content" style="display: none;">
+                    <div class="form">
+                      <form id="forgot-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
+                        <div class="form-group">
+                          <input type="email" autocomplete="username" class="form-control" name="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="col text-center">
+                          <div id="forgot-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
+                          </div>
+                          <div id="forgot-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
+                          </div>
+                          <input class="form-control" type="hidden" name="service" value="forgot">
+                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Requesting">
+                            <span>Request Password &#8594;</i></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div id="create-forgot-footer">
+                  <span>Create account?</span>&nbsp;<a id="showRegisterForm" href="#" role="button">Register</a><br><span>Forgot password?</span>&nbsp;<a id="showForgotForm" href="#" role="button">Request</a>
+                </div>
+                <div id="login-footer" style="display: none">
+                  <span>Already have an account?</span>&nbsp;<a id="showLoginForm" href="#" role="button">Login</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Examples -->
+        <div id="examples" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false" role="dialog" >
+          <div class="modal-dialog animated" role="document" style="max-width: 730px;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary text-center" id="examplesModalLabel">Graph Type Examples</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 0;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <!-- Graphs -->
+                  <div id="graphs" class="content" style="display: block;">
+                    <div class="examplePages"><a href="/examples/area-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><polygon class="cxbc" points="11.9 86.7 53 44.1 63.3 53.7 100 12.1 100 86.3 11.9 86.7" /><g class="cxb"><polyline points="14.5 84.1 53 44.1 63.3 53.7 100 12.1" /><polyline points="11.9 47.3 40.1 18.3 53.1 31.7 78 3.5 93.7 19.6" /></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Area</span></div>
+                    <div class="examplePages"><a href="/examples/arealine-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><polygon class="cxbc" points="11.9 86.3 40 57.1 55 67.9 76.8 37 92.6 67.8 99.9 58.8 99.9 86 11.9 86.3" /><g class="cxb"><polyline points="11.9 86.3 40 57.1 55 67.9 76.8 37 92.6 67.8 99.9 58.8" /><polyline points="11.9 61.7 40 30 53 43.4 79.9 3.7 99.9 39.2" /></g><g class="cxa"><line x1="11.9" y1="0.1" x2="11.9" y2="100" /><line x1="99.9" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.2" x2="11.9" y2="39.2" x1="0"/><line y1="15.7" x2="11.9" y2="15.7" x1="0"/></g></svg></a><span class="examplePages">AreaLine</span></div>
+                    <div class="examplePages"><a href="/examples/bar-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"> <rect x="23.4" y="55.7" width="15.2" height="30.3" /><rect x="50.3" y="15.6" width="15.2" height="70.4" /><rect x="77.2" y="30.1" width="15.2" height="56" /></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Bar</span></div>
+                    <div class="examplePages"><a href="/examples/barline-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"> <rect x="23.2" y="56" width="15.1" height="30.1" /><rect x="50" y="42.5" width="15.1" height="43.6"/><rect x="76.7" y="30.4" width="15.1" height="55.6" /></g><g class="cxa"><line x1="11.9" y1="0.5" x2="11.9" y2="100" /><line x1="99.4" y1="86.1" y2="86.1" x2="0"/><line y1="62.7" x2="11.9" y2="62.7" x1="0"/><line y1="39.4" x2="11.9" y2="39.4" x1="0"/><line y1="16.1" x2="11.9" y2="16.1" x1="0"/><polyline points="23.2 42.5 49.7 19.6 59.5 28.6 89.1 0.5"/></g></svg></a><span class="examplePages">BarLine</span></div>
+                    <div class="examplePages"><a href="/examples/boxplot-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g><g class="cxb"><rect x="83.1" y="27.1" width="13.3" height="25.1"/><line x1="83.1" y1="39.6" x2="96.4" y2="39.6"/><line x1="90" y1="27.1" x2="90" y2="19.3"/><line x1="84.8" y1="20" x2="95.2" y2="20"/><line x1="90" y1="52.2" x2="90" y2="59.9"/><line x1="84.8" y1="59.2" x2="95.2" y2="59.2"/><line x1="89.8" y1="67.5" x2="89.8" y2="68.7"/><rect x="23.1" y="18.8" width="13.3" height="25.1"/><line x1="23.1" y1="31.3" x2="36.5" y2="31.3"/><line x1="30" y1="18.8" x2="30" y2="11"/><line x1="24.8" y1="11.7" x2="35.3" y2="11.7"/><line x1="30" y1="43.9" x2="30" y2="51.7"/><line x1="24.8" y1="51" x2="35.3" y2="51"/><line x1="29.8" y1="59.2" x2="29.8" y2="60.5"/><rect x="53.1" y="44.2" width="13.3" height="25.1"/><line x1="53.1" y1="56.7" x2="66.4" y2="56.7"/><line x1="60" y1="69.2" x2="60" y2="77"/><line x1="54.7" y1="76.3" x2="65.3" y2="76.3"/><line x1="60" y1="44.2" x2="60" y2="36.4"/><line x1="54.7" y1="37.1" x2="65.3" y2="37.1"/><line x1="59.8" y1="25.9" x2="59.8" y2="24.7"/></g></svg></a><span class="examplePages">Boxplot</span></div>
+                    <div class="examplePages"><a href="/examples/bubble-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><circle cx="50" cy="50" r="47.4"/><circle cx="63.6" cy="65.7" r="10.7"/><circle cx="36.4" cy="36" r="11.3"/><circle cx="35.6" cy="82.2" r="5.8"/><circle cx="82" cy="41.6" r="4.6"/></g><g class="cxb"><circle cx="37.2" cy="35.3" r="20"/><circle cx="63.6" cy="65.7" r="20"/><circle cx="67.8" cy="25.7" r="10.7"/><circle cx="21" cy="61.9" r="10.7"/></g></svg></a><span class="examplePages">Bubble</span></div>
+                    <div class="examplePages"><a href="/examples/chord-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><path d="M 84.5 65.8 C 84.5 65.8 46.1 50 83.6 32.4"/><path d="M 84.5 65.8 C 84.5 65.8 47.4 48.6 42.2 87.2"/><path d="M 15.5 65.8 C 15.5 65.8 59.1 50.7 61.5 13.8"/><path d="M 12.1 50 C 12.1 50 59.8 66.4 87.4 43"/><path d="M 15 35.2 C 15 35.2 56.8 39 25.2 79"/><path d="M 72.8 80.4 C 72.8 80.4 15.8 48.8 75.9 22.3"/></g><g class="cxa"><path d="M 2.2 50 C 2.3 86.8 42.1 109.8 74 91.3 C 75.6 90.4 77.1 89.4 78.6 88.3 L 72.7 80.4 C 49.3 97.9 15.7 83.4 12.3 54.4 C 12.2 53 12.1 51.5 12.1 50 L 2.2 50 Z"/><path d="M 15 35.2 C 25.3 11 56.6 4.3 75.9 22.3 L 82.6 15.1 C 58.3 -7.6 18.9 0.9 6 31.4 L 15 35.2 Z"/><path d="M 87.4 79.8 C 99.3 64.9 101.2 44.2 92.1 27.4 L 83.7 32.4 C 90.7 45.8 89.1 62.2 79.5 74 L 87.4 79.8 Z"/></g></svg></a><span class="examplePages">Chord</span></div>
+                    <div class="examplePages"><a href="/examples/circular-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><circle cx="50" cy="50" r="37.9"/><line x1="23" y1="76.6" x2="16.9" y2="84.6"/><circle cx="50" cy="50" r="47.9"/><circle cx="50" cy="50" r="18.6"/></g><g class="cxa"><line x1="50" y1="2.2" x2="50" y2="12.1"/></g><g class="cxb"><line x1="50" y1="20.2" x2="50" y2="24"/><line x1="50" y1="79.8" x2="50" y2="76"/><line x1="79.8" y1="50" x2="76" y2="50"/><line x1="20.2" y1="50" x2="24" y2="50"/><line x1="71.1" y1="28.9" x2="68.4" y2="31.6"/><line x1="28.9" y1="71.1" x2="31.6" y2="68.4"/><line x1="71.1" y1="71.1" x2="68.4" y2="68.4"/><line x1="28.9" y1="28.9" x2="31.6" y2="31.6"/><line x1="61.3" y1="22.4" x2="59.8" y2="25.9"/><line x1="38.7" y1="77.6" x2="40.2" y2="74.1"/><line x1="77.6" y1="61.3" x2="74.1" y2="59.8"/><line x1="22.4" y1="38.7" x2="25.9" y2="40.2"/><line x1="77.5" y1="38.5" x2="74" y2="39.9"/><line x1="22.5" y1="61.6" x2="26" y2="60.1"/><line x1="61.6" y1="77.5" x2="60.1" y2="74"/><line x1="38.5" y1="22.5" x2="39.9" y2="26"/><path d="M 87.9 50 C 87.9 59.7 84.1 69.1 77.4 76.1 L 83.7 83.8 C 109.8 57.8 97.9 13.4 62.4 3.8 C 58.3 2.7 54.2 2.2 50 2.2 L 50 12.1 C 71 12.1 87.9 29.1 87.9 50 Z"/></g></svg></a><span class="examplePages">Circular</span></div>
+                    <div class="examplePages"><a href="/examples/contour-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><path d="M 56.1 92.7 L 21.1 92.7 C 17.4 92.8 14.3 89.8 14.3 86 L 14.3 82.1 C 14.3 80.4 13.1 79.1 11.4 79.1 L 11.4 79.1 C 9.8 79.1 8.4 77.7 8.4 76.2 L 8.4 29.7 L 14.3 29.7 L 14.3 22.2 L 20.3 22.2 L 20.3 18.4 L 25 18.4 L 25 13.3 L 29.9 13.3 L 29.9 8.7 L 33.6 8.7 L 33.6 5.8 L 37.8 5.8 L 37.8 2.8 L 50 2.8 L 50 6.6 L 62.5 6.6 L 62.5 10.9 L 69.1 10.9 L 69.1 15.7 L 74 15.7 L 74 20 L 77.5 20 L 77.5 27 L 82.5 27 L 82.5 34.9 L 86.2 34.9 L 86.2 50.9 L 90.8 50.9 L 90.8 69.8 L 86.5 69.8 L 86.5 80.1 L 82.5 80.1 L 82.5 90.6 C 82.5 91.8 81.5 92.7 80.2 92.7 L 80.2 92.7 C 78.9 92.7 77.9 93.8 77.9 95 L 77.9 95 C 77.9 96.3 76.9 97.3 75.6 97.3 L 60.8 97.3 C 59.6 97.3 58.6 96.3 58.6 95 L 58.6 95 C 58.6 93.7 57.5 92.6 56.1 92.7 Z"/><polygon points="38.4 42.7 38.4 38.9 49.9 38.9 49.9 43.2 53.7 43.2 53.7 71.1 38.4 71.1 38.4 63.2 34 63.2 34 42.7 38.4 42.7"/></g><g class="cxb"><polygon points="63 78.5 69.8 78.5 69.8 70.7 78.5 70.7 78.5 59.1 74 59.1 74 50.6 69.5 50.6 69.5 39.4 66.7 39.4 66.7 31.7 62.5 31.7 62.5 27.5 54.2 27.5 54.2 22.9 33.9 22.9 33.9 27.4 30.1 27.3 30.1 29.8 26.2 29.8 26.2 34.7 22.8 34.7 22.8 75.1 25.4 75.1 25.4 79.2 29.5 79.2 29.5 83.1 63 83.1 63 78.5"/><polyline points="77.9 2.9 85.9 2.9 85.9 11.4 90 11.4 90 15 93.9 15 93.9 22.9 98.2 22.9 98.2 31.2"/><polyline points="21.9 2.9 14 2.9 14 7.2 10.1 7.2 10.1 15.4 1.8 15.4"/></g></svg></a><span class="examplePages">Contour</span></div>
+                    <div class="examplePages"><a href="/examples/correlation-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="76.6" y1="22.6" x2="36.7" y2="63.9"/><line x1="23.4" y1="22.6" x2="63.3" y2="63.9"/><line x1="50" y1="22.6" x2="76.2" y2="51"/><line x1="50" y1="22.6" x2="23.8" y2="51"/><line x1="76.6" y1="22.6" x2="90.8" y2="36.8"/><line x1="23.4" y1="22.6" x2="9.9" y2="36.8"/></g><g class="cxa"><polygon points="50 22.6 1.9 22.6 1.9 28.8 50 77.4 98.1 28.8 98.1 22.6 50 22.6"/></g></svg></a><span class="examplePages">Correlation</span></div>
+                    <div class="examplePages"><a href="/examples/dashboard-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><path d="M 40.2 73.9 C 40.2 66.3 48.3 61.6 54.8 65.4 C 57.9 67.1 59.7 70.4 59.7 73.9"/><line x1="50" y1="33.3" x2="50" y2="41.5"/><line x1="72.3" y1="40" x2="67.8" y2="46.8"/><line x1="86.6" y1="56.5" x2="79.2" y2="59.9"/><line x1="27.6" y1="40" x2="32.1" y2="46.8"/><line x1="13.3" y1="56.5" x2="20.7" y2="59.9"/><line x1="47.1" y1="64.1" x2="41.2" y2="43.4"/></g><g class="cxa"><path d="M 50 26.2 C 23.6 26.2 2.3 47.5 2.3 73.9 L 97.7 73.9 C 97.7 47.5 76.3 26.2 50 26.2 Z"/></g></svg></a><span class="examplePages">Dashboard</span></div>
+                    <div class="examplePages"><a href="/examples/density-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><path d="M 11.9 86 C 11.9 86 23.5 79.2 29.4 56.8 C 35.3 34.4 38.9 2.4 47.3 3.9 C 55.8 5.3 59.3 58.7 63.9 58.7 C 69 58.7 67.8 37.7 76.8 39.5 C 85.7 41.3 96.7 86 96.7 86"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Density</span></div>
+                    <div class="examplePages"><a href="/examples/donnut-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxbc"><path d="M 50 2.5 C 36.8 2.4 24.2 8 15.2 17.7 L 32.5 34.3 C 41.3 24.5 56.4 23.8 66 32.8 L 81.5 14.4 C 72.8 6.7 61.6 2.5 50 2.5 Z"/><path d="M 50 97.6 C 57.2 97.6 64.2 95.9 70.6 92.8 L 60.2 71.2 C 44.6 78.8 26.4 67.4 26.4 50 L 2.5 50 C 2.5 76.3 23.8 97.6 50 97.6 Z"/></g><g class="cxb"><line x1="26.4" y1="50" x2="2.5" y2="50"/><line x1="14.9" y1="17.9" x2="32.6" y2="34.3"/><line x1="66" y1="32.6" x2="82.1" y2="14.9"/><line x1="59.8" y1="71.4" x2="70.1" y2="93.2"/></g><g class="cxa"><path d="M 50 2.5 C 13.4 2.5 -9.5 42.1 8.8 73.8 C 27.1 105.5 72.9 105.5 91.2 73.8 C 95.4 66.6 97.6 58.4 97.6 50 C 97.6 23.8 76.3 2.5 50 2.5 Z M 50 73.6 C 31.9 73.6 20.5 54 29.6 38.2 C 38.7 22.5 61.4 22.5 70.4 38.2 C 72.5 41.8 73.6 45.9 73.6 50 C 73.6 63.1 63 73.6 50 73.6 Z"/></g></svg></a><span class="examplePages">Donnut</span></div>
+                    <div class="examplePages"><a href="/examples/dotline-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g><g class="cxb"><polyline points="24.8 65.2 53.4 35.9 62.7 46.1 89.3 19.9"/></g><g class="cxb"><circle cx="52" cy="67.9" r="6.6"/><circle cx="82.7" cy="55.7" r="6.6"/><circle cx="35.6" cy="23.4" r="6.6"/></g></svg></a><span class="examplePages">DotLine</span></div>
+                    <div class="examplePages"><a href="/examples/dotplot-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g><g class="cxb"><circle cx="57.1" cy="67.9" r="6.6"/><circle cx="82.7" cy="42.6" r="6.6"/><circle cx="38.9" cy="25.9" r="6.6"/></g></svg></a><span class="examplePages">Dotplot</span></div>
+                    <div class="examplePages"><a href="/examples/facet-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="10.2" y1="28" x2="10.2" y2="14.3"/><line x1="19.5" y1="28" x2="19.5" y2="9.1"/><line x1="10.2" y1="62.6" x2="10.2" y2="53.1"/><line x1="19.5" y1="62.6" x2="19.5" y2="48.9"/><line x1="10.2" y1="97.2" x2="10.2" y2="79.7"/><line x1="19.5" y1="97.2" x2="19.5" y2="79.7"/><line x1="89.7" y1="28" x2="89.7" y2="14.3"/><line x1="80.4" y1="28" x2="80.4" y2="9.1"/><line x1="89.7" y1="62.6" x2="89.7" y2="53.1"/><line x1="80.4" y1="62.6" x2="80.4" y2="48.9"/><line x1="89.7" y1="97.2" x2="89.7" y2="84.5"/><line x1="80.4" y1="97.2" x2="80.4" y2="90.3"/><line x1="45.3" y1="28" x2="45.3" y2="18.5"/><line x1="54.6" y1="28" x2="54.6" y2="9.1"/><line x1="45.3" y1="62.6" x2="45.3" y2="45.1"/><line x1="54.6" y1="62.6" x2="54.6" y2="55.7"/><line x1="45.3" y1="97.2" x2="45.3" y2="79.7"/><line x1="54.6" y1="97.2" x2="54.6" y2="84"/></g><g class="cxa"><rect x="2.3" y="2.8" width="25.2" height="25.2"/><rect x="2.3" y="37.3" width="25.2" height="25.2"/><rect x="2.3" y="71.9" width="25.2" height="25.2"/><rect x="72.5" y="2.8" width="25.2" height="25.2"/><rect x="72.5" y="37.3" width="25.2" height="25.2"/><rect x="72.5" y="71.9" width="25.2" height="25.2"/><rect x="37.4" y="2.8" width="25.2" height="25.2"/><rect x="37.4" y="37.3" width="25.2" height="25.2"/><rect x="37.4" y="71.9" width="25.2" height="25.2"/></g></svg></a><span class="examplePages">Facet</span></div>
+                    <div class="examplePages"><a href="/examples/fish-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><path d="M 78 50 C 78 50 61.1 74.1 40.4 74.1 C 19.6 74.1 2.7 50 2.7 50 C 2.7 50 19.6 25.9 40.4 25.9 C 61.1 25.9 78 50 78 50 Z"/><line x1="97.4" y1="28.2" x2="77.9" y2="50"/><line x1="97.4" y1="71.9" x2="77.9" y2="50"/></g><g class="cxb"><line x1="23.5" y1="43.2" x2="23.5" y2="47.1"/></g></svg></a><span class="examplePages">Fish</span></div>
+                    <div class="examplePages"><a href="/examples/functions-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="10" y1="2" x2="10" y2="98" /><line x1="2" y1="10" x2="10" y2="10" /><line x1="2" y1="30" x2="10" y2="30" /><line x1="2" y1="50" x2="10" y2="50" /><line x1="2" y1="70" x2="10" y2="70" /><line x1="2" y1="90" x2="98" y2="90" /><line x1="10" y1="90" x2="10" y2="98" /><line x1="30" y1="90" x2="30" y2="98" /><line x1="50" y1="90" x2="50" y2="98" /><line x1="70" y1="90" x2="70" y2="98" /><line x1="90" y1="90" x2="90" y2="98" /></g><g class="cxa"><path d="M15,90 C80,75 30,25 95,10" /></g></svg></a><span class="examplePages">Functions</span></div>
+                    <div class="examplePages"><a href="/examples/gantt-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g><g class="cxb"><rect x="24" y="10.6" width="29.6" height="10.5"/><rect x="66" y="64.1" width="29.6" height="10.5"/><rect x="43.2" y="28.5" width="20.9" height="10.5"/><rect x="56.4" y="46.3" width="16.3" height="10.5"/></g></svg></a><span class="examplePages">Gantt</span></div>
+                    <div class="examplePages"><a href="/examples/genome-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="62.7" y1="7.9" x2="92.7" y2="37.9"/><line x1="52.5" y1="25.1" x2="75.5" y2="48.1"/><line x1="7.9" y1="62.7" x2="37.9" y2="92.7"/><line x1="25.1" y1="52.5" x2="48.1" y2="75.5"/></g><g class="cxa"><path d="M 100 31.3 L 94.5 36.8 C 82.9 48.4 66.3 53.4 50.3 50.2 L 50.3 50.2 C 47.1 34.2 52.2 17.6 63.7 6 L 69.2 0.6"/><path d="M 31.3 100 L 36.8 94.5 C 48.4 82.9 53.4 66.3 50.2 50.3 L 50.2 50.3 C 34.2 47.1 17.6 52.2 6 63.7 L 0.6 69.2"/><path d="M 31.3 100 L 36.8 94.5 C 48.4 82.9 53.4 66.3 50.2 50.3 L 50.2 50.3 C 34.2 47.1 17.6 52.2 6 63.7 L 0.6 69.2"/></g></svg></a><span class="examplePages">Genome</span></div>
+                    <div class="examplePages"><a href="/examples/heatmap-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="64.5" y="50" width="28.8" height="20.3"/><rect x="64.5" y="69.5" width="28.8" height="20.3"/><rect x="35.6" y="30.2" width="28.8" height="20.3"/><rect x="6.7" y="10.9" width="28.8" height="20.3"/><rect x="6.8" y="69.5" width="28.8" height="20.3"/></g><g class="cxbb"><rect x="64.4" y="10.3" width="28.8" height="20.3"/><rect x="35.6" y="49.9" width="28.8" height="20.3"/><rect x="6.7" y="30.2" width="28.8" height="20.3"/></g><g class="cxa"><line x1="100" y1="50" y2="50" x2="0"/><line x1="93.3" x2="93.3" y2="96.2" y1="3.8"/><line x1="64.4" x2="64.4" y2="96.2" y1="3.8"/><line x1="6.7" x2="6.7" y2="96.2" y1="3.8"/><line x1="35.6" x2="35.6" y2="96.2" y1="3.8"/><line x1="100" y1="69.8" y2="69.8" x2="0"/><line x1="100" y1="89.4" y2="89.4" x2="0"/><line x1="100" y1="10.9" y2="10.9" x2="0"/><line x1="100" y1="30.6" y2="30.6" x2="0"/></g></svg></a><span class="examplePages">Heatmap</span></div>
+                    <div class="examplePages"><a href="/examples/hexplot-binplot-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="10" y1="2" x2="10" y2="98" /><line x1="2" y1="10" x2="10" y2="10" /><line x1="2" y1="30" x2="10" y2="30" /><line x1="2" y1="50" x2="10" y2="50" /><line x1="2" y1="70" x2="10" y2="70" /><line x1="2" y1="90" x2="98" y2="90" /><line x1="10" y1="90" x2="10" y2="98" /><line x1="30" y1="90" x2="30" y2="98" /><line x1="50" y1="90" x2="50" y2="98" /><line x1="70" y1="90" x2="70" y2="98" /><line x1="90" y1="90" x2="90" y2="98" /></g><g class="cxa"><rect x="20" y="68" width="15" height="15" /><rect x="35" y="68" width="15" height="15" /><rect x="35" y="53" width="15" height="15" /><rect x="50" y="38" width="15" height="15" /><rect x="65" y="23" width="15" height="15" /><rect x="50" y="53" width="15" height="15" /><rect x="65" y="38" width="15" height="15" /><rect x="80" y="23" width="15" height="15" /></g></svg></a><span class="examplePages">Hexplot-Binplot</span></div>
+                    <div class="examplePages"><a href="/examples/histogram-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><rect x="21.2" y="44.8" width="11.8" height="41.2"/><rect x="33" y="27.4" width="11.8" height="58.6"/><rect x="44.9" y="12.7" width="11.8" height="73.3"/><rect x="56.7" y="26" width="11.8" height="60"/><rect x="68.5" y="49.3" width="11.8" height="36.7"/><rect x="80.3" y="65.4" width="11.8" height="20.6"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="35.4" y1="100" x2="35.4" y2="86"/><line x1="58.9" y1="100" x2="58.9" y2="86"/><line x1="82.5" y1="100" x2="82.5" y2="86"/></g></svg></a><span class="examplePages">Histogram</span></div>
+                    <div class="examplePages"><a href="/examples/kaplan-meier-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><polyline points="11.9 28.5 25.6 28.5 25.6 44.8 39.6 44.8 39.6 56.7 50 56.7 50 68.8 76.7 68.8 76.7 75.4 100 75.4"/><polyline points="11.9 7 37.5 7 37.5 15.6 50 15.6 50 39.1 70.8 39.1 70.8 56 90.7 56 90.7 62.6 100 62.6"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="35.2" y1="100" x2="35.2" y2="86"/><line x1="58.5" y1="100" x2="58.5" y2="85.5"/><line x1="81.9" y1="100" x2="81.9" y2="85.5"/></g></svg></a><span class="examplePages">Kaplan-Meier</span></div>
+                    <div class="examplePages"><a href="/examples/layout-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><rect x="2.1" y="2.6" width="25.3" height="25.3"/><rect x="2.1" y="37.4" width="25.3" height="25.3"/><rect x="2.1" y="72.1" width="25.3" height="25.3"/><rect x="72.6" y="2.6" width="25.3" height="25.3"/><rect x="72.6" y="37.4" width="25.3" height="25.3"/><rect x="72.6" y="72.1" width="25.3" height="25.3"/><rect x="37.4" y="2.6" width="25.3" height="25.3"/><rect x="37.4" y="37.4" width="25.3" height="25.3"/><rect x="37.4" y="72.1" width="25.3" height="25.3"/></g><g class="cxb"><line x1="90" y1="14.3" x2="90" y2="10"/><line x1="46.3" y1="13.3" x2="46.3" y2="9.1"/><line x1="9.9" y1="13.3" x2="9.9" y2="9.1"/><line x1="14.8" y1="47.6" x2="14.8" y2="43.3"/><line x1="9.9" y1="81.5" x2="9.9" y2="77.3"/><line x1="18" y1="18.5" x2="18" y2="14.3"/><line x1="19.5" y1="52.5" x2="19.5" y2="56.7"/><line x1="19.5" y1="82.6" x2="19.5" y2="86.9"/><line x1="45" y1="82.6" x2="45" y2="86.9"/><line x1="55.3" y1="82.6" x2="55.3" y2="86.9"/><line x1="53.4" y1="21.1" x2="53.4" y2="16.9"/><line x1="53.4" y1="47.6" x2="53.4" y2="43.3"/><line x1="47.9" y1="56.7" x2="47.9" y2="52.5"/><line x1="81.6" y1="47.6" x2="81.6" y2="43.3"/><line x1="81.6" y1="86.9" x2="81.6" y2="82.6"/><line x1="90.6" y1="57.7" x2="90.6" y2="53.5"/><line x1="90.6" y1="81.5" x2="90.6" y2="77.3"/><line x1="81.6" y1="21.1" x2="81.6" y2="16.9"/></g></svg></a><span class="examplePages">Layout</span></div>
+                    <div class="examplePages"><a href="/examples/line-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g><g class="cxb"><polyline points="24.3 73.9 54 42.6 62.7 50.7 90.2 19.4"/></g></svg></a><span class="examplePages">Line</span></div>
+                    <div class="examplePages"><a href="/examples/lollipop-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><circle cx="30.2" cy="60.1" r="7.4"/><line x1="30.2" y1="67.4" x2="30.2" y2="86"/><circle cx="65.9" cy="46.5" r="7.4"/><line x1="65.9" y1="53.8" x2="65.9" y2="86"/><circle cx="83.7" cy="34.1" r="7.4"/><line x1="83.7" y1="41.5" x2="83.7" y2="86"/><circle cx="48.1" cy="26.8" r="7.4"/><line x1="48.1" y1="34.1" x2="48.1" y2="86"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Lollipop</span></div>
+                    <div class="examplePages"><a href="/examples/map-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><ellipse cx="50" cy="50" rx="26.6" ry="47.8"/><path d="M 87.9 20.9 C 79.2 25.3 65.4 28.2 50 28.2 C 34.5 28.2 20.8 25.3 12 20.9"/><path d="M 87.9 79 C 79.2 74.6 65.4 71.7 50 71.7 C 34.5 71.7 20.8 74.6 12 79"/><line x1="97.8" y1="50" x2="2.1" y2="50"/><line x1="50" y1="2.1" x2="50" y2="97.8"/></g><g class="cxb"><circle cx="50" cy="50" r="47.8"/></g></svg></a><span class="examplePages">Map</span></div>
+                    <div class="examplePages"><a href="/examples/meter-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><path d="M 23.6 30.4 C 36.7 13.6 62 13.2 75.7 29.5 L 87.3 21.9 C 67.9 -3 30.2 -2.3 11.7 23.2 Z"/><path d="M 91.7 28.4 L 80 36.1 C 87.1 50.3 83.3 67.5 70.8 77.3 L 70.8 93.6 C 95.1 81.8 104.6 52.1 91.7 28.4 Z"/><line x1="44.3" y1="33.5" x2="44.3" y2="40.6"/><line x1="54.7" y1="33.5" x2="54.7" y2="40.6"/><polyline points="40.3 80.2 44.6 80.2 44.6 96.3"/><rect x="51.6" y="80.2" width="8.2" height="14.1"/></g><g class="cxb"><path d="M 28.2 76.5 C 16.8 66.8 13.3 50.7 19.5 37.1 L 7.6 29.9 C -4.1 53 5.1 81.3 28.2 93.2 Z"/><circle cx="49.5" cy="65.4" r="7.3"/><line x1="54" y1="59.7" x2="70.9" y2="37.8"/></g></svg></a><span class="examplePages">Meter</span></div>
+                    <div class="examplePages"><a href="/examples/network-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="18.9" y1="15.4" x2="41.7" y2="31.3"/><line x1="21.6" y1="75.8" x2="43.5" y2="53.1"/><line x1="56.7" y1="76.6" x2="55.9" y2="57.1"/><line x1="84.3" y1="60.8" x2="69.5" y2="50.2"/><line x1="78" y1="13.9" x2="66.4" y2="28.2"/><circle cx="55.3" cy="40.9" r="16.9"/></g><g class="cxb"><circle cx="82.3" cy="8.6" r="6.8"/><circle cx="89.9" cy="64.7" r="6.8"/><circle cx="16.9" cy="80.6" r="6.8"/><circle cx="12.2" cy="10.7" r="8.9"/><circle cx="57.1" cy="87.5" r="10.8"/></g></svg></a><span class="examplePages">Network</span></div>
+                    <div class="examplePages"><a href="/examples/nonlinear-fit-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><path d="M 11.9 73.2 L 23.4 73.2 C 36.2 73.2 47.9 65.8 53.5 54.3 L 58.8 43.4 C 64.4 31.8 76.1 24.5 89 24.5 L 100 24.5"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.5" x2="11.9" y2="62.5" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="32.5" y1="100" x2="32.5" y2="86"/><line x1="57.7" y1="100" x2="57.7" y2="86"/><line x1="82.8" y1="100" x2="82.8" y2="86"/></g><g class="cxaa"><circle cx="30.5" cy="61.5" r="4.6"/><circle cx="73.2" cy="16.9" r="4.6"/><circle cx="92.4" cy="33.3" r="4.6"/><circle cx="60.6" cy="63.5" r="4.6"/><circle cx="51.4" cy="34.5" r="4.6"/></g></svg></a><span class="examplePages">NonLinear-Fit</span></div>
+                    <div class="examplePages"><a href="/examples/linear-fit-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><line x1="30" y1="80" x2="98" y2="4" /></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.5" x2="11.9" y2="62.5" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="32.5" y1="100" x2="32.5" y2="86"/><line x1="57.7" y1="100" x2="57.7" y2="86"/><line x1="82.8" y1="100" x2="82.8" y2="86"/></g><g class="cxaa"><circle cx="30.5" cy="61.5" r="4.6"/><circle cx="73.2" cy="16.9" r="4.6"/><circle cx="92.4" cy="33.3" r="4.6"/><circle cx="60.6" cy="63.5" r="4.6"/><circle cx="51.4" cy="34.5" r="4.6"/></g></svg></a><span class="examplePages">Linear-Fit</span></div>
+                    <div class="examplePages"><a href="/examples/oncoprint-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxbb"><rect x="14.4" y="4.2" width="16.4" height="20.4"/><rect x="47.8" y="4.2" width="16.4" height="20.4"/><rect x="80.9" y="31.3" width="16.4" height="6.6"/><rect x="80.9" y="51.6" width="16.4" height="6.6"/><rect x="14.5" y="51.6" width="16.4" height="6.6"/><rect x="64.4" y="51.6" width="16.4" height="6.6"/></g><g class="cxcc"><rect x="64.1" y="11" width="16.4" height="6.6"/><rect x="47.8" y="71.9" width="16.4" height="6.6"/><rect x="30.7" y="31.3" width="16.4" height="6.6"/><rect x="80.9" y="71.9" width="16.4" height="6.6"/></g><g class="cxa"><rect x="14.4" y="4.2" width="16.6" height="20.3"/><rect x="31" y="4.2" width="16.6" height="20.3"/><rect x="64.3" y="4.2" width="16.6" height="20.3"/><rect x="80.9" y="4.2" width="16.6" height="20.3"/><rect x="47.6" y="4.2" width="16.6" height="20.3"/><rect x="14.4" y="24.5" width="16.6" height="20.3"/><rect x="31" y="24.5" width="16.6" height="20.3"/><rect x="64.3" y="24.5" width="16.6" height="20.3"/><rect x="80.9" y="24.5" width="16.6" height="20.3"/><rect x="47.6" y="24.5" width="16.6" height="20.3"/><rect x="14.4" y="44.8" width="16.6" height="20.3"/><rect x="31" y="44.8" width="16.6" height="20.3"/><rect x="64.3" y="44.8" width="16.6" height="20.3"/><rect x="80.9" y="44.8" width="16.6" height="20.3"/><rect x="47.6" y="44.8" width="16.6" height="20.3"/><rect x="14.4" y="65.1" width="16.6" height="20.3"/><rect x="31" y="65.1" width="16.6" height="20.3"/><rect x="64.3" y="65.1" width="16.6" height="20.3"/><rect x="80.9" y="65.1" width="16.6" height="20.3"/><rect x="47.6" y="65.1" width="16.6" height="20.3"/></g><g class="cxa"><line x1="2.5" y1="10" x2="2.5" y2="18"/><line x1="2.5" y1="30.6" x2="2.5" y2="38.6"/><line x1="2.5" y1="51" x2="2.5" y2="58.9"/><line x1="2.5" y1="71.3" x2="2.5" y2="79.2"/><line x1="18.6" y1="95.8" x2="26.6" y2="95.8"/><line x1="35.3" y1="95.8" x2="43.3" y2="95.8"/><line x1="51.9" y1="95.8" x2="59.9" y2="95.8"/><line x1="68.5" y1="95.8" x2="76.5" y2="95.8"/><line x1="85.3" y1="95.8" x2="93.2" y2="95.8"/></g></svg></a><span class="examplePages">Oncoprint</span></div>
+                    <div class="examplePages"><a href="/examples/parallelcoordinates-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="54.3" y1="52.8" x2="88" y2="23.6"/><line x1="12.4" y1="33.9" x2="45.7" y2="53.8"/><line x1="54.4" y1="78.7" x2="88" y2="51.7"/><line x1="13.1" y1="68.7" x2="44.8" y2="80.2"/><line x1="10.1" y1="86.5" x2="47.2" y2="24.6"/><line x1="53.4" y1="24.3" x2="89" y2="72.1"/></g><g class="cxb"><line x1="7.6" y1="73.2" x2="7.6" y2="85.1"/><line x1="7.6" y1="36.6" x2="7.6" y2="61.4"/><line x1="7.6" x2="7.6" y2="25.5" y1="3.8"/><line x1="92.5" y1="82.2" x2="92.5" y2="96.2"/><line x1="92.5" y1="53.8" x2="92.5" y2="71"/><line x1="92.5" y1="25.5" x2="92.5" y2="42.6"/><line x1="92.5" x2="92.5" y2="14.3" y1="3.8"/><line x1="50.1" y1="87.7" x2="50.1" y2="96.2"/><line x1="50.1" y1="62" x2="50.1" y2="76.6"/><line x1="50.1" y1="25.5" x2="50.1" y2="50.9"/><line x1="50.1" x2="50.1" y2="14.3" y1="3.8"/><circle cx="92.4" cy="19.9" r="5.6"/><circle cx="50.1" cy="19.9" r="5.6"/><circle cx="7.6" cy="31" r="5.6"/><circle cx="7.6" cy="67.6" r="5.6"/><circle cx="7.6" cy="90.6" r="5.6"/><circle cx="92.4" cy="48.2" r="5.6"/><circle cx="50.1" cy="56.5" r="5.6"/><circle cx="50.1" cy="82.1" r="5.6"/><circle cx="92.4" cy="76.6" r="5.6"/></g></svg></a><span class="examplePages">ParallelCoordinates</span></div>
+                    <div class="examplePages"><a href="/examples/pie-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><path d="M 49.5 50 L 49.5 3.2 C 26.2 3.4 3.1 19 2.5 50 C 2.4 60.7 5.8 71 12.3 79.5 Z"/></g><g class="cxbb"><path d="M 96 62 L 49.5 50 L 12.3 79.5 C 34.4 107.5 86.6 101.6 96 62 Z"/></g><g class="cxb"><polyline points="49.5 3.2 49.5 50 12.3 79.5"/><line x1="96" y1="62.3" x2="49.5" y2="50"/></g><g class="cxa"><path d="M 97.6 50 C 96.5 112.5 3.5 112.5 2.5 50 C 3.5 -12.5 96.5 -12.5 97.6 50 Z"/></g></svg></a><span class="examplePages">Pie</span></div>
+                    <div class="examplePages"><a href="/examples/radar-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><polygon points="50 24.6 20.4 44.5 31.4 81.2 71.2 83.5 90.7 41.3 50 24.6"/></g><g class="cxb"><polyline points="50 4.5 50 53.1 97.8 39.2"/><polyline points="79.5 95.5 50 53.1 20.4 95.5"/><line x1="2.2" y1="39.2" x2="50" y2="53.1"/></g><g class="cxa"><polygon points="50 4.5 2.2 39.2 20.4 95.5 79.5 95.5 97.8 39.2 50 4.5"/></g></svg></a><span class="examplePages">Radar</span></div>
+                    <div class="examplePages"><a href="/examples/remote-graphs-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><circle cx="50" cy="50" r="16.8"/></g><g class="cxb"><path d="M 83.8 16.2 C 102.4 34.9 102.4 65.1 83.8 83.8"/><path d="M 73.1 26.9 C 85.9 39.6 85.9 60.3 73.1 73.1"/><path d="M 73.1 26.9 C 85.9 39.6 85.9 60.3 73.1 73.1"/><path d="M 16.2 16.2 C -2.4 34.9 -2.4 65.1 16.2 83.8"/><path d="M 26.9 26.9 C 14.1 39.6 14.1 60.3 26.9 73.1"/><path d="M 26.9 26.9 C 14.1 39.6 14.1 60.3 26.9 73.1"/></g></svg></a><span class="examplePages">Remote-Graphs</span></div>
+                    <div class="examplePages"><a href="/examples/ridge-line-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><path d="M 11.5 35.4 C 11.5 35.4 27.1 2.1 30.9 2.1 C 43.1 2.1 53.7 32.3 59.5 35.4"/><path d="M 22.6 66.7 C 22.6 66.7 35.9 32 40.4 26.5 C 45.1 20.4 53.9 42 68.9 65.8"/><path d="M 42.3 98 C 42.3 98 53.1 62.5 59.2 55.9 C 67 47.3 82.5 85.5 86.4 91.6 C 87.2 93.8 88.3 95.8 88.9 98"/></g><g class="cxb"><path d="M 11.5 35.4 C 11.5 35.4 27.1 2.1 30.9 2.1 C 43.1 2.1 53.7 32.3 59.5 35.4"/><path d="M 22.6 66.7 C 22.6 66.7 35.9 32 40.4 26.5 C 45.1 20.7 53.9 42.3 68.9 65.8"/><path d="M 42.3 98 C 42.3 98 52.8 62.5 58.9 55.9 C 66.7 47.3 82.2 85.5 86.4 91.6 C 87.2 93.8 88.3 95.8 88.9 98"/></g><g class="cxa"><line y1="35.4" x2="94" y2="35.4" x1="6"/><line y1="66.7" x2="94" y2="66.7" x1="6"/><line y1="97.9" x2="94" y2="97.9" x1="6"/></g></svg></a><span class="examplePages">Ridge-Line</span></div>
+                    <div class="examplePages"><a href="/examples/splom-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="2.3" y="2.9" width="18.4" height="18.4"/><rect x="79.3" y="78.7" width="18.4" height="18.4"/><rect x="53.7" y="53.4" width="18.4" height="18.4"/><rect x="28" y="28.2" width="18.4" height="18.4"/></g><g class="cxa"><rect x="2.3" y="2.9" width="18.4" height="18.4"/><rect x="2.3" y="28.2" width="18.4" height="18.4"/><rect x="2.3" y="53.4" width="18.4" height="18.4"/><rect x="2.3" y="78.7" width="18.4" height="18.4"/><rect x="79.3" y="2.9" width="18.4" height="18.4"/><rect x="79.3" y="28.2" width="18.4" height="18.4"/><rect x="79.3" y="53.4" width="18.4" height="18.4"/><rect x="79.3" y="78.7" width="18.4" height="18.4"/><rect x="53.7" y="2.9" width="18.4" height="18.4"/><rect x="53.7" y="28.2" width="18.4" height="18.4"/><rect x="53.7" y="53.4" width="18.4" height="18.4"/><rect x="53.7" y="78.7" width="18.4" height="18.4"/><rect x="28" y="2.9" width="18.4" height="18.4"/><rect x="28" y="28.2" width="18.4" height="18.4"/><rect x="28" y="53.4" width="18.4" height="18.4"/><rect x="28" y="78.7" width="18.4" height="18.4"/></g><g class="cxb"><rect x="2.3" y="2.9" width="18.4" height="18.4"/><rect x="79.3" y="78.7" width="18.4" height="18.4"/><rect x="53.7" y="53.4" width="18.4" height="18.4"/><rect x="28" y="28.2" width="18.4" height="18.4"/></g></svg></a><span class="examplePages">SPLOM</span></div>
+                    <div class="examplePages"><a href="/examples/sankey-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><path d="M 88.1 57.9 L 88.1 57.9 C 76.8 57.9 66.1 52.9 58.7 44.3 L 42.4 25.1 C 35 16.5 24.3 11.6 13 11.6 L 12 11.6 L 12 42.1 L 13 42.1 C 24.3 42.2 35.1 47.1 42.4 55.8 L 58.7 74.9 C 66.1 83.6 76.8 88.5 88.1 88.5 L 88.1 88.5 L 88.1 57.9"/></g><g class="cxb"><rect x="2" y="11.5" width="10" height="30.6"/><rect x="88.1" y="57.9" width="10" height="30.6"/><path d="M 12 11.6 L 12 11.6 C 23.4 11.6 34.1 16.5 41.4 25.1 L 57.8 44.3 C 65.1 52.9 75.9 57.9 87.2 57.9 L 88.1 57.9"/><path d="M 12 42.1 L 12 42.1 C 23.4 42.2 34.1 47.1 41.4 55.8 L 57.8 74.9 C 65.1 83.6 75.9 88.5 87.2 88.5 L 88.1 88.5"/></g><g class="cxa"><rect x="2" y="57.9" width="10" height="30.6"/><rect x="88.1" y="11.5" width="10" height="30.6"/><path d="M 12 57.9 L 12 57.9 C 23.4 57.9 34.1 52.9 41.4 44.3 L 57.8 25.1 C 65.1 16.5 75.9 11.6 87.2 11.6 L 88.1 11.6 L 88.1 42.1 L 87.2 42.1 C 75.8 42.2 65.1 47.1 57.8 55.8 L 41.4 74.9 C 34.1 83.6 23.4 88.5 12 88.5 L 12 88.5 L 12 57.9"/></g></svg></a><span class="examplePages">Sankey</span></div>
+                    <div class="examplePages"><a href="/examples/scatter2d-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="32.5" y1="100" x2="32.5" y2="86"/><line x1="56" y1="100" x2="56" y2="86"/><line x1="79.4" y1="100" x2="79.4" y2="86"/></g><g class="cxb"><line x1="28.9" y1="15.6" x2="32.5" y2="15.6"/><line x1="80.3" y1="19.5" x2="84" y2="19.5"/><line x1="54.1" y1="26.6" x2="57.8" y2="26.6"/><line x1="90" y1="36.8" x2="93.7" y2="36.8"/><line x1="80.3" y1="47.2" x2="84" y2="47.2"/><line x1="67.7" y1="47.2" x2="71.4" y2="47.2"/><line x1="61.2" y1="59.8" x2="64.8" y2="59.8"/><line x1="74.5" y1="68.3" x2="78.2" y2="68.3"/><line x1="42.7" y1="73.6" x2="46.3" y2="73.6"/><line x1="34.2" y1="59.8" x2="37.9" y2="59.8"/><line x1="48.2" y1="47.2" x2="51.8" y2="47.2"/><line x1="23.6" y1="39.1" x2="27.3" y2="39.1"/></g></svg></a><span class="examplePages">Scatter2D</span></div>
+                    <div class="examplePages"><a href="/examples/scatterbubble2d-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="32.5" y1="100" x2="32.5" y2="86"/><line x1="56" y1="100" x2="56" y2="86"/><line x1="79.4" y1="100" x2="79.4" y2="86"/></g><g class="cxb"><circle cx="68.1" cy="42.8" r="17.8"/><circle cx="29.8" cy="45.7" r="6.9"/><circle cx="43.6" cy="68.3" r="7"/><circle cx="88.4" cy="14.5" r="6.7"/><circle cx="34.7" cy="17.3" r="7.8"/></g></svg></a><span class="examplePages">ScatterBubble2D</span></div>
+                    <div class="examplePages"><a href="/examples/scatter3d-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><line x1="32.5" y1="100" x2="32.5" y2="86"/><line x1="56" y1="100" x2="56" y2="86"/><line x1="79.4" y1="100" x2="79.4" y2="86"/><line x1="11.9" y1="86" x2="74.5" y2="26.6"/></g><g class="cxb"><line x1="28.9" y1="15.6" x2="32.5" y2="15.6"/><line x1="50" y1="15.6" x2="53.7" y2="15.6"/><line x1="78.3" y1="46.7" x2="81.9" y2="46.7"/><line x1="61.2" y1="59.8" x2="64.8" y2="59.8"/><line x1="74.5" y1="68.3" x2="78.2" y2="68.3"/><line x1="48" y1="71.8" x2="51.4" y2="71.8"/><line x1="39" y1="29.4" x2="42.7" y2="29.4"/><polyline points="72.1 4.9 81.5 4.9 81.5 19.5 72.1 19.5"/><line x1="74.5" y1="11.8" x2="81.5" y2="11.8"/><polyline points="92.5 4.9 85.8 4.9 85.8 19.5 92.5 19.5"/><line x1="94" y1="5.9" x2="94" y2="18.5"/></g></svg></a><span class="examplePages">Scatter3D</span></div>
+                    <div class="examplePages"><a href="/examples/stacked-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="76.7" y="47.3" width="14.9" height="25.8"/><rect x="49.7" y="39.1" width="14.9" height="25.8"/><rect x="23.2" y="61.7" width="14.9" height="14.9"/></g><g class="cxbb"><rect x="22.4" y="73.1" width="14.9" height="12.9"/><rect x="49.7" y="64.9" width="14.9" height="21.1"/><rect x="76.7" y="73.1" width="14.9" height="12.9"/></g><g class="cxb"><rect x="22.4" y="50" width="15.6" height="36"/><rect x="49.4" y="15.6" width="15.6" height="70.4"/><rect x="76.4" y="27.4" width="15.6" height="58.5"/><line x1="50" y1="39.1" x2="64.9" y2="39.1"/><line x1="50" y1="64.9" x2="64.9" y2="64.9"/><line x1="76.7" y1="47.3" x2="91.6" y2="47.3"/><line x1="76.7" y1="73.1" x2="91.6" y2="73.1"/><line x1="22.4" y1="62.6" x2="37.9" y2="62.6"/><line x1="22.4" y1="73.1" x2="37.9" y2="73.1"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Stacked</span></div>
+                    <div class="examplePages"><a href="/examples/stackedline-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="76.7" y="51.4" width="15.1" height="34.7"/><rect x="50" y="64.3" width="15.1" height="21.8"/><rect x="23.2" y="71" width="15.1" height="15.1"/></g><g class="cxb"><rect x="23.2" y="56" width="15.1" height="30.1"/><rect x="50" y="42.5" width="15.1" height="43.6"/><rect x="76.7" y="30.4" width="15.1" height="55.6"/><line x1="23.2" y1="71" x2="38.4" y2="71"/><line x1="49.7" y1="64.3" x2="65.1" y2="64.3"/><line x1="76.7" y1="51.4" x2="91.9" y2="51.4"/></g><g class="cxa"><line x1="11.9" y1="0.5" x2="11.9" y2="100"/><line x1="99.4" y1="86.1" y2="86.1" x2="0"/><line y1="62.7" x2="11.9" y2="62.7" x1="0"/><line y1="39.4" x2="11.9" y2="39.4" x1="0"/><line y1="16.1" x2="11.9" y2="16.1" x1="0"/><polyline points="23.2 42.5 49.7 19.6 59.5 28.6 89.1 0.5"/></g></svg></a><span class="examplePages">StakedLine</span></div>
+                    <div class="examplePages"><a href="/examples/stackedpercent-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="76.7" y="45.4" width="14.9" height="22.1"/><rect x="49.7" y="21.1" width="14.9" height="39.7"/><rect x="23.2" y="31.3" width="14.9" height="37.3"/></g><g class="cxbb"><rect x="22.4" y="68.6" width="14.9" height="17.4"/><rect x="49.7" y="60.8" width="14.9" height="25.2"/><rect x="76.7" y="67.5" width="14.9" height="18.5"/></g><g class="cxb"><rect x="22.4" y="2" width="15.6" height="84"/><rect x="49.4" y="2" width="15.6" height="84"/><rect x="76.4" y="2" width="15.6" height="84"/><line x1="50" y1="21.1" x2="64.9" y2="21.1"/><line x1="50" y1="60.8" x2="64.9" y2="60.8"/><line x1="76.7" y1="45.4" x2="91.6" y2="45.4"/><line x1="76.7" y1="67.5" x2="91.6" y2="67.5"/><line x1="22.4" y1="31.3" x2="37.9" y2="31.3"/><line x1="22.4" y1="68.6" x2="37.9" y2="68.6"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">StackedPercent</span></div>
+                    <div class="examplePages"><a href="/examples/stackedpercentline-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><rect x="76.7" y="34.8" width="14.9" height="32.7"/><rect x="49.7" y="59.1" width="14.9" height="18.2"/><rect x="23.2" y="31.3" width="14.9" height="37.3"/></g><g class="cxbb"><rect x="22.4" y="68.6" width="14.9" height="17.4"/><rect x="49.7" y="76.7" width="14.9" height="9.3"/><rect x="76.7" y="67.5" width="14.9" height="18.5"/></g><g class="cxb"><rect x="22.4" y="2" width="15.6" height="84"/><rect x="49.4" y="2" width="15.6" height="84"/><rect x="76.4" y="2" width="15.6" height="84"/><line x1="50" y1="59.1" x2="64.9" y2="59.1"/><line x1="50" y1="76.7" x2="64.9" y2="76.7"/><line x1="76.7" y1="34.8" x2="91.6" y2="34.8"/><line x1="76.7" y1="67.5" x2="91.6" y2="67.5"/><line x1="22.4" y1="31.3" x2="37.9" y2="31.3"/><line x1="22.4" y1="68.6" x2="37.9" y2="68.6"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/><polyline points="23.1 15.6 57.7 51.1 89.9 15.6"/></g></svg></a><span class="examplePages">StackedPercentLine</span></div>
+                    <div class="examplePages"><a href="/examples/streamgraph-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><path class="cxc" d="M 80.7,41.34 c -6.66-5.76 -9.04-10.68 -12.36-10.68 s -6.34,15 -14,15 -9-24.42 -14.68-24.42 -3,15 -8.66,15 -6.66-7.2 -12.5-7.2 S 10.34,50, 1,50 c 10.34,1, 12.66,21.04, 18.5,21.04 S 25.34,64, 31,64 s 3,15, 8.66,15, 7-24.42, 14.68-24.42, 10.66,15, 14,15 S 74,64.58, 80.7,58.8, 99,50, 99,50, 87.76,47.02, 80.7,41.34Z"/><path class="cxa" d="M 80.7,34.88 c -6.66-10 -9.04-18.54 -12.36-18.54 s -6.34,26 -14,26 S 45.34,1, 39.66,1 s -3,26 -8.66,26 S 24.34,13.5, 18.5,13.5, 10.34,50, 1,50 c 10.34,1, 12.66,36.5, 18.5,36.5 S 25.34,74, 31,74, 34,99, 39.63,99 s 7-42.34, 14.68-42.34, 10.66,26, 14,26, 5.7-8.54, 12.36-18.54 S 99,50, 99,50, 87.36,44.88, 80.7,34.88 Z"/><path class="cxbb" d=" M80.7,44.76 c-6.66-3.46-9.04-6.42-12.36-6.42 s-6.34,9-14,9-9-14.64-14.68-14.64-3,9-8.66,9-6.66-4.36-12.5-4.36 S10.34,50,1,50 c10.34,1,12.66,12.62,18.5,12.62 s6.84-4.32,12.5-4.32,3,9,8.66,9,7-14.64,14.68-14.64,10.66,9,14,9,5.7-2.96,12.36-6.42 S99,50,99,50,87.36,48.24,80.7,44.76Z"/></svg></a><span class="examplePages">Streamgraph</span></div>
+                    <div class="examplePages"><a href="/examples/sunburst-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><circle cx="50.1" cy="50.1" r="35.7"/><path d="M 27.5 50.1 L 2.4 50.1 C 2.4 23.8 23.8 2.4 50.1 2.4 L 50.1 41.1"/><path d="M 72.7 50.1 L 97.7 50.1 C 97.7 76.4 76.4 97.7 50.1 97.7 L 50.1 72.7"/><circle cx="50.1" cy="50.1" r="22.6"/><circle cx="50.1" cy="50.1" r="9"/></g><g class="cxac"><path d="M 50.1 14.3 L 50.1 2.4 C 23.8 2.4 2.4 23.8 2.4 50.1 L 14.3 50.1 C 14.3 30.3 30.3 14.3 50.1 14.3 Z"/><path d="M 50.1 85.8 L 50.1 97.7 C 76.4 97.7 97.7 76.4 97.7 50.1 L 85.8 50.1 C 85.8 69.8 69.8 85.8 50.1 85.8 Z"/></g><g class="cxb"><line x1="43.2" y1="55.9" x2="22.7" y2="73.1"/><line x1="27.4" y1="21.5" x2="36.7" y2="30.9"/><line x1="68.2" y1="63.4" x2="89.1" y2="77.2"/><line x1="68.2" y1="80.8" x2="74.1" y2="91.2"/><line x1="7.5" y1="28.7" x2="29.9" y2="39.7"/><line x1="29.9" y1="8.8" x2="34.2" y2="17.9"/></g></svg></a><span class="examplePages">Sunburst</span></div>
+                    <div class="examplePages"><a href="/examples/tcga-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><ellipse cx="50" cy="50" rx="26.6" ry="47.8"/><path d="M 87.9 20.9 C 79.2 25.3 65.4 28.2 50 28.2 C 34.5 28.2 20.8 25.3 12 20.9"/><path d="M 87.9 79 C 79.2 74.6 65.4 71.7 50 71.7 C 34.5 71.7 20.8 74.6 12 79"/><line x1="97.8" y1="50" x2="2.1" y2="50"/><line x1="50" y1="2.1" x2="50" y2="97.8"/></g><g class="cxb"><circle cx="50" cy="50" r="47.8"/></g></svg></a><span class="examplePages">TCGA</span></div>
+                    <div class="examplePages"><a href="/examples/tagcloud-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxa"><line x1="10.7" y1="2.1" x2="66.7" y2="2.1"/><line x1="10.7" y1="6.2" x2="66.7" y2="6.2"/><line x1="65" y1="17.9" x2="89" y2="17.9"/><line x1="40.5" y1="27.3" x2="77" y2="27.3"/><line y1="65.4" x2="54.5" y2="65.4" x1="4"/><line x1="45.7" y1="89" x2="79.8" y2="89"/><line x1="63.5" y1="97.9" x2="92.1" y2="97.9"/><line x1="25.5" y1="27.3" x2="19.2" y2="27.3"/><line x1="54.9" y1="38.9" x2="63.5" y2="38.9"/><line x1="58" y1="77.4" x2="66.7" y2="77.4"/><line x1="34.4" y1="51.1" x2="68.9" y2="51.1"/><line x1="34.4" y1="53.2" x2="68.9" y2="53.2"/></g><g class="cxb"><line y1="17.9" x2="52.2" y2="17.9" x1="4"/><line x1="68.9" y1="41.9" x2="93" y2="41.9"/><line x1="9.8" y1="38.9" x2="46.3" y2="38.9"/><line x1="9.8" y1="41.9" x2="46.3" y2="41.9"/><line x1="72" y1="80.4" x2="96" y2="80.4"/><line x1="13" y1="77.4" x2="49.5" y2="77.4"/><line x1="13" y1="80.4" x2="49.5" y2="80.4"/><line x1="86.3" y1="30.6" x2="93" y2="30.6"/><line x1="76.4" y1="5.2" x2="83" y2="5.2"/><line x1="13.5" y1="53.9" x2="22.5" y2="53.9"/><line x1="83.3" y1="56.2" x2="92.4" y2="56.2"/><line x1="61.9" y1="65.4" x2="79.8" y2="65.4"/></g></svg></a><span class="examplePages">TagCloud</span></div>
+                    <div class="examplePages"><a href="/examples/tree-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><path d="M 40.5 25.6 L 35.6 25.6 C 31.2 25.5 27.1 27.8 24.8 31.6 L 12.4 51.4 L 23.2 68.5 C 25.5 72.2 29.5 74.4 33.8 74.4 L 40.5 74.4"/><path d="M 50.3 25.6 L 57.7 25.6 C 59.5 25.6 61.2 24.6 62.3 23.1 L 62.3 23.1 C 66.1 17.4 72.5 14 79.4 13.9 L 88.2 13.9"/><path d="M 50.3 25.6 L 57.7 25.6 C 59.5 25.6 61.2 26.5 62.3 28 L 62.3 28 C 66.1 33.7 72.5 37.1 79.4 37.2 L 88.2 37.2"/><path d="M 50.3 74.5 L 57.7 74.5 C 59.5 74.5 61.2 73.5 62.3 72 L 62.3 72 C 66.1 66.3 72.5 62.9 79.4 62.9 L 88.2 62.9"/><path d="M 50.3 74.5 L 57.7 74.5 C 59.5 74.5 61.2 75.4 62.3 76.9 L 62.3 76.9 C 66.1 82.6 72.5 86 79.4 86.1 L 88.2 86.1"/></g><g class="cxa"><circle cx="6.8" cy="51.4" r="4.9"/><circle cx="45.4" cy="25.6" r="4.9"/><circle cx="45.4" cy="74.5" r="4.9"/><circle cx="93.2" cy="13.9" r="4.9"/><circle cx="93.2" cy="37.3" r="4.9"/><circle cx="93.2" cy="62.7" r="4.9"/><circle cx="93.2" cy="86.2" r="4.9"/></g></svg></a><span class="examplePages">Tree</span></div>
+                    <div class="examplePages"><a href="/examples/treemap-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxbb"><rect x="48" y="83.3" width="33.1" height="14.4"/><rect x="59.5" y="23" width="38.1" height="38.9"/><rect x="25.4" y="35.9" width="22.6" height="45.5"/><rect x="2.3" y="2.2" width="45.7" height="45.7"/></g><g class="cxcc"><rect x="80.4" y="72.6" width="16.6" height="25.1"/><rect x="25.1" y="79" width="22.9" height="18.6"/><rect x="48" y="61.9" width="31.8" height="21.3"/><rect x="48" y="2.2" width="49.1" height="20.8"/></g><g class="cxa"><rect x="2.3" y="2.2" width="95.5" height="95.5"/><rect x="2.3" y="2.2" width="45.7" height="45.7"/><line x1="97" y1="23" x2="48" y2="23"/><line x1="48" y1="47.9" x2="48" y2="97.6"/><rect x="2.3" y="47.9" width="22.9" height="49.7"/><line x1="25.1" y1="79" x2="48" y2="79"/><rect x="48" y="61.9" width="31.8" height="21.3"/><rect x="79.8" y="61.9" width="17.9" height="35.7"/><line x1="79.8" y1="72.6" x2="97.6" y2="72.6"/><line x1="59.5" y1="23" x2="59.5" y2="61.9"/></g></svg></a><span class="examplePages">Treemap</span></div>
+                    <div class="examplePages"><a href="/examples/upset-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><circle cx="35" cy="50" r="4"/><circle cx="50" cy="50" r="4"/><circle cx="65" cy="50" r="4"/><circle cx="80" cy="50" r="4"/><circle cx="96" cy="50" r="4"/><circle cx="35" cy="65" r="4"/><circle cx="50" cy="65" r="4"/><circle cx="65" cy="65" r="4"/><circle cx="80" cy="65" r="4"/><circle cx="96" cy="65" r="4"/><circle cx="35" cy="80" r="4"/><circle cx="50" cy="80" r="4"/><circle cx="65" cy="80" r="4"/><circle cx="80" cy="80" r="4"/><circle cx="96" cy="80" r="4"/><circle cx="35" cy="96" r="4"/><circle cx="50" cy="96" r="4"/><circle cx="65" cy="96" r="4"/><circle cx="80" cy="96" r="4"/><circle cx="96" cy="96" r="4"/></g><g class="cxaa"><circle cx="35" cy="80" r="4"/><circle cx="35" cy="96" r="4"/><circle cx="50" cy="50" r="4"/><circle cx="50" cy="65" r="4"/><circle cx="50" cy="80" r="4"/><circle cx="65" cy="96" r="4"/><circle cx="80" cy="65" r="4"/><circle cx="80" cy="80" r="4"/><circle cx="96" cy="50" r="4"/><circle cx="96" cy="65" r="4"/></g><g class="cxa"><line x1="35" y1="80" x2="35" y2="96"/><line x1="50" y1="50" x2="50" y2="80"/><line x1="80" y1="65" x2="80" y2="80"/><line x1="96" y1="50" x2="96" y2="65"/></g><g class="cxa"><rect x="32" y="2" width="5" height="38"/><rect x="47" y="10" width="5" height="30"/><rect x="62" y="18" width="5" height="22"/><rect x="77" y="24" width="5" height="16"/><rect x="93" y="32" width="5" height="8"/><rect x="20" y="47" width="4" height="5"/><rect x="14" y="62" width="10" height="5"/><rect x="8" y="77" width="16" height="5"/><rect x="2" y="93" width="22" height="5"/></g></svg></a><span class="examplePages">UpSet</span></div>
+                    <div class="examplePages"><a href="/examples/venn-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxbb"><path d="M 39.4 64.1 C 28.2 59.7 20.9 48.9 20.8 36.9 C 20.8 36.6 20.8 36.2 20.8 35.9 C -0.1 44 -4.4 71.7 13.1 85.8 C 23.9 94.5 39.3 94.4 49.9 85.6 C 43.5 80.2 39.7 72.4 39.4 64.1 Z"/><path d="M 50 7.8 C 27.6 7.9 13.7 32.3 25 51.6 C 28.3 57.2 33.4 61.6 39.4 64 C 39.4 63.7 39.4 63.3 39.4 63 C 39.4 54.3 43.3 46 50.1 40.5 C 56.8 46 60.7 54.3 60.7 63 C 60.7 63.3 60.7 63.7 60.7 64 C 81.6 55.7 85.6 28 68 14 C 62.9 10 56.6 7.8 50.1 7.8 Z"/></g><g class="cxcc"><path d="M 50 66.1 C 46.4 66.1 42.8 65.4 39.4 64.1 C 39.7 72.4 43.6 80.3 50 85.6 C 56.5 80.3 60.3 72.4 60.6 64.1 C 57.2 65.4 53.6 66.1 50 66.1 Z"/><path d="M 79.1 35.9 C 75.7 34.6 72.2 33.9 68.5 33.9 C 61.8 33.9 55.2 36.2 50 40.5 C 56.7 46.1 60.6 54.3 60.6 63.1 C 60.6 63.4 60.6 63.7 60.6 64.1 C 71.8 59.7 79.2 48.9 79.2 36.9 C 79.2 36.6 79.1 36.2 79.1 35.9 Z"/><path d="M 20.9 35.9 C 24.3 34.6 27.9 33.9 31.5 33.9 C 38.2 33.9 44.8 36.2 50 40.5 C 43.3 46.1 39.4 54.3 39.4 63.1 C 39.4 63.4 39.4 63.7 39.4 64.1 C 28.2 59.7 20.8 48.9 20.8 36.9 C 20.8 36.6 20.9 36.2 20.9 35.9 Z"/></g><g class="cxa"><circle cx="50" cy="36.9" r="29.2"/><circle cx="68.5" cy="63.1" r="29.2"/><circle cx="31.5" cy="63.1" r="29.2"/></g></svg></a><span class="examplePages">Venn</span></div>
+                    <div class="examplePages"><a href="/examples/violin-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxcc"><path d="M 73.1 51.6 C 67.5 46.1 54.8 40.4 61.2 34.5 C 68.7 27.4 59.6 21 54.4 14.7 C 51.8 11.4 50.3 7.5 50 3.4 C 50 2 50 2 50 3.4 L 50 3.4 C 49.8 7.5 48.2 11.4 45.6 14.7 C 40.5 21 31.3 27.4 38.9 34.5 C 45.1 40.4 32.5 46.1 26.9 51.6 C 22.5 55.9 24.2 60.7 30.7 61.7 C 56.4 65.6 32.4 67.9 32.5 74.5 C 32.7 80.6 40.2 76.2 42.7 84.5 C 43.4 87.1 44.8 89.5 46.9 91.4 C 48.6 92.8 49.8 95 50 97.3 C 50 97.3 50 97.8 50 97.6 C 50 97.5 50 97.3 50 97.3 C 50.3 95 51.3 92.8 53.2 91.4 C 55.2 89.5 56.7 87.1 57.4 84.5 C 59.9 76.2 67.3 80.6 67.5 74.5 C 67.7 67.9 43.7 65.5 69.3 61.7 C 75.9 60.7 77.5 55.9 73.1 51.6 Z"/></g><g class="cxa"><path d="M 73.1 51.6 C 67.5 46.1 54.8 40.4 61.2 34.5 C 68.7 27.4 59.6 21 54.4 14.7 C 51.8 11.4 50.3 7.5 50 3.4 C 50 2 50 2 50 3.4 L 50 3.4 C 49.8 7.5 48.2 11.4 45.6 14.7 C 40.5 21 31.3 27.4 38.9 34.5 C 45.1 40.4 32.5 46.1 26.9 51.6 C 22.5 55.9 24.2 60.7 30.7 61.7 C 56.4 65.6 32.4 67.9 32.5 74.5 C 32.7 80.6 40.2 76.2 42.7 84.5 C 43.4 87.1 44.8 89.5 46.9 91.4 C 48.6 92.8 49.8 95 50 97.3 C 50 97.3 50 97.8 50 97.6 C 50 97.5 50 97.3 50 97.3 C 50.3 95 51.3 92.8 53.2 91.4 C 55.2 89.5 56.7 87.1 57.4 84.5 C 59.9 76.2 67.3 80.6 67.5 74.5 C 67.7 67.9 43.7 65.5 69.3 61.7 C 75.9 60.7 77.5 55.9 73.1 51.6 Z"/></g></svg></a><span class="examplePages">Violin</span></div>
+                    <div class="examplePages"><a href="/examples/waterfall-1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:50px;height:50px"><g class="cxb"><rect x="44.7" y="22.6" width="12.7" height="19.6"/><rect x="19.4" y="5.9" width="12.7" height="36.4"/><rect x="32.1" y="13.3" width="12.7" height="28.9"/><rect x="57.4" y="42.2" width="12.7" height="19.6"/><rect x="82.8" y="42.2" width="12.7" height="36.4"/><rect x="70.1" y="42.2" width="12.7" height="28.9"/></g><g class="cxa"><line x1="11.9" x2="11.9" y2="100" y1="0"/><line x1="100" y1="86" y2="86" x2="0"/><line y1="62.6" x2="11.9" y2="62.6" x1="0"/><line y1="39.1" x2="11.9" y2="39.1" x1="0"/><line y1="15.6" x2="11.9" y2="15.6" x1="0"/></g></svg></a><span class="examplePages">Waterfall</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Docs -->
+      <div class="py-5">
+        <div class="container px-4 px-lg-3" style="max-width: 1600px;">
+          <div class="row">
+
+            <!--  Left Side bar -->
+            <div class="col-lg-2 sidebar">
+              <div data-aos="fade-up">
+                <h5 class="mt-4 mb-1">Getting Started</h5>
+                <a href="/docs/overview.html" style="height:32px;" class="d-block text-dark fade-page">
+                  <div style="width:30px;height:30px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:30px;height:30px"><g class="cxa"><path d="M 80.9 42.6 L 80.9 21.6 L 61.6 2.3 L 11.5 2.3 L 11.5 90.4 L 31.6 90.4"/><polyline points="61.8 2.2 61.8 21.3 81 21.3"/></g><g class="cxb"><circle cx="59" cy="68.3" r="22.1"/><line x1="74.5" y1="84" x2="88.5" y2="97.8"/></g></svg>
+                  </div>
+                  <div style="position:relative;left:35px;top:-30px;">Overview</div>
+                </a>
+                <a href="/docs/installation.html" style="height:32px;" class="d-block text-dark fade-page">
+                  <div style="width:30px;height:30px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:30px;height:30px"><g class="cxa"><path d="M 65.2 51.9 C 82.4 58.5 100.3 43.9 97.4 25.7 C 97.1 23.8 96.5 21.8 95.8 20 L 83.3 32.5 L 73.5 29.8 L 70.8 19.9 L 83.2 7.5 C 66.2 0.3 47.8 14.1 50 32.4 C 50.3 35.1 51.1 37.7 52.3 40.1"/><polyline points="35 57.1 10.1 82 22.6 94.5 41.3 75.7"/></g><g class="cxb"><rect x="62.8" y="52" width="17.8" height="39.3" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -30.578448, 74.020113)"/><line x1="43.9" y1="73.2" x2="70" y2="47.1"/><polygon points="28.5 15.7 12.1 5.5 2.3 15.3 12.5 31.7 19.4 30.6 53.1 64.2 61 56.3 27.4 22.6 28.5 15.7"/></g></svg>
+                  </div>
+                  <div style="position:relative;left:35px;top:-30px;">Installation</div>
+                </a>
+
+                <h5 class="mt-4 mb-1">API</h5>
+                <a href="/api/3d_attributes.html" class="d-block fade-page">3D Attributes</a>
+                <a href="/api/animations_and_visualization_transitions.html" class="d-block fade-page">Animations and Visualization Transitions</a>
+                <a href="/api/area_graphs.html" class="d-block fade-page">Area Graphs</a>
+                <a href="/api/aspect_ratio__space_and_width.html" class="d-block fade-page">Aspect Ratio, Space and width</a>
+                <a href="/api/axis.html" class="d-block fade-page">Axis</a>
+                <a href="/api/bar_graphs.html" class="d-block fade-page">Bar Graphs</a>
+                <a href="/api/bin_plots.html" class="d-block fade-page">Bin Plots</a>
+                <a href="/api/bins.html" class="d-block fade-page">Bins</a>
+                <a href="/api/boxplot_graphs.html" class="d-block fade-page">Boxplot Graphs</a>
+                <a href="/api/circular_graphs.html" class="d-block fade-page">Circular Graphs</a>
+                <a href="/api/citations_or_references.html" class="d-block fade-page">Citations or References</a>
+                <a href="/api/clustering.html" class="d-block fade-page">Clustering</a>
+                <a href="/api/colors.html" class="d-block fade-page">Colors</a>
+                <a href="/api/combination_plots.html" class="d-block fade-page">Combination Plots</a>
+                <a href="/api/confidence_intervals.html" class="d-block fade-page">Confidence Intervals</a>
+                <a href="/api/contours.html" class="d-block fade-page">Contours</a>
+                <a href="/api/correlation_graphs.html" class="d-block fade-page">Correlation Graphs</a>
+                <a href="/api/doe.html" class="d-block fade-page text-dark font-weight-bold">DOE</a>
+                <a href="/api/data.html" class="d-block fade-page">Data</a>
+                <a href="/api/data_customizer.html" class="d-block fade-page">Data Customizer</a>
+                <a href="/api/data_filters.html" class="d-block fade-page">Data Filters</a>
+                <a href="/api/data_point_attributes.html" class="d-block fade-page">Data Point Attributes</a>
+                <a href="/api/data_selection.html" class="d-block fade-page">Data Selection</a>
+                <a href="/api/data_table.html" class="d-block fade-page">Data Table</a>
+                <a href="/api/data_table_filter.html" class="d-block fade-page">Data Table/Filter</a>
+                <a href="/api/data_sorting.html" class="d-block fade-page">Data sorting</a>
+                <a href="/api/debug.html" class="d-block fade-page">Debug</a>
+                <a href="/api/decorations.html" class="d-block fade-page">Decorations</a>
+                <a href="/api/dendrograms.html" class="d-block fade-page">Dendrograms</a>
+                <a href="/api/density_plots.html" class="d-block fade-page">Density Plots</a>
+                <a href="/api/dotplot_graphs.html" class="d-block fade-page">Dotplot Graphs</a>
+                <a href="/api/effect.html" class="d-block fade-page">Effect</a>
+                <a href="/api/error_bars.html" class="d-block fade-page">Error Bars</a>
+                <a href="/api/events.html" class="d-block fade-page">Events</a>
+                <a href="/api/fish_graphs.html" class="d-block fade-page">Fish Graphs</a>
+                <a href="/api/fit_lines.html" class="d-block fade-page">Fit Lines</a>
+                <a href="/api/foreground_and_background.html" class="d-block fade-page">Foreground and Background</a>
+                <a href="/api/gantt_charts.html" class="d-block fade-page">Gantt Charts</a>
+                <a href="/api/general.html" class="d-block fade-page">General</a>
+                <a href="/api/general_attributes.html" class="d-block fade-page">General Attributes</a>
+                <a href="/api/genome_browser.html" class="d-block fade-page">Genome Browser</a>
+                <a href="/api/gradients.html" class="d-block fade-page">Gradients</a>
+                <a href="/api/heatmap_graphs.html" class="d-block fade-page">Heatmap Graphs</a>
+                <a href="/api/hierarchy.html" class="d-block fade-page">Hierarchy</a>
+                <a href="/api/histograms.html" class="d-block fade-page">Histograms</a>
+                <a href="/api/ideograms.html" class="d-block fade-page">Ideograms</a>
+                <a href="/api/images.html" class="d-block fade-page">Images</a>
+                <a href="/api/kaplan_meier_plots.html" class="d-block fade-page">Kaplan Meier Plots</a>
+                <a href="/api/legends.html" class="d-block fade-page">Legends</a>
+                <a href="/api/line_graphs.html" class="d-block fade-page">Line Graphs</a>
+                <a href="/api/lines.html" class="d-block fade-page">Lines</a>
+                <a href="/api/loess.html" class="d-block fade-page">Loess</a>
+                <a href="/api/maps.html" class="d-block fade-page">Maps</a>
+                <a href="/api/margins.html" class="d-block fade-page">Margins</a>
+                <a href="/api/meter_graphs.html" class="d-block fade-page">Meter Graphs</a>
+                <a href="/api/missing_data.html" class="d-block fade-page">Missing Data</a>
+                <a href="/api/motion_charts.html" class="d-block fade-page">Motion Charts</a>
+                <a href="/api/network_algorithm_parameters.html" class="d-block fade-page">Network Algorithm Parameters</a>
+                <a href="/api/network_cola_algorithm_parameters.html" class="d-block fade-page">Network Cola Algorithm Parameters</a>
+                <a href="/api/network_communities.html" class="d-block fade-page">Network Communities</a>
+                <a href="/api/network_graphs.html" class="d-block fade-page">Network Graphs</a>
+                <a href="/api/network_node_and_edge_attributes.html" class="d-block fade-page">Network Node and Edge Attributes</a>
+                <a href="/api/oncoprint_graphs.html" class="d-block fade-page">Oncoprint Graphs</a>
+                <a href="/api/overlays.html" class="d-block fade-page">Overlays</a>
+                <a href="/api/pie_charts.html" class="d-block fade-page">Pie Charts</a>
+                <a href="/api/plot_area.html" class="d-block fade-page">Plot area</a>
+                <a href="/api/quantile_regression_plots.html" class="d-block fade-page">Quantile Regression Plots</a>
+                <a href="/api/r.html" class="d-block fade-page">R</a>
+                <a href="/api/r_axis.html" class="d-block fade-page">R-Axis</a>
+                <a href="/api/random.html" class="d-block fade-page">Random</a>
+                <a href="/api/regression.html" class="d-block fade-page">Regression</a>
+                <a href="/api/remote_procedures.html" class="d-block fade-page">Remote Procedures</a>
+                <a href="/api/ridgeline_plots.html" class="d-block fade-page">Ridgeline Plots</a>
+                <a href="/api/samples.html" class="d-block fade-page">Samples</a>
+                <a href="/api/sankey_diagrams.html" class="d-block fade-page">Sankey Diagrams</a>
+                <a href="/api/scatter_plot_matrix.html" class="d-block fade-page">Scatter Plot Matrix</a>
+                <a href="/api/scatter_plots.html" class="d-block fade-page">Scatter Plots</a>
+                <a href="/api/shadows.html" class="d-block fade-page">Shadows</a>
+                <a href="/api/shapes.html" class="d-block fade-page">Shapes</a>
+                <a href="/api/tag_cloud.html" class="d-block fade-page">Tag Cloud</a>
+                <a href="/api/text.html" class="d-block fade-page">Text</a>
+                <a href="/api/time_series.html" class="d-block fade-page">Time Series</a>
+                <a href="/api/titles_and_subtitles.html" class="d-block fade-page">Titles and Subtitles</a>
+                <a href="/api/treemap_graphs.html" class="d-block fade-page">Treemap Graphs</a>
+                <a href="/api/trees.html" class="d-block fade-page">Trees</a>
+                <a href="/api/upset_plots.html" class="d-block fade-page">UpSet Plots</a>
+                <a href="/api/variables.html" class="d-block fade-page">Variables</a>
+                <a href="/api/venn_diagrams.html" class="d-block fade-page">Venn Diagrams</a>
+                <a href="/api/x_axis.html" class="d-block fade-page">X-Axis</a>
+                <a href="/api/y_axis.html" class="d-block fade-page">Y-Axis</a>
+                <a href="/api/z_axis.html" class="d-block fade-page">Z-Axis</a>
+                <a href="/api/zooming__panning_and_resizing.html" class="d-block fade-page">Zooming, Panning and Resizing</a>
+                <a href="/api/cxplot.html" class="d-block fade-page">cxplot</a>
+                <a href="/api/false.html" class="d-block fade-page">false</a>
+              </div>
+            </div>
+
+            <!-- Center Pane -->
+            <div class="col-lg-8" data-aos="fade-up">
+              <h2>DOE : Parameters used to create graphs with meta data</h2>
+              <h3 id="asDOE" style="margin-bottom:0"><a href="#asDOE">#</a> asDOE</h3>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Object with configurations to create DOE
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">object</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">false</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h3 id="autoexpandDOE" style="margin-bottom:0"><a href="#autoexpandDOE">#</a> autoexpandDOE</h3>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Flag to automatically expand verticaly the extent of the meta data-plots when changing the size of the graphs
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">boolean</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">true</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h3 id="extendedDOE" style="margin-bottom:0"><a href="#extendedDOE">#</a> extendedDOE</h3>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Flag to extend DOE to include variables / samples
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">boolean</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">true</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h3 id="includeDOE" style="margin-bottom:0"><a href="#includeDOE">#</a> includeDOE</h3>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Array containing the factors to include when exploring the DOE. If left empty all the factors will be included
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">array</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">[]</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h3 id="maxDOENumber" style="margin-bottom:0"><a href="#maxDOENumber">#</a> maxDOENumber</h3>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Maximum number of graphs when creating a DOE
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">integer</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">8</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+
+            <!-- Right Bar -->
+            <div class="col-lg-2 sidebar" data-aos="fade-up">
+              <div>
+                <h5 class=" mb-1">On This Page</h5>
+                <a href="#asDOE" class="d-block smooth-scroll">asDOE</a>
+                <a href="#autoexpandDOE" class="d-block smooth-scroll">autoexpandDOE</a>
+                <a href="#extendedDOE" class="d-block smooth-scroll">extendedDOE</a>
+                <a href="#includeDOE" class="d-block smooth-scroll">includeDOE</a>
+                <a href="#maxDOENumber" class="d-block smooth-scroll">maxDOENumber</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class=" bg-primary-alt">
+        <div class="container">
+          <div class="row justify-content-between" data-aos="fade-up">
+            <div class="col d-flex flex-column align-items-center align-items-md-start">
+              <a href="/" class=" fade-page">
+                <h3 class="mb-0">
+                  <img src="/assets/images/logo-dark.svg" width="282" height="35" title="CanvasXpress Logo"/>
+                </h3>
+              </a>
+              <ul class="nav mt-3">
+                <li class="nav-item"><a href="/" class="nav-link pl-0 fade-page">Home</a></li>
+                <li class="nav-item"><a href="/examples.html" class="nav-link fade-page">Examples</a></li>
+                <li class="nav-item"><a href="/docs.html" class="nav-link fade-page">Docs</a></li>
+                <li class="nav-item"><a href="/api.html" class="nav-link active fade-page">Api</a></li>
+                <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
+                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
+                <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
+                <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
+              </ul>
+              <small class="text-muted mt-2 d-none d-lg-block">&copy;2020 All Rights Reserved. CanvasXpress® </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+
+  </body>
+
+</html>

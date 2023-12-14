@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Chord Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: chord-3">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: chord-3">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Chord Chart">
+    <meta itemprop="description" content="CanvasXpress: chord-3">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Chord Chart">
+    <meta name="og:description" content="CanvasXpress: chord-3">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/chord-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Chord
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="chord3" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXchord3 = new CanvasXpress("chord3",
+          {
+            "y" : {
+              "vars" : ["A", "B", "C", "D"],
+              "smps" : ["A", "B", "C", "D"],
+              "data" : [[11975,  5871, 8916, 2868],
+                        [ 1951, 10048, 2060, 6171],
+                        [ 8010, 16145, 8090, 8045],
+                        [ 1013,   990,  940, 6907]]
+            }
+          },
+          {"circularArc": 180,
+           "circularRotate": -90,
+           "circularType": "chord",
+           "graphType": "Circular",
+           "higlightGreyOut": true,
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "objectBorderColor": "rgb(0,0,0)",
+           "rAxisTickFormat": ["%sK", " / 1000"],
+           "showLegend": false,
+           "showTransition": false,
+           "theme": "CanvasXpress",
+           "title": "Rotated Half Chord Graph",
+           "transitionStep": 50,
+           "transitionTime": 1500
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

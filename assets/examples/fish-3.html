@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Fish Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Breast Cancer">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Breast Cancer">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Fish Chart">
+    <meta itemprop="description" content="CanvasXpress: Breast Cancer">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Fish Chart">
+    <meta name="og:description" content="CanvasXpress: Breast Cancer">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/fish-3.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Fish
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="fish3" width="613" height="413" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXfish3 = new CanvasXpress("fish3",
+          {
+            "y" : {
+              "vars" : ["S1", "S2", "S3", "S4"],
+              "smps" : ["Primary", "Post-AI"],
+              "data" : [
+                [100, 100],
+                [98, 44],
+                [46, 1],
+                [1, 55]
+              ]
+            }
+          },
+          {"backgroundType": "windowSolidGradient",
+           "colorSpectrum": ["#ffe4c4", "#ffb90f", "#cd6600"],
+           "colors": ["#1B9E77", "#D95F02", "#7570B3", "#E7298A"],
+           "fishAxis": [0, 120],
+           "fishAxisLabels": ["Primary", "Post-AI"],
+           "fishParents": [0, 1, 2, 1],
+           "fishShape": "polygon",
+           "fishTimepoints": [0, 120],
+           "gradientOrientation": "horizontal",
+           "graphType": "Fish",
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "title": "BRC32"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

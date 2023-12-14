@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Scatter2D Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: scatter2d-2">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: scatter2d-2">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Scatter2D Chart">
+    <meta itemprop="description" content="CanvasXpress: scatter2d-2">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Scatter2D Chart">
+    <meta name="og:description" content="CanvasXpress: scatter2d-2">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/scatter2d-2.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Scatter2D
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="scatter2d2" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXscatter2d2 = new CanvasXpress("scatter2d2",
+          {
+            "z" : {
+              "Response" : [ "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Complete Response", "Progressive Disease", "Progressive Disease", "Progressive Disease", "Progressive Disease", "Progressive Disease", "Progressive Disease", "Progressive Disease", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response", "Partial Response" ],
+              "Subject" : [ "S101810", "S101810", "S101810", "S101810", "S101810", "S101810", "S101810", "S101810", "S103101", "S103101", "S103101", "S103105", "S103105", "S103105", "S103105", "S103201", "S103201", "S103201", "S103201", "S103201", "S103201", "S103205", "S103205", "S103205", "S103205", "S103205", "S103205", "S103205", "S103205" ]
+            },
+            "y" : {
+              "smps" : [ "Weeks", "Change From Baseline %" ],
+              "data" : [[0, 0.0],
+                        [8, -0.60],
+                        [16, -0.70],
+                        [24, -0.70],
+                        [32, -0.70],
+                        [40, -0.70],
+                        [48, -0.65],
+                        [56, -0.70],
+                        [0, 0.0],
+                        [8, 0.5],
+                        [16, 0.7],
+                        [0, 0.0],
+                        [8, 0.3],
+                        [16, 0.4],
+                        [24, 0.6],
+                        [0, 0.0],
+                        [8, -0.1],
+                        [16, -0.3],
+                        [24, -0.2],
+                        [32, -0.4],
+                        [40, -0.5],
+                        [0, 0.0],
+                        [8, -0.4],
+                        [16, -0.5],
+                        [24, -0.55],
+                        [32, -0.55],
+                        [40, -0.40],
+                        [48, -0.70],
+                        [58, -0.80]]
+            }
+          },
+          {"colorBy": "Response",
+           "graphType": "Scatter2D",
+           "legendBox": true,
+           "legendInside": true,
+           "legendPosition": "topRight",
+           "lineBy": "Subject",
+           "theme": "CanvasXpress",
+           "title": "Tumor Response by Week",
+           "xAxis": ["Weeks"],
+           "yAxis": ["Change From Baseline %"]
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.sidebar{
+    margin-bottom: 40px;
+    .sticky-sidebar{
+        position: sticky;
+        top: 100px;
+    }
+    a{
+        margin-bottom: 5px;
+    }
+}
+
+.internal-grey-link{
+    font-size: 14px;
+    color: #adb5bd;
+    font-style: italic;
+}

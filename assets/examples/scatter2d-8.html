@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Scatter2D Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: scatter2d-8">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: scatter2d-8">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Scatter2D Chart">
+    <meta itemprop="description" content="CanvasXpress: scatter2d-8">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Scatter2D Chart">
+    <meta name="og:description" content="CanvasXpress: scatter2d-8">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/scatter2d-8.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Scatter2D
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="scatter2d8" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXscatter2d8 = new CanvasXpress("scatter2d8",
+          {
+            "y" : {
+              "smps" : [ "Age", "Height" ],
+              "vars" : [ "s1",  "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12" ],
+              "data" : [
+                [ 18, 76.1 ],
+                [ 19, 77 ],
+                [ 20, 78.1 ],
+                [ 21, 78.2 ],
+                [ 22, 78.8 ],
+                [ 23, 79.7 ],
+                [ 24, 79.9 ],
+                [ 25, 81.1 ],
+                [ 26, 81.2 ],
+                [ 27, 81.8 ],
+                [ 28, 82.8 ],
+                [ 29, 83.5 ]
+              ]
+            }
+          },
+          {"citation": "Moore, David S., and George P. McCabe (1989)",
+           "citationScaleFontFactor": 0.75,
+           "graphType": "Scatter2D",
+           "showRegressionFit": true,
+           "theme": "CanvasXpress",
+           "title": "Mean heights of a group of children in Kalama",
+           "xAxis": ["Age"],
+           "yAxis": ["Height"]
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

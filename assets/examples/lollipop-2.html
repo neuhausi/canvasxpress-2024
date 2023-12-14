@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Lollipop Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Big Lollipop">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Big Lollipop">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Lollipop Chart">
+    <meta itemprop="description" content="CanvasXpress: Big Lollipop">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Lollipop Chart">
+    <meta name="og:description" content="CanvasXpress: Big Lollipop">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/lollipop-2.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Lollipop
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="lollipop2" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXlollipop2 = new CanvasXpress("lollipop2",
+          {
+            "y": {
+              "vars": ["Var1"],
+              "smps": ["Engineering", "Biology", "Computer", "Psycology", "Education", "Health"],
+              "data": [
+                [-40,-85,-60,50,75,100]
+              ]
+            },
+            "x": {
+              "Color": ["A", "B", "C", "D", "E", "F"]
+            }
+          },
+          {"backgroundType": "solid",
+           "barLollipopFactor": 1.5,
+           "barLollipopOpen": true,
+           "barPath": true,
+           "barPathColor": "rgb(225,225,225)",
+           "barPathTransparency": 1,
+           "barType": "lollipop",
+           "colorBy": "Color",
+           "colorScheme": "GGPlot",
+           "graphType": "Bar",
+           "marginBottom": 50,
+           "marginLeft": 50,
+           "marginRight": 50,
+           "marginTop": 50,
+           "maxTextSize": 80,
+           "objectBorderColor": "rgba(255,255,255,0)",
+           "setMaxX": 150,
+           "setMinX": -150,
+           "showDataValues": true,
+           "showLegend": false,
+           "smpLabelScaleFontFactor": 2,
+           "title": "Occupations",
+           "xAxis2Show": false,
+           "xAxisShow": false,
+           "xAxisTicksMajorShow": false,
+           "xAxisTicksMinorShow": false
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

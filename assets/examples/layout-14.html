@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Layout Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: layout-14">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: layout-14">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Layout Chart">
+    <meta itemprop="description" content="CanvasXpress: layout-14">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Layout Chart">
+    <meta name="og:description" content="CanvasXpress: layout-14">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/layout-14.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Layout
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="layout14" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXlayout14 = new CanvasXpress("layout14",
+          {
+            "y" : {
+              "vars" : ["Duration", "Discontinued", "Response","Baseline"],
+              "data" :[[4.8,33.9,40.1,6.9,28.8,40.5,31.2,40.0,41.8,29.7,1.5,10.0,45.5,14.9,26.7,29.9,5.6,10.7,25.9,20.8],
+                       [null,null,null,null,null,35.5,null,35.0,null,null,null,5.0,null,null,21.7,null,0.6,null,null,null],
+                       [29.3,23.0,19.6,14.0,5.2,-1.4,-2.8,-6.9,-6.9,-7.1,-13.2,-13.9,-14.5,-16.6,-27.2,-33.9,-43.5,-43.7,-51.4,-52.6],
+                       [192.7,175.1,93.2,172.0,121.4,77.1,33.7,73.6,188.6,122.8,80.8,32.5,183.4,87.2,43.5,46.6,115.4,99.9,180.5,130.3]]
+            },
+            "x" : {
+              "Drug" : ["4 mg", "2 mg", "3 F6 mg", "4 mg", "3 F6 mg", "3 F6 mg", "2 mg", "2 mg", "2 mg", "2 mg", "1 mg", "4 F6 mg", "3 F6 mg", "4 F6 mg", "3 F6 mg", "2 mg", "2 mg", "1 mg", "3 F6 mg", "4 mg"],
+              "Code" :["FL", "DLBCL", "DLBCL", "FL", "FL",  "DLBCL", "DLBCL",  "DLBCL", "DLBCL",  "DLBCL", "FL", "FL", "FL", "DLBCL", "FL",  "DLBCL", "DLBCL",  "DLBCL", "FL", "DLBCL"]   
+            },
+            "z" : {
+              "Panel" : [1,1,2,3]
+            }
+          },
+          {"graphOrientation": "vertical",
+           "graphType": "Bar",
+           "layoutAdjust": true,
+           "layoutConfig": [{"xAxis":["Duration"],"showDataValues":true,"graphType":"BarLine","xAxis2":["Discontinued"],"xAxisTitle":"Duration of Treatment","axisCoordinate":true},{"xAxisTitle":"Change from Baseline (%)","legendInside":true,"showLegendTitle":false,"legendColumns":5,"legendPosition":"bottomLeft","showLegend":true,"colorBy":"Drug"},{"barLollipopOpen":false,"barLollipopFactor":1.5,"xAxisTitle":"Baseline (mm)","barType":"lollipop"}],
+           "layoutLabelShow": false,
+           "layoutTopology": "3X1",
+           "showLegend": false,
+           "theme": "CanvasXpress",
+           "title": "Tumor Response and Duration by Subject Id",
+           "xAxis2Show": false
+          }
+        );
+        cXlayout14.segregateVariables(["Panel"]      );
+      </script>
+    </div>
+  </body>
+</html>

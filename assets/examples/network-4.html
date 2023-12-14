@@ -1,0 +1,1533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: network-4">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: network-4">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Network Chart">
+    <meta itemprop="description" content="CanvasXpress: network-4">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Network Chart">
+    <meta name="og:description" content="CanvasXpress: network-4">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/network-4.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Network
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="network4" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork4 = new CanvasXpress("network4",
+          {
+            "nodes" : [
+              {
+                "id" : "Id0",
+                "name" : "Myriel",
+                "group": "G01"
+              }, {
+                "id" : "Id1",
+                "name" : "Napoleon",
+                "group": "G01"
+              }, {
+                "id" : "Id2",
+                "name" : "Mlle. Baptistine",
+                "group": "G01"
+              }, {
+                "id" : "Id3",
+                "name" : "Mme. Magloire",
+                "group": "G01"
+              }, {
+                "id" : "Id4",
+                "name" : "Countess de Lo",
+                "group": "G01"
+              }, {
+                "id" : "Id5",
+                "name" : "Geborand",
+                "group": "G01"
+              }, {
+                "id" : "Id6",
+                "name" : "Champtercier",
+                "group": "G01"
+              }, {
+                "id" : "Id7",
+                "name" : "Cravatte",
+                "group": "G01"
+              }, {
+                "id" : "Id8",
+                "name" : "Count",
+                "group": "G01"
+              }, {
+                "id" : "Id9",
+                "name" : "Old Man",
+                "group": "G01"
+              }, {
+                "id" : "Id10",
+                "name" : "Labarre",
+                "group": "G02"
+              }, {
+                "id" : "Id11",
+                "name" : "Valjean",
+                "group": "G02"
+              }, {
+                "id" : "Id12",
+                "name" : "Marguerite",
+                "group": "G03"
+              }, {
+                "id" : "Id13",
+                "name" : "Mme. de R",
+                "group": "G02"
+              }, {
+                "id" : "Id14",
+                "name" : "Isabeau",
+                "group": "G02"
+              }, {
+                "id" : "Id15",
+                "name" : "Gervais",
+                "group": "G02"
+              }, {
+                "id" : "Id16",
+                "name" : "Tholomyes",
+                "group": "G03"
+              }, {
+                "id" : "Id17",
+                "name" : "Listolier",
+                "group": "G03"
+              }, {
+                "id" : "Id18",
+                "name" : "Fameuil",
+                "group": "G03"
+              }, {
+                "id" : "Id19",
+                "name" : "Blacheville",
+                "group": "G03"
+              }, {
+                "id" : "Id20",
+                "name" : "Favourite",
+                "group": "G03"
+              }, {
+                "id" : "Id21",
+                "name" : "Dahlia",
+                "group": "G03"
+              }, {
+                "id" : "Id22",
+                "name" : "Zephine",
+                "group": "G03"
+              }, {
+                "id" : "Id23",
+                "name" : "Fantine",
+                "group": "G03"
+              }, {
+                "id" : "Id24",
+                "name" : "Mme. Thenardier",
+                "group": "G04"
+              }, {
+                "id" : "Id25",
+                "name" : "Thenardier",
+                "group": "G04"
+              }, {
+                "id" : "Id26",
+                "name" : "Cosette",
+                "group": "G05"
+              }, {
+                "id" : "Id27",
+                "name" : "Javert",
+                "group": "G04"
+              }, {
+                "id" : "Id28",
+                "name" : "Fauchelevent",
+                "group" : "G00"
+              }, {
+                "id" : "Id29",
+                "name" : "Bamatabois",
+                "group": "G02"
+              }, {
+                "id" : "Id30",
+                "name" : "Perpetue",
+                "group": "G03"
+              }, {
+                "id" : "Id31",
+                "name" : "Simplice",
+                "group": "G02"
+              }, {
+                "id" : "Id32",
+                "name" : "Scaufflaire",
+                "group": "G02"
+              }, {
+                "id" : "Id33",
+                "name" : "Woman 1",
+                "group": "G02"
+              }, {
+                "id" : "Id34",
+                "name" : "Judge",
+                "group": "G02"
+              }, {
+                "id" : "Id35",
+                "name" : "Champmathieu",
+                "group": "G02"
+              }, {
+                "id" : "Id36",
+                "name" : "Brevet",
+                "group": "G02"
+              }, {
+                "id" : "Id37",
+                "name" : "Chenildieu",
+                "group": "G02"
+              }, {
+                "id" : "Id38",
+                "name" : "Cochepaille",
+                "group": "G02"
+              }, {
+                "id" : "Id39",
+                "name" : "Pontmercy",
+                "group": "G04"
+              }, {
+                "id" : "Id40",
+                "name" : "Boulatruelle",
+                "group": "G06"
+              }, {
+                "id" : "Id41",
+                "name" : "Eponine",
+                "group": "G04"
+              }, {
+                "id" : "Id42",
+                "name" : "Anzelma",
+                "group": "G04"
+              }, {
+                "id" : "Id43",
+                "name" : "Woman 2",
+                "group": "G05"
+              }, {
+                "id" : "Id44",
+                "name" : "Mother Innocent",
+                "group" : "G00"
+              }, {
+                "id" : "Id45",
+                "name" : "Gribier",
+                "group" : "G00"
+              }, {
+                "id" : "Id46",
+                "name" : "Jondrette",
+                "group": "G07"
+              }, {
+                "id" : "Id47",
+                "name" : "Mme. Burgon",
+                "group": "G07"
+              }, {
+                "id" : "Id48",
+                "name" : "Gavroche",
+                "group": "G08"
+              }, {
+                "id" : "Id49",
+                "name" : "Gillenormand",
+                "group": "G05"
+              }, {
+                "id" : "Id50",
+                "name" : "Magnon",
+                "group": "G05"
+              }, {
+                "id" : "Id51",
+                "name" : "Mlle. Gillenormand",
+                "group": "G05"
+              }, {
+                "id" : "Id52",
+                "name" : "Mme. Pontmercy",
+                "group": "G05"
+              }, {
+                "id" : "Id53",
+                "name" : "Mlle. Vaubois",
+                "group": "G05"
+              }, {
+                "id" : "Id54",
+                "name" : "Lt. Gillenormand",
+                "group": "G05"
+              }, {
+                "id" : "Id55",
+                "name" : "Marius",
+                "group": "G08"
+              }, {
+                "id" : "Id56",
+                "name" : "Baroness T",
+                "group": "G05"
+              }, {
+                "id" : "Id57",
+                "name" : "Mabeuf",
+                "group": "G08"
+              }, {
+                "id" : "Id58",
+                "name" : "Enjolras",
+                "group": "G08"
+              }, {
+                "id" : "Id59",
+                "name" : "Combeferre",
+                "group": "G08"
+              }, {
+                "id" : "Id60",
+                "name" : "Prouvaire",
+                "group": "G08"
+              }, {
+                "id" : "Id61",
+                "name" : "Feuilly",
+                "group": "G08"
+              }, {
+                "id" : "Id62",
+                "name" : "Courfeyrac",
+                "group": "G08"
+              }, {
+                "id" : "Id63",
+                "name" : "Bahorel",
+                "group": "G08"
+              }, {
+                "id" : "Id64",
+                "name" : "Bossuet",
+                "group": "G08"
+              }, {
+                "id" : "Id65",
+                "name" : "Joly",
+                "group": "G08"
+              }, {
+                "id" : "Id66",
+                "name" : "Grantaire",
+                "group": "G08"
+              }, {
+                "id" : "Id67",
+                "name" : "Mother Plutarch",
+                "group": "G09"
+              }, {
+                "id" : "Id68",
+                "name" : "Gueulemer",
+                "group": "G04"
+              }, {
+                "id" : "Id69",
+                "name" : "Babet",
+                "group": "G04"
+              }, {
+                "id" : "Id70",
+                "name" : "Claquesous",
+                "group": "G04"
+              }, {
+                "id" : "Id71",
+                "name" : "Montparnasse",
+                "group": "G04"
+              }, {
+                "id" : "Id72",
+                "name" : "Toussaint",
+                "group": "G05"
+              }, {
+                "id" : "Id73",
+                "name" : "Child 1",
+                "group": "G10"
+              }, {
+                "id" : "Id74",
+                "name" : "Child 2",
+                "group": "G10"
+              }, {
+                "id" : "Id75",
+                "name" : "Brujon",
+                "group": "G04"
+              }, {
+                "id" : "Id76",
+                "name" : "Mme. Hucheloup",
+                "group": "G08"
+              }
+            ],
+            "edges" : [
+              {
+                "id1" : "Id1",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id2",
+                "id2" : "Id0",
+                "value" : 8
+              }, {
+                "id1" : "Id3",
+                "id2" : "Id0",
+                "value" : 10
+              }, {
+                "id1" : "Id3",
+                "id2" : "Id2",
+                "value" : 6
+              }, {
+                "id1" : "Id4",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id5",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id6",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id7",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id8",
+                "id2" : "Id0",
+                "value" : 2
+              }, {
+                "id1" : "Id9",
+                "id2" : "Id0",
+                "value" : 1
+              }, {
+                "id1" : "Id11",
+                "id2" : "Id10",
+                "value" : 1
+              }, {
+                "id1" : "Id11",
+                "id2" : "Id3",
+                "value" : 3
+              }, {
+                "id1" : "Id11",
+                "id2" : "Id2",
+                "value" : 3
+              }, {
+                "id1" : "Id11",
+                "id2" : "Id0",
+                "value" : 5
+              }, {
+                "id1" : "Id12",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id13",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id14",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id15",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id17",
+                "id2" : "Id16",
+                "value" : 4
+              }, {
+                "id1" : "Id18",
+                "id2" : "Id16",
+                "value" : 4
+              }, {
+                "id1" : "Id18",
+                "id2" : "Id17",
+                "value" : 4
+              }, {
+                "id1" : "Id19",
+                "id2" : "Id16",
+                "value" : 4
+              }, {
+                "id1" : "Id19",
+                "id2" : "Id17",
+                "value" : 4
+              }, {
+                "id1" : "Id19",
+                "id2" : "Id18",
+                "value" : 4
+              }, {
+                "id1" : "Id20",
+                "id2" : "Id16",
+                "value" : 3
+              }, {
+                "id1" : "Id20",
+                "id2" : "Id17",
+                "value" : 3
+              }, {
+                "id1" : "Id20",
+                "id2" : "Id18",
+                "value" : 3
+              }, {
+                "id1" : "Id20",
+                "id2" : "Id19",
+                "value" : 4
+              }, {
+                "id1" : "Id21",
+                "id2" : "Id16",
+                "value" : 3
+              }, {
+                "id1" : "Id21",
+                "id2" : "Id17",
+                "value" : 3
+              }, {
+                "id1" : "Id21",
+                "id2" : "Id18",
+                "value" : 3
+              }, {
+                "id1" : "Id21",
+                "id2" : "Id19",
+                "value" : 3
+              }, {
+                "id1" : "Id21",
+                "id2" : "Id20",
+                "value" : 5
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id16",
+                "value" : 3
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id17",
+                "value" : 3
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id18",
+                "value" : 3
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id19",
+                "value" : 3
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id20",
+                "value" : 4
+              }, {
+                "id1" : "Id22",
+                "id2" : "Id21",
+                "value" : 4
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id16",
+                "value" : 3
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id17",
+                "value" : 3
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id18",
+                "value" : 3
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id19",
+                "value" : 3
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id20",
+                "value" : 4
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id21",
+                "value" : 4
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id22",
+                "value" : 4
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id12",
+                "value" : 2
+              }, {
+                "id1" : "Id23",
+                "id2" : "Id11",
+                "value" : 9
+              }, {
+                "id1" : "Id24",
+                "id2" : "Id23",
+                "value" : 2
+              }, {
+                "id1" : "Id24",
+                "id2" : "Id11",
+                "value" : 7
+              }, {
+                "id1" : "Id25",
+                "id2" : "Id24",
+                "value" : 13
+              }, {
+                "id1" : "Id25",
+                "id2" : "Id23",
+                "value" : 1
+              }, {
+                "id1" : "Id25",
+                "id2" : "Id11",
+                "value" : 12
+              }, {
+                "id1" : "Id26",
+                "id2" : "Id24",
+                "value" : 4
+              }, {
+                "id1" : "Id26",
+                "id2" : "Id11",
+                "value" : 31
+              }, {
+                "id1" : "Id26",
+                "id2" : "Id16",
+                "value" : 1
+              }, {
+                "id1" : "Id26",
+                "id2" : "Id25",
+                "value" : 1
+              }, {
+                "id1" : "Id27",
+                "id2" : "Id11",
+                "value" : 17
+              }, {
+                "id1" : "Id27",
+                "id2" : "Id23",
+                "value" : 5
+              }, {
+                "id1" : "Id27",
+                "id2" : "Id25",
+                "value" : 5
+              }, {
+                "id1" : "Id27",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id27",
+                "id2" : "Id26",
+                "value" : 1
+              }, {
+                "id1" : "Id28",
+                "id2" : "Id11",
+                "value" : 8
+              }, {
+                "id1" : "Id28",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id29",
+                "id2" : "Id23",
+                "value" : 1
+              }, {
+                "id1" : "Id29",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id29",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id30",
+                "id2" : "Id23",
+                "value" : 1
+              }, {
+                "id1" : "Id31",
+                "id2" : "Id30",
+                "value" : 2
+              }, {
+                "id1" : "Id31",
+                "id2" : "Id11",
+                "value" : 3
+              }, {
+                "id1" : "Id31",
+                "id2" : "Id23",
+                "value" : 2
+              }, {
+                "id1" : "Id31",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id32",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id33",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id33",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id34",
+                "id2" : "Id11",
+                "value" : 3
+              }, {
+                "id1" : "Id34",
+                "id2" : "Id29",
+                "value" : 2
+              }, {
+                "id1" : "Id35",
+                "id2" : "Id11",
+                "value" : 3
+              }, {
+                "id1" : "Id35",
+                "id2" : "Id34",
+                "value" : 3
+              }, {
+                "id1" : "Id35",
+                "id2" : "Id29",
+                "value" : 2
+              }, {
+                "id1" : "Id36",
+                "id2" : "Id34",
+                "value" : 2
+              }, {
+                "id1" : "Id36",
+                "id2" : "Id35",
+                "value" : 2
+              }, {
+                "id1" : "Id36",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id36",
+                "id2" : "Id29",
+                "value" : 1
+              }, {
+                "id1" : "Id37",
+                "id2" : "Id34",
+                "value" : 2
+              }, {
+                "id1" : "Id37",
+                "id2" : "Id35",
+                "value" : 2
+              }, {
+                "id1" : "Id37",
+                "id2" : "Id36",
+                "value" : 2
+              }, {
+                "id1" : "Id37",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id37",
+                "id2" : "Id29",
+                "value" : 1
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id34",
+                "value" : 2
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id35",
+                "value" : 2
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id36",
+                "value" : 2
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id37",
+                "value" : 2
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id38",
+                "id2" : "Id29",
+                "value" : 1
+              }, {
+                "id1" : "Id39",
+                "id2" : "Id25",
+                "value" : 1
+              }, {
+                "id1" : "Id40",
+                "id2" : "Id25",
+                "value" : 1
+              }, {
+                "id1" : "Id41",
+                "id2" : "Id24",
+                "value" : 2
+              }, {
+                "id1" : "Id41",
+                "id2" : "Id25",
+                "value" : 3
+              }, {
+                "id1" : "Id42",
+                "id2" : "Id41",
+                "value" : 2
+              }, {
+                "id1" : "Id42",
+                "id2" : "Id25",
+                "value" : 2
+              }, {
+                "id1" : "Id42",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id43",
+                "id2" : "Id11",
+                "value" : 3
+              }, {
+                "id1" : "Id43",
+                "id2" : "Id26",
+                "value" : 1
+              }, {
+                "id1" : "Id43",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id44",
+                "id2" : "Id28",
+                "value" : 3
+              }, {
+                "id1" : "Id44",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id45",
+                "id2" : "Id28",
+                "value" : 2
+              }, {
+                "id1" : "Id47",
+                "id2" : "Id46",
+                "value" : 1
+              }, {
+                "id1" : "Id48",
+                "id2" : "Id47",
+                "value" : 2
+              }, {
+                "id1" : "Id48",
+                "id2" : "Id25",
+                "value" : 1
+              }, {
+                "id1" : "Id48",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id48",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id49",
+                "id2" : "Id26",
+                "value" : 3
+              }, {
+                "id1" : "Id49",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id50",
+                "id2" : "Id49",
+                "value" : 1
+              }, {
+                "id1" : "Id50",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id51",
+                "id2" : "Id49",
+                "value" : 9
+              }, {
+                "id1" : "Id51",
+                "id2" : "Id26",
+                "value" : 2
+              }, {
+                "id1" : "Id51",
+                "id2" : "Id11",
+                "value" : 2
+              }, {
+                "id1" : "Id52",
+                "id2" : "Id51",
+                "value" : 1
+              }, {
+                "id1" : "Id52",
+                "id2" : "Id39",
+                "value" : 1
+              }, {
+                "id1" : "Id53",
+                "id2" : "Id51",
+                "value" : 1
+              }, {
+                "id1" : "Id54",
+                "id2" : "Id51",
+                "value" : 2
+              }, {
+                "id1" : "Id54",
+                "id2" : "Id49",
+                "value" : 1
+              }, {
+                "id1" : "Id54",
+                "id2" : "Id26",
+                "value" : 1
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id51",
+                "value" : 6
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id49",
+                "value" : 12
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id39",
+                "value" : 1
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id54",
+                "value" : 1
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id26",
+                "value" : 21
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id11",
+                "value" : 19
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id16",
+                "value" : 1
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id25",
+                "value" : 2
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id41",
+                "value" : 5
+              }, {
+                "id1" : "Id55",
+                "id2" : "Id48",
+                "value" : 4
+              }, {
+                "id1" : "Id56",
+                "id2" : "Id49",
+                "value" : 1
+              }, {
+                "id1" : "Id56",
+                "id2" : "Id55",
+                "value" : 1
+              }, {
+                "id1" : "Id57",
+                "id2" : "Id55",
+                "value" : 1
+              }, {
+                "id1" : "Id57",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id57",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id58",
+                "id2" : "Id55",
+                "value" : 7
+              }, {
+                "id1" : "Id58",
+                "id2" : "Id48",
+                "value" : 7
+              }, {
+                "id1" : "Id58",
+                "id2" : "Id27",
+                "value" : 6
+              }, {
+                "id1" : "Id58",
+                "id2" : "Id57",
+                "value" : 1
+              }, {
+                "id1" : "Id58",
+                "id2" : "Id11",
+                "value" : 4
+              }, {
+                "id1" : "Id59",
+                "id2" : "Id58",
+                "value" : 15
+              }, {
+                "id1" : "Id59",
+                "id2" : "Id55",
+                "value" : 5
+              }, {
+                "id1" : "Id59",
+                "id2" : "Id48",
+                "value" : 6
+              }, {
+                "id1" : "Id59",
+                "id2" : "Id57",
+                "value" : 2
+              }, {
+                "id1" : "Id60",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id60",
+                "id2" : "Id58",
+                "value" : 4
+              }, {
+                "id1" : "Id60",
+                "id2" : "Id59",
+                "value" : 2
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id48",
+                "value" : 2
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id58",
+                "value" : 6
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id60",
+                "value" : 2
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id59",
+                "value" : 5
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id57",
+                "value" : 1
+              }, {
+                "id1" : "Id61",
+                "id2" : "Id55",
+                "value" : 1
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id55",
+                "value" : 9
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id58",
+                "value" : 17
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id59",
+                "value" : 13
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id48",
+                "value" : 7
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id57",
+                "value" : 2
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id61",
+                "value" : 6
+              }, {
+                "id1" : "Id62",
+                "id2" : "Id60",
+                "value" : 3
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id59",
+                "value" : 5
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id48",
+                "value" : 5
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id62",
+                "value" : 6
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id57",
+                "value" : 2
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id58",
+                "value" : 4
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id61",
+                "value" : 3
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id60",
+                "value" : 2
+              }, {
+                "id1" : "Id63",
+                "id2" : "Id55",
+                "value" : 1
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id55",
+                "value" : 5
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id62",
+                "value" : 12
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id48",
+                "value" : 5
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id63",
+                "value" : 4
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id58",
+                "value" : 10
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id61",
+                "value" : 6
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id60",
+                "value" : 2
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id59",
+                "value" : 9
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id57",
+                "value" : 1
+              }, {
+                "id1" : "Id64",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id63",
+                "value" : 5
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id64",
+                "value" : 7
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id48",
+                "value" : 3
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id62",
+                "value" : 5
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id58",
+                "value" : 5
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id61",
+                "value" : 5
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id60",
+                "value" : 2
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id59",
+                "value" : 5
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id57",
+                "value" : 1
+              }, {
+                "id1" : "Id65",
+                "id2" : "Id55",
+                "value" : 2
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id64",
+                "value" : 3
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id58",
+                "value" : 3
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id59",
+                "value" : 1
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id62",
+                "value" : 2
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id65",
+                "value" : 2
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id63",
+                "value" : 1
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id61",
+                "value" : 1
+              }, {
+                "id1" : "Id66",
+                "id2" : "Id60",
+                "value" : 1
+              }, {
+                "id1" : "Id67",
+                "id2" : "Id57",
+                "value" : 3
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id25",
+                "value" : 5
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id68",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id25",
+                "value" : 6
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id68",
+                "value" : 6
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id27",
+                "value" : 2
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id69",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id25",
+                "value" : 4
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id69",
+                "value" : 4
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id68",
+                "value" : 4
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id24",
+                "value" : 1
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id70",
+                "id2" : "Id58",
+                "value" : 1
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id69",
+                "value" : 2
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id68",
+                "value" : 2
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id70",
+                "value" : 2
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id71",
+                "id2" : "Id25",
+                "value" : 1
+              }, {
+                "id1" : "Id72",
+                "id2" : "Id26",
+                "value" : 2
+              }, {
+                "id1" : "Id72",
+                "id2" : "Id27",
+                "value" : 1
+              }, {
+                "id1" : "Id72",
+                "id2" : "Id11",
+                "value" : 1
+              }, {
+                "id1" : "Id73",
+                "id2" : "Id48",
+                "value" : 2
+              }, {
+                "id1" : "Id74",
+                "id2" : "Id48",
+                "value" : 2
+              }, {
+                "id1" : "Id74",
+                "id2" : "Id73",
+                "value" : 3
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id69",
+                "value" : 3
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id68",
+                "value" : 3
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id25",
+                "value" : 3
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id41",
+                "value" : 1
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id70",
+                "value" : 1
+              }, {
+                "id1" : "Id75",
+                "id2" : "Id71",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id64",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id65",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id66",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id63",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id62",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id48",
+                "value" : 1
+              }, {
+                "id1" : "Id76",
+                "id2" : "Id58",
+                "value" : 1
+              }
+            ],
+            "groups" : [
+              {
+                "id": "G0",
+                "nodes": [
+                  "Id28",
+                  "Id44",
+                  "Id45"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G1",
+                "nodes": [
+                  "Id0",
+                  "Id1",
+                  "Id2",
+                  "Id3",
+                  "Id4",
+                  "Id5",
+                  "Id6",
+                  "Id7",
+                  "Id8",
+                  "Id9"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G2",
+                "nodes": [
+                  "Id10",
+                  "Id11",
+                  "Id13",
+                  "Id14",
+                  "Id15",
+                  "Id29",
+                  "Id31",
+                  "Id32",
+                  "Id33",
+                  "Id34",
+                  "Id35",
+                  "Id36",
+                  "Id37",
+                  "Id38"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G3",
+                "nodes": [
+                  "Id12",
+                  "Id16",
+                  "Id17",
+                  "Id18",
+                  "Id19",
+                  "Id20",
+                  "Id21",
+                  "Id22",
+                  "Id23",
+                  "Id30"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G4",
+                "nodes": [
+                  "Id24",
+                  "Id25",
+                  "Id27",
+                  "Id39",
+                  "Id41",
+                  "Id42",
+                  "Id68",
+                  "Id69",
+                  "Id70",
+                  "Id71",
+                  "Id75"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G5",
+                "nodes": [
+                  "Id26",
+                  "Id43",
+                  "Id49",
+                  "Id50",
+                  "Id51",
+                  "Id52",
+                  "Id53",
+                  "Id54",
+                  "Id56",
+                  "Id72"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G6",
+                "nodes": [
+                  "Id40"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G7",
+                "nodes": [
+                  "Id46",
+                  "Id47"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G8",
+                "nodes": [
+                  "Id48",
+                  "Id55",
+                  "Id57",
+                  "Id58",
+                  "Id59",
+                  "Id60",
+                  "Id61",
+                  "Id62",
+                  "Id63",
+                  "Id64",
+                  "Id65",
+                  "Id66",
+                  "Id76"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G9",
+                "nodes": [
+                  "Id67"
+                ],
+                "padding": 8
+              },
+              {
+                "id": "G10",
+                "nodes": [
+                  "Id73",
+                  "Id74"
+                ],
+                "padding": 8
+              }
+            ]
+          },
+          {"colorNodeBy": "group",
+           "graphType": "Network",
+           "networkColaAvoidOverlaps": true,
+           "networkColaJaccardLinkLengthDefault": 0.7,
+           "networkColaJaccardLinkLengths": 40,
+           "networkColaStartUnconstrainedIterations": 50,
+           "networkLayoutType": "cola"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

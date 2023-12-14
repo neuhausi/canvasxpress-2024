@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Dotplot Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: dotplot-4">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: dotplot-4">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Dotplot Chart">
+    <meta itemprop="description" content="CanvasXpress: dotplot-4">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Dotplot Chart">
+    <meta name="og:description" content="CanvasXpress: dotplot-4">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/dotplot-4.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Dotplot
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="dotplot4" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdotplot4 = new CanvasXpress("dotplot4",
+          {
+            "y" : {
+              "vars" : ["Women", "Men"],
+              "smps" : ["MIT", "Stanford", "Harvard", "U.Penn", "Princeton", "Chicago", "Georgetown", "Tufts", "Yale", "Columbia", "Duke", "Dartmouth", "NYU", "Notre Dame", "Cornell", "Michigan", "Brown", "Berkeley", "Emory", "UCLA", "SoCal"],
+              "data" : [[94, 96, 112, 92, 90, 78, 94, 76, 79, 86, 93, 84, 67, 73, 80, 62, 72, 71, 68, 64, 72],
+                        [152, 151, 165, 141, 137, 118, 131, 112, 114, 119, 124, 114, 94, 100, 107, 84, 92, 88, 82, 78, 81]]
+            },
+            "z" : {
+              "Connect" : ["1", "1"]
+            }
+          },
+          {"axisAlgorithm": "wilkinson",
+           "connectBy": "Connect",
+           "dotplotType": "stacked",
+           "graphType": "Dotplot",
+           "showTransition": false,
+           "smpTitle": "School",
+           "sortDir": "descending",
+           "theme": "CanvasXpress",
+           "title": "Gender Earnings Disparity",
+           "xAxis2Title": "Annual Salary",
+           "xAxisTickFormat": "\$%sK",
+           "xAxisTicksMinorShow": false,
+           "xAxisTitle": "Annual Salary"
+          }
+        );
+        cXdotplot4.sortSamplesByVariable("Men"      );
+      </script>
+    </div>
+  </body>
+</html>

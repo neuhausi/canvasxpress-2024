@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: network-19">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: network-19">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Network Chart">
+    <meta itemprop="description" content="CanvasXpress: network-19">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Network Chart">
+    <meta name="og:description" content="CanvasXpress: network-19">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/network-19.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Network
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="network19" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork19 = new CanvasXpress("network19",
+          "https://www.canvasxpress.org/data/hsa05222.xml",
+          {"appendNetworkData": 
+            [
+              "https://www.canvasxpress.org/data/hsa05222.txt",
+              {
+                 "type" : "node",
+                 "data" : {
+                    "2" : {
+                       "Exp8" : {
+                          "CL3" : 7,
+                          "CL2" : 14,
+                          "CL1" : 2
+                       },
+                       "Exp6" : 4,
+                       "Exp9" : {
+                          "CL1" : 32,
+                          "CL3" : 5,
+                          "CL2" : 1
+                       },
+                       "Exp7" : "H",
+                       "Exp5" : -3
+                    },
+                    "9" : {
+                       "Exp8" : {
+                          "CL2" : 14,
+                          "CL3" : 32,
+                          "CL1" : 2
+                       },
+                       "Exp6" : 14,
+                       "Exp9" : {
+                          "CL1" : 12,
+                          "CL2" : 4
+                       },
+                       "Exp7" : "M",
+                       "Exp5" : -8
+                    },
+                    "3" : {
+                       "Exp7" : "L",
+                       "Exp5" : -1,
+                       "Exp9" : {
+                          "CL2" : 4,
+                          "CL1" : 45
+                       },
+                       "Exp6" : 15,
+                       "Exp8" : {
+                          "CL1" : 2,
+                          "CL3" : 22,
+                          "CL2" : 40
+                       }
+                    },
+                    "4" : {
+                       "Exp8" : {
+                          "CL3" : 15,
+                          "CL2" : 4,
+                          "CL1" : 32
+                       },
+                       "Exp5" : 5,
+                       "Exp7" : "H",
+                       "Exp9" : {
+                          "CL2" : 4,
+                          "CL1" : 52
+                       },
+                       "Exp6" : 40
+                    },
+                    "8" : {
+                       "Exp7" : "H",
+                       "Exp5" : 10,
+                       "Exp9" : {
+                          "CL2" : 44,
+                          "CL3" : 9,
+                          "CL1" : 21
+                       },
+                       "Exp6" : 24,
+                       "Exp8" : {
+                          "CL2" : 4,
+                          "CL3" : 1,
+                          "CL1" : 12
+                       }
+                    }
+                 }
+              }
+           ],
+           "colorNodeBy": "Exp1",
+           "graphType": "Network"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

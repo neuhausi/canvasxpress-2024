@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>Gauge</title>
+
+    <style>
+        div.content {
+            top: 25px;
+            left: 25px;
+            position: absolute;
+        }
+
+        div.container {
+            border: 1px solid #d3d3d3;
+            position: relative;
+            height: 100%;
+            border-radius: 4px;
+            background: white;
+            float: left;
+            margin: 5px;
+        }
+
+        div.title {
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 22px;
+            flex-grow: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center !important;
+            font-weight: bold;
+            background: #f5f5f5;
+        }
+
+        div.plot {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+        }
+    </style>
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="title">
+                Gauge
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas1" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                Speedometer
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas2" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                Digital
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas3" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                State
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas4" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                Horizontal
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas5" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                Vertical
+            </div>
+            <div class="plot">
+                <div>
+                    <canvas id="canvas6" width="300" height="300" data-responsive="true"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new CanvasXpress({
+            renderTo: "canvas1",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: 'gauge'
+            }
+        });
+        new CanvasXpress({
+            renderTo: "canvas2",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: "speedometer"
+            }
+        });
+        new CanvasXpress({
+            renderTo: "canvas3",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: 'digital'
+            }
+        });
+        new CanvasXpress({
+            renderTo: "canvas4",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: 'state'
+            }
+        });
+        new CanvasXpress({
+            renderTo: "canvas5",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: 'horizontal'
+            }
+        });
+        new CanvasXpress({
+            renderTo: "canvas6",
+            data: {
+                y: {
+                    vars: ['Performance'],
+                    smps: ['January'],
+                    data: [[85]]
+                }
+            },
+            config: {
+                graphType: "Meter",
+                meterType: 'vertical'
+            }
+        });
+    </script>
+</body>
+
+</html>

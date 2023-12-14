@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: StackedPercent Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: stackedpercent-4">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: stackedpercent-4">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: StackedPercent Chart">
+    <meta itemprop="description" content="CanvasXpress: stackedpercent-4">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: StackedPercent Chart">
+    <meta name="og:description" content="CanvasXpress: stackedpercent-4">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/stackedpercent-4.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          StackedPercent
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="stackedpercent4" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXstackedpercent4 = new CanvasXpress("stackedpercent4",
+          {
+            "y": {
+              "vars": ["Pants on Fire", "False", "Mostly False", "Half True", "Mostly True", "True"],
+              "smps": ["Big Fat Liar", "Two-Faced", "Honest Abe"],
+              "data": [[-35, -20, -5],
+                       [-25, -20, -10],
+                       [-15, -10, -10],
+                       [10, 10, 15],
+                       [10, 20, 25],
+                       [5, 20, 35]]
+            }
+          },
+          {"axisAlgorithm": "wilkinson",
+           "colorScheme": "CanvasXpress",
+           "graphOrientation": "horizontal",
+           "graphType": "StackedPercent",
+           "legendColumns": 3,
+           "legendKeyBackgroundBorderColor": "rgba(255,255,255,0)",
+           "legendKeyBackgroundColor": "rgba(255,255,255,0)",
+           "legendPosition": "bottom",
+           "marginRight": 20,
+           "showDataValues": true,
+           "title": "Diverging Stacked Percent Graph",
+           "xAxisTickFormat": "%s%%"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

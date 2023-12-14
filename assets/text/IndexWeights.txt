@@ -1,0 +1,639 @@
+Symbol	Company	Weight	Market
+MSFT	Microsoft Corporation	5.447417	S&P 500
+AAPL	Apple Inc.	5.23108	S&P 500
+AMZN	Amazon.com Inc.	3.97622	S&P 500
+FB	Facebook Inc. Class A	2.133678	S&P 500
+GOOGL	Alphabet Inc. Class A	1.661297	S&P 500
+GOOG	Alphabet Inc. Class C	1.653864	S&P 500
+JNJ	Johnson & Johnson	1.50712	S&P 500
+BRK.B	Berkshire Hathaway Inc. Class B	1.437871	S&P 500
+V	Visa Inc. Class A	1.298252	S&P 500
+JPM	JPMorgan Chase & Co.	1.259858	S&P 500
+PG	Procter & Gamble Company	1.138698	S&P 500
+UNH	UnitedHealth Group Incorporated	1.114438	S&P 500
+HD	Home Depot Inc.	1.054749	S&P 500
+MA	Mastercard Incorporated Class A	1.050109	S&P 500
+INTC	Intel Corporation	1.037787	S&P 500
+VZ	Verizon Communications Inc.	0.905428	S&P 500
+T	AT&T Inc.	0.886721	S&P 500
+DIS	Walt Disney Company	0.848341	S&P 500
+NVDA	NVIDIA Corporation	0.827	S&P 500
+BAC	Bank of America Corp	0.810538	S&P 500
+MRK	Merck & Co. Inc.	0.804835	S&P 500
+XOM	Exxon Mobil Corporation	0.802583	S&P 500
+PFE	Pfizer Inc.	0.770895	S&P 500
+CSCO	Cisco Systems Inc.	0.767114	S&P 500
+ADBE	Adobe Inc.	0.727125	S&P 500
+CMCSA	Comcast Corporation Class A	0.72228	S&P 500
+PEP	PepsiCo Inc.	0.713475	S&P 500
+NFLX	Netflix Inc.	0.712407	S&P 500
+KO	Coca-Cola Company	0.711533	S&P 500
+PYPL	PayPal Holdings Inc	0.709162	S&P 500
+CVX	Chevron Corporation	0.707879	S&P 500
+WMT	Walmart Inc.	0.674745	S&P 500
+ABT	Abbott Laboratories	0.622302	S&P 500
+ABBV	AbbVie Inc.	0.617324	S&P 500
+CRM	salesforce.com inc.	0.597932	S&P 500
+MCD	McDonald's Corporation	0.560767	S&P 500
+BMY	Bristol-Myers Squibb Company	0.544019	S&P 500
+TMO	Thermo Fisher Scientific Inc.	0.5363	S&P 500
+COST	Costco Wholesale Corporation	0.522144	S&P 500
+ACN	Accenture Plc Class A	0.507098	S&P 500
+AMGN	Amgen Inc.	0.506139	S&P 500
+MDT	Medtronic Plc	0.501382	S&P 500
+NKE	NIKE Inc. Class B	0.499733	S&P 500
+LLY	Eli Lilly and Company	0.496471	S&P 500
+NEE	NextEra Energy Inc.	0.488763	S&P 500
+UNP	Union Pacific Corporation	0.476148	S&P 500
+AVGO	Broadcom Inc.	0.472988	S&P 500
+TXN	Texas Instruments Incorporated	0.458082	S&P 500
+AMT	American Tower Corporation	0.456267	S&P 500
+C	Citigroup Inc.	0.448606	S&P 500
+ORCL	Oracle Corporation	0.446418	S&P 500
+PM	Philip Morris International Inc.	0.444793	S&P 500
+LIN	Linde plc	0.440544	S&P 500
+IBM	International Business Machines Corporation	0.44028	S&P 500
+WFC	Wells Fargo & Company	0.427444	S&P 500
+HON	Honeywell International Inc.	0.422106	S&P 500
+DHR	Danaher Corporation	0.411512	S&P 500
+LOW	Lowe's Companies Inc.	0.39224	S&P 500
+LMT	Lockheed Martin Corporation	0.385211	S&P 500
+RTX	Raytheon Technologies Corporation	0.380475	S&P 500
+QCOM	QUALCOMM Incorporated	0.369979	S&P 500
+GILD	Gilead Sciences Inc.	0.362801	S&P 500
+SBUX	Starbucks Corporation	0.362318	S&P 500
+MMM	3M Company	0.357316	S&P 500
+BA	Boeing Company	0.356907	S&P 500
+CVS	CVS Health Corporation	0.335276	S&P 500
+CHTR	Charter Communications Inc. Class A	0.330799	S&P 500
+FIS	Fidelity National Information Services Inc.	0.330692	S&P 500
+BLK	BlackRock Inc.	0.321886	S&P 500
+SPGI	S&P Global Inc.	0.313897	S&P 500
+INTU	Intuit Inc.	0.290761	S&P 500
+CI	Cigna Corporation	0.289876	S&P 500
+MO	Altria Group Inc	0.289588	S&P 500
+MDLZ	Mondelez International Inc. Class A	0.28908	S&P 500
+ANTM	Anthem Inc.	0.282768	S&P 500
+NOW	ServiceNow Inc.	0.282173	S&P 500
+UPS	United Parcel Service Inc. Class B	0.28001	S&P 500
+CCI	Crown Castle International Corp	0.27979	S&P 500
+BKNG	Booking Holdings Inc.	0.278512	S&P 500
+PLD	Prologis Inc.	0.276974	S&P 500
+BDX	Becton Dickinson and Company	0.276191	S&P 500
+VRTX	Vertex Pharmaceuticals Incorporated	0.274606	S&P 500
+D	Dominion Energy Inc	0.274359	S&P 500
+AXP	American Express Company	0.272438	S&P 500
+CAT	Caterpillar Inc.	0.270567	S&P 500
+ZTS	Zoetis Inc. Class A	0.261524	S&P 500
+GS	Goldman Sachs Group Inc.	0.258505	S&P 500
+TJX	TJX Companies Inc	0.258056	S&P 500
+CME	CME Group Inc. Class A	0.257273	S&P 500
+ISRG	Intuitive Surgical Inc.	0.255951	S&P 500
+ADP	Automatic Data Processing Inc.	0.25302	S&P 500
+DUK	Duke Energy Corporation	0.250733	S&P 500
+SYK	Stryker Corporation	0.248937	S&P 500
+GE	General Electric Company	0.247621	S&P 500
+FISV	Fiserv Inc.	0.239754	S&P 500
+TGT	Target Corporation	0.237799	S&P 500
+AMD	Advanced Micro Devices Inc.	0.237768	S&P 500
+SO	Southern Company	0.237482	S&P 500
+CL	Colgate-Palmolive Company	0.236558	S&P 500
+REGN	Regeneron Pharmaceuticals Inc.	0.234311	S&P 500
+EQIX	Equinix Inc.	0.234159	S&P 500
+CSX	CSX Corporation	0.223684	S&P 500
+CB	Chubb Limited	0.220922	S&P 500
+GPN	Global Payments Inc.	0.219034	S&P 500
+ECL	Ecolab Inc.	0.21344	S&P 500
+MMC	Marsh & McLennan Companies Inc.	0.212513	S&P 500
+USB	U.S. Bancorp	0.212084	S&P 500
+APD	Air Products and Chemicals Inc.	0.211286	S&P 500
+MS	Morgan Stanley	0.210458	S&P 500
+BIIB	Biogen Inc.	0.210452	S&P 500
+ICE	Intercontinental Exchange Inc.	0.21012	S&P 500
+MU	Micron Technology Inc.	0.208927	S&P 500
+TFC	Truist Financial Corporation	0.206642	S&P 500
+ATVI	Activision Blizzard Inc.	0.206613	S&P 500
+AMAT	Applied Materials Inc.	0.205831	S&P 500
+BSX	Boston Scientific Corporation	0.203846	S&P 500
+NOC	Northrop Grumman Corporation	0.202991	S&P 500
+ILMN	Illumina Inc.	0.202911	S&P 500
+PNC	PNC Financial Services Group Inc.	0.202353	S&P 500
+ITW	Illinois Tool Works Inc.	0.201209	S&P 500
+HUM	Humana Inc.	0.200849	S&P 500
+NSC	Norfolk Southern Corporation	0.193423	S&P 500
+DE	Deere & Company	0.192077	S&P 500
+ADSK	Autodesk Inc.	0.191845	S&P 500
+COP	ConocoPhillips	0.190995	S&P 500
+SHW	Sherwin-Williams Company	0.188031	S&P 500
+KMB	Kimberly-Clark Corporation	0.187344	S&P 500
+DG	Dollar General Corporation	0.186236	S&P 500
+EW	Edwards Lifesciences Corporation	0.179698	S&P 500
+AON	Aon Plc Class A	0.179598	S&P 500
+PGR	Progressive Corporation	0.178425	S&P 500
+BAX	Baxter International Inc.	0.177954	S&P 500
+MCO	Moody's Corporation	0.17688	S&P 500
+NEM	Newmont Corporation	0.176572	S&P 500
+EL	Estee Lauder Companies Inc. Class A	0.174373	S&P 500
+SCHW	Charles Schwab Corporation	0.174139	S&P 500
+ADI	Analog Devices Inc.	0.172678	S&P 500
+LHX	L3Harris Technologies Inc	0.170969	S&P 500
+WM	Waste Management Inc.	0.165707	S&P 500
+AEP	American Electric Power Company Inc.	0.16565	S&P 500
+ROP	Roper Technologies Inc.	0.160771	S&P 500
+LRCX	Lam Research Corporation	0.160082	S&P 500
+DD	DuPont de Nemours Inc.	0.155845	S&P 500
+EXC	Exelon Corporation	0.149507	S&P 500
+EMR	Emerson Electric Co.	0.147731	S&P 500
+TMUS	T-Mobile US Inc.	0.147373	S&P 500
+CNC	Centene Corporation	0.146588	S&P 500
+PSX	Phillips 66	0.143407	S&P 500
+GIS	General Mills Inc.	0.143225	S&P 500
+SRE	Sempra Energy	0.143013	S&P 500
+ETN	Eaton Corp. Plc	0.142363	S&P 500
+DLR	Digital Realty Trust Inc.	0.141337	S&P 500
+GM	General Motors Company	0.141019	S&P 500
+GD	General Dynamics Corporation	0.140214	S&P 500
+ROST	Ross Stores Inc.	0.139619	S&P 500
+EBAY	eBay Inc.	0.136938	S&P 500
+SBAC	SBA Communications Corp. Class A	0.136695	S&P 500
+XEL	Xcel Energy Inc.	0.13498	S&P 500
+COF	Capital One Financial Corporation	0.133373	S&P 500
+EA	Electronic Arts Inc.	0.132719	S&P 500
+DXCM	DexCom Inc.	0.128691	S&P 500
+BK	Bank of New York Mellon Corporation	0.127272	S&P 500
+FDX	FedEx Corporation	0.127201	S&P 500
+WBA	Walgreens Boots Alliance Inc	0.126047	S&P 500
+ALL	Allstate Corporation	0.1254	S&P 500
+EOG	EOG Resources Inc.	0.124181	S&P 500
+ORLY	O'Reilly Automotive Inc.	0.122787	S&P 500
+KMI	Kinder Morgan Inc Class P	0.120668	S&P 500
+PSA	Public Storage	0.119744	S&P 500
+DOW	Dow Inc.	0.119001	S&P 500
+APH	Amphenol Corporation Class A	0.117926	S&P 500
+CTSH	Cognizant Technology Solutions Corporation Class A	0.116754	S&P 500
+SYY	Sysco Corporation	0.116164	S&P 500
+TEL	TE Connectivity Ltd.	0.114801	S&P 500
+TROW	T. Rowe Price Group	0.114779	S&P 500
+MET	MetLife Inc.	0.114129	S&P 500
+TRV	Travelers Companies Inc.	0.113823	S&P 500
+WEC	WEC Energy Group Inc	0.1137	S&P 500
+KLAC	KLA Corporation	0.113099	S&P 500
+STZ	Constellation Brands Inc. Class A	0.112731	S&P 500
+INFO	IHS Markit Ltd.	0.112525	S&P 500
+VLO	Valero Energy Corporation	0.111591	S&P 500
+AIG	American International Group Inc.	0.111312	S&P 500
+YUM	Yum! Brands Inc.	0.110175	S&P 500
+HCA	HCA Healthcare Inc	0.110086	S&P 500
+ES	Eversource Energy	0.108709	S&P 500
+A	Agilent Technologies Inc.	0.108123	S&P 500
+AFL	Aflac Incorporated	0.108044	S&P 500
+VRSK	Verisk Analytics Inc	0.107455	S&P 500
+MNST	Monster Beverage Corporation	0.106634	S&P 500
+IQV	IQVIA Holdings Inc	0.106403	S&P 500
+SNPS	Synopsys Inc.	0.105771	S&P 500
+AZO	AutoZone Inc.	0.10569	S&P 500
+IDXX	IDEXX Laboratories Inc.	0.105153	S&P 500
+SLB	Schlumberger NV	0.104638	S&P 500
+MAR	Marriott International Inc. Class A	0.10443	S&P 500
+MSCI	MSCI Inc. Class A	0.104235	S&P 500
+TWTR	Twitter Inc.	0.104088	S&P 500
+CMG	Chipotle Mexican Grill Inc.	0.103429	S&P 500
+ZBH	Zimmer Biomet Holdings Inc.	0.103354	S&P 500
+CMI	Cummins Inc.	0.103312	S&P 500
+PEG	Public Service Enterprise Group Inc	0.102312	S&P 500
+PPG	PPG Industries Inc.	0.101712	S&P 500
+WLTW	Willis Towers Watson Public Limited Company	0.101514	S&P 500
+KR	Kroger Co.	0.100751	S&P 500
+MCK	McKesson Corporation	0.100745	S&P 500
+CDNS	Cadence Design Systems Inc.	0.100481	S&P 500
+MCHP	Microchip Technology Incorporated	0.100151	S&P 500
+JCI	Johnson Controls International plc	0.099816	S&P 500
+CLX	Clorox Company	0.099654	S&P 500
+PCAR	PACCAR Inc	0.099082	S&P 500
+PRU	Prudential Financial Inc.	0.098853	S&P 500
+ROK	Rockwell Automation Inc.	0.098059	S&P 500
+MSI	Motorola Solutions Inc.	0.097652	S&P 500
+ALXN	Alexion Pharmaceuticals Inc.	0.097251	S&P 500
+PH	Parker-Hannifin Corporation	0.097131	S&P 500
+ED	Consolidated Edison Inc.	0.097036	S&P 500
+MPC	Marathon Petroleum Corporation	0.096581	S&P 500
+HPQ	HP Inc.	0.096465	S&P 500
+WMB	Williams Companies Inc.	0.095999	S&P 500
+ANSS	ANSYS Inc.	0.094644	S&P 500
+HLT	Hilton Worldwide Holdings Inc	0.093597	S&P 500
+BLL	Ball Corporation	0.093484	S&P 500
+F	Ford Motor Company	0.093143	S&P 500
+XLNX	Xilinx Inc.	0.09269	S&P 500
+FAST	Fastenal Company	0.092477	S&P 500
+STT	State Street Corporation	0.092312	S&P 500
+WELL	Welltower Inc.	0.092115	S&P 500
+AWK	American Water Works Company Inc.	0.091919	S&P 500
+PAYX	Paychex Inc.	0.091852	S&P 500
+FE	FirstEnergy Corp.	0.090662	S&P 500
+TDG	TransDigm Group Incorporated	0.090047	S&P 500
+CERN	Cerner Corporation	0.089245	S&P 500
+RMD	ResMed Inc.	0.089004	S&P 500
+PPL	PPL Corporation	0.088752	S&P 500
+TT	Trane Technologies plc	0.087335	S&P 500
+AVB	AvalonBay Communities Inc.	0.087135	S&P 500
+ADM	Archer-Daniels-Midland Company	0.086874	S&P 500
+CTAS	Cintas Corporation	0.086767	S&P 500
+OTIS	Otis Worldwide Corporation	0.086682	S&P 500
+SPG	Simon Property Group Inc.	0.086433	S&P 500
+DLTR	Dollar Tree Inc.	0.086386	S&P 500
+VRSN	VeriSign Inc.	0.085415	S&P 500
+FLT	FleetCor Technologies Inc.	0.085141	S&P 500
+EIX	Edison International	0.084287	S&P 500
+SWKS	Skyworks Solutions Inc.	0.083818	S&P 500
+DTE	DTE Energy Company	0.083655	S&P 500
+AME	AMETEK Inc.	0.083016	S&P 500
+EQR	Equity Residential	0.082936	S&P 500
+CTVA	Corteva Inc	0.082196	S&P 500
+APTV	Aptiv PLC	0.082009	S&P 500
+MKC	McCormick & Company Incorporated	0.082002	S&P 500
+VFC	V.F. Corporation	0.081066	S&P 500
+EFX	Equifax Inc.	0.080704	S&P 500
+SWK	Stanley Black & Decker Inc.	0.080375	S&P 500
+ETR	Entergy Corporation	0.07985	S&P 500
+O	Realty Income Corporation	0.079701	S&P 500
+MTD	Mettler-Toledo International Inc.	0.078718	S&P 500
+FTNT	Fortinet Inc.	0.078284	S&P 500
+KEYS	Keysight Technologies Inc	0.076865	S&P 500
+HSY	Hershey Company	0.076739	S&P 500
+FTV	Fortive Corp.	0.076312	S&P 500
+MKTX	MarketAxess Holdings Inc.	0.075725	S&P 500
+KHC	Kraft Heinz Company	0.074822	S&P 500
+GLW	Corning Inc	0.074758	S&P 500
+ALGN	Align Technology Inc.	0.07436	S&P 500
+AMP	Ameriprise Financial Inc.	0.074236	S&P 500
+FRC	First Republic Bank	0.074227	S&P 500
+LUV	Southwest Airlines Co.	0.074126	S&P 500
+DHI	D.R. Horton Inc.	0.073471	S&P 500
+ARE	Alexandria Real Estate Equities Inc.	0.073266	S&P 500
+BBY	Best Buy Co. Inc.	0.072359	S&P 500
+AEE	Ameren Corporation	0.071398	S&P 500
+CPRT	Copart Inc.	0.071183	S&P 500
+CHD	Church & Dwight Co. Inc.	0.070912	S&P 500
+RSG	Republic Services Inc.	0.070865	S&P 500
+LYB	LyondellBasell Industries NV	0.069774	S&P 500
+AJG	Arthur J. Gallagher & Co.	0.069767	S&P 500
+NTRS	Northern Trust Corporation	0.069748	S&P 500
+CARR	Carrier Global Corp.	0.069733	S&P 500
+DFS	Discover Financial Services	0.069231	S&P 500
+LEN	Lennar Corporation Class A	0.068673	S&P 500
+TSN	Tyson Foods Inc. Class A	0.068372	S&P 500
+LVS	Las Vegas Sands Corp.	0.067617	S&P 500
+INCY	Incyte Corporation	0.06739	S&P 500
+LH	Laboratory Corporation of America Holdings	0.06708	S&P 500
+TFX	Teleflex Incorporated	0.066019	S&P 500
+CMS	CMS Energy Corporation	0.065823	S&P 500
+AMCR	Amcor PLC	0.065757	S&P 500
+PXD	Pioneer Natural Resources Company	0.064505	S&P 500
+OKE	ONEOK Inc.	0.064417	S&P 500
+AKAM	Akamai Technologies Inc.	0.064306	S&P 500
+CAH	Cardinal Health Inc.	0.063993	S&P 500
+CDW	CDW Corp.	0.063902	S&P 500
+CBRE	CBRE Group Inc. Class A	0.063867	S&P 500
+ESS	Essex Property Trust Inc.	0.063842	S&P 500
+WY	Weyerhaeuser Company	0.063219	S&P 500
+MXIM	Maxim Integrated Products Inc.	0.063178	S&P 500
+DAL	Delta Air Lines Inc.	0.063163	S&P 500
+CAG	Conagra Brands Inc.	0.06287	S&P 500
+K	Kellogg Company	0.062829	S&P 500
+CTXS	Citrix Systems Inc.	0.062023	S&P 500
+ODFL	Old Dominion Freight Line Inc.	0.061314	S&P 500
+DGX	Quest Diagnostics Incorporated	0.061248	S&P 500
+COO	Cooper Companies Inc.	0.060376	S&P 500
+VMC	Vulcan Materials Company	0.060281	S&P 500
+KMX	CarMax Inc.	0.060178	S&P 500
+WST	West Pharmaceutical Services Inc.	0.059714	S&P 500
+KSU	Kansas City Southern	0.059136	S&P 500
+FITB	Fifth Third Bancorp	0.058632	S&P 500
+HIG	Hartford Financial Services Group Inc.	0.058497	S&P 500
+DPZ	Domino's Pizza Inc.	0.058103	S&P 500
+PAYC	Paycom Software Inc.	0.058051	S&P 500
+MTB	M&T Bank Corporation	0.058041	S&P 500
+DOV	Dover Corporation	0.058	S&P 500
+VTR	Ventas Inc.	0.057817	S&P 500
+ABC	AmerisourceBergen Corporation	0.057784	S&P 500
+FCX	Freeport-McMoRan Inc.	0.05674	S&P 500
+IFF	International Flavors & Fragrances Inc.	0.056401	S&P 500
+ZBRA	Zebra Technologies Corporation Class A	0.056133	S&P 500
+TSCO	Tractor Supply Company	0.056077	S&P 500
+IP	International Paper Company	0.055986	S&P 500
+EVRG	Evergy Inc.	0.055895	S&P 500
+ULTA	Ulta Beauty Inc	0.055801	S&P 500
+TTWO	Take-Two Interactive Software Inc.	0.055777	S&P 500
+HOLX	Hologic Inc.	0.055407	S&P 500
+LDOS	Leidos Holdings Inc.	0.055149	S&P 500
+BR	Broadridge Financial Solutions Inc.	0.05483	S&P 500
+GWW	W.W. Grainger Inc.	0.053617	S&P 500
+MAA	Mid-America Apartment Communities Inc.	0.053563	S&P 500
+STE	STERIS Plc	0.053509	S&P 500
+GRMN	Garmin Ltd.	0.053387	S&P 500
+MAS	Masco Corporation	0.053305	S&P 500
+OXY	Occidental Petroleum Corporation	0.053205	S&P 500
+BXP	Boston Properties Inc.	0.053051	S&P 500
+NDAQ	Nasdaq Inc.	0.052909	S&P 500
+JKHY	Jack Henry & Associates Inc.	0.052463	S&P 500
+PEAK	Healthpeak Properties Inc.	0.052316	S&P 500
+HES	Hess Corporation	0.052061	S&P 500
+DRE	Duke Realty Corporation	0.052021	S&P 500
+HPE	Hewlett Packard Enterprise Co.	0.051702	S&P 500
+SYF	Synchrony Financial	0.051661	S&P 500
+NUE	Nucor Corporation	0.051512	S&P 500
+EXPD	Expeditors International of Washington Inc.	0.051475	S&P 500
+WDC	Western Digital Corporation	0.051337	S&P 500
+EXR	Extra Space Storage Inc.	0.051218	S&P 500
+HRL	Hormel Foods Corporation	0.051209	S&P 500
+FMC	FMC Corporation	0.05104	S&P 500
+QRVO	Qorvo Inc.	0.05072	S&P 500
+MLM	Martin Marietta Materials Inc.	0.05043	S&P 500
+WAT	Waters Corporation	0.050189	S&P 500
+SJM	J.M. Smucker Company	0.050088	S&P 500
+GPC	Genuine Parts Company	0.050021	S&P 500
+CXO	Concho Resources Inc.	0.049513	S&P 500
+ANET	Arista Networks Inc.	0.048575	S&P 500
+ATO	Atmos Energy Corporation	0.048351	S&P 500
+XYL	Xylem Inc.	0.048349	S&P 500
+OMC	Omnicom Group Inc	0.047957	S&P 500
+KEY	KeyCorp	0.047888	S&P 500
+IEX	IDEX Corporation	0.047794	S&P 500
+EXPE	Expedia Group Inc.	0.047546	S&P 500
+STX	Seagate Technology PLC	0.047459	S&P 500
+LNT	Alliant Energy Corp	0.047399	S&P 500
+TIF	Tiffany & Co.	0.04727	S&P 500
+VIAC	ViacomCBS Inc. Class B	0.047117	S&P 500
+BF.B	Brown-Forman Corporation Class B	0.046217	S&P 500
+WAB	Westinghouse Air Brake Technologies Corporation	0.046121	S&P 500
+NVR	NVR Inc.	0.046076	S&P 500
+J	Jacobs Engineering Group Inc.	0.045963	S&P 500
+RF	Regions Financial Corporation	0.04593	S&P 500
+NLOK	NortonLifeLock Inc.	0.045449	S&P 500
+IT	Gartner Inc.	0.04527	S&P 500
+VAR	Varian Medical Systems Inc.	0.045184	S&P 500
+CFG	Citizens Financial Group Inc.	0.045105	S&P 500
+CE	Celanese Corporation	0.044759	S&P 500
+CBOE	Cboe Global Markets Inc	0.044682	S&P 500
+HAL	Halliburton Company	0.044411	S&P 500
+UDR	UDR Inc.	0.044307	S&P 500
+PKI	PerkinElmer Inc.	0.044228	S&P 500
+SIVB	SVB Financial Group	0.043904	S&P 500
+CHRW	C.H. Robinson Worldwide Inc.	0.043699	S&P 500
+URI	United Rentals Inc.	0.043517	S&P 500
+BKR	Baker Hughes Company Class A	0.043475	S&P 500
+PFG	Principal Financial Group Inc.	0.042916	S&P 500
+ETFC	E*TRADE Financial Corporation	0.042208	S&P 500
+FOXA	Fox Corporation Class A	0.041656	S&P 500
+ABMD	ABIOMED Inc.	0.041239	S&P 500
+XRAY	DENTSPLY SIRONA Inc.	0.041012	S&P 500
+IR	Ingersoll Rand Inc.	0.041007	S&P 500
+DRI	Darden Restaurants Inc.	0.040343	S&P 500
+NTAP	NetApp Inc.	0.040336	S&P 500
+MGM	MGM Resorts International	0.040222	S&P 500
+HBAN	Huntington Bancshares Incorporated	0.039666	S&P 500
+CTL	CenturyLink Inc.	0.039254	S&P 500
+PKG	Packaging Corporation of America	0.039053	S&P 500
+AVY	Avery Dennison Corporation	0.038544	S&P 500
+RCL	Royal Caribbean Cruises Ltd.	0.038289	S&P 500
+JBHT	J.B. Hunt Transport Services Inc.	0.038242	S&P 500
+AAP	Advance Auto Parts Inc.	0.038071	S&P 500
+HAS	Hasbro Inc.	0.03799	S&P 500
+EMN	Eastman Chemical Company	0.037935	S&P 500
+ALLE	Allegion PLC	0.037889	S&P 500
+CINF	Cincinnati Financial Corporation	0.03738	S&P 500
+WU	Western Union Company	0.037013	S&P 500
+RJF	Raymond James Financial Inc.	0.036841	S&P 500
+LW	Lamb Weston Holdings Inc.	0.036473	S&P 500
+NI	NiSource Inc	0.036188	S&P 500
+LKQ	LKQ Corporation	0.035899	S&P 500
+HSIC	Henry Schein Inc.	0.035767	S&P 500
+NRG	NRG Energy Inc.	0.035542	S&P 500
+CNP	CenterPoint Energy Inc.	0.035493	S&P 500
+PHM	PulteGroup Inc.	0.035328	S&P 500
+L	Loews Corporation	0.035054	S&P 500
+HST	Host Hotels & Resorts Inc.	0.034946	S&P 500
+MYL	Mylan N.V.	0.03477	S&P 500
+WYNN	Wynn Resorts Limited	0.034734	S&P 500
+AES	AES Corporation	0.034682	S&P 500
+PNW	Pinnacle West Capital Corporation	0.034192	S&P 500
+FBHS	Fortune Brands Home & Security Inc.	0.034044	S&P 500
+FFIV	F5 Networks Inc.	0.033672	S&P 500
+WRB	W. R. Berkley Corporation	0.033653	S&P 500
+DISH	DISH Network Corporation Class A	0.03345	S&P 500
+RE	Everest Re Group Ltd.	0.033041	S&P 500
+ALB	Albemarle Corporation	0.032506	S&P 500
+UHS	Universal Health Services Inc. Class B	0.032337	S&P 500
+COG	Cabot Oil & Gas Corporation	0.032075	S&P 500
+CPB	Campbell Soup Company	0.031779	S&P 500
+REG	Regency Centers Corporation	0.031691	S&P 500
+JNPR	Juniper Networks Inc.	0.031649	S&P 500
+HII	Huntington Ingalls Industries Inc.	0.031483	S&P 500
+WHR	Whirlpool Corporation	0.031473	S&P 500
+GL	Globe Life Inc.	0.031335	S&P 500
+IRM	Iron Mountain Inc.	0.031327	S&P 500
+LNC	Lincoln National Corporation	0.031248	S&P 500
+TXT	Textron Inc.	0.030868	S&P 500
+SNA	Snap-on Incorporated	0.029808	S&P 500
+FANG	Diamondback Energy Inc.	0.029556	S&P 500
+WRK	WestRock Company	0.02952	S&P 500
+LYV	Live Nation Entertainment Inc.	0.02938	S&P 500
+TAP	Molson Coors Beverage Company Class B	0.029271	S&P 500
+PRGO	Perrigo Co. Plc	0.029171	S&P 500
+UAL	United Airlines Holdings Inc.	0.028185	S&P 500
+DVA	DaVita Inc.	0.027555	S&P 500
+IPG	Interpublic Group of Companies Inc.	0.027235	S&P 500
+BWA	BorgWarner Inc.	0.027216	S&P 500
+CF	CF Industries Holdings Inc.	0.026893	S&P 500
+AOS	A. O. Smith Corporation	0.026634	S&P 500
+CCL	Carnival Corporation	0.026253	S&P 500
+PNR	Pentair plc	0.026244	S&P 500
+DISCK	Discovery Inc. Class C	0.026213	S&P 500
+AIZ	Assurant Inc.	0.025327	S&P 500
+VNO	Vornado Realty Trust	0.025254	S&P 500
+FRT	Federal Realty Investment Trust	0.025187	S&P 500
+RHI	Robert Half International Inc.	0.025003	S&P 500
+FLIR	FLIR Systems Inc.	0.02448	S&P 500
+ROL	Rollins Inc.	0.024237	S&P 500
+MHK	Mohawk Industries Inc.	0.024146	S&P 500
+ZION	Zions Bancorporation N.A.	0.023391	S&P 500
+AIV	Apartment Investment & Management Co Class A	0.023034	S&P 500
+BEN	Franklin Resources Inc.	0.02297	S&P 500
+HWM	Howmet Aerospace Inc.	0.022681	S&P 500
+CMA	Comerica Incorporated	0.022301	S&P 500
+KIM	Kimco Realty Corporation	0.022283	S&P 500
+IPGP	IPG Photonics Corporation	0.022262	S&P 500
+PWR	Quanta Services Inc.	0.022152	S&P 500
+NWL	Newell Brands Inc	0.022004	S&P 500
+NLSN	Nielsen Holdings Plc	0.021493	S&P 500
+PBCT	People's United Financial Inc.	0.02094	S&P 500
+SEE	Sealed Air Corporation	0.020257	S&P 500
+NOV	National Oilwell Varco Inc.	0.019665	S&P 500
+HFC	HollyFrontier Corporation	0.019296	S&P 500
+DVN	Devon Energy Corporation	0.018741	S&P 500
+ALK	Alaska Air Group Inc.	0.018665	S&P 500
+NWSA	News Corporation Class A	0.018639	S&P 500
+FOX	Fox Corporation Class B	0.018626	S&P 500
+NBL	Noble Energy Inc.	0.018604	S&P 500
+MRO	Marathon Oil Corporation	0.018469	S&P 500
+MOS	Mosaic Company	0.018455	S&P 500
+APA	Apache Corporation	0.018079	S&P 500
+AAL	American Airlines Group Inc.	0.018071	S&P 500
+DXC	DXC Technology Co.	0.017618	S&P 500
+LEG	Leggett & Platt Incorporated	0.017516	S&P 500
+HBI	Hanesbrands Inc.	0.016836	S&P 500
+TPR	Tapestry Inc.	0.016731	S&P 500
+SLG	SL Green Realty Corp.	0.016279	S&P 500
+RL	Ralph Lauren Corporation Class A	0.016275	S&P 500
+LB	L Brands Inc.	0.015833	S&P 500
+PVH	PVH Corp.	0.015714	S&P 500
+NCLH	Norwegian Cruise Line Holdings Ltd.	0.01498	S&P 500
+HOG	Harley-Davidson Inc.	0.014454	S&P 500
+FLS	Flowserve Corporation	0.014349	S&P 500
+FTI	TechnipFMC Plc	0.014331	S&P 500
+KSS	Kohl's Corporation	0.014074	S&P 500
+HRB	H&R Block Inc.	0.013599	S&P 500
+UNM	Unum Group	0.013582	S&P 500
+DISCA	Discovery Inc. Class A	0.013518	S&P 500
+IVZ	Invesco Ltd.	0.01316	S&P 500
+XRX	Xerox Holdings Corporation	0.012863	S&P 500
+GPS	Gap Inc.	0.009932	S&P 500
+ADS	Alliance Data Systems Corporation	0.008723	S&P 500
+JWN	Nordstrom Inc.	0.007879	S&P 500
+UAA	Under Armour Inc. Class A	0.007216	S&P 500
+UA	Under Armour Inc. Class C	0.006865	S&P 500
+NWS	News Corporation Class B	0.006176	S&P 500
+COTY	Coty Inc. Class A	0.005509	S&P 500
+AAPL	Apple Inc	11.338	Nasdaq 100
+MSFT	Microsoft Corp	11.237	Nasdaq 100
+AMZN	Amazon.com Inc	9.833	Nasdaq 100
+FB	Facebook Inc	4.413	Nasdaq 100
+GOOGL	Alphabet Inc	3.947	Nasdaq 100
+GOOG	Alphabet Inc	3.904	Nasdaq 100
+INTC	Intel Corp	2.693	Nasdaq 100
+NVDA	NVIDIA Corp	2.183	Nasdaq 100
+CSCO	Cisco Systems Inc	2.024	Nasdaq 100
+ADBE	Adobe Inc	1.916	Nasdaq 100
+CMCSA	Comcast Corp	1.908	Nasdaq 100
+NFLX	Netflix Inc	1.883	Nasdaq 100
+PEP	PepsiCo Inc	1.876	Nasdaq 100
+PYPL	PayPal Holdings Inc	1.87	Nasdaq 100
+TSLA	Tesla Inc	1.653	Nasdaq 100
+COST	Costco Wholesale Corp	1.377	Nasdaq 100
+AMGN	Amgen Inc	1.325	Nasdaq 100
+TMUS	T-Mobile US Inc	1.272	Nasdaq 100
+AVGO	Broadcom Inc	1.257	Nasdaq 100
+TXN	Texas Instruments Inc	1.208	Nasdaq 100
+CHTR	Charter Communications Inc	1.168	Nasdaq 100
+QCOM	QUALCOMM Inc	0.977	Nasdaq 100
+GILD	Gilead Sciences Inc	0.956	Nasdaq 100
+SBUX	Starbucks Corp	0.95	Nasdaq 100
+INTU	Intuit Inc	0.768	Nasdaq 100
+MDLZ	Mondelez International Inc	0.759	Nasdaq 100
+FISV	Fiserv Inc	0.751	Nasdaq 100
+VRTX	Vertex Pharmaceuticals Inc	0.73	Nasdaq 100
+BKNG	Booking Holdings Inc	0.721	Nasdaq 100
+ISRG	Intuitive Surgical Inc	0.677	Nasdaq 100
+ADP	Automatic Data Processing Inc	0.666	Nasdaq 100
+REGN	Regeneron Pharmaceuticals Inc	0.665	Nasdaq 100
+AMD	Advanced Micro Devices Inc	0.627	Nasdaq 100
+CSX	CSX Corp	0.587	Nasdaq 100
+MU	Micron Technology Inc	0.553	Nasdaq 100
+ATVI	Activision Blizzard Inc	0.547	Nasdaq 100
+AMAT	Applied Materials Inc	0.54	Nasdaq 100
+ILMN	Illumina Inc	0.536	Nasdaq 100
+BIIB	Biogen Inc	0.536	Nasdaq 100
+JD	JD.com Inc ADR	0.535	Nasdaq 100
+ADSK	Autodesk Inc	0.505	Nasdaq 100
+ADI	Analog Devices Inc	0.455	Nasdaq 100
+MELI	MercadoLibre Inc	0.431	Nasdaq 100
+LRCX	Lam Research Corp	0.425	Nasdaq 100
+LULU	Lululemon Athletica Inc	0.406	Nasdaq 100
+MNST	Monster Beverage Corp	0.396	Nasdaq 100
+EXC	Exelon Corp	0.395	Nasdaq 100
+WBA	Walgreens Boots Alliance Inc	0.393	Nasdaq 100
+KHC	Kraft Heinz Co/The	0.389	Nasdaq 100
+ZM	Zoom Video Communications Inc	0.381	Nasdaq 100
+ROST	Ross Stores Inc	0.365	Nasdaq 100
+XEL	Xcel Energy Inc	0.356	Nasdaq 100
+EA	Electronic Arts Inc	0.347	Nasdaq 100
+DXCM	DexCom Inc	0.341	Nasdaq 100
+EBAY	eBay Inc	0.331	Nasdaq 100
+MAR	Marriott International Inc/MD	0.329	Nasdaq 100
+ORLY	O'Reilly Automotive Inc	0.321	Nasdaq 100
+BIDU	Baidu Inc ADR	0.316	Nasdaq 100
+CTSH	Cognizant Technology Solutions Corp	0.309	Nasdaq 100
+NXPI	NXP Semiconductors NV	0.309	Nasdaq 100
+WDAY	Workday Inc	0.309	Nasdaq 100
+NTES	NetEase Inc ADR	0.308	Nasdaq 100
+SPLK	Splunk Inc	0.3	Nasdaq 100
+KLAC	KLA Corp	0.297	Nasdaq 100
+CTAS	Cintas Corp	0.286	Nasdaq 100
+VRSK	Verisk Analytics Inc	0.283	Nasdaq 100
+SNPS	Synopsys Inc	0.281	Nasdaq 100
+SIRI	Sirius XM Holdings Inc	0.28	Nasdaq 100
+IDXX	IDEXX Laboratories Inc	0.276	Nasdaq 100
+PAYX	Paychex Inc	0.273	Nasdaq 100
+SGEN	Seattle Genetics Inc	0.272	Nasdaq 100
+MCHP	Microchip Technology Inc	0.265	Nasdaq 100
+CDNS	Cadence Design Systems Inc	0.265	Nasdaq 100
+PCAR	PACCAR Inc	0.263	Nasdaq 100
+ASML	ASML Holding NV	0.26	Nasdaq 100
+ALXN	Alexion Pharmaceuticals Inc	0.256	Nasdaq 100
+VRSN	VeriSign Inc	0.253	Nasdaq 100
+ANSS	ANSYS Inc	0.251	Nasdaq 100
+CSGP	CoStar Group Inc	0.246	Nasdaq 100
+FAST	Fastenal Co	0.246	Nasdaq 100
+XLNX	Xilinx Inc	0.241	Nasdaq 100
+CERN	Cerner Corp	0.233	Nasdaq 100
+DLTR	Dollar Tree Inc	0.228	Nasdaq 100
+SWKS	Skyworks Solutions Inc	0.22	Nasdaq 100
+INCY	Incyte Corp	0.218	Nasdaq 100
+ALGN	Align Technology Inc	0.215	Nasdaq 100
+CPRT	Copart Inc	0.214	Nasdaq 100
+BMRN	BioMarin Pharmaceutical Inc	0.203	Nasdaq 100
+CTXS	Citrix Systems Inc	0.174	Nasdaq 100
+CDW	CDW Corp/DE	0.167	Nasdaq 100
+MXIM	Maxim Integrated Products Inc	0.166	Nasdaq 100
+CHKP	Check Point Software Technologies Ltd	0.159	Nasdaq 100
+TTWO	Take-Two Interactive Software Inc	0.149	Nasdaq 100
+TCOM	Trip.com Group Ltd ADR	0.149	Nasdaq 100
+ULTA	Ulta Beauty Inc	0.147	Nasdaq 100
+WDC	Western Digital Corp	0.138	Nasdaq 100
+EXPE	Expedia Group Inc	0.122	Nasdaq 100
+FOXA	Fox Corp	0.108	Nasdaq 100
+NTAP	NetApp Inc	0.103	Nasdaq 100
+UAL	United Airlines Holdings Inc	0.099	Nasdaq 100
+LBTYK	Liberty Global PLC	0.096	Nasdaq 100
+FOX	Fox Corp	0.081	Nasdaq 100
+LBTYA	Liberty Global PLC	0.041	Nasdaq 100
+AAPL	Apple Inc.	8.486262	Dow Jones
+UNH	UnitedHealth Group Incorporated	7.970228	Dow Jones
+HD	Home Depot Inc.	6.551587	Dow Jones
+GS	Goldman Sachs Group Inc.	5.496286	Dow Jones
+V	Visa Inc. Class A	5.138689	Dow Jones
+MCD	McDonald's Corporation	5.045244	Dow Jones
+MSFT	Microsoft Corporation	4.838255	Dow Jones
+BA	Boeing Company	4.519812	Dow Jones
+MMM	3M Company	4.207894	Dow Jones
+JNJ	Johnson & Johnson	3.880053	Dow Jones
+IBM	International Business Machines Corporation	3.368456	Dow Jones
+CAT	Caterpillar Inc.	3.317295	Dow Jones
+WMT	Walmart Inc.	3.222806	Dow Jones
+DIS	Walt Disney Company	3.189135	Dow Jones
+PG	Procter & Gamble Company	3.093863	Dow Jones
+TRV	Travelers Companies Inc.	2.987889	Dow Jones
+AXP	American Express Company	2.751145	Dow Jones
+JPM	JPMorgan Chase & Co.	2.721649	Dow Jones
+NKE	NIKE Inc. Class B	2.717473	Dow Jones
+CVX	Chevron Corporation	2.536587	Dow Jones
+MRK	Merck & Co. Inc.	2.141925	Dow Jones
+RTX	Raytheon Technologies Corporation	1.761098	Dow Jones
+INTC	Intel Corporation	1.616493	Dow Jones
+VZ	Verizon Communications Inc.	1.483373	Dow Jones
+XOM	Exxon Mobil Corporation	1.285259	Dow Jones
+KO	Coca-Cola Company	1.250283	Dow Jones
+CSCO	Cisco Systems Inc.	1.225225	Dow Jones
+WBA	Walgreens Boots Alliance Inc	1.138306	Dow Jones
+DOW	Dow Inc.	1.086624	Dow Jones
+PFE	Pfizer Inc.	0.943846	Dow Jones

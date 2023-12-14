@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+  <title>Sorting</title>
+  <!-- CanvasXpress -->
+  <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+  <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <canvas id="canvas" width="1000" height="1000" data-responsive="true"></canvas>
+  </div>
+  <script>
+    var data = {
+      "renderTo": "canvas",
+      "data": {
+        "y": {
+          "vars": ["log2_TPM"],
+          "smps": ["X1","X2","X3","X4","X5","X6","X7","X8","X9","X10","X11","X12","X13","X14","X15","X16","X17","X18","X19","X20","X21","X22","X23","X24","X25","X26","X27","X28","X29","X30","X31","X32","X33","X34","X35","X36","X37","X38","X39","X40","X41","X42","X43","X44","X45","X46","X47","X48","X49","X50","X51","X52","X53","X54","X55","X56","X57","X58","X59","X60","X61","X62","X63","X64","X65","X66","X67","X68","X69","X70","X71","X72","X73","X74","X75","X76","X77","X78","X79","X80","X81","X82","X83","X84","X85","X86","X87","X88","X89","X90","X91","X92","X93","X94","X95","X96","X97","X98","X99","X100","X101","X102","X103","X104","X105","X106","X107","X108","X109","X110","X111","X112","X113","X114","X115","X116","X117","X118","X119","X120","X121","X122","X123","X124","X125","X126","X127","X128"],
+          "data": [
+            [8.124,1.314,4.367,2.971,1.692,1.936,3.401,8.272,2.781,3.631,3.35,6.932,2.196,-3.296,6.983,6.012,6.693,5.999,6.666,6.273,3.746,6.575,6.861,6.017,6.796,6.526,null,5.886,6.985,0.931,6.217,1.225,-0.222,3.764,2.504,6.265,2.912,6.485,3.631,-3.201,4.552,4.788,3.666,5.261,0.908,-0.115,3.24,1.692,3.724,0.114,6.971,3.661,11.28,3.394,4.437,2.078,2.552,2.277,4.374,2.209,2.463,1.917,4.713,3.42,2.948,5.67,6.875,6.507,6.629,6.672,6.881,6.662,6.627,6.455,7.132,6.807,6.807,6.669,5.564,7.86,8.205,4.113,6.834,5.783,4.704,7.176,8.543,7.729,7.805,9.851,5.451,8.252,5.991,7.247,2.901,4.544,6.001,4.375,9.986,9.315,7.514,7.391,7.899,4.333,3.297,0.794,1.646,2.087,0.395,1.364,6.807,6.811,6.572,6.641,6.765,6.024,5.072,-2.531,-0.299,-3.566,-0.9,-2.204,4.934,null,null,-1.266,4.535,null]
+          ]
+        },
+        "x": {
+          "ReplicateGroup": ["Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Post","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Pre","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref","Ref"],
+          "Gene": ["COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","DES","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","COL1A1","DES","DES","DES","DES","DES","DES","NPPA","NPPA","NPPA","NPPA","NPPA","NPPA","NPPB","NPPB","NPPB","NPPB","NPPB","NPPB"],
+          "GeneID": ["COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","COL1A1 (ENSG00000108821)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","DES (ENSG00000175084)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPA (ENSG00000175206)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)","NPPB (ENSG00000120937)"],
+          "Project": ["Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD","Human Hearts pre-post LVAD"]
+        },
+      },
+      "config": {
+        "graphType": "Boxplot",
+        "isR": true,
+        "graphOrientation": "vertical",
+        "groupingFactors": ["ReplicateGroup"],
+        "colorBy": ["ReplicateGroup"],
+        "segregateSamplesBy": ["GeneID"],
+        "smpOverlays": ["Project"],
+        "smpOverlayProperties": {
+          "Project": {
+            "scheme": "BlackAndWhite",
+            "thickness": 25,
+            "fontstyle": "bold",
+            "type": "Default",
+            "color": "rgb(254,41,108)",
+            "spectrum": ["#4575b4","#91bfdb","#e0f3f8","#ffffbf","#fee090","#fc8d59","#d73027"],
+            "showLegend": true,
+            "showName": true,
+            "showBox": true,
+            "rotate": false,
+            "position": "bottom"
+          }
+        },
+        "title": "Grouped Intensity Plots",
+        "citation": "Note: Box encloses Qtl2 to Qtl3 with median indicated; whiskers extend to Qtl1 and Qtl4",
+        "xAxisTitle": "log2TPM",
+        "layoutTopology": "2X2",
+        "showSampleNames": true,
+        "showLegend": false,
+        "legendOrder": {
+          "ReplicateGroup": ["Post","Pre","Ref"]
+        },
+        "smpLabelRotate": 60,
+        "layoutAdjust": true,
+        "layoutCollapse": true,
+        "xAxis2Show": false,
+        "boxplotMedianWidth": 4,
+        "outlineWidth": 2,
+        "dataPointSize": 150,
+        "showBoxplotOriginalData": true,
+        "dotplotOutlineThreshold": 1,
+        "citationFontStyle": "italic",
+        "boxplotDataPointTransparency": 0.6,
+        "titleScaleFontFactor": 0.7,
+        "smpLabelScaleFontFactor": 0.4,
+        "citationScaleFontFactor": 0.7,
+        "margin": 10,
+        "marginBottom": 50,
+        "zoomDisable": true
+      }
+    };
+    var cX = new CanvasXpress(data);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Map Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Leaflet Map">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Leaflet Map">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Map Chart">
+    <meta itemprop="description" content="CanvasXpress: Leaflet Map">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Map Chart">
+    <meta name="og:description" content="CanvasXpress: Leaflet Map">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/map-16.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Map
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="map16" width="813" height="613" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXmap16 = new CanvasXpress("map16",
+          {
+            "y": {
+              "smps": ["New York 1", "New York 2", "New York 3"]
+            },
+            "x": {
+              "Latitude": [40.701, 40.702, 40.703],
+              "Longitude": [-73.985, -74.011, -73.991],
+              "shape": ["circle", "teardrop", "star"],
+              "color" : ["blue", "red", "green"],
+              "size" : [1, 1.5, 3]
+            }
+          },
+          {"graphType": "Map",
+           "mapConfig": {"center":[40.7,-74],"zoom":15},
+           "markerBy": "shape",
+           "showLegend": false,
+           "useLeaflet": true
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

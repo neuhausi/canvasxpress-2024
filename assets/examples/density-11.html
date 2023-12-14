@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Density Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: density-11">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: density-11">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Density Chart">
+    <meta itemprop="description" content="CanvasXpress: density-11">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Density Chart">
+    <meta name="og:description" content="CanvasXpress: density-11">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/density-11.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Density
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="density11" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdensity11 = new CanvasXpress("density11",
+          {
+            "y" : {
+              "smps" : ["Weight-Fem", "Weight-Mas"],
+              "data" : [[49,67],[56,68],[60,66],[43,69],[57,67],[58,69],[52,74],[52,71],[52,65],[51,59],[53,67],[50,63],[51,72],[55,57],[60,63],[54,67],[52,64],[50,62],[51,63],[67,68],[56,69],[53,68],[53,76],[57,71],[52,66],[48,62],[58,80],[50,68],[55,62],[50,66],[61,63],[53,64],[51,60],[52,66],[47,67],[49,60],[44,49],[48,64],[54,65],[53,68],[62,65],[50,67],[51,60],[54,69],[50,69],[50,66],[49,72],[49,67],[52,66],[53,66],[46,67],[52,70],[49,67],[50,68],[54,59],[58,63],[63,72],[51,59],[63,66],[49,67],[58,70],[68,63],[55,66],[52,56],[55,67],[64,62],[49,64],[62,59],[62,67],[57,68],[55,63],[53,74],[53,68],[58,70],[65,75],[54,62],[48,69],[51,70],[56,65],[53,67],[54,60],[54,67],[48,61],[54,69],[59,61],[58,67],[58,61],[53,64],[54,57],[49,66],[55,70],[56,66],[64,56],[60,62],[53,73],[57,74],[49,59],[59,63],[60,67],[66,67],[57,62],[53,60],[55,64],[52,70],[51,65],[56,62],[51,62],[56,73],[57,63],[55,69],[54,72],[52,67],[49,63],[59,65],[55,63],[59,71],[49,64],[56,73],[58,62],[55,62],[54,66],[51,65],[65,62],[59,57],[64,65],[55,61],[52,70],[47,60],[52,71],[56,62],[60,66],[56,69],[49,62],[58,68],[47,65],[53,59],[53,64],[45,73],[60,64],[52,61],[53,65],[62,67],[58,70],[54,71],[58,66],[57,71],[63,61],[56,53],[58,63],[57,62],[53,53],[55,68],[63,61],[51,64],[56,57],[62,68],[54,74],[50,61],[51,64],[53,75],[51,70],[54,75],[53,65],[54,64],[57,62],[58,72],[63,59],[55,67],[53,65],[62,76],[64,62],[55,57],[53,66],[46,65],[62,61],[51,66],[49,64],[70,62],[56,68],[55,63],[41,56],[55,52],[60,62],[57,72],[60,69],[65,71],[61,70],[52,67],[59,57],[54,66],[52,73],[41,48],[51,61],[57,71],[66,68],[58,69],[58,67],[50,68],[56,65],[45,60]]
+            },
+            "x" : {
+              "sexf" : ["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F"],
+              "sexm" : ["M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M"]
+            }
+          },
+          {"graphType": "Scatter2D",
+           "hideHistogram": false,
+           "histogramBins": 20,
+           "histogramStat": "count",
+           "showFilledHistogramDensity": true,
+           "showHistogramDensity": true,
+           "showHistogramMedian": true,
+           "theme": "CanvasXpress",
+           "xAxisHistogramHeight": 150,
+           "xAxisHistogramShow": true,
+           "yAxisHistogramHeight": 150,
+           "yAxisHistogramShow": true
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

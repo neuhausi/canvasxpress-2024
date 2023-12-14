@@ -1,0 +1,31 @@
+Symbol	Company	Weight
+AAPL	Apple Inc.	8.486262
+UNH	UnitedHealth Group Incorporated	7.970228
+HD	Home Depot Inc.	6.551587
+GS	Goldman Sachs Group Inc.	5.496286
+V	Visa Inc. Class A	5.138689
+MCD	McDonald's Corporation	5.045244
+MSFT	Microsoft Corporation	4.838255
+BA	Boeing Company	4.519812
+MMM	3M Company	4.207894
+JNJ	Johnson & Johnson	3.880053
+IBM	International Business Machines Corporation	3.368456
+CAT	Caterpillar Inc.	3.317295
+WMT	Walmart Inc.	3.222806
+DIS	Walt Disney Company	3.189135
+PG	Procter & Gamble Company	3.093863
+TRV	Travelers Companies Inc.	2.987889
+AXP	American Express Company	2.751145
+JPM	JPMorgan Chase & Co.	2.721649
+NKE	NIKE Inc. Class B	2.717473
+CVX	Chevron Corporation	2.536587
+MRK	Merck & Co. Inc.	2.141925
+RTX	Raytheon Technologies Corporation	1.761098
+INTC	Intel Corporation	1.616493
+VZ	Verizon Communications Inc.	1.483373
+XOM	Exxon Mobil Corporation	1.285259
+KO	Coca-Cola Company	1.250283
+CSCO	Cisco Systems Inc.	1.225225
+WBA	Walgreens Boots Alliance Inc	1.138306
+DOW	Dow Inc.	1.086624
+PFE	Pfizer Inc.	0.943846

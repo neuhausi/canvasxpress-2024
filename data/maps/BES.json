@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-68.21958160400385,12.102359771728516],[-68.19569396972656,12.219306945800895],[-68.3220825195312,12.21097373962408],[-68.21958160400385,12.102359771728516]]]},"properties":{"GID_0":"BES","NAME_0":"Bonaire, Sint Eustatius and Saba","GID_1":"BES.1_1","NAME_1":"Bonaire","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Gemeente","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"BES","NAME_0":"Bonaire, Sint Eustatius and Saba","GID_1":"BES.2_1","NAME_1":"Saba","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Gemeente","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":""}},
+{"type":"Feature","geometry":null,"properties":{"GID_0":"BES","NAME_0":"Bonaire, Sint Eustatius and Saba","GID_1":"BES.3_1","NAME_1":"Sint Eustatius","VARNAME_1":"","NL_NAME_1":"","TYPE_1":"Gemeente","ENGTYPE_1":"Municipality","CC_1":"","HASC_1":""}}
+]}

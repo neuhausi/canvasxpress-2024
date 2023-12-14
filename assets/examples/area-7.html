@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CanvasXpress: Area Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanvasXpress: Scatter Area">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- COMMON TAGS -->
+    <!-- Search Engine -->
+    <meta name="description" content="CanvasXpress: Scatter Area">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="CanvasXpress: Area Chart">
+    <meta itemprop="description" content="CanvasXpress: Scatter Area">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="CanvasXpress: Area Chart">
+    <meta name="og:description" content="CanvasXpress: Scatter Area">
+    <meta name="og:url" content="https://www.canvasxpress.org/examples/area-7.html">
+    <meta name="og:site_name" content="CanvasXpress">
+    <meta name="og:type" content="website">
+
+    <!-- CanvasXpress -->
+    <link rel="stylesheet" href="/dist/canvasXpress.css" type="text/css" />
+    <script type="text/javascript" src="/dist/canvasXpress.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          Area
+        </div>
+        <div class="plot">
+        <div>
+          <canvas id="area7" width="613" height="613" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXarea7 = new CanvasXpress("area7",
+          {
+            "y": {
+              "vars": ["1","2","3","4","5","6"],
+              "smps": ["x","y"],
+              "data": [
+                [1,2],
+                [3,5],
+                [5,1],
+                [2,3],
+                [4,6],
+                [6,7]
+              ]
+            },
+            "z": {
+              "g": ["a","a","a","b","b","b"]
+            }
+          },
+          {"colorBy": "g",
+           "colorScheme": "GGPlot",
+           "graphType": "Scatter2D",
+           "scatterType": "area",
+           "theme": "GGPlot"
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>
