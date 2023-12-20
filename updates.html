@@ -56,7 +56,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link active fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-toggle="modal" data-target="#search">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="35" cy="35" r="33" /><line x1="60" y1="60" x2="99" y2="99" /></g></svg>
                 </li>
@@ -93,47 +92,6 @@
               </div>
               <div class="modal-footer">
                 <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Social -->
-        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
-          <div class="modal-dialog animated">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body" style="padding: 0;">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div id="dataset" class="content" style="display: block;">
-                    <div class="form">
-                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
-                        </div>
-                        <div class="col text-center">
-                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
-                          </div>
-                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
-                          </div>
-                          <input class="form-control" type="hidden" name="service" value="dataset">
-                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
-                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
-                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
-                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
-                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
-                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
-                            <span>Save dataset &#8594;</span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -411,7 +369,12 @@
               <h2 id="about"><a href="#about">#</a> About CanvasXpress</h2>
               <p class="lead">CanvasXpress was developed as the core visualization component for bioinformatics and systems biology analysis at Bristol-Myers Squibb. It supports a large number of visualizations to display scientific and non-scientific data. CanvasXpress also includes a standalone unobtrusive data table and a filtering widget to allow data exploration similar to those only seen in other high-end commercial applications. Data can be easily sorted, grouped, transposed, transformed or clustered dynamically. The fully customizable mouse events as well as the zooming, panning and drag'n drop capabilities are features that make this library unique in its class.</p><br>
               </p>
-              <h2 id="Version47.2"><a href="Version47.2">#</a> Version 47.2 (12-10-2023)</h2>
+              <h2 id="Version47.3"><a href="Version47.3">#</a> Version 47.3 (12-19-2023)</h2>
+              <p>
+                1. Fixed bug in updateData to reset cached values.<br>
+                2. Performance improvements.<br>
+              </p>
+              <h2 id="Version47.2"><a href="Version47.2">#</a> Version 47.2</h2>
               <p>
                 1. Refactor code for histograms major.<br>
                 2. Fixed bug in setting citations in Network graphs.<br>
@@ -3937,7 +3900,8 @@
               <div>
                 <h5 class=" mb-1">On This Page</h5>
                 <a href="#about" class="d-block smooth-scroll">About CanvasXpress</a>
-                <a href="#Version47.2" class="d-block smooth-scroll">Version 47.2 </a>
+                <a href="#Version47.3" class="d-block smooth-scroll">Version 47.3 </a>
+                <a href="#Version47.2" class="d-block smooth-scroll">Version 47.2</a>
                 <a href="#Version47.1" class="d-block smooth-scroll">Version 47.1</a>
                 <a href="#Version47.0" class="d-block smooth-scroll">Version 47.0 </a>
                 <a href="#Version46.9" class="d-block smooth-scroll">Version 46.9 </a>
@@ -4402,7 +4366,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link active fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
                 <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
               </ul>

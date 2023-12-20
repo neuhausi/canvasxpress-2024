@@ -60,7 +60,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-toggle="modal" data-target="#search">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="35" cy="35" r="33" /><line x1="60" y1="60" x2="99" y2="99" /></g></svg>
                 </li>
@@ -97,47 +96,6 @@
               </div>
               <div class="modal-footer">
                 <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Social -->
-        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
-          <div class="modal-dialog animated">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body" style="padding: 0;">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div id="dataset" class="content" style="display: block;">
-                    <div class="form">
-                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
-                        </div>
-                        <div class="col text-center">
-                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
-                          </div>
-                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
-                          </div>
-                          <input class="form-control" type="hidden" name="service" value="dataset">
-                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
-                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
-                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
-                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
-                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
-                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
-                            <span>Save dataset &#8594;</span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1610,9 +1568,9 @@
                   {"background": "rgb(222,222,222)",
                    "citation": "Visualization inspired by Cédric Scherer's • Data by Claremont Run Project via Malcom Barret • Popularity Scores by ranker.com",
                    "colorBy": "char_costume",
-                   "colorKey": {"char_costume":{"Wolverine (casual)   ":"rgb(255,180,0)","Nightcrawler (costumed)   ":"rgb(78,195,243)","Gambit (casual)   ":"rgb(142,3,142)","Storm (casual)":"rgb(89,90,82)","Wolverine (costumed)   ":"rgb(255,199,64)","Storm (costumed)":"rgb(115,117,106)","Nightcrawler (casual)   ":"rgb(19,175,239)","Magneto (costumed)   ":"rgb(255,2,13)","Magneto (casual)   ":"rgb(194,0,8)","Gambit (costumed)   ":"rgb(213,5,213)"}},
+                   "colorKey": {"char_costume":{"Wolverine (casual)   ":"rgb(255,180,0)","Gambit (casual)   ":"rgb(142,3,142)","Nightcrawler (casual)   ":"rgb(19,175,239)","Wolverine (costumed)   ":"rgb(255,199,64)","Storm (casual)":"rgb(89,90,82)","Magneto (casual)   ":"rgb(194,0,8)","Gambit (costumed)   ":"rgb(213,5,213)","Nightcrawler (costumed)   ":"rgb(78,195,243)","Magneto (costumed)   ":"rgb(255,2,13)","Storm (costumed)":"rgb(115,117,106)"}},
                    "dataPointSizeScaleFactor": 0,
-                   "decorations": {"label":[{"align":"left","justify":40,"y":-70,"color":"rgb(142,3,142)","background":"rgb(255,255,255)","scope":"depicted","label":"**Gambit** was introduced for the first time inissue #266 called Gambit => Out of the Frying Pan nevertheless, he is the **4 most popular X-Men character**!","x":250},{"align":"left","justify":40,"y":70,"color":"rgb(255,180,0)","label":"**Wolverine is the most popular X-Men** and has a regular presence in the X-Men comics between 1975 and 1991.","x":70,"scope":"depicted","background":"rgb(255,255,255)"},{"y":-70,"justify":40,"align":"left","scope":"narrative","background":"rgb(255,255,255)","x":215,"label":"**Magneto** was ranked by IGN as the *Greatest Comic Book Villain of All Time*. And even though he only appears from time to time he **ranks 2nd **—4 ranks higher than his friend and opponent Professor X!","color":"rgb(194,0,8)"},{"color":"rgb(19,175,239)","x":211,"label":"The **3rd most popular X-men character Nightcrawler** gets injured during the 'Mutant Massacre' and fell into a coma after an attack from Riptide in issue #211","background":"rgb(255,255,255)","scope":"speech","justify":40,"align":"left","y":-100},{"scope":"thought","background":"rgb(255,255,255)","x":220,"label":"**Storm** is by far the most thoughtful of the five most popular X-Men characters, especially in issues #220, #223 and #265. Storm **ranks 5th**","color":"rgb(89,90,82)","y":-70,"align":"left","justify":40}],"text":[{"label":"Depicted","y":-50,"x":85,"scope":"depicted","align":"left","color":"rgb(0,0,0)"},{"align":"left","color":"rgb(0,0,0)","scope":"narrative","x":85,"label":"Narrative\nStatements","y":-50},{"label":"Speech\nBubbles","x":85,"y":-50,"scope":"speech","color":"rgb(0,0,0)","align":"left"},{"align":"left","color":"rgb(0,0,0)","scope":"thought","label":"Thought\nBubbles","x":85,"y":-50}],"image":[{"x":300,"scope":"depicted","y":-100,"src":"https://www.canvasxpress.org/assets/images/uncannyxmen.png","width":100,"height":64}]},
+                   "decorations": {"text":[{"align":"left","scope":"depicted","x":85,"color":"rgb(0,0,0)","label":"Depicted","y":-50},{"align":"left","scope":"narrative","x":85,"label":"Narrative\nStatements","color":"rgb(0,0,0)","y":-50},{"align":"left","x":85,"scope":"speech","y":-50,"color":"rgb(0,0,0)","label":"Speech\nBubbles"},{"align":"left","color":"rgb(0,0,0)","label":"Thought\nBubbles","y":-50,"scope":"thought","x":85}],"image":[{"scope":"depicted","height":64,"width":100,"src":"https://www.canvasxpress.org/assets/images/uncannyxmen.png","x":300,"y":-100}],"label":[{"scope":"depicted","x":250,"color":"rgb(142,3,142)","label":"**Gambit** was introduced for the first time inissue #266 called Gambit => Out of the Frying Pan nevertheless, he is the **4 most popular X-Men character**!","y":-70,"background":"rgb(255,255,255)","justify":40,"align":"left"},{"align":"left","justify":40,"background":"rgb(255,255,255)","y":70,"color":"rgb(255,180,0)","label":"**Wolverine is the most popular X-Men** and has a regular presence in the X-Men comics between 1975 and 1991.","x":70,"scope":"depicted"},{"align":"left","justify":40,"background":"rgb(255,255,255)","y":-70,"color":"rgb(194,0,8)","label":"**Magneto** was ranked by IGN as the *Greatest Comic Book Villain of All Time*. And even though he only appears from time to time he **ranks 2nd **—4 ranks higher than his friend and opponent Professor X!","x":215,"scope":"narrative"},{"justify":40,"align":"left","background":"rgb(255,255,255)","label":"The **3rd most popular X-men character Nightcrawler** gets injured during the 'Mutant Massacre' and fell into a coma after an attack from Riptide in issue #211","color":"rgb(19,175,239)","y":-100,"scope":"speech","x":211},{"x":220,"scope":"thought","y":-70,"color":"rgb(89,90,82)","label":"**Storm** is by far the most thoughtful of the five most popular X-Men characters, especially in issues #220, #223 and #265. Storm **ranks 5th**","background":"rgb(255,255,255)","justify":40,"align":"left"}]},
                    "decorationsClipped": false,
                    "decorationsTextScaleFontFactor": 0.6,
                    "fontName": "Trebuchet MS",
@@ -1690,7 +1648,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
                 <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
               </ul>

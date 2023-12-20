@@ -60,7 +60,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-toggle="modal" data-target="#search">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="35" cy="35" r="33" /><line x1="60" y1="60" x2="99" y2="99" /></g></svg>
                 </li>
@@ -97,47 +96,6 @@
               </div>
               <div class="modal-footer">
                 <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Social -->
-        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
-          <div class="modal-dialog animated">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body" style="padding: 0;">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div id="dataset" class="content" style="display: block;">
-                    <div class="form">
-                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
-                        </div>
-                        <div class="col text-center">
-                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
-                          </div>
-                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
-                          </div>
-                          <input class="form-control" type="hidden" name="service" value="dataset">
-                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
-                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
-                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
-                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
-                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
-                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
-                            <span>Save dataset &#8594;</span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -450,7 +408,7 @@
                        "data" : [[33, 44, 55]]
                      }
                   },
-                  {"decorations": {"marker":[{"variable":"V1","text":"p < 0.01 ***","position":"top","color":"red","fontSize":14,"sample":"S1","type":"annotation"},{"variable":"V1","position":"top","text":"p < 0.05 **","sample":"S2","fontSize":14,"type":"annotation"},{"text":"p < 0.01 ***","variable2":"V1","fontStyle":"bold","sample2":"S3","variable":"V1","type":"comparison","fontSize":14,"color":"red","sample":"S2"}]},
+                  {"decorations": {"marker":[{"position":"top","text":"p < 0.01 ***","color":"red","sample":"S1","variable":"V1","fontSize":14,"type":"annotation"},{"sample":"S2","fontSize":14,"variable":"V1","type":"annotation","position":"top","text":"p < 0.05 **"},{"variable2":"V1","variable":"V1","sample2":"S3","color":"red","sample":"S2","fontSize":14,"type":"comparison","fontStyle":"bold","text":"p < 0.01 ***"}]},
                    "graphOrientation": "vertical",
                    "graphType": "Bar",
                    "showLegend": false,
@@ -539,7 +497,7 @@
                   },
                   {"axisTitleFontStyle": "italic",
                    "colorScheme": "CanvasXpress",
-                   "decorations": {"marker":[{"sample":"setosa","text":"Species with__nl__lowest petal__nl__width","y":0.85,"variable":"Petal.Width","x":0.4}]},
+                   "decorations": {"marker":[{"variable":"Petal.Width","x":0.4,"y":0.85,"sample":"setosa","text":"Species with__nl__lowest petal__nl__width"}]},
                    "graphOrientation": "vertical",
                    "graphType": "Bar",
                    "groupingFactors": ["Species"],
@@ -663,7 +621,7 @@
                   {"axisTitleFontStyle": "italic",
                    "colorBy": "Drug Sensitivity",
                    "colorScheme": "CanvasXpress",
-                   "decorations": {"line":[{"label":"Cutoff","align":"left","width":2,"color":"rgb(255,0,0)","value":50}]},
+                   "decorations": {"line":[{"width":2,"align":"left","label":"Cutoff","color":"rgb(255,0,0)","value":50}]},
                    "decorationsTextScaleFontFactor": 1.3,
                    "graphOrientation": "vertical",
                    "graphType": "Bar",
@@ -700,7 +658,7 @@
                   },
                   {"axisTitleFontStyle": "italic",
                    "colorBy": "IC50",
-                   "decorations": {"line":[{"value":50,"color":"rgb(255,0,0)","align":"left","width":2,"label":"Cutoff"}]},
+                   "decorations": {"line":[{"value":50,"label":"Cutoff","color":"rgb(255,0,0)","width":2,"align":"left"}]},
                    "decorationsTextScaleFontFactor": 1.3,
                    "graphOrientation": "vertical",
                    "graphType": "Bar",
@@ -781,7 +739,7 @@
                   },
                   {"axisAlgorithm": "rPretty",
                    "colorBy": "GNI",
-                   "decorations": {"marker":[{"y":0.7,"text":"Norway is the country\nwith the largest GNI\naccording to 2014 census","align":"center","x":0.65,"baseline":"middle","variable":"population","color":"red","sample":"Norway"},{"text":"China is the country with\nthe largest population\naccording to 2014 census","y":0.1,"align":"center","x":0.2,"baseline":"middle","variable":"population","color":"red","sample":"China"}]},
+                   "decorations": {"marker":[{"text":"Norway is the country\nwith the largest GNI\naccording to 2014 census","baseline":"middle","align":"center","color":"red","sample":"Norway","variable":"population","x":0.65,"y":0.7},{"sample":"China","color":"red","align":"center","baseline":"middle","text":"China is the country with\nthe largest population\naccording to 2014 census","y":0.1,"x":0.2,"variable":"population"}]},
                    "graphOrientation": "vertical",
                    "graphType": "Stacked",
                    "groupingFactors": ["continent"],
@@ -879,7 +837,7 @@
                    "groupingFactors": ["Subject"],
                    "objectBorderColor": false,
                    "objectColorTransparency": 0.5,
-                   "smpOverlayProperties": {"Durable":{"position":"bottom"},"Response":{"type":"Bar","thickness":100,"position":"bottom"}},
+                   "smpOverlayProperties": {"Response":{"position":"bottom","thickness":100,"type":"Bar"},"Durable":{"position":"bottom"}},
                    "smpOverlays": ["Durable", "Response"],
                    "swimDurable": "Durable",
                    "swimEnd": "end",
@@ -1081,7 +1039,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
                 <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
               </ul>

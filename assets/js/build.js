@@ -232,23 +232,16 @@ $(document).ready(function () {
       data: data,
       pageId: this.attributes.cxhtml.value,
       success: function (e) {
-        CanvasXpress.destroy();
-        if (window.ContentBuilder) {
-          var builder = $('.is-wrapper').data('contentbox');
-          builder.loadHtml($(e).html() || e);
-          loadDatasets(this.pageId);
-          $('#datasetStore').modal('hide');
-        } else {
-          $('#centerPanel').html($(e).html() || e);
-          var cx = CanvasXpress.instances[0];
-          if (cx) {
-            var id = cx.target.replace(/(\d+)/, '-$1');
-            var el = $('#' + id);
-            var tt = el.text().replace('# ', '');
-            $('#centerPanelId').attr("href", '#' + id);
-            $('#centerPanelId').html(tt);
-            PR.prettyPrint();
-          }
+      CanvasXpress.destroy();
+        $('#centerPanel').html($(e).html() || e);
+        var cx = CanvasXpress.instances[0];
+        if (cx) {
+          var id = cx.target.replace(/(\d+)/, '-$1');
+          var el = $('#' + id);
+          var tt = el.text().replace('# ', '');
+          $('#centerPanelId').attr("href", '#' + id);
+          $('#centerPanelId').html(tt);
+          PR.prettyPrint();
         }
         $('body,html').animate({
           scrollTop: 0
@@ -259,7 +252,7 @@ $(document).ready(function () {
       }
     });
   });
-  
+
   /**
    * Other Logs
    */
@@ -278,7 +271,7 @@ $(document).ready(function () {
   /**
    * Contact Form
    */
-   $("#domain-form").on("submit", function (e) {
+  $("#domain-form").on("submit", function (e) {
     e.preventDefault();
     e.stopPropagation();
     var url = $(this).attr("action");
@@ -339,46 +332,6 @@ $(document).ready(function () {
   $(".site-form").on("submit", function (e) {
     e.preventDefault();
     e.stopPropagation();
-    if (this.id == 'dataset-form') {
-      var userId = getCookie("canvasXpressUserId");
-      if (userId != "") {
-        var builder = $('.is-wrapper').data('contentbox');
-        $('#visualization').find('div.CanvasXpress-ParentNode').each(function () {
-          this.className = 'ContentBuilderCanvasXpress';
-          $(this).removeAttr('id');
-          var cId = $(this).find('canvas.CanvasXpress')[0].id;
-          var cX = CanvasXpress.$(cId);
-          if (cX) {
-            var html = '';
-            var conf = "";
-            for (var p in cX.meta.dom) {
-              conf += ' ' + p + '="' + cX.meta.dom[p] + '"';
-            }
-            html += '\n                          <canvas' + conf + '></canvas>\n                          ';
-            html += ('<scriptcx>\n' + cX.getCodeJSONJS() + '<' + '/scriptcx>').replace(/\n/g, '\n                          ') + '\n                        ';
-            $(this).html(html);
-          }
-          CanvasXpress.destroy(cId);
-        })
-        var page = '        ' + builder.html($('#visualization')).replace(/scriptcx/g, 'script');
-        builder.loadHtml(page);
-        $('#email-field').val(userId.split('::')[1]);
-        $('#version-field').val(CanvasXpress.factory.version);
-        $('#dataset-field').val(page);
-        $('#cssMain-field').val(builder.mainCss());
-        $('#cssSec-field').val(builder.sectionCss());
-      } else {
-        $("#dataset-form-error").html("You must login to save page!");
-        $("#dataset-form-success").hide();
-        $("#dataset-form-error").show();
-        setTimeout(function () {
-          $("#dataset-form").trigger("reset");
-          $("#dataset-form-error").hide();
-          $('#social').modal('hide');
-        }, 2500);
-        return;
-      }
-    }
     var url = $(this).attr("action");
     var data = $(this).serialize();
     var id = this.id;
@@ -401,8 +354,6 @@ $(document).ready(function () {
             $("#" + i + "-success").show();
             if (i == 'register-form') {
               setCookie("canvasXpressUserId", e.data);
-            } else if (i == 'dataset-form') {
-              loadDatasets(e.data);
             }
             setTimeout(function () {
               $("#" + i).trigger("reset");
@@ -443,57 +394,8 @@ $(document).ready(function () {
   });
 
   /**
-   * Load the available datasets
-   * 
-   * @returns void
-   */
-  var loadDatasets = function (id) {
-    var sp = $('#sharedPages');
-    if (sp.length) {
-      console.log("Loading datasets...");
-      $.ajax({
-        type: "POST",
-        url: sp.attr('data-action'),
-        data: sp.attr('data-service'),
-        dataType: 'json',
-        success: function (e) {
-          console.log(e.message);
-          if (e.status == "success") {
-            var s = $('#sharedPages');
-            var v = $('#versionPages');
-            var q = {};
-            if (e.data) {
-              s.empty();
-              v.empty();
-              var p = id && e.data[id] && e.data[id].parent ? e.data[id].parent : id ? id : false;
-              var k = Object.keys(e.data).sort(function (a, b) {
-                return e.data[b].order - e.data[a].order;
-              });
-              for (var i = 0; i < k.length; i++) {
-                if (i < 100 && !q.hasOwnProperty(k[i].toString()) && !q.hasOwnProperty(e.data[k[i]].parent.toString())) {
-                  s.append('<div style="border:1px solid #495057;margin:10px;padding:10px;border-radius:8px;height:200px;"><div style="float:left;padding-top:80px;"><b>' + e.data[k[i]].name + '</b></div><div style="padding-right:100px"><a style="float:right;" class="d-block" href="/social/' + k[i] + '.html" title="' + e.data[k[i]].date + '"><img src="/social/' + k[i] + '.png" width=180 height=180 /></a></div></div>');
-                  q[k[i].toString()] = true;
-                  if (e.data[k[i]].parent) {
-                    q[e.data[k[i]].parent.toString()] = true;
-                  }
-                }
-                if (p && (p == k[i] || p == e.data[k[i]].parent)) {
-                  v.append('<a style="padding-left:20px;" class="d-block" href="/social/' + k[i] + '.html" title="' + e.data[k[i]].date + '">' + e.data[k[i]].date + '</a>');
-                }
-              }
-            }
-          }
-        },
-        error: function (e) {
-          console.log('Ooops! Something went wrong!');
-        }
-      });
-    }
-  }
-
-  /**
    * Load the available logs
-   * 
+   *
    * @returns void
    */
   var loadLogs = function () {
@@ -619,7 +521,7 @@ $(document).ready(function () {
 
   /**
    * Get Cookie
-   * 
+   *
    * @returns void
    */
   var getCookie = function (cname) {
@@ -639,9 +541,9 @@ $(document).ready(function () {
   }
 
   /**
-   * 
+   *
    * Toggle the Account modal
-   * 
+   *
    * @return void
    */
   var toggleModal = function () {
@@ -651,7 +553,7 @@ $(document).ready(function () {
 
   /**
    * Check Cookie
-   * 
+   *
    * @returns void
    */
   var checkCookie = function (cname) {
@@ -672,7 +574,6 @@ $(document).ready(function () {
   }
 
   checkCookie("canvasXpressUserId");
-  loadDatasets();
   loadLogs();
 
 });

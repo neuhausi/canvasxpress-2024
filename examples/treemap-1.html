@@ -58,7 +58,6 @@
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-toggle="modal" data-target="#search">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:18px;height:18px"><g class="cxa"><circle cx="35" cy="35" r="33" /><line x1="60" y1="60" x2="99" y2="99" /></g></svg>
                 </li>
@@ -95,47 +94,6 @@
               </div>
               <div class="modal-footer">
                 <button class="btn text-primary" type="button" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Social -->
-        <div id="social" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-backdrop="false" role="dialog">
-          <div class="modal-dialog animated">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-primary" id="socialModalLabel">Create New Page</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body" style="padding: 0;">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div id="dataset" class="content" style="display: block;">
-                    <div class="form">
-                      <form id="dataset-form" class="site-form" action="https://www.canvasxpress.org/cgi-bin/services.pl" method="post">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="name" placeholder="Dataset Name" required/>
-                        </div>
-                        <div class="col text-center">
-                          <div id="dataset-form-success" class="alert alert-success" role="alert" data-success-message style="display: none;">
-                          </div>
-                          <div id="dataset-form-error" class="alert alert-danger" role="alert" data-error-message style="display: none;">
-                          </div>
-                          <input class="form-control" type="hidden" name="service" value="dataset">
-                          <input id="email-field" class="form-control" type="hidden" name="email" value="">
-                          <input id="dataset-field" class="form-control" type="hidden" name="dataset" value="">
-                          <input id="cssMain-field" class="form-control" type="hidden" name="cssMain" value="">
-                          <input id="cssSec-field" class="form-control" type="hidden" name="cssSec" value="">
-                          <input id="version-field" class="form-control" type="hidden" name="version" value="">
-                          <button style="margin-bottom:10px;" type="submit" class="btn btn-primary btn-loading mx-auto" data-loading-text="Saving">
-                            <span>Save dataset &#8594;</span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -610,7 +568,6 @@ canvasXpress(
                 <li class="nav-item"><a href="/api.html" class="nav-link fade-page">Api</a></li>
                 <li class="nav-item"><a href="/updates.html" class="nav-link fade-page">Updates</a></li>
                 <li class="nav-item"><a href="/contact.html" class="nav-link fade-page">Contact</a></li>
-                <li class="nav-item"><a href="/social.html" class="nav-link fade-page">Social</a></li>
                 <li class="nav-item"><a href="/references.html" class="nav-link fade-page">References</a></li>
                 <li class="nav-item"><a href="/usage.html" class="nav-link fade-page">Usage</a></li>
               </ul>
@@ -641,7 +598,7 @@ canvasXpress(
           }
         },
         {"colorBy": "GNI",
-         "decorations": {"marker":[{"variable":"population","x":0.65,"baseline":"middle","color":"red","sample":"Norway","text":"Norway is the country\nwith the largest GNI\naccording to 2014 census","y":0.7,"align":"center"},{"text":"China is the country with\nthe largest population\naccording to 2014 census","y":0.1,"align":"center","x":0.15,"variable":"population","baseline":"middle","color":"red","sample":"China"}]},
+         "decorations": {"marker":[{"variable":"population","x":0.65,"y":0.7,"text":"Norway is the country\nwith the largest GNI\naccording to 2014 census","baseline":"middle","align":"center","color":"red","sample":"Norway"},{"x":0.15,"variable":"population","y":0.1,"text":"China is the country with\nthe largest population\naccording to 2014 census","align":"center","baseline":"middle","sample":"China","color":"red"}]},
          "graphType": "Treemap",
          "objectBorderColor": "rgb(0,0,0)",
          "showDecorations": false,
